@@ -1,0 +1,66 @@
+[
+  {
+    "id": "warmup-1",
+    "title": "Warmup-1",
+    "description": "Simple warmup problems to get started with basic logic and loops",
+    "problemCount": 31,
+    "difficulty": "Basic",
+    "color": "bg-green-500"
+  },
+  {
+    "id": "string-1",
+    "title": "String-1",
+    "description": "Basic string manipulation problems using substring, charAt, and length",
+    "problemCount": 18,
+    "difficulty": "Basic",
+    "color": "bg-blue-500"
+  },
+  {
+    "id": "array-1",
+    "title": "Array-1",
+    "description": "Basic array problems involving loops and array manipulation",
+    "problemCount": 15,
+    "difficulty": "Basic",
+    "color": "bg-purple-500"
+  },
+  {
+    "id": "logic-1",
+    "title": "Logic-1",
+    "description": "Basic boolean logic problems with if/else statements",
+    "problemCount": 20,
+    "difficulty": "Basic",
+    "color": "bg-orange-500"
+  },
+  {
+    "id": "string-2",
+    "title": "String-2",
+    "description": "Medium string problems with more complex logic and patterns",
+    "problemCount": 14,
+    "difficulty": "Medium",
+    "color": "bg-cyan-500"
+  },
+  {
+    "id": "array-2",
+    "title": "Array-2",
+    "description": "Medium array problems with nested loops and complex logic",
+    "problemCount": 16,
+    "difficulty": "Medium",
+    "color": "bg-pink-500"
+  },
+  {
+    "id": "logic-2",
+    "title": "Logic-2",
+    "description": "Medium boolean logic problems with complex conditions",
+    "problemCount": 11,
+    "difficulty": "Medium",
+    "color": "bg-indigo-500"
+  },
+  {
+    "id": "recursion-1",
+    "title": "Recursion-1",
+    "description": "Introduction to recursion with basic recursive problems",
+    "problemCount": 13,
+    "difficulty": "Hard",
+    "color": "bg-red-500"
+  }
+]
