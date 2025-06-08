@@ -1,4 +1,3 @@
-[
   {
     "topicId": "warmup-1",
     "id": "sleepin",
@@ -18,21 +17,32 @@
     "starterCode": "function sleepIn(weekday, vacation) {\n  // type here\n}",
     "testCases": [
       {
-        "input": ["true", "true"],
+        "input": [
+          "true",
+          "true"
+        ],
         "output": true
       },
       {
-        "input": ["true", "false"],
+        "input": [
+          "true",
+          "false"
+        ],
         "output": false
       },
       {
-        "input": ["false", "true"],
+        "input": [
+          "false",
+          "true"
+        ],
         "output": true
       },
       {
-        "input": ["false", "false"],
+        "input": [
+          "false",
+          "false"
+        ],
         "output": true
       }
     ]
   }
-]

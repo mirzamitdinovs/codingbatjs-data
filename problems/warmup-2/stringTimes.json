@@ -1,0 +1,41 @@
+{
+  "topicId": "warmup-2",
+  "id": "stringTimes",
+  "difficulty": "Easy",
+  "functionName": "stringTimes",
+  "title": {
+    "en": "String Times",
+    "ru": "Строка Несколько Раз",
+    "uz": "Satr Bir Necha Marta"
+  },
+  "description": {
+    "en": "Given a string and a non-negative int n, return a larger string that is n copies of the original string.",
+    "ru": "Дана строка и неотрицательное число n. Верните строку, содержащую n копий исходной строки.",
+    "uz": "Berilgan satr va musbat bo‘lgan n butun soni uchun, satrni n marta takrorlab, yangi satr qaytaring."
+  },
+  "solution": "function stringTimes(str, n) {\n  return str.repeat(n);\n}",
+  "starterCode": "function stringTimes(str, n) {\n  // type here\n}",
+  "testCases": [
+    {
+      "input": [
+        "\"Hi\"",
+        "2"
+      ],
+      "output": "HiHi"
+    },
+    {
+      "input": [
+        "\"Hi\"",
+        "3"
+      ],
+      "output": "HiHiHi"
+    },
+    {
+      "input": [
+        "\"Hi\"",
+        "1"
+      ],
+      "output": "Hi"
+    }
+  ]
+}

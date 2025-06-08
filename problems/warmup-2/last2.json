@@ -1,0 +1,38 @@
+{
+  "topicId": "warmup-2",
+  "id": "last2",
+  "difficulty": "Easy",
+  "functionName": "last2",
+  "title": {
+    "en": "Last 2",
+    "ru": "Последние 2",
+    "uz": "Oxirgi 2"
+  },
+  "description": {
+    "en": "Given a string, return the count of the number of times that a substring length 2 appears in the string and also as the last 2 chars, not counting the end substring itself.",
+    "ru": "Дана строка. Посчитайте, сколько раз подстрока длиной 2 встречается в строке, включая последние 2 символа, но не считая их как совпадение.",
+    "uz": "Berilgan satrda, oxirgi 2 belgidan iborat bo‘lgan substring necha marta takrorlanganini sanang, lekin oxirgi o‘zini hisoblamang."
+  },
+  "solution": "function last2(str) {\n  if (str.length < 2) return 0;\n  let last2 = str.slice(-2);\n  let count = 0;\n  for (let i = 0; i < str.length - 2; i++) {\n    if (str.substring(i, i + 2) === last2) {\n      count++;\n    }\n  }\n  return count;\n}",
+  "starterCode": "function last2(str) {\n  // type here\n}",
+  "testCases": [
+    {
+      "input": [
+        "\"hixxhi\""
+      ],
+      "output": 1
+    },
+    {
+      "input": [
+        "\"xaxxaxaxx\""
+      ],
+      "output": 1
+    },
+    {
+      "input": [
+        "\"axxxaaxx\""
+      ],
+      "output": 2
+    }
+  ]
+}

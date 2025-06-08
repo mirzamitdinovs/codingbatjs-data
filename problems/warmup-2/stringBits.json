@@ -1,0 +1,38 @@
+{
+  "topicId": "warmup-2",
+  "id": "stringBits",
+  "difficulty": "Easy",
+  "functionName": "stringBits",
+  "title": {
+    "en": "String Bits",
+    "ru": "Каждый Второй Символ",
+    "uz": "Har Ikkinchi Belgilar"
+  },
+  "description": {
+    "en": "Given a string, return a new string made of every other char starting with the first.",
+    "ru": "Дана строка. Верните новую строку, содержащую каждый второй символ, начиная с первого.",
+    "uz": "Berilgan satrdan har ikkinchi belgini olib, yangi satr qaytaring (birinchi belgidan boshlab)."
+  },
+  "solution": "function stringBits(str) {\n  let result = '';\n  for (let i = 0; i < str.length; i += 2) {\n    result += str[i];\n  }\n  return result;\n}",
+  "starterCode": "function stringBits(str) {\n  // type here\n}",
+  "testCases": [
+    {
+      "input": [
+        "\"Hello\""
+      ],
+      "output": "Hlo"
+    },
+    {
+      "input": [
+        "\"Hi\""
+      ],
+      "output": "H"
+    },
+    {
+      "input": [
+        "\"Heeololeo\""
+      ],
+      "output": "Hello"
+    }
+  ]
+}

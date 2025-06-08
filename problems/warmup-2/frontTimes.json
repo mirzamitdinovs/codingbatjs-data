@@ -1,0 +1,41 @@
+  {
+    "topicId": "warmup-2",
+    "id": "frontTimes",
+    "difficulty": "Easy",
+    "functionName": "frontTimes",
+    "title": {
+      "en": "Front Times",
+      "ru": "Начало Несколько Раз",
+      "uz": "Boshini Takrorlash"
+    },
+    "description": {
+      "en": "Given a string and a non-negative int n, we'll say that the front of the string is the first 3 chars, or whatever is there if the string is less than length 3. Return n copies of the front.",
+      "ru": "Дана строка и неотрицательное число n. Фронтом строки считается её первые 3 символа (или вся строка, если она короче). Верните строку, содержащую n копий фронта.",
+      "uz": "Berilgan satr va n musbat butun soni uchun, satrning dastlabki 3 belgisi (yoki mavjudlari) 'bosh' deb hisoblanadi. Boshlanish qismni n marta takrorlab qaytaring."
+    },
+    "solution": "function frontTimes(str, n) {\n  let front = str.length < 3 ? str : str.substring(0, 3);\n  return front.repeat(n);\n}",
+    "starterCode": "function frontTimes(str, n) {\n  // type here\n}",
+    "testCases": [
+      {
+        "input": [
+          "\"Chocolate\"",
+          "2"
+        ],
+        "output": "ChoCho"
+      },
+      {
+        "input": [
+          "\"Chocolate\"",
+          "3"
+        ],
+        "output": "ChoChoCho"
+      },
+      {
+        "input": [
+          "\"Abc\"",
+          "3"
+        ],
+        "output": "AbcAbcAbc"
+      }
+    ]
+  }

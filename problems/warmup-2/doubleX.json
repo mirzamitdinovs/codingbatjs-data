@@ -1,0 +1,38 @@
+{
+  "topicId": "warmup-2",
+  "id": "doubleX",
+  "difficulty": "Easy",
+  "functionName": "doubleX",
+  "title": {
+    "en": "Double X",
+    "ru": "Двойной X",
+    "uz": "Ikkita X"
+  },
+  "description": {
+    "en": "Given a string, return true if the first instance of 'x' in the string is immediately followed by another 'x'.",
+    "ru": "Дана строка. Верните true, если первый символ 'x' сразу же за которым следует ещё один 'x'.",
+    "uz": "Berilgan satrda birinchi 'x' dan keyin darhol yana bir 'x' kelsa, true qaytaring."
+  },
+  "solution": "function doubleX(str) {\n  let index = str.indexOf('x');\n  return index !== -1 && index + 1 < str.length && str[index + 1] === 'x';\n}",
+  "starterCode": "function doubleX(str) {\n  // type here\n}",
+  "testCases": [
+    {
+      "input": [
+        "\"axxbb\""
+      ],
+      "output": true
+    },
+    {
+      "input": [
+        "\"axaxax\""
+      ],
+      "output": false
+    },
+    {
+      "input": [
+        "\"xxxxx\""
+      ],
+      "output": true
+    }
+  ]
+}
