@@ -1,21 +1,6 @@
 [
   {
     "topicId": "warmup-1",
-    "id": "sleepin",
-    "difficulty": "Easy",
-    "functionName": "sleepIn",
-    "description": "The parameter weekday is true if it is a weekday, and the parameter vacation is true if we are on vacation. We sleep in if it is not a weekday or we're on vacation. Return true if we sleep in.",
-    "solution": "function sleepIn(weekday, vacation) {\n  return !weekday || vacation;\n}",
-    "starterCode": "function sleepIn(weekday, vacation) {\n  // type here\n}",
-    "testCases": [
-      { "input": ["true", "true"], "output": true },
-      { "input": ["true", "false"], "output": false },
-      { "input": ["false", "true"], "output": true },
-      { "input": ["false", "false"], "output": true }
-    ]
-  },
-  {
-    "topicId": "warmup-1",
     "id": "monkeytrouble",
     "difficulty": "Easy",
     "functionName": "monkeyTrouble",
