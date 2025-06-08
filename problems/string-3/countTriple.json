@@ -1,0 +1,50 @@
+{
+  "topicId": "string-3",
+  "id": "countTriple",
+  "difficulty": "Medium",
+  "functionName": "countTriple",
+  "title": {
+    "en": "countTriple",
+    "ru": "подсчет троек",
+    "uz": "uchliklarni sanash"
+  },
+  "description": {
+    "en": "Return the number of 'triples' in the string. A 'triple' is a char appearing three times in a row.",
+    "ru": "Верните количество 'троек' в строке. 'Тройка' — это символ, который появляется три раза подряд.",
+    "uz": "Satrda ketma-ket bir xil belgi uch marta takrorlanish sonini qaytaring."
+  },
+  "solution": "function countTriple(str) {\n  let count = 0;\n  for (let i = 0; i < str.length - 2; i++) {\n    if (str[i] === str[i + 1] && str[i] === str[i + 2]) {\n      count++;\n    }\n  }\n  return count;\n}",
+  "starterCode": "function countTriple(str) {\n  // type here\n}",
+  "testCases": [
+    {
+      "input": [
+        "abcXXXabc"
+      ],
+      "output": 1
+    },
+    {
+      "input": [
+        "xxxabyyyycd"
+      ],
+      "output": 3
+    },
+    {
+      "input": [
+        "a"
+      ],
+      "output": 0
+    },
+    {
+      "input": [
+        ""
+      ],
+      "output": 0
+    },
+    {
+      "input": [
+        "aaabbbcccdddeee"
+      ],
+      "output": 5
+    }
+  ]
+}

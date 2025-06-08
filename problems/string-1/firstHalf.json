@@ -1,0 +1,38 @@
+{
+  "topicId": "string-1",
+  "id": "firstHalf",
+  "difficulty": "Easy",
+  "functionName": "firstHalf",
+  "title": {
+    "en": "First Half",
+    "ru": "Первая половина",
+    "uz": "Birinchi yarmi"
+  },
+  "description": {
+    "en": "Given a string of even length, return the first half.",
+    "ru": "Дана строка чётной длины. Верните первую половину.",
+    "uz": "Juft uzunlikdagi satr berilgan. Birinchi yarmini qaytaring."
+  },
+  "solution": "function firstHalf(str) {\n  return str.substring(0, str.length/2);\n}",
+  "starterCode": "function firstHalf(str) {\n  // type here\n}",
+  "testCases": [
+    {
+      "input": [
+        "\"WooHoo\""
+      ],
+      "output": "Woo"
+    },
+    {
+      "input": [
+        "\"HelloThere\""
+      ],
+      "output": "Hello"
+    },
+    {
+      "input": [
+        "\"abcdef\""
+      ],
+      "output": "abc"
+    }
+  ]
+}

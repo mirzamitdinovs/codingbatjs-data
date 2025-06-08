@@ -1,0 +1,38 @@
+{
+  "topicId": "array-1",
+  "id": "sum2",
+  "difficulty": "Easy",
+  "functionName": "sum2",
+  "title": {
+    "en": "Sum 2",
+    "ru": "Сумма двух",
+    "uz": "Ikki yig‘indi"
+  },
+  "description": {
+    "en": "Given an array of ints, return the sum of the first two elements. If the array has fewer than two elements, sum whatever is there; return 0 if empty.",
+    "ru": "Дан массив. Верните сумму первых двух элементов. Если длина <2, суммируйте, что есть. Если пуст, верните 0.",
+    "uz": "Massiv berilgan. Agar ≥2 element bo‘lsa, dastlabki ikkisining yig‘indisi. Agar 1 ta bo‘lsa, uni; bo‘sh bo‘lsa 0."
+  },
+  "solution": "function sum2(nums) {\n  if (nums.length === 0) return 0;\n  if (nums.length === 1) return nums[0];\n  return nums[0] + nums[1];\n}",
+  "starterCode": "function sum2(nums) {\n  // type here\n}",
+  "testCases": [
+    {
+      "input": [
+        "[]"
+      ],
+      "output": 0
+    },
+    {
+      "input": [
+        "[1]"
+      ],
+      "output": 1
+    },
+    {
+      "input": [
+        "[1, 2, 3]"
+      ],
+      "output": 3
+    }
+  ]
+}

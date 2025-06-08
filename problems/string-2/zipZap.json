@@ -1,0 +1,50 @@
+{
+  "topicId": "string-2",
+  "id": "zipZap",
+  "difficulty": "Medium",
+  "functionName": "zipZap",
+  "title": {
+    "en": "zipZap",
+    "ru": "zipZap",
+    "uz": "zipZap"
+  },
+  "description": {
+    "en": "Look for patterns like 'zip' and 'zap' in the string. Return a string where for all such patterns, the middle letter is gone, so 'zipXzap' yields 'zpXzp'.",
+    "ru": "Найдите в строке паттерны вида 'zip' и 'zap'. Верните строку, где для всех таких паттернов средняя буква удалена, например 'zipXzap' → 'zpXzp'.",
+    "uz": "Satrda 'zip' va 'zap' kabi naqshlarni qidiring. Bunday naqshlardagi o‘rta harfni olib tashlab, natijani qaytaring, masalan 'zipXzap' → 'zpXzp'."
+  },
+  "solution": "function zipZap(str) {\n  let result = '';\n  let i = 0;\n  while (i < str.length) {\n    if (i + 2 < str.length && str.charAt(i) === 'z' && str.charAt(i + 2) === 'p') {\n      result += 'zp';\n      i += 3;\n    } else {\n      result += str.charAt(i);\n      i++;\n    }\n  }\n  return result;\n}",
+  "starterCode": "function zipZap(str) {\n  // type here\n}",
+  "testCases": [
+    {
+      "input": [
+        "zipXzap"
+      ],
+      "output": "zpXzp"
+    },
+    {
+      "input": [
+        "zopzop"
+      ],
+      "output": "zpzp"
+    },
+    {
+      "input": [
+        "zzzopzop"
+      ],
+      "output": "zzzpzp"
+    },
+    {
+      "input": [
+        "zip"
+      ],
+      "output": "zp"
+    },
+    {
+      "input": [
+        "zi"
+      ],
+      "output": "zi"
+    }
+  ]
+}

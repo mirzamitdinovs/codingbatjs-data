@@ -1,0 +1,56 @@
+{
+  "topicId": "string-2",
+  "id": "sameStarChar",
+  "difficulty": "Medium",
+  "functionName": "sameStarChar",
+  "title": {
+    "en": "sameStarChar",
+    "ru": "тот же символ вокруг звёздочки",
+    "uz": "yulduzcha atrofidagi bir xil belgi"
+  },
+  "description": {
+    "en": "Returns true if for every '*' in the string, the chars immediately before and after the '*' are the same.",
+    "ru": "Верните true, если для каждой '*' в строке символы сразу перед и после '*' одинаковые.",
+    "uz": "Satrda har bir '*' belgisidan oldingi va keyingi belgilar bir xil bo‘lsa, true qaytaring."
+  },
+  "solution": "function sameStarChar(str) {\n  for (let i = 1; i < str.length - 1; i++) {\n    if (str.charAt(i) === '*') {\n      if (str.charAt(i - 1) !== str.charAt(i + 1)) {\n        return false;\n      }\n    }\n  }\n  return true;\n}",
+  "starterCode": "function sameStarChar(str) {\n  // type here\n}",
+  "testCases": [
+    {
+      "input": [
+        "xy*yzz"
+      ],
+      "output": true
+    },
+    {
+      "input": [
+        "xy*zzz"
+      ],
+      "output": false
+    },
+    {
+      "input": [
+        "*xa*az"
+      ],
+      "output": true
+    },
+    {
+      "input": [
+        "aaa*aaa"
+      ],
+      "output": true
+    },
+    {
+      "input": [
+        "*"
+      ],
+      "output": true
+    },
+    {
+      "input": [
+        "a*"
+      ],
+      "output": true
+    }
+  ]
+}

@@ -1,0 +1,59 @@
+{
+  "topicId": "functional-2",
+  "id": "noz",
+  "difficulty": "Easy",
+  "functionName": "noZ",
+  "title": {
+    "en": "No Z",
+    "ru": "Без Z",
+    "uz": "Z harfisiz"
+  },
+  "description": {
+    "en": "Given a list of strings, return a list of the strings, omitting any string that contains the letter 'z'.",
+    "ru": "Дан список строк. Верните список строк, исключив те, которые содержат букву 'z'.",
+    "uz": "Satrlar ro‘yxati berilgan. 'z' harfini o‘z ichiga olgan satrlarni chiqarib tashlab, qolganlarini qaytaring."
+  },
+  "solution": "function noZ(strings) {\n  return strings.filter(s => !s.includes('z'));\n}",
+  "starterCode": "function noZ(strings) {\n  // type here\n}",
+  "testCases": [
+    {
+      "input": [
+        [
+          "aaa",
+          "bbb",
+          "aza"
+        ]
+      ],
+      "output": [
+        "aaa",
+        "bbb"
+      ]
+    },
+    {
+      "input": [
+        [
+          "hziz",
+          "hzello",
+          "hi"
+        ]
+      ],
+      "output": [
+        "hi"
+      ]
+    },
+    {
+      "input": [
+        [
+          "hello",
+          "howz",
+          "are",
+          "youz"
+        ]
+      ],
+      "output": [
+        "hello",
+        "are"
+      ]
+    }
+  ]
+}

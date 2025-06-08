@@ -1,0 +1,38 @@
+{
+  "topicId": "string-1",
+  "id": "extraFront",
+  "difficulty": "Easy",
+  "functionName": "extraFront",
+  "title": {
+    "en": "Extra Front",
+    "ru": "Повтор первых символов",
+    "uz": "Qo‘shimcha avvalgi belgilar"
+  },
+  "description": {
+    "en": "Given a string, take its first 2 chars and return them 3 times. If length < 2, use whatever is there.",
+    "ru": "Дана строка. Возьмите её первые 2 символа и верните их 3 раза. Если длина < 2, используйте строку целиком.",
+    "uz": "Satr berilgan. Birinchi 2 belgini 3 marta qaytaring. Agar uzunlik < 2 bo‘lsa, borini ishlating."
+  },
+  "solution": "function extraFront(str) {\n  let front = str.length < 2 ? str : str.substring(0, 2);\n  return front + front + front;\n}",
+  "starterCode": "function extraFront(str) {\n  // type here\n}",
+  "testCases": [
+    {
+      "input": [
+        "\"Hello\""
+      ],
+      "output": "HeHeHe"
+    },
+    {
+      "input": [
+        "\"ab\""
+      ],
+      "output": "ababab"
+    },
+    {
+      "input": [
+        "\"H\""
+      ],
+      "output": "HHH"
+    }
+  ]
+}

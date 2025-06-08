@@ -1,0 +1,50 @@
+{
+  "topicId": "string-3",
+  "id": "mirrorEnds",
+  "difficulty": "Medium",
+  "functionName": "mirrorEnds",
+  "title": {
+    "en": "mirrorEnds",
+    "ru": "зеркальные концы",
+    "uz": "oyina oxirlari"
+  },
+  "description": {
+    "en": "Given a string, look for a mirror image (backwards) string at both the beginning and end of the given string. In other words, zero or more characters at the very beginning of the given string, and at the very end of the string in reverse order.",
+    "ru": "Дана строка. Найдите зеркальный образ (в обратном порядке) в начале и конце строки. То есть несколько символов в начале и таких же в конце, но в обратном порядке.",
+    "uz": "Berilgan satrda boshida va oxirida teskari tartibda joylashgan oyna tasvirini (backwards) toping."
+  },
+  "solution": "function mirrorEnds(str) {\n  let result = '';\n  for (let i = 0; i < str.length; i++) {\n    if (str[i] === str[str.length - 1 - i]) {\n      result += str[i];\n    } else {\n      break;\n    }\n  }\n  return result;\n}",
+  "starterCode": "function mirrorEnds(str) {\n  // type here\n}",
+  "testCases": [
+    {
+      "input": [
+        "abXYZba"
+      ],
+      "output": "ab"
+    },
+    {
+      "input": [
+        "abca"
+      ],
+      "output": "a"
+    },
+    {
+      "input": [
+        "aba"
+      ],
+      "output": "aba"
+    },
+    {
+      "input": [
+        "abab"
+      ],
+      "output": ""
+    },
+    {
+      "input": [
+        ""
+      ],
+      "output": ""
+    }
+  ]
+}

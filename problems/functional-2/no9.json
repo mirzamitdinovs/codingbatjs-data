@@ -1,0 +1,60 @@
+{
+  "topicId": "functional-2",
+  "id": "no9",
+  "difficulty": "Easy",
+  "functionName": "no9",
+  "title": {
+    "en": "No 9",
+    "ru": "Без 9",
+    "uz": "9 siz"
+  },
+  "description": {
+    "en": "Given a list of non-negative integers, return a list of the integers, omitting any that end with 9.",
+    "ru": "Дан список неотрицательных целых чисел. Верните новый список, исключив из него все числа, заканчивающиеся на 9.",
+    "uz": "Musbat butun sonlar ro‘yxati berilgan. Oxiri 9 bilan tugaydigan sonlarni chiqarib tashlab, qolganlari bilan yangi ro‘yxatni qaytaring."
+  },
+  "solution": "function no9(nums) {\n  return nums.filter(n => n % 10 !== 9);\n}",
+  "starterCode": "function no9(nums) {\n  // type here\n}",
+  "testCases": [
+    {
+      "input": [
+        [
+          1,
+          2,
+          19
+        ]
+      ],
+      "output": [
+        1,
+        2
+      ]
+    },
+    {
+      "input": [
+        [
+          9,
+          19,
+          29,
+          3
+        ]
+      ],
+      "output": [
+        3
+      ]
+    },
+    {
+      "input": [
+        [
+          1,
+          2,
+          3
+        ]
+      ],
+      "output": [
+        1,
+        2,
+        3
+      ]
+    }
+  ]
+}

@@ -1,0 +1,41 @@
+{
+  "topicId": "string-1",
+  "id": "theEnd",
+  "difficulty": "Easy",
+  "functionName": "theEnd",
+  "title": {
+    "en": "The End",
+    "ru": "Конец",
+    "uz": "Oxir"
+  },
+  "description": {
+    "en": "Given a string and a boolean front, return the first char if front is true, otherwise return the last char.",
+    "ru": "Дана строка и булев front. Верните первый символ, если front=true, иначе — последний.",
+    "uz": "Satr va front boolean berilgan. front true bo‘lsa birinchi, aks holda oxirgi belgini qaytaring."
+  },
+  "solution": "function theEnd(str, front) {\n  return front ? str.substring(0, 1) : str.substring(str.length - 1);\n}",
+  "starterCode": "function theEnd(str, front) {\n  // type here\n}",
+  "testCases": [
+    {
+      "input": [
+        "\"Hello\"",
+        "true"
+      ],
+      "output": "H"
+    },
+    {
+      "input": [
+        "\"Hello\"",
+        "false"
+      ],
+      "output": "o"
+    },
+    {
+      "input": [
+        "\"oh\"",
+        "true"
+      ],
+      "output": "o"
+    }
+  ]
+}

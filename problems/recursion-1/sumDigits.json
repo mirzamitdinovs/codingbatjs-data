@@ -1,0 +1,50 @@
+{
+  "topicId": "recursion-1",
+  "id": "sumdigits",
+  "difficulty": "Easy",
+  "functionName": "sumDigits",
+  "title": {
+    "en": "Sum Digits",
+    "ru": "Сумма цифр",
+    "uz": "Raqamlar yig‘indisi"
+  },
+  "description": {
+    "en": "Given a non-negative int n, return the sum of its digits recursively. For example, sumDigits(126) = 1 + 2 + 6 = 9.",
+    "ru": "Дано неотрицательное целое число n, рекурсивно верните сумму его цифр. Например, sumDigits(126) = 1 + 2 + 6 = 9.",
+    "uz": "Musbat butun n berilgan, uning raqamlar yig‘indisini rekursiv hisoblang. Masalan, sumDigits(126) = 1 + 2 + 6 = 9."
+  },
+  "solution": "function sumDigits(n) {\n  if (n === 0) return 0;\n  return (n % 10) + sumDigits(Math.floor(n / 10));\n}",
+  "starterCode": "function sumDigits(n) {\n  // type here\n}",
+  "testCases": [
+    {
+      "input": [
+        "126"
+      ],
+      "output": 9
+    },
+    {
+      "input": [
+        "49"
+      ],
+      "output": 13
+    },
+    {
+      "input": [
+        "12"
+      ],
+      "output": 3
+    },
+    {
+      "input": [
+        "10"
+      ],
+      "output": 1
+    },
+    {
+      "input": [
+        "1"
+      ],
+      "output": 1
+    }
+  ]
+}

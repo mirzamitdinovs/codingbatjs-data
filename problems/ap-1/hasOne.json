@@ -1,0 +1,60 @@
+{
+  "topicId": "ap-1",
+  "id": "hasOne",
+  "difficulty": "Easy",
+  "functionName": "hasOne",
+  "title": {
+    "en": "hasOne",
+    "ru": "есть единица",
+    "uz": "birlik mavjud"
+  },
+  "description": {
+    "en": "Given an array of integers, return true if the array contains at least one 1.",
+    "ru": "Дан массив целых чисел. Верните true, если в массиве есть хотя бы одно число 1.",
+    "uz": "Butun sonlar massiv berilgan. Agar massivda kamida bitta 1 bo‘lsa, true qaytaring."
+  },
+  "solution": "function hasOne(nums) {\n  return nums.includes(1);\n}",
+  "starterCode": "function hasOne(nums) {\n  // type here\n}",
+  "testCases": [
+    {
+      "input": [
+        [
+          1,
+          2,
+          3
+        ]
+      ],
+      "output": true
+    },
+    {
+      "input": [
+        [
+          2,
+          3,
+          4
+        ]
+      ],
+      "output": false
+    },
+    {
+      "input": [
+        [
+          0,
+          1
+        ]
+      ],
+      "output": true
+    },
+    {
+      "input": [
+        [
+          5,
+          1,
+          6,
+          7
+        ]
+      ],
+      "output": true
+    }
+  ]
+}

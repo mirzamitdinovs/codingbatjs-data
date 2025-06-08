@@ -1,0 +1,91 @@
+{
+  "topicId": "array-2",
+  "id": "matchUp",
+  "difficulty": "Medium",
+  "functionName": "matchUp",
+  "title": {
+    "en": "matchUp",
+    "ru": "совпадение",
+    "uz": "moslik"
+  },
+  "description": {
+    "en": "Given arrays nums1 and nums2 of the same length, return the number of positions where the two arrays differ by 1 or 2, but are not equal.",
+    "ru": "Даны массивы nums1 и nums2 одинаковой длины. Верните количество позиций, где элементы массивов отличаются на 1 или 2, но не равны.",
+    "uz": "Bir xil uzunlikdagi nums1 va nums2 massivlari berilgan. Elementlar qiymati 1 yoki 2 ga farq qiladigan, ammo teng bo‘lmagan pozitsiyalar sonini qaytaring."
+  },
+  "solution": "function matchUp(nums1, nums2) {\n  let count = 0;\n  for (let i = 0; i < nums1.length; i++) {\n    let diff = Math.abs(nums1[i] - nums2[i]);\n    if (diff <= 2 && diff > 0) {\n      count++;\n    }\n  }\n  return count;\n}",
+  "starterCode": "function matchUp(nums1, nums2) {\n  // type here\n}",
+  "testCases": [
+    {
+      "input": [
+        [
+          1,
+          2,
+          3
+        ],
+        [
+          2,
+          3,
+          10
+        ]
+      ],
+      "output": 2
+    },
+    {
+      "input": [
+        [
+          1,
+          2,
+          3
+        ],
+        [
+          2,
+          3,
+          5
+        ]
+      ],
+      "output": 3
+    },
+    {
+      "input": [
+        [
+          1,
+          2,
+          3
+        ],
+        [
+          2,
+          3,
+          3
+        ]
+      ],
+      "output": 2
+    },
+    {
+      "input": [
+        [
+          5,
+          6
+        ],
+        [
+          7,
+          6
+        ]
+      ],
+      "output": 1
+    },
+    {
+      "input": [
+        [
+          5,
+          6
+        ],
+        [
+          8,
+          6
+        ]
+      ],
+      "output": 0
+    }
+  ]
+}

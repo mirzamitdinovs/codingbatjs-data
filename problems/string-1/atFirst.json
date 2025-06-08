@@ -1,0 +1,38 @@
+{
+  "topicId": "string-1",
+  "id": "atFirst",
+  "difficulty": "Easy",
+  "functionName": "atFirst",
+  "title": {
+    "en": "At First",
+    "ru": "Первые символы",
+    "uz": "Avvalgi belgi"
+  },
+  "description": {
+    "en": "Given a string, return a string made of its first two chars. If the string is shorter than two, pad with '@'.",
+    "ru": "Дана строка. Верните строку из первых двух символов. Если строка короче двух, добавьте '@'.",
+    "uz": "Satr berilgan. Birinchi ikki belgidan iborat satr qaytaring. Agar uzunlik < 2 bo‘lsa, '@' bilan to‘ldiring."
+  },
+  "solution": "function atFirst(str) {\n  if (str.length >= 2) return str.substring(0, 2);\n  return (str + '@@').substring(0, 2);\n}",
+  "starterCode": "function atFirst(str) {\n  // type here\n}",
+  "testCases": [
+    {
+      "input": [
+        "\"hello\""
+      ],
+      "output": "he"
+    },
+    {
+      "input": [
+        "\"hi\""
+      ],
+      "output": "hi"
+    },
+    {
+      "input": [
+        "\"h\""
+      ],
+      "output": "h@"
+    }
+  ]
+}

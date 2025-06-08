@@ -1,0 +1,38 @@
+{
+  "topicId": "warmup-2",
+  "id": "altPairs",
+  "difficulty": "Easy",
+  "functionName": "altPairs",
+  "title": {
+    "en": "Alt Pairs",
+    "ru": "Альтернативные Пары",
+    "uz": "Alternativ Juftliklar"
+  },
+  "description": {
+    "en": "Return a string made of characters at index 0-1, 4-5, 8-9, etc.",
+    "ru": "Верните строку, составленную из символов с индексами 0-1, 4-5, 8-9 и т.д.",
+    "uz": "Indekslar 0-1, 4-5, 8-9 va hokazolar bo‘yicha belgilarni olib, yangi satr qaytaring."
+  },
+  "solution": "function altPairs(str) {\n  let result = '';\n  for (let i = 0; i < str.length; i += 4) {\n    result += str[i];\n    if (i + 1 < str.length) result += str[i + 1];\n  }\n  return result;\n}",
+  "starterCode": "function altPairs(str) {\n  // type here\n}",
+  "testCases": [
+    {
+      "input": [
+        "\"kitten\""
+      ],
+      "output": "kien"
+    },
+    {
+      "input": [
+        "\"Chocolate\""
+      ],
+      "output": "Chole"
+    },
+    {
+      "input": [
+        "\"CodingHorror\""
+      ],
+      "output": "Congrr"
+    }
+  ]
+}

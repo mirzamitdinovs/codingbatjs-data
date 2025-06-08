@@ -1,0 +1,71 @@
+{
+  "topicId": "array-2",
+  "id": "bigDiff",
+  "difficulty": "Easy",
+  "functionName": "bigDiff",
+  "title": {
+    "en": "bigDiff",
+    "ru": "большая разница",
+    "uz": "katta farq"
+  },
+  "description": {
+    "en": "Given an array length 1 or more of ints, return the difference between the largest and smallest values in the array.",
+    "ru": "Дан массив целых чисел длиной 1 или более. Верните разницу между максимальным и минимальным значениями массива.",
+    "uz": "1 yoki undan ko‘p butun sonlardan iborat massiv berilgan. Massivdagi eng katta va eng kichik qiymatlar orasidagi farqni qaytaring."
+  },
+  "solution": "function bigDiff(nums) {\n  let max = nums[0];\n  let min = nums[0];\n  for (let num of nums) {\n    if (num > max) max = num;\n    if (num < min) min = num;\n  }\n  return max - min;\n}",
+  "starterCode": "function bigDiff(nums) {\n  // type here\n}",
+  "testCases": [
+    {
+      "input": [
+        [
+          10,
+          3,
+          5,
+          6
+        ]
+      ],
+      "output": 7
+    },
+    {
+      "input": [
+        [
+          7,
+          2,
+          10,
+          9
+        ]
+      ],
+      "output": 8
+    },
+    {
+      "input": [
+        [
+          2,
+          10,
+          7,
+          2
+        ]
+      ],
+      "output": 8
+    },
+    {
+      "input": [
+        [
+          2,
+          2,
+          2
+        ]
+      ],
+      "output": 0
+    },
+    {
+      "input": [
+        [
+          5
+        ]
+      ],
+      "output": 0
+    }
+  ]
+}

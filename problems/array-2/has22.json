@@ -1,0 +1,72 @@
+{
+  "topicId": "array-2",
+  "id": "has22",
+  "difficulty": "Easy",
+  "functionName": "has22",
+  "title": {
+    "en": "has22",
+    "ru": "есть 22",
+    "uz": "22 borligi"
+  },
+  "description": {
+    "en": "Given an array of ints, return true if the array contains a 2 next to a 2 somewhere.",
+    "ru": "Дан массив целых чисел. Верните true, если где-то в массиве есть два соседних числа 2.",
+    "uz": "Butun sonlardan iborat massiv berilgan. Agar massivda yonma-yon 2 sonlari bo‘lsa, true qaytaring."
+  },
+  "solution": "function has22(nums) {\n  for (let i = 0; i < nums.length - 1; i++) {\n    if (nums[i] === 2 && nums[i + 1] === 2) {\n      return true;\n    }\n  }\n  return false;\n}",
+  "starterCode": "function has22(nums) {\n  // type here\n}",
+  "testCases": [
+    {
+      "input": [
+        [
+          1,
+          2,
+          2
+        ]
+      ],
+      "output": true
+    },
+    {
+      "input": [
+        [
+          1,
+          2,
+          1,
+          2
+        ]
+      ],
+      "output": false
+    },
+    {
+      "input": [
+        [
+          2,
+          1,
+          2
+        ]
+      ],
+      "output": false
+    },
+    {
+      "input": [
+        [
+          2,
+          2,
+          1,
+          2
+        ]
+      ],
+      "output": true
+    },
+    {
+      "input": [
+        [
+          1,
+          3,
+          2
+        ]
+      ],
+      "output": false
+    }
+  ]
+}

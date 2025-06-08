@@ -1,0 +1,86 @@
+{
+  "topicId": "map-2",
+  "id": "allswap",
+  "difficulty": "Medium",
+  "functionName": "allSwap",
+  "title": {
+    "en": "AllSwap",
+    "ru": "Все обмены",
+    "uz": "Barcha almashtirishlar"
+  },
+  "description": {
+    "en": "Given an array of strings, we'll say that 2 strings \"match\" if they are non-empty and their first characters are the same. Perform swaps on the array so that whenever a matching string is found, it swaps with the string that was previously matched. Each first character can cause at most one swap, so once a swap is made with a character, that character's later matches won't swap again.",
+    "ru": "Дан массив строк. Считается, что 2 строки \"совпадают\", если они не пустые и имеют одинаковый первый символ. Выполните обмены в массиве так, что при обнаружении совпадающей строки она меняется местами со строкой, которая была ранее совпавшей. Для каждого первого символа возможен максимум один обмен, после которого последующие совпадения с этим символом обмена не вызывают.",
+    "uz": "Satrlar massiv berilgan. Ikki satr \"mos keladi\", agar ular bo‘sh bo‘lmagan va birinchi belgisi bir xil bo‘lsa. Har bir birinchi belgi bo‘yicha faqat bitta almashtirish amalga oshiriladi — topilgan mos kelgan satrni avvalgi mos kelgan satr bilan almashtiring."
+  },
+  "solution": "function allSwap(words) {\n  const map = {};\n  for (let i = 0; i < words.length; i++) {\n    const first = words[i][0];\n    if (map.hasOwnProperty(first)) {\n      const j = map[first];\n      [words[i], words[j]] = [words[j], words[i]];\n      delete map[first];\n    } else {\n      map[first] = i;\n    }\n  }\n  return words;\n}",
+  "starterCode": "function allSwap(words) {\n  // type here\n}",
+  "testCases": [
+    {
+      "input": [
+        [
+          "ab",
+          "ac"
+        ]
+      ],
+      "output": [
+        "ac",
+        "ab"
+      ]
+    },
+    {
+      "input": [
+        [
+          "ax",
+          "bx",
+          "cx",
+          "cy",
+          "by",
+          "ay",
+          "aaa",
+          "azz"
+        ]
+      ],
+      "output": [
+        "ay",
+        "by",
+        "cy",
+        "cx",
+        "bx",
+        "ax",
+        "azz",
+        "aaa"
+      ]
+    },
+    {
+      "input": [
+        [
+          "ax",
+          "bx",
+          "ay",
+          "by",
+          "ai",
+          "aj",
+          "bx",
+          "by"
+        ]
+      ],
+      "output": [
+        "ay",
+        "by",
+        "aj",
+        "ai",
+        "ax",
+        "bx",
+        "by",
+        "bx"
+      ]
+    },
+    {
+      "input": [
+        []
+      ],
+      "output": []
+    }
+  ]
+}

@@ -1,0 +1,41 @@
+{
+  "topicId": "logic-1",
+  "id": "maxMod5",
+  "difficulty": "Medium",
+  "functionName": "maxMod5",
+  "title": {
+    "en": "Max Mod5",
+    "ru": "Макс Mod5",
+    "uz": "Max Mod5"
+  },
+  "description": {
+    "en": "Given two ints, return the larger, but if they have the same remainder when divided by 5, return the smaller. If they are equal, return 0.",
+    "ru": "Даны два целых. Верните больший, но если остаток от деления на 5 одинаков, верните меньший. Если равны — 0.",
+    "uz": "Ikki butun son berilgan. Katta bo‘lganini qaytaring, lekin agar 5 ga bo‘lganda qoldiqlari teng bo‘lsa, kichikroqni qaytaring. Teng bo‘lsa 0."
+  },
+  "solution": "function maxMod5(a, b) { if (a === b) return 0; if (a % 5 === b % 5) return Math.min(a, b); return Math.max(a, b); }",
+  "starterCode": "function maxMod5(a, b) {\n  // type here\n}",
+  "testCases": [
+    {
+      "input": [
+        "7",
+        "12"
+      ],
+      "output": 7
+    },
+    {
+      "input": [
+        "10",
+        "15"
+      ],
+      "output": 10
+    },
+    {
+      "input": [
+        "3",
+        "3"
+      ],
+      "output": 0
+    }
+  ]
+}

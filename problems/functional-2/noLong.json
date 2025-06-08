@@ -1,0 +1,57 @@
+{
+  "topicId": "functional-2",
+  "id": "nolong",
+  "difficulty": "Easy",
+  "functionName": "noLong",
+  "title": {
+    "en": "No Long",
+    "ru": "Без длинных",
+    "uz": "Uzunlarsiz"
+  },
+  "description": {
+    "en": "Given a list of strings, return a list of the strings, omitting any string length 4 or more.",
+    "ru": "Дан список строк. Верните новый список, исключив строки длиной 4 и более символов.",
+    "uz": "Satrlar ro‘yxati berilgan. Uzunligi 4 yoki undan katta bo‘lgan satrlarni chiqarib tashlab, qolganlari bilan yangi ro‘yxatni qaytaring."
+  },
+  "solution": "function noLong(strings) {\n  return strings.filter(s => s.length < 4);\n}",
+  "starterCode": "function noLong(strings) {\n  // type here\n}",
+  "testCases": [
+    {
+      "input": [
+        [
+          "this",
+          "not",
+          "too",
+          "long"
+        ]
+      ],
+      "output": [
+        "not",
+        "too"
+      ]
+    },
+    {
+      "input": [
+        [
+          "a",
+          "bbb",
+          "cccc"
+        ]
+      ],
+      "output": [
+        "a",
+        "bbb"
+      ]
+    },
+    {
+      "input": [
+        [
+          "cccc",
+          "cccc",
+          "cccc"
+        ]
+      ],
+      "output": []
+    }
+  ]
+}

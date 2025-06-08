@@ -1,0 +1,50 @@
+{
+  "topicId": "recursion-1",
+  "id": "nox",
+  "difficulty": "Easy",
+  "functionName": "noX",
+  "title": {
+    "en": "No X",
+    "ru": "Без X",
+    "uz": "X larni olib tashlash"
+  },
+  "description": {
+    "en": "Given a string, compute recursively a new string where all the lowercase 'x' chars have been removed.",
+    "ru": "Дана строка. Рекурсивно верните новую строку, где все строчные символы 'x' удалены.",
+    "uz": "Berilgan satrda rekursiv ravishda barcha kichik 'x' harflarini olib tashlang."
+  },
+  "solution": "function noX(str) {\n  if (str.length === 0) return \"\";\n  if (str.charAt(0) === 'x') {\n    return noX(str.substring(1));\n  } else {\n    return str.charAt(0) + noX(str.substring(1));\n  }\n}",
+  "starterCode": "function noX(str) {\n  // type here\n}",
+  "testCases": [
+    {
+      "input": [
+        "xaxb"
+      ],
+      "output": "ab"
+    },
+    {
+      "input": [
+        "abc"
+      ],
+      "output": "abc"
+    },
+    {
+      "input": [
+        "xx"
+      ],
+      "output": ""
+    },
+    {
+      "input": [
+        ""
+      ],
+      "output": ""
+    },
+    {
+      "input": [
+        "axxbxx"
+      ],
+      "output": "abb"
+    }
+  ]
+}

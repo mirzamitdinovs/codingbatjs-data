@@ -1,0 +1,50 @@
+{
+  "topicId": "array-1",
+  "id": "middleWay",
+  "difficulty": "Easy",
+  "functionName": "middleWay",
+  "title": {
+    "en": "Middle Way",
+    "ru": "Средний способ",
+    "uz": "O‘rta usul"
+  },
+  "description": {
+    "en": "Given 2 int arrays length 3, return a new array length 2 containing their middle elements.",
+    "ru": "Даны 2 массива длины 3. Верните массив длины 2, содержащий их средние элементы.",
+    "uz": "3 elementli 2 massiv berilgan. Ularning o‘rta elementlaridan 2 elementli massiv hosil qiling."
+  },
+  "solution": "function middleWay(a, b) {\n  return [a[1], b[1]];\n}",
+  "starterCode": "function middleWay(a, b) {\n  // type here\n}",
+  "testCases": [
+    {
+      "input": [
+        "[1, 2, 3]",
+        "[4, 5, 6]"
+      ],
+      "output": [
+        2,
+        5
+      ]
+    },
+    {
+      "input": [
+        "[7, 7, 7]",
+        "[3, 8, 0]"
+      ],
+      "output": [
+        7,
+        8
+      ]
+    },
+    {
+      "input": [
+        "[5, 2, 9]",
+        "[1, 4, 5]"
+      ],
+      "output": [
+        2,
+        4
+      ]
+    }
+  ]
+}

@@ -1,0 +1,96 @@
+{
+  "topicId": "array-2",
+  "id": "zeroFront",
+  "difficulty": "Medium",
+  "functionName": "zeroFront",
+  "title": {
+    "en": "zeroFront",
+    "ru": "нули вперед",
+    "uz": "nolni oldinga surish"
+  },
+  "description": {
+    "en": "Return an array with all the zeros grouped at the start, preserving the order of the other elements.",
+    "ru": "Верните массив, в котором все нули сгруппированы в начале, сохраняя порядок остальных элементов.",
+    "uz": "Massivdagi barcha nol qiymatlarni boshiga jamlab, qolgan elementlarning tartibini saqlang."
+  },
+  "solution": "function zeroFront(nums) {\n  let zeros = [];\n  let others = [];\n  for (let num of nums) {\n    if (num === 0) zeros.push(num);\n    else others.push(num);\n  }\n  return zeros.concat(others);\n}",
+  "starterCode": "function zeroFront(nums) {\n  // type here\n}",
+  "testCases": [
+    {
+      "input": [
+        [
+          1,
+          0,
+          0,
+          1
+        ]
+      ],
+      "output": [
+        0,
+        0,
+        1,
+        1
+      ]
+    },
+    {
+      "input": [
+        [
+          0,
+          1,
+          1,
+          0,
+          1
+        ]
+      ],
+      "output": [
+        0,
+        0,
+        1,
+        1,
+        1
+      ]
+    },
+    {
+      "input": [
+        [
+          1,
+          0
+        ]
+      ],
+      "output": [
+        0,
+        1
+      ]
+    },
+    {
+      "input": [
+        [
+          0,
+          0,
+          1,
+          0
+        ]
+      ],
+      "output": [
+        0,
+        0,
+        0,
+        1
+      ]
+    },
+    {
+      "input": [
+        [
+          1,
+          2,
+          3
+        ]
+      ],
+      "output": [
+        1,
+        2,
+        3
+      ]
+    }
+  ]
+}

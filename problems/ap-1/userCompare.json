@@ -1,0 +1,56 @@
+{
+  "topicId": "ap-1",
+  "id": "usercompare",
+  "difficulty": "Medium",
+  "functionName": "userCompare",
+  "title": {
+    "en": "User Compare",
+    "ru": "Сравнение Пользователей",
+    "uz": "Foydalanuvchilarni solishtirish"
+  },
+  "description": {
+    "en": "We have data for two users: their names and their IDs. Compare the two users and return -1 if the first user comes before the second, 1 if the second user comes before the first, and 0 if they are the same. Comparison is by name first, and if names are the same, then by ID.",
+    "ru": "У нас есть данные о двух пользователях: их имена и идентификаторы. Сравните двух пользователей и верните -1, если первый пользователь идет раньше второго, 1 — если второй раньше первого, и 0 — если они одинаковы. Сначала сравниваются имена, а если они одинаковы — идентификаторы.",
+    "uz": "Ikki foydalanuvchi haqida ma’lumotlar mavjud: ularning ismlari va ID raqamlari. Foydalanuvchilarni solishtirib, agar birinchi foydalanuvchi ikkinchisidan oldin kelsa -1, ikkinchisi birinchisidan oldin bo‘lsa 1, va ular bir xil bo‘lsa 0 qaytaring. Avval ism, keyin esa ID bo‘yicha solishtiriladi."
+  },
+  "solution": "function userCompare(aName, aId, bName, bId) {\n  if (aName < bName) return -1;\n  if (aName > bName) return 1;\n  if (aId < bId) return -1;\n  if (aId > bId) return 1;\n  return 0;\n}",
+  "starterCode": "function userCompare(aName, aId, bName, bId) {\n  // type here\n}",
+  "testCases": [
+    {
+      "input": [
+        "\"alice\"",
+        "1",
+        "\"bob\"",
+        "2"
+      ],
+      "output": -1
+    },
+    {
+      "input": [
+        "\"charlie\"",
+        "2",
+        "\"charlie\"",
+        "3"
+      ],
+      "output": -1
+    },
+    {
+      "input": [
+        "\"dave\"",
+        "7",
+        "\"dave\"",
+        "7"
+      ],
+      "output": 0
+    },
+    {
+      "input": [
+        "\"emma\"",
+        "9",
+        "\"dan\"",
+        "5"
+      ],
+      "output": 1
+    }
+  ]
+}

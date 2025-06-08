@@ -1,0 +1,41 @@
+{
+  "topicId": "string-1",
+  "id": "nonStart",
+  "difficulty": "Easy",
+  "functionName": "nonStart",
+  "title": {
+    "en": "Non‑Start",
+    "ru": "Без начала",
+    "uz": "Boshlanishsiz"
+  },
+  "description": {
+    "en": "Given two strings, return their concatenation without the first char of each.",
+    "ru": "Даны две строки. Верните их соединение без первых символов каждой.",
+    "uz": "Ikki satr berilgan. Har bir satrning birinchi belgisiz ularni birlashtiring."
+  },
+  "solution": "function nonStart(a, b) {\n  return a.substring(1) + b.substring(1);\n}",
+  "starterCode": "function nonStart(a, b) {\n  // type here\n}",
+  "testCases": [
+    {
+      "input": [
+        "\"Hello\"",
+        "\"There\""
+      ],
+      "output": "ellohere"
+    },
+    {
+      "input": [
+        "\"java\"",
+        "\"coder\""
+      ],
+      "output": "avaoder"
+    },
+    {
+      "input": [
+        "\"shotl\"",
+        "\"java\""
+      ],
+      "output": "hotlava"
+    }
+  ]
+}

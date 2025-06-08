@@ -1,0 +1,38 @@
+{
+  "topicId": "string-1",
+  "id": "middleThree",
+  "difficulty": "Medium",
+  "functionName": "middleThree",
+  "title": {
+    "en": "Middle Three",
+    "ru": "Средние три",
+    "uz": "O‘rta uchta"
+  },
+  "description": {
+    "en": "Given a string of odd length ≥ 3, return the middle three chars.",
+    "ru": "Дана строка нечетной длины ≥ 3. Верните её средние три символа.",
+    "uz": "Bu belgilarning uzunligi toq ≥ 3 bo‘lgan satr. O‘rta uchta belgini qaytaring."
+  },
+  "solution": "function middleThree(str) {\n  let mid = Math.floor(str.length / 2);\n  return str.substring(mid - 1, mid + 2);\n}",
+  "starterCode": "function middleThree(str) {\n  // type here\n}",
+  "testCases": [
+    {
+      "input": [
+        "\"Candy\""
+      ],
+      "output": "and"
+    },
+    {
+      "input": [
+        "\"and\""
+      ],
+      "output": "and"
+    },
+    {
+      "input": [
+        "\"solving\""
+      ],
+      "output": "lvi"
+    }
+  ]
+}

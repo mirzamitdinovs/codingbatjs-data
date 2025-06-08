@@ -1,0 +1,68 @@
+{
+  "topicId": "logic-2",
+  "id": "closeFar",
+  "difficulty": "Medium",
+  "functionName": "closeFar",
+  "title": {
+    "en": "Close Far",
+    "ru": "Близко-далеко",
+    "uz": "Yaqin-uzoqlik"
+  },
+  "description": {
+    "en": "Given three ints, a b c, return true if one of b or c is 'close' (differing from a by at most 1), while the other is 'far', differing from both other values by 2 or more.",
+    "ru": "Даны три целых числа a, b и c. Верните true, если одно из чисел b или c 'близко' к a (разница не более 1), а другое 'далеко' от обоих других чисел (разница не менее 2).",
+    "uz": "3 ta butun son a, b, c berilgan. Agar b yoki c dan biri a ga 1 dan oshmaydigan farq bilan 'yaqin' bo‘lsa, ikkinchisi esa boshqa ikkitasidan 2 yoki undan katta farq bilan 'uzoqlik'da bo‘lsa, true qaytaring."
+  },
+  "solution": "function closeFar(a, b, c) {\n  const close = (x, y) => Math.abs(x - y) <= 1;\n  const far = (x, y) => Math.abs(x - y) >= 2;\n  return (close(a, b) && far(a, c) && far(b, c)) ||\n         (close(a, c) && far(a, b) && far(b, c));\n}",
+  "starterCode": "function closeFar(a, b, c) {\n  // type here\n}",
+  "testCases": [
+    {
+      "input": [
+        "1",
+        "2",
+        "10"
+      ],
+      "output": true
+    },
+    {
+      "input": [
+        "1",
+        "2",
+        "3"
+      ],
+      "output": false
+    },
+    {
+      "input": [
+        "4",
+        "1",
+        "3"
+      ],
+      "output": true
+    },
+    {
+      "input": [
+        "4",
+        "5",
+        "3"
+      ],
+      "output": false
+    },
+    {
+      "input": [
+        "4",
+        "3",
+        "5"
+      ],
+      "output": false
+    },
+    {
+      "input": [
+        "10",
+        "9",
+        "8"
+      ],
+      "output": false
+    }
+  ]
+}

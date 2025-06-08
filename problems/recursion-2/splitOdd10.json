@@ -1,0 +1,72 @@
+{
+  "topicId": "recursion-2",
+  "id": "splitodd10",
+  "difficulty": "Medium",
+  "functionName": "splitOdd10",
+  "title": {
+    "en": "Split Odd 10",
+    "ru": "Разделить на группы с нечётной и кратной 10 суммой",
+    "uz": "To‘q va 10 ga bo‘linadigan yig‘indiga bo‘lish"
+  },
+  "description": {
+    "en": "Given an array of ints, is it possible to divide the ints into two groups, so that the sum of one group is a multiple of 10, and the sum of the other group is odd?",
+    "ru": "Дан массив целых чисел. Можно ли разделить числа на две группы так, чтобы сумма одной группы была кратна 10, а сумма другой — нечётной?",
+    "uz": "Berilgan butun sonlar massivini ikkiga bo‘lish mumkinmi, shunda bir guruh yig‘indisi 10 ga bo‘linadigan, ikkinchi guruh yig‘indisi to‘q bo‘lsin?"
+  },
+  "solution": "function splitOdd10(nums) {\n  function helper(start, sum1, sum2) {\n    if (start >= nums.length) return (sum1 % 10 === 0 && sum2 % 2 === 1) || (sum2 % 10 === 0 && sum1 % 2 === 1);\n    return helper(start + 1, sum1 + nums[start], sum2) || helper(start + 1, sum1, sum2 + nums[start]);\n  }\n  return helper(0, 0, 0);\n}",
+  "starterCode": "function splitOdd10(nums) {\n  // type here\n}",
+  "testCases": [
+    {
+      "input": [
+        [
+          5,
+          5,
+          5
+        ]
+      ],
+      "output": true
+    },
+    {
+      "input": [
+        [
+          5,
+          5,
+          6
+        ]
+      ],
+      "output": false
+    },
+    {
+      "input": [
+        [
+          5,
+          5,
+          6,
+          1
+        ]
+      ],
+      "output": true
+    },
+    {
+      "input": [
+        [
+          10,
+          5,
+          5,
+          1
+        ]
+      ],
+      "output": true
+    },
+    {
+      "input": [
+        [
+          10,
+          5,
+          2
+        ]
+      ],
+      "output": false
+    }
+  ]
+}

@@ -1,0 +1,50 @@
+{
+  "topicId": "recursion-1",
+  "id": "triangle",
+  "difficulty": "Easy",
+  "functionName": "triangle",
+  "title": {
+    "en": "Triangle",
+    "ru": "Треугольник",
+    "uz": "Uchburchak"
+  },
+  "description": {
+    "en": "We have a triangle made of blocks. The top row has 1 block, the next row down has 2 blocks, the next row has 3 blocks, and so on. Compute recursively (no loops or multiplication) the total number of blocks in such a triangle with the given number of rows.",
+    "ru": "У нас есть треугольник из блоков. В верхнем ряду 1 блок, в следующем ряду 2 блока, в следующем — 3 блока, и так далее. Рекурсивно вычислите (без циклов и умножения) общее количество блоков в треугольнике с заданным числом рядов.",
+    "uz": "Bloklardan tashkil topgan uchburchak bor. Tepadagi qatorda 1 ta blok, keyingi qatorda 2 ta, undan keyingi qatorda 3 ta blok bor, va hokazo. Berilgan qatordagi bloklar sonini rekursiv ravishda (tsiklsiz va ko‘paytirmasdan) hisoblang."
+  },
+  "solution": "function triangle(rows) {\n  if (rows === 0) return 0;\n  return rows + triangle(rows - 1);\n}",
+  "starterCode": "function triangle(rows) {\n  // type here\n}",
+  "testCases": [
+    {
+      "input": [
+        "0"
+      ],
+      "output": 0
+    },
+    {
+      "input": [
+        "1"
+      ],
+      "output": 1
+    },
+    {
+      "input": [
+        "2"
+      ],
+      "output": 3
+    },
+    {
+      "input": [
+        "3"
+      ],
+      "output": 6
+    },
+    {
+      "input": [
+        "4"
+      ],
+      "output": 10
+    }
+  ]
+}

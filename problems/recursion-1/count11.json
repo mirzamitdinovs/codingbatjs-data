@@ -1,0 +1,50 @@
+{
+  "topicId": "recursion-1",
+  "id": "count11",
+  "difficulty": "Medium",
+  "functionName": "count11",
+  "title": {
+    "en": "Count 11",
+    "ru": "Подсчет 11",
+    "uz": "11 ni hisoblash"
+  },
+  "description": {
+    "en": "Given a string, compute recursively the number of times lowercase '11' appears in the string. The '11's should not overlap.",
+    "ru": "Дана строка. Рекурсивно подсчитайте, сколько раз в строке появляется подстрока '11'. Подстроки не должны пересекаться.",
+    "uz": "Berilgan satrda kichik harfdagi '11' nechta uchrashini rekursiv hisoblang. '11' lar qoplanmasligi kerak."
+  },
+  "solution": "function count11(str) {\n  if (str.length < 2) return 0;\n  if (str.substring(0, 2) === '11') {\n    return 1 + count11(str.substring(2));\n  } else {\n    return count11(str.substring(1));\n  }\n}",
+  "starterCode": "function count11(str) {\n  // type here\n}",
+  "testCases": [
+    {
+      "input": [
+        "11abc11"
+      ],
+      "output": 2
+    },
+    {
+      "input": [
+        "abc11x11x11"
+      ],
+      "output": 3
+    },
+    {
+      "input": [
+        "111"
+      ],
+      "output": 1
+    },
+    {
+      "input": [
+        "1"
+      ],
+      "output": 0
+    },
+    {
+      "input": [
+        ""
+      ],
+      "output": 0
+    }
+  ]
+}

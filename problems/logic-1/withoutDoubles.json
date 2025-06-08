@@ -1,0 +1,44 @@
+{
+  "topicId": "logic-1",
+  "id": "withoutDoubles",
+  "difficulty": "Medium",
+  "functionName": "withoutDoubles",
+  "title": {
+    "en": "Without Doubles",
+    "ru": "Без дублей",
+    "uz": "Takrorlarsiz"
+  },
+  "description": {
+    "en": "Return the sum of two dice rolls, but if 'noDoubles' is true and they show the same value, increment one die (wrapping 6 to 1).",
+    "ru": "Верните сумму двух бросков кубика. Если noDoubles true и они равны, увеличьте один кубик (6 меняется на 1).",
+    "uz": "Ikki tanga tashlash yig‘indisini qaytaring. Agar noDoubles true bo‘lsa va tangalar teng bo‘lsa, birini 1 ga oshiring (6 dan keyin 1 ga qaytadi)."
+  },
+  "solution": "function withoutDoubles(die1, die2, noDoubles) { if (noDoubles && die1 === die2) { die1 = die1 === 6 ? 1 : die1 + 1; } return die1 + die2; }",
+  "starterCode": "function withoutDoubles(die1, die2, noDoubles) {\n  // type here\n}",
+  "testCases": [
+    {
+      "input": [
+        "2",
+        "3",
+        "true"
+      ],
+      "output": 5
+    },
+    {
+      "input": [
+        "3",
+        "3",
+        "true"
+      ],
+      "output": 7
+    },
+    {
+      "input": [
+        "3",
+        "3",
+        "false"
+      ],
+      "output": 6
+    }
+  ]
+}

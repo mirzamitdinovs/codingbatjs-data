@@ -1,0 +1,86 @@
+{
+  "topicId": "recursion-2",
+  "id": "groupnoadj",
+  "difficulty": "Medium",
+  "functionName": "groupNoAdj",
+  "title": {
+    "en": "Group No Adj",
+    "ru": "Группа без соседних",
+    "uz": "Qo‘shnilarisiz guruh"
+  },
+  "description": {
+    "en": "Given an array of ints, is it possible to choose a group of some of the ints, beginning at the start index, such that the group sums to the given target, with the constraint that if a value is chosen, the value immediately following it is not chosen?",
+    "ru": "Дан массив целых чисел. Можно ли выбрать группу чисел, начиная с указанного индекса, чтобы сумма этой группы равнялась заданному числу, при условии, что если число выбрано, следующий за ним не выбирается?",
+    "uz": "Berilgan butun sonlar massividan boshlang‘ich indeksdan boshlab ba’zi elementlarni tanlab, ularning yig‘indisi berilgan maqsadga teng bo‘lishi mumkinmi, bunda agar bir element tanlangan bo‘lsa, undan keyingi element tanlanmasligi kerak?"
+  },
+  "solution": "function groupNoAdj(start, nums, target) {\n  if (start >= nums.length) return target === 0;\n  if (groupNoAdj(start + 2, nums, target - nums[start])) return true;\n  if (groupNoAdj(start + 1, nums, target)) return true;\n  return false;\n}",
+  "starterCode": "function groupNoAdj(start, nums, target) {\n  // type here\n}",
+  "testCases": [
+    {
+      "input": [
+        0,
+        [
+          2,
+          5,
+          10,
+          4
+        ],
+        12
+      ],
+      "output": true
+    },
+    {
+      "input": [
+        0,
+        [
+          2,
+          5,
+          10,
+          4
+        ],
+        14
+      ],
+      "output": false
+    },
+    {
+      "input": [
+        0,
+        [
+          2,
+          5,
+          10,
+          4
+        ],
+        7
+      ],
+      "output": false
+    },
+    {
+      "input": [
+        0,
+        [
+          2,
+          5,
+          10,
+          4
+        ],
+        9
+      ],
+      "output": true
+    },
+    {
+      "input": [
+        0,
+        [
+          10,
+          2,
+          2,
+          5,
+          0
+        ],
+        15
+      ],
+      "output": true
+    }
+  ]
+}

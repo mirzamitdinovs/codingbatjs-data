@@ -1,0 +1,82 @@
+{
+  "topicId": "ap-1",
+  "id": "wordsFront",
+  "difficulty": "Easy",
+  "functionName": "wordsFront",
+  "title": {
+    "en": "wordsFront",
+    "ru": "первые слова",
+    "uz": "oldingi so‘zlar"
+  },
+  "description": {
+    "en": "Given an array of strings, return a new array containing the first n strings. The array length will be at least n.",
+    "ru": "Дан массив строк. Верните новый массив, содержащий первые n строк. Длина массива будет не меньше n.",
+    "uz": "So‘zlar massiv berilgan. Massivdan dastlabki n ta so‘zni yangi massiv sifatida qaytaring. Massiv uzunligi kamida n bo‘ladi."
+  },
+  "solution": "function wordsFront(words, n) {\n  return words.slice(0, n);\n}",
+  "starterCode": "function wordsFront(words, n) {\n  // type here\n}",
+  "testCases": [
+    {
+      "input": [
+        [
+          "a",
+          "b",
+          "c",
+          "d"
+        ],
+        1
+      ],
+      "output": [
+        "a"
+      ]
+    },
+    {
+      "input": [
+        [
+          "a",
+          "b",
+          "c",
+          "d"
+        ],
+        2
+      ],
+      "output": [
+        "a",
+        "b"
+      ]
+    },
+    {
+      "input": [
+        [
+          "a",
+          "b",
+          "c",
+          "d"
+        ],
+        3
+      ],
+      "output": [
+        "a",
+        "b",
+        "c"
+      ]
+    },
+    {
+      "input": [
+        [
+          "a",
+          "b",
+          "c",
+          "d"
+        ],
+        4
+      ],
+      "output": [
+        "a",
+        "b",
+        "c",
+        "d"
+      ]
+    }
+  ]
+}

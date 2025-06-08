@@ -1,0 +1,41 @@
+{
+  "topicId": "string-1",
+  "id": "minCat",
+  "difficulty": "Easy",
+  "functionName": "minCat",
+  "title": {
+    "en": "Min Cat",
+    "ru": "Самый короткий",
+    "uz": "Eng qisqa satr"
+  },
+  "description": {
+    "en": "Given two strings, if they differ in length, trim the longer one to match the shorter and return their concatenation.",
+    "ru": "Даны 2 строки. Если они разной длины, укорачивайте более длинную слева, чтобы длины совпали, и верните конкатенацию.",
+    "uz": "2 satr berilgan. Uzunliklari farqli bo‘lsa, uzunini qisqartiring va ikkisini birlashtirib qaytaring."
+  },
+  "solution": "function minCat(a, b) {\n  let min = Math.min(a.length, b.length);\n  return a.substring(a.length - min) + b.substring(b.length - min);\n}",
+  "starterCode": "function minCat(a, b) {\n  // type here\n}",
+  "testCases": [
+    {
+      "input": [
+        "\"Hello\"",
+        "\"Hi\""
+      ],
+      "output": "loHi"
+    },
+    {
+      "input": [
+        "\"Hello\"",
+        "\"java\""
+      ],
+      "output": "ellojava"
+    },
+    {
+      "input": [
+        "\"java\"",
+        "\"Hello\""
+      ],
+      "output": "javaello"
+    }
+  ]
+}

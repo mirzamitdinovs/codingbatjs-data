@@ -1,0 +1,41 @@
+{
+  "topicId": "array-1",
+  "id": "commonEnd",
+  "difficulty": "Easy",
+  "functionName": "commonEnd",
+  "title": {
+    "en": "Common End",
+    "ru": "Одинаковый конец",
+    "uz": "Oxirgi element bir xilmi?"
+  },
+  "description": {
+    "en": "Given 2 arrays of ints, a and b, return true if they have the same first element or the same last element.",
+    "ru": "Даны 2 массива. Верните true, если у них одинаковый первый или последний элемент.",
+    "uz": "2 massiv berilgan. Agar birinchi yoki oxirgi elementlari teng bo‘lsa true."
+  },
+  "solution": "function commonEnd(a, b) {\n  return a[0] === b[0] || a[a.length - 1] === b[b.length - 1];\n}",
+  "starterCode": "function commonEnd(a, b) {\n  // type here\n}",
+  "testCases": [
+    {
+      "input": [
+        "[1, 2, 3]",
+        "[7, 3]"
+      ],
+      "output": true
+    },
+    {
+      "input": [
+        "[1, 2, 3]",
+        "[7, 3, 2]"
+      ],
+      "output": false
+    },
+    {
+      "input": [
+        "[1, 2, 3]",
+        "[1, 3]"
+      ],
+      "output": true
+    }
+  ]
+}

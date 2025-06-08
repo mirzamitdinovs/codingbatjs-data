@@ -1,0 +1,92 @@
+{
+  "topicId": "array-2",
+  "id": "zeroMax",
+  "difficulty": "Medium",
+  "functionName": "zeroMax",
+  "title": {
+    "en": "zeroMax",
+    "ru": "нулевой максимум",
+    "uz": "nol maksimal"
+  },
+  "description": {
+    "en": "Return a version of the given array where each zero value is replaced by the largest odd value to the right of the zero in the array. If there is no odd value to the right, leave the zero as is.",
+    "ru": "Верните версию массива, в которой каждое значение 0 заменяется на наибольшее нечетное значение справа от этого 0 в массиве. Если справа нет нечетных значений, оставьте 0 как есть.",
+    "uz": "Berilgan massivdagi har bir nol qiymatini uning o‘ngidagi eng katta toq qiymatga almashtiring. Agar o‘ngida toq qiymat bo‘lmasa, nol o‘zgarmaydi."
+  },
+  "solution": "function zeroMax(nums) {\n  for (let i = 0; i < nums.length; i++) {\n    if (nums[i] === 0) {\n      let maxOdd = 0;\n      for (let j = i + 1; j < nums.length; j++) {\n        if (nums[j] % 2 === 1 && nums[j] > maxOdd) {\n          maxOdd = nums[j];\n        }\n      }\n      if (maxOdd > 0) {\n        nums[i] = maxOdd;\n      }\n    }\n  }\n  return nums;\n}",
+  "starterCode": "function zeroMax(nums) {\n  // type here\n}",
+  "testCases": [
+    {
+      "input": [
+        [
+          0,
+          5,
+          0,
+          3
+        ]
+      ],
+      "output": [
+        5,
+        5,
+        3,
+        3
+      ]
+    },
+    {
+      "input": [
+        [
+          0,
+          4,
+          0,
+          3
+        ]
+      ],
+      "output": [
+        3,
+        4,
+        3,
+        3
+      ]
+    },
+    {
+      "input": [
+        [
+          0,
+          1,
+          0
+        ]
+      ],
+      "output": [
+        1,
+        1,
+        0
+      ]
+    },
+    {
+      "input": [
+        [
+          0,
+          2,
+          0
+        ]
+      ],
+      "output": [
+        0,
+        2,
+        0
+      ]
+    },
+    {
+      "input": [
+        [
+          1,
+          0
+        ]
+      ],
+      "output": [
+        1,
+        0
+      ]
+    }
+  ]
+}

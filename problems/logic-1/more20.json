@@ -1,0 +1,38 @@
+{
+  "topicId": "logic-1",
+  "id": "more20",
+  "difficulty": "Easy",
+  "functionName": "more20",
+  "title": {
+    "en": "More 20",
+    "ru": "Больше 20",
+    "uz": "20 dan ko‘p"
+  },
+  "description": {
+    "en": "Return true if n is 1 or 2 more than a multiple of 20.",
+    "ru": "Верните true, если n на 1 или 2 больше кратного 20.",
+    "uz": "Agar n 20 ga bo‘linadigan sondan 1 yoki 2 ga katta bo‘lsa true qaytaring."
+  },
+  "solution": "function more20(n) { return n % 20 === 1 || n % 20 === 2; }",
+  "starterCode": "function more20(n) {\n  // type here\n}",
+  "testCases": [
+    {
+      "input": [
+        "20"
+      ],
+      "output": false
+    },
+    {
+      "input": [
+        "21"
+      ],
+      "output": true
+    },
+    {
+      "input": [
+        "22"
+      ],
+      "output": true
+    }
+  ]
+}

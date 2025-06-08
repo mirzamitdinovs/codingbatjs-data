@@ -1,0 +1,44 @@
+{
+  "topicId": "logic-1",
+  "id": "lastDigit",
+  "difficulty": "Medium",
+  "functionName": "lastDigit",
+  "title": {
+    "en": "Last Digit",
+    "ru": "Последняя цифра",
+    "uz": "Oxirgi raqam"
+  },
+  "description": {
+    "en": "Given three non-negative ints, return true if two or more of them have the same rightmost digit.",
+    "ru": "Даны три неотрицательных целых. Верните true, если у двух или более одинаковая последняя цифра.",
+    "uz": "Uchta musbat yoki nol butun son berilgan. Agar ikki yoki undan ko‘pi oxirgi raqamda teng bo‘lsa true qaytaring."
+  },
+  "solution": "function lastDigit(a, b, c) { let a1 = a % 10; let b1 = b % 10; let c1 = c % 10; return a1 === b1 || a1 === c1 || b1 === c1; }",
+  "starterCode": "function lastDigit(a, b, c) {\n  // type here\n}",
+  "testCases": [
+    {
+      "input": [
+        "23",
+        "19",
+        "13"
+      ],
+      "output": true
+    },
+    {
+      "input": [
+        "23",
+        "19",
+        "12"
+      ],
+      "output": false
+    },
+    {
+      "input": [
+        "23",
+        "19",
+        "3"
+      ],
+      "output": true
+    }
+  ]
+}

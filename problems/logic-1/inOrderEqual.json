@@ -1,0 +1,47 @@
+{
+  "topicId": "logic-1",
+  "id": "inOrderEqual",
+  "difficulty": "Medium",
+  "functionName": "inOrderEqual",
+  "title": {
+    "en": "In Order Equal",
+    "ru": "По порядку с равенством",
+    "uz": "Tartibda tenglik bilan"
+  },
+  "description": {
+    "en": "Given three ints, return true if they are in ascending order, allowing equality if 'equalOk' is true.",
+    "ru": "Даны три целых. Верните true, если они по возрастанию. Равенство разрешено, если equalOk true.",
+    "uz": "Uchta son berilgan. Agar ular o‘sish tartibida bo‘lsa true qaytaring, tenglik 'equalOk' true bo‘lsa ruxsat etiladi."
+  },
+  "solution": "function inOrderEqual(a, b, c, equalOk) { if (equalOk) return a <= b && b <= c; return a < b && b < c; }",
+  "starterCode": "function inOrderEqual(a, b, c, equalOk) {\n  // type here\n}",
+  "testCases": [
+    {
+      "input": [
+        "2",
+        "5",
+        "11",
+        "false"
+      ],
+      "output": true
+    },
+    {
+      "input": [
+        "5",
+        "7",
+        "6",
+        "false"
+      ],
+      "output": false
+    },
+    {
+      "input": [
+        "5",
+        "5",
+        "7",
+        "true"
+      ],
+      "output": true
+    }
+  ]
+}

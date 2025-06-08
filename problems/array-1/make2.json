@@ -1,0 +1,50 @@
+{
+  "topicId": "array-1",
+  "id": "make2",
+  "difficulty": "Medium",
+  "functionName": "make2",
+  "title": {
+    "en": "Make 2",
+    "ru": "Сделать 2",
+    "uz": "Ikki qilish"
+  },
+  "description": {
+    "en": "Given 2 int arrays, a and b, return a new array length 2 containing elements from a then b.",
+    "ru": "Даны 2 массива целых a и b. Верните новый массив длины 2, содержащий сначала элементы из a, потом из b.",
+    "uz": "2 butun sonli massiv a va b berilgan. a dan keyin b dan elementlar olgan yangi 2 o‘lchamli massiv qaytaring."
+  },
+  "solution": "function make2(a,b) { let res = []; for (let i=0; i<a.length; i++) { if (res.length < 2) res.push(a[i]); } for (let j=0; j<b.length; j++) { if (res.length < 2) res.push(b[j]); } return res; }",
+  "starterCode": "function make2(a, b) {\n  // type here\n}",
+  "testCases": [
+    {
+      "input": [
+        "[4, 5]",
+        "[1, 2, 3]"
+      ],
+      "output": [
+        4,
+        5
+      ]
+    },
+    {
+      "input": [
+        "[4]",
+        "[1, 2, 3]"
+      ],
+      "output": [
+        4,
+        1
+      ]
+    },
+    {
+      "input": [
+        "[]",
+        "[1, 2]"
+      ],
+      "output": [
+        1,
+        2
+      ]
+    }
+  ]
+}

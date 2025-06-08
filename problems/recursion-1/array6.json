@@ -1,0 +1,68 @@
+{
+  "topicId": "recursion-1",
+  "id": "array6",
+  "difficulty": "Easy",
+  "functionName": "array6",
+  "title": {
+    "en": "Array 6",
+    "ru": "Массив 6",
+    "uz": "Massiv 6"
+  },
+  "description": {
+    "en": "Given an array of ints, compute recursively if the array contains a 6. We'll use the convention of considering only the part of the array that begins at the given index. In this way, a recursive call can pass index+1 to move down the array. The initial call will pass in index as 0.",
+    "ru": "Дан массив целых чисел. Рекурсивно определите, содержит ли массив 6. Будем рассматривать только часть массива, начиная с данного индекса. Первоначальный вызов начинается с индекса 0.",
+    "uz": "Butun sonlardan iborat massiv berilgan. Massivda 6 bormi-yo‘qligini rekursiv hisoblang. Faqat berilgan indeksdan boshlab massiv qismi ko‘riladi. Boshlang‘ich chaqiriqda indeks 0 bo‘ladi."
+  },
+  "solution": "function array6(nums, index) {\n  if (index >= nums.length) return false;\n  if (nums[index] === 6) return true;\n  return array6(nums, index + 1);\n}",
+  "starterCode": "function array6(nums, index) {\n  // type here\n}",
+  "testCases": [
+    {
+      "input": [
+        [
+          1,
+          6,
+          4
+        ],
+        "0"
+      ],
+      "output": true
+    },
+    {
+      "input": [
+        [
+          1,
+          4
+        ],
+        "0"
+      ],
+      "output": false
+    },
+    {
+      "input": [
+        [
+          6
+        ],
+        "0"
+      ],
+      "output": true
+    },
+    {
+      "input": [
+        [],
+        "0"
+      ],
+      "output": false
+    },
+    {
+      "input": [
+        [
+          1,
+          6,
+          6
+        ],
+        "0"
+      ],
+      "output": true
+    }
+  ]
+}

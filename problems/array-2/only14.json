@@ -1,0 +1,69 @@
+{
+  "topicId": "array-2",
+  "id": "only14",
+  "difficulty": "Easy",
+  "functionName": "only14",
+  "title": {
+    "en": "only14",
+    "ru": "только 1 и 4",
+    "uz": "faqat 1 va 4"
+  },
+  "description": {
+    "en": "Given an array of ints, return true if every element is a 1 or a 4.",
+    "ru": "Дан массив целых чисел. Верните true, если каждый элемент равен 1 или 4.",
+    "uz": "Butun sonlardan iborat massiv berilgan. Agar har bir element 1 yoki 4 bo‘lsa, true qaytaring."
+  },
+  "solution": "function only14(nums) {\n  for (let num of nums) {\n    if (num !== 1 && num !== 4) {\n      return false;\n    }\n  }\n  return true;\n}",
+  "starterCode": "function only14(nums) {\n  // type here\n}",
+  "testCases": [
+    {
+      "input": [
+        [
+          1,
+          4,
+          1,
+          4
+        ]
+      ],
+      "output": true
+    },
+    {
+      "input": [
+        [
+          1,
+          4,
+          2,
+          4
+        ]
+      ],
+      "output": false
+    },
+    {
+      "input": [
+        [
+          1,
+          1
+        ]
+      ],
+      "output": true
+    },
+    {
+      "input": [
+        [
+          4,
+          1
+        ]
+      ],
+      "output": true
+    },
+    {
+      "input": [
+        [
+          3,
+          1
+        ]
+      ],
+      "output": false
+    }
+  ]
+}

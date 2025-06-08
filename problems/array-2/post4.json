@@ -1,0 +1,85 @@
+{
+  "topicId": "array-2",
+  "id": "post4",
+  "difficulty": "Medium",
+  "functionName": "post4",
+  "title": {
+    "en": "post4",
+    "ru": "все числа после 4",
+    "uz": "4 dan keyingi barcha sonlar"
+  },
+  "description": {
+    "en": "Return a new array containing the elements from the original array that come after the last 4. The original array will contain at least one 4.",
+    "ru": "Верните новый массив, содержащий элементы исходного массива после последней четверки (4). В исходном массиве гарантированно есть хотя бы одна четверка.",
+    "uz": "Asl massivdagi oxirgi 4 dan keyingi elementlarni yangi massiv sifatida qaytaring. Asl massivda hech bo‘lmaganda bitta 4 bor."
+  },
+  "solution": "function post4(nums) {\n  let index = nums.lastIndexOf(4);\n  return nums.slice(index + 1);\n}",
+  "starterCode": "function post4(nums) {\n  // type here\n}",
+  "testCases": [
+    {
+      "input": [
+        [
+          2,
+          4,
+          1,
+          2
+        ]
+      ],
+      "output": [
+        1,
+        2
+      ]
+    },
+    {
+      "input": [
+        [
+          4,
+          1,
+          4,
+          2
+        ]
+      ],
+      "output": [
+        2
+      ]
+    },
+    {
+      "input": [
+        [
+          4,
+          4,
+          1,
+          4,
+          2,
+          2
+        ]
+      ],
+      "output": [
+        2,
+        2
+      ]
+    },
+    {
+      "input": [
+        [
+          4,
+          4,
+          4,
+          4
+        ]
+      ],
+      "output": []
+    },
+    {
+      "input": [
+        [
+          1,
+          2,
+          3,
+          4
+        ]
+      ],
+      "output": []
+    }
+  ]
+}

@@ -1,0 +1,41 @@
+{
+  "topicId": "string-1",
+  "id": "twoChar",
+  "difficulty": "Easy",
+  "functionName": "twoChar",
+  "title": {
+    "en": "Two Char",
+    "ru": "Два символа",
+    "uz": "Ikkita belgi"
+  },
+  "description": {
+    "en": "Given a string and index, return 2 chars starting at index. If invalid, return first 2 chars.",
+    "ru": "Дана строка и индекс. Верните два символа, начиная с индекса. Если индекс нед.valid, вернуть первые две.",
+    "uz": "Satr va indeks berilgan. Indekstdan boshlab 2 belgini qaytaring. Noto‘g‘ri bo‘lsa, birinchi 2 belgini qaytaring."
+  },
+  "solution": "function twoChar(str, index) {\n  return (index >= 0 && index <= str.length - 2)\n    ? str.substring(index, index + 2)\n    : str.substring(0, 2);\n}",
+  "starterCode": "function twoChar(str, index) {\n  // type here\n}",
+  "testCases": [
+    {
+      "input": [
+        "\"java\"",
+        "0"
+      ],
+      "output": "ja"
+    },
+    {
+      "input": [
+        "\"java\"",
+        "2"
+      ],
+      "output": "va"
+    },
+    {
+      "input": [
+        "\"java\"",
+        "3"
+      ],
+      "output": "ja"
+    }
+  ]
+}

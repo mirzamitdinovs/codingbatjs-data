@@ -1,0 +1,66 @@
+{
+  "topicId": "map-2",
+  "id": "pairs",
+  "difficulty": "Easy",
+  "functionName": "pairs",
+  "title": {
+    "en": "Pairs",
+    "ru": "Пары",
+    "uz": "Juftliklar"
+  },
+  "description": {
+    "en": "Given an array of strings, return a map where for every different string in the array, there is a key of its first character with the value of its last character.",
+    "ru": "Дан массив строк. Верните карту, где для каждой уникальной строки в массиве ключ — это первый символ, а значение — последний символ строки.",
+    "uz": "Satrlar massiv berilgan. Har bir noyob satr uchun map qaytaring, bunda kalit satrning birinchi belgisi, qiymat esa oxirgi belgisi bo‘ladi."
+  },
+  "solution": "function pairs(words) {\n  const map = {};\n  for (const word of words) {\n    map[word[0]] = word[word.length - 1];\n  }\n  return map;\n}",
+  "starterCode": "function pairs(words) {\n  // type here\n}",
+  "testCases": [
+    {
+      "input": [
+        [
+          "code",
+          "bug"
+        ]
+      ],
+      "output": {
+        "c": "e",
+        "b": "g"
+      }
+    },
+    {
+      "input": [
+        [
+          "man",
+          "moon",
+          "main"
+        ]
+      ],
+      "output": {
+        "m": "n"
+      }
+    },
+    {
+      "input": [
+        [
+          "a",
+          "b",
+          "c",
+          "d"
+        ]
+      ],
+      "output": {
+        "a": "a",
+        "b": "b",
+        "c": "c",
+        "d": "d"
+      }
+    },
+    {
+      "input": [
+        []
+      ],
+      "output": {}
+    }
+  ]
+}

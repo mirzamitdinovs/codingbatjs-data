@@ -1,0 +1,69 @@
+{
+  "topicId": "ap-1",
+  "id": "wordsCount",
+  "difficulty": "Easy",
+  "functionName": "wordsCount",
+  "title": {
+    "en": "wordsCount",
+    "ru": "подсчет слов",
+    "uz": "so‘zlarni sanash"
+  },
+  "description": {
+    "en": "Given an array of strings, return the count of the number of strings with the given length.",
+    "ru": "Дан массив строк, верните количество строк заданной длины.",
+    "uz": "So‘zlar massiv berilgan, berilgan uzunlikdagi so‘zlar sonini qaytaring."
+  },
+  "solution": "function wordsCount(words, len) {\n  let count = 0;\n  for (let word of words) {\n    if (word.length === len) count++;\n  }\n  return count;\n}",
+  "starterCode": "function wordsCount(words, len) {\n  // type here\n}",
+  "testCases": [
+    {
+      "input": [
+        [
+          "a",
+          "bb",
+          "b",
+          "ccc"
+        ],
+        1
+      ],
+      "output": 2
+    },
+    {
+      "input": [
+        [
+          "a",
+          "bb",
+          "b",
+          "ccc"
+        ],
+        3
+      ],
+      "output": 1
+    },
+    {
+      "input": [
+        [
+          "a",
+          "bb",
+          "b",
+          "ccc"
+        ],
+        4
+      ],
+      "output": 0
+    },
+    {
+      "input": [
+        [
+          "xx",
+          "yyy",
+          "x",
+          "yy",
+          "z"
+        ],
+        2
+      ],
+      "output": 2
+    }
+  ]
+}

@@ -1,0 +1,50 @@
+{
+  "topicId": "recursion-1",
+  "id": "endx",
+  "difficulty": "Easy",
+  "functionName": "endX",
+  "title": {
+    "en": "End X",
+    "ru": "X в конец",
+    "uz": "X ni oxiriga qo‘yish"
+  },
+  "description": {
+    "en": "Given a string, compute recursively a new string where all the lowercase 'x' chars have been moved to the end of the string.",
+    "ru": "Дана строка. Рекурсивно верните новую строку, где все строчные символы 'x' перемещены в конец строки.",
+    "uz": "Berilgan satrda rekursiv ravishda barcha kichik 'x' harflarini satr oxiriga suring."
+  },
+  "solution": "function endX(str) {\n  if (str.length === 0) return \"\";\n  let firstChar = str.charAt(0);\n  if (firstChar === 'x') {\n    return endX(str.substring(1)) + 'x';\n  } else {\n    return firstChar + endX(str.substring(1));\n  }\n}",
+  "starterCode": "function endX(str) {\n  // type here\n}",
+  "testCases": [
+    {
+      "input": [
+        "xxre"
+      ],
+      "output": "rexx"
+    },
+    {
+      "input": [
+        "xxhixx"
+      ],
+      "output": "hixxxx"
+    },
+    {
+      "input": [
+        "xhixhix"
+      ],
+      "output": "hihixxx"
+    },
+    {
+      "input": [
+        ""
+      ],
+      "output": ""
+    },
+    {
+      "input": [
+        "abc"
+      ],
+      "output": "abc"
+    }
+  ]
+}

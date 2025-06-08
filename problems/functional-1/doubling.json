@@ -1,0 +1,58 @@
+{
+  "topicId": "functional-1",
+  "id": "doubling",
+  "difficulty": "Easy",
+  "functionName": "doubling",
+  "title": {
+    "en": "Doubling",
+    "ru": "Удвоение",
+    "uz": "Ikki barobar qilish"
+  },
+  "description": {
+    "en": "Given an array of integers, return a new array where each integer is doubled.",
+    "ru": "Дан массив целых чисел. Верните новый массив, в котором каждое число удвоено.",
+    "uz": "Butun sonlar massiv berilgan. Har bir son ikki barobar ko‘paytirilgan yangi massivni qaytaring."
+  },
+  "solution": "function doubling(nums) {\n  return nums.map(n => n * 2);\n}",
+  "starterCode": "function doubling(nums) {\n  // type here\n}",
+  "testCases": [
+    {
+      "input": [
+        [
+          1,
+          2,
+          3
+        ]
+      ],
+      "output": [
+        2,
+        4,
+        6
+      ]
+    },
+    {
+      "input": [
+        [
+          6,
+          8,
+          6,
+          8,
+          -1
+        ]
+      ],
+      "output": [
+        12,
+        16,
+        12,
+        16,
+        -2
+      ]
+    },
+    {
+      "input": [
+        []
+      ],
+      "output": []
+    }
+  ]
+}

@@ -1,0 +1,77 @@
+{
+  "topicId": "array-3",
+  "id": "canBalance",
+  "difficulty": "Medium",
+  "functionName": "canBalance",
+  "title": {
+    "en": "canBalance",
+    "ru": "можно ли сбалансировать",
+    "uz": "muvozanat qilish mumkinmi"
+  },
+  "description": {
+    "en": "Given a non-empty array, return true if there is a place to split the array so that the sum of the numbers on one side is equal to the sum of the numbers on the other side.",
+    "ru": "Дан непустой массив. Верните true, если можно разделить массив так, чтобы сумма чисел с одной стороны была равна сумме чисел с другой стороны.",
+    "uz": "Bo‘sh bo‘lmagan massiv berilgan. Agar massivni shunday bo‘laklarga ajratish mumkin bo‘lsa, ya’ni bir tomonidagi sonlar yig‘indisi boshqa tomonidagi yig‘indiga teng bo‘lsa, true qaytaring."
+  },
+  "solution": "function canBalance(nums) {\n  let totalSum = nums.reduce((a, b) => a + b, 0);\n  let leftSum = 0;\n  for (let i = 0; i < nums.length; i++) {\n    leftSum += nums[i];\n    if (leftSum === totalSum - leftSum) return true;\n  }\n  return false;\n}",
+  "starterCode": "function canBalance(nums) {\n  // type here\n}",
+  "testCases": [
+    {
+      "input": [
+        [
+          1,
+          1,
+          1,
+          2,
+          1
+        ]
+      ],
+      "output": true
+    },
+    {
+      "input": [
+        [
+          2,
+          1,
+          1,
+          2,
+          1
+        ]
+      ],
+      "output": false
+    },
+    {
+      "input": [
+        [
+          10,
+          10
+        ]
+      ],
+      "output": true
+    },
+    {
+      "input": [
+        [
+          10,
+          0,
+          1,
+          -1,
+          10
+        ]
+      ],
+      "output": true
+    },
+    {
+      "input": [
+        [
+          1,
+          1,
+          1,
+          1,
+          4
+        ]
+      ],
+      "output": false
+    }
+  ]
+}

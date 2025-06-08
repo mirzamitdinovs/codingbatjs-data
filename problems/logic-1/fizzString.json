@@ -1,0 +1,38 @@
+{
+  "topicId": "logic-1",
+  "id": "fizzString",
+  "difficulty": "Easy",
+  "functionName": "fizzString",
+  "title": {
+    "en": "Fizz String",
+    "ru": "Fizz строка",
+    "uz": "Fizz satri"
+  },
+  "description": {
+    "en": "Given a string, return 'FizzBuzz' if it starts with 'f' and ends with 'b', 'Fizz' if it starts with 'f', 'Buzz' if it ends with 'b', else the string itself.",
+    "ru": "Дана строка. Верните 'FizzBuzz', если начинается с 'f' и заканчивается 'b', 'Fizz' если начинается с 'f', 'Buzz' если заканчивается 'b', иначе строку.",
+    "uz": "Berilgan satr boshida 'f' va oxirida 'b' bo‘lsa 'FizzBuzz', boshida 'f' bo‘lsa 'Fizz', oxirida 'b' bo‘lsa 'Buzz', aks holda o‘sha satrni qaytaring."
+  },
+  "solution": "function fizzString(str) { let startsF = str.startsWith('f'); let endsB = str.endsWith('b'); if (startsF && endsB) return 'FizzBuzz'; if (startsF) return 'Fizz'; if (endsB) return 'Buzz'; return str; }",
+  "starterCode": "function fizzString(str) {\n  // type here\n}",
+  "testCases": [
+    {
+      "input": [
+        "fib"
+      ],
+      "output": "FizzBuzz"
+    },
+    {
+      "input": [
+        "fig"
+      ],
+      "output": "Fizz"
+    },
+    {
+      "input": [
+        "bob"
+      ],
+      "output": "Buzz"
+    }
+  ]
+}

@@ -1,0 +1,55 @@
+{
+  "topicId": "string-2",
+  "id": "endOther",
+  "difficulty": "Easy",
+  "functionName": "endOther",
+  "title": {
+    "en": "End Other",
+    "ru": "Оканчивается ли один на другой",
+    "uz": "Biri boshqasida tugaydimi"
+  },
+  "description": {
+    "en": "Given two strings, return true if either of the strings appears at the very end of the other string, ignoring case differences.",
+    "ru": "Даны две строки. Верните true, если одна из строк встречается в самом конце другой, игнорируя регистр.",
+    "uz": "Ikki satr berilgan. Agar ulardan biri boshqasining oxirida bo‘lsa (katta-kichik harflarga e’tibor bermasdan), true qaytaring."
+  },
+  "solution": "function endOther(a, b) {\n  a = a.toLowerCase();\n  b = b.toLowerCase();\n  return a.endsWith(b) || b.endsWith(a);\n}",
+  "starterCode": "function endOther(a, b) {\n  // type here\n}",
+  "testCases": [
+    {
+      "input": [
+        "Hiabc",
+        "abc"
+      ],
+      "output": true
+    },
+    {
+      "input": [
+        "AbC",
+        "HiaBc"
+      ],
+      "output": true
+    },
+    {
+      "input": [
+        "abc",
+        "abXabc"
+      ],
+      "output": true
+    },
+    {
+      "input": [
+        "abc",
+        "abXab"
+      ],
+      "output": false
+    },
+    {
+      "input": [
+        "",
+        "abc"
+      ],
+      "output": false
+    }
+  ]
+}

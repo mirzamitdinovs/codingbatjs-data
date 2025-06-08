@@ -1,0 +1,50 @@
+{
+  "topicId": "string-3",
+  "id": "sumDigits",
+  "difficulty": "Easy",
+  "functionName": "sumDigits",
+  "title": {
+    "en": "sumDigits",
+    "ru": "сумма цифр",
+    "uz": "raqamlar yig‘indisi"
+  },
+  "description": {
+    "en": "Given a string, return the sum of the digits 0-9 that appear in the string, ignoring all other characters.",
+    "ru": "Дана строка. Верните сумму цифр 0-9, которые встречаются в строке, игнорируя остальные символы.",
+    "uz": "Berilgan satrda 0-9 raqamlarining yig‘indisini qaytaring, boshqa belgilar e’tiborga olinmaydi."
+  },
+  "solution": "function sumDigits(str) {\n  let sum = 0;\n  for (let i = 0; i < str.length; i++) {\n    if (str[i] >= '0' && str[i] <= '9') {\n      sum += parseInt(str[i], 10);\n    }\n  }\n  return sum;\n}",
+  "starterCode": "function sumDigits(str) {\n  // type here\n}",
+  "testCases": [
+    {
+      "input": [
+        "aa1bc2d3"
+      ],
+      "output": 6
+    },
+    {
+      "input": [
+        "aa11b33"
+      ],
+      "output": 8
+    },
+    {
+      "input": [
+        "Chocolate"
+      ],
+      "output": 0
+    },
+    {
+      "input": [
+        "5hoco1a1e"
+      ],
+      "output": 7
+    },
+    {
+      "input": [
+        "123abc123"
+      ],
+      "output": 12
+    }
+  ]
+}

@@ -1,0 +1,76 @@
+{
+  "topicId": "logic-2",
+  "id": "noTeenSum",
+  "difficulty": "Medium",
+  "functionName": "noTeenSum",
+  "title": {
+    "en": "No Teen Sum",
+    "ru": "Сумма без подростков",
+    "uz": "O‘n yetmishlarsiz yig‘indi"
+  },
+  "description": {
+    "en": "Given 3 int values, a b c, return their sum. However, if any of the values is a teen (in the range 13..19 inclusive), then that value counts as 0, except 15 and 16 do not count as teens.",
+    "ru": "Даны три целых числа a, b и c. Верните их сумму. Если одно из чисел — подросток (от 13 до 19 включительно), оно считается 0, за исключением 15 и 16.",
+    "uz": "3 ta butun son a, b, c berilgan. Ularning yig‘indisini qaytaring. Agar qiymatlar 13..19 orasida bo‘lsa, ular 0 hisoblanadi, faqat 15 va 16 bundan mustasno."
+  },
+  "solution": "function fixTeen(n) {\n  if ((n >= 13 && n <= 19) && n !== 15 && n !== 16) {\n    return 0;\n  }\n  return n;\n}\n\nfunction noTeenSum(a, b, c) {\n  return fixTeen(a) + fixTeen(b) + fixTeen(c);\n}",
+  "starterCode": "function noTeenSum(a, b, c) {\n  // type here\n}",
+  "testCases": [
+    {
+      "input": [
+        "1",
+        "2",
+        "3"
+      ],
+      "output": 6
+    },
+    {
+      "input": [
+        "2",
+        "13",
+        "1"
+      ],
+      "output": 3
+    },
+    {
+      "input": [
+        "2",
+        "1",
+        "14"
+      ],
+      "output": 3
+    },
+    {
+      "input": [
+        "2",
+        "15",
+        "1"
+      ],
+      "output": 18
+    },
+    {
+      "input": [
+        "2",
+        "16",
+        "17"
+      ],
+      "output": 18
+    },
+    {
+      "input": [
+        "17",
+        "18",
+        "19"
+      ],
+      "output": 0
+    },
+    {
+      "input": [
+        "15",
+        "16",
+        "19"
+      ],
+      "output": 31
+    }
+  ]
+}

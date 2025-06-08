@@ -1,0 +1,38 @@
+{
+  "topicId": "string-1",
+  "id": "right2",
+  "difficulty": "Easy",
+  "functionName": "right2",
+  "title": {
+    "en": "Right2",
+    "ru": "Сдвиг вправо на 2",
+    "uz": "O‘ngga 2 pozitsiya"
+  },
+  "description": {
+    "en": "Given a string, return a “rotated right 2” version where the last 2 chars are moved to the front.",
+    "ru": "Дана строка. Верните строку, где последние 2 символа перемещены в начало.",
+    "uz": "Satr berilgan. Oxirgi 2 belgini boshiga ko‘chiring."
+  },
+  "solution": "function right2(str) {\n  let n = str.length;\n  return str.substring(n - 2) + str.substring(0, n - 2);\n}",
+  "starterCode": "function right2(str) {\n  // type here\n}",
+  "testCases": [
+    {
+      "input": [
+        "\"Hello\""
+      ],
+      "output": "loHel"
+    },
+    {
+      "input": [
+        "\"java\""
+      ],
+      "output": "vaja"
+    },
+    {
+      "input": [
+        "\"Hi\""
+      ],
+      "output": "Hi"
+    }
+  ]
+}

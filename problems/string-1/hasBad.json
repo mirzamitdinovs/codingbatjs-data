@@ -1,0 +1,38 @@
+{
+  "topicId": "string-1",
+  "id": "hasBad",
+  "difficulty": "Easy",
+  "functionName": "hasBad",
+  "title": {
+    "en": "Has Bad",
+    "ru": "Содержит bad",
+    "uz": "Bad bor"
+  },
+  "description": {
+    "en": "Return true if 'bad' appears at index 0 or 1 in the string.",
+    "ru": "Верните true, если 'bad' встречается в начале (индекс 0 или 1).",
+    "uz": "Agar 'bad' satrning 0 yoki 1 indeksida bo‘lsa, true qaytaring."
+  },
+  "solution": "function hasBad(str) {\n  if (str.startsWith('bad')) return true;\n  if (str.length >= 4 && str.substring(1, 4) === 'bad') return true;\n  return false;\n}",
+  "starterCode": "function hasBad(str) {\n  // type here\n}",
+  "testCases": [
+    {
+      "input": [
+        "\"badxx\""
+      ],
+      "output": true
+    },
+    {
+      "input": [
+        "\"xbadxx\""
+      ],
+      "output": true
+    },
+    {
+      "input": [
+        "\"xxbadxx\""
+      ],
+      "output": false
+    }
+  ]
+}

@@ -1,0 +1,50 @@
+{
+  "topicId": "string-3",
+  "id": "sumNumbers",
+  "difficulty": "Medium",
+  "functionName": "sumNumbers",
+  "title": {
+    "en": "sumNumbers",
+    "ru": "сумма чисел",
+    "uz": "raqamlar yig‘indisi"
+  },
+  "description": {
+    "en": "Given a string, return the sum of the numbers appearing in the string, where a number is a series of one or more digit chars in a row.",
+    "ru": "Дана строка. Верните сумму чисел, встречающихся в строке. Число — это последовательность из одной или более цифр подряд.",
+    "uz": "Berilgan satrda ketma-ket kelgan raqamlar ketma-ketligini raqam deb hisoblab, ularning yig‘indisini qaytaring."
+  },
+  "solution": "function sumNumbers(str) {\n  let sum = 0;\n  let currentNum = '';\n  for (let i = 0; i < str.length; i++) {\n    if (str[i] >= '0' && str[i] <= '9') {\n      currentNum += str[i];\n    } else {\n      if (currentNum.length > 0) {\n        sum += parseInt(currentNum, 10);\n        currentNum = '';\n      }\n    }\n  }\n  if (currentNum.length > 0) {\n    sum += parseInt(currentNum, 10);\n  }\n  return sum;\n}",
+  "starterCode": "function sumNumbers(str) {\n  // type here\n}",
+  "testCases": [
+    {
+      "input": [
+        "abc123xyz"
+      ],
+      "output": 123
+    },
+    {
+      "input": [
+        "aa11b33"
+      ],
+      "output": 44
+    },
+    {
+      "input": [
+        "7 11"
+      ],
+      "output": 18
+    },
+    {
+      "input": [
+        "Chocolate"
+      ],
+      "output": 0
+    },
+    {
+      "input": [
+        "5hoco1a1e"
+      ],
+      "output": 7
+    }
+  ]
+}

@@ -1,0 +1,83 @@
+{
+  "topicId": "array-2",
+  "id": "centeredAverage",
+  "difficulty": "Medium",
+  "functionName": "centeredAverage",
+  "title": {
+    "en": "centeredAverage",
+    "ru": "среднее без крайних значений",
+    "uz": "markaziy o‘rtacha"
+  },
+  "description": {
+    "en": "Return the 'centered' average of an array of ints, which is the mean average excluding the largest and smallest values in the array. If there are multiple copies of the smallest or largest values, only remove one copy each.",
+    "ru": "Верните 'центральное' среднее массива целых чисел, то есть среднее значение без учета максимального и минимального элементов. Если максимальных или минимальных значений несколько, уберите только по одному.",
+    "uz": "Butun sonlar massivining 'markaziy' o‘rtachasini qaytaring — bu massivdagi eng katta va eng kichik qiymatlarni bitta nusxadan chiqarib tashlab hisoblangan o‘rtacha."
+  },
+  "solution": "function centeredAverage(nums) {\n  let sum = 0;\n  let max = nums[0];\n  let min = nums[0];\n  for (let num of nums) {\n    if (num > max) max = num;\n    if (num < min) min = num;\n    sum += num;\n  }\n  return (sum - max - min) / (nums.length - 2);\n}",
+  "starterCode": "function centeredAverage(nums) {\n  // type here\n}",
+  "testCases": [
+    {
+      "input": [
+        [
+          1,
+          2,
+          3,
+          4,
+          100
+        ]
+      ],
+      "output": 3
+    },
+    {
+      "input": [
+        [
+          1,
+          1,
+          5,
+          5,
+          10,
+          8,
+          7
+        ]
+      ],
+      "output": 5
+    },
+    {
+      "input": [
+        [
+          -10,
+          -4,
+          -2,
+          -4,
+          -2,
+          0
+        ]
+      ],
+      "output": -3
+    },
+    {
+      "input": [
+        [
+          5,
+          3,
+          4,
+          6,
+          2
+        ]
+      ],
+      "output": 4
+    },
+    {
+      "input": [
+        [
+          5,
+          3,
+          4,
+          0,
+          100
+        ]
+      ],
+      "output": 4
+    }
+  ]
+}

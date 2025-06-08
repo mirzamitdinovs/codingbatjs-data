@@ -1,0 +1,73 @@
+{
+  "topicId": "array-3",
+  "id": "countClumps",
+  "difficulty": "Medium",
+  "functionName": "countClumps",
+  "title": {
+    "en": "countClumps",
+    "ru": "подсчет групп",
+    "uz": "guruhlarni sanash"
+  },
+  "description": {
+    "en": "Say that a 'clump' in an array is a series of 2 or more adjacent elements of the same value. Return the number of clumps in the given array.",
+    "ru": "Говорим, что 'группа' в массиве — это серия из 2 и более соседних элементов с одинаковым значением. Верните количество таких групп в массиве.",
+    "uz": "Massivda 'guruh' deb, bir xil qiymatga ega 2 yoki undan ortiq yonma-yon elementlar ketma-ketligini aytiladi. Berilgan massivdagi guruhlar sonini qaytaring."
+  },
+  "solution": "function countClumps(nums) {\n  let count = 0;\n  let i = 0;\n  while (i < nums.length) {\n    let length = 1;\n    while (i + length < nums.length && nums[i] === nums[i + length]) {\n      length++;\n    }\n    if (length > 1) count++;\n    i += length;\n  }\n  return count;\n}",
+  "starterCode": "function countClumps(nums) {\n  // type here\n}",
+  "testCases": [
+    {
+      "input": [
+        [
+          1,
+          2,
+          2,
+          3,
+          4,
+          4
+        ]
+      ],
+      "output": 2
+    },
+    {
+      "input": [
+        [
+          1,
+          1,
+          2,
+          1,
+          1
+        ]
+      ],
+      "output": 2
+    },
+    {
+      "input": [
+        [
+          1,
+          1,
+          1,
+          1,
+          1
+        ]
+      ],
+      "output": 1
+    },
+    {
+      "input": [
+        [
+          1,
+          2,
+          3
+        ]
+      ],
+      "output": 0
+    },
+    {
+      "input": [
+        []
+      ],
+      "output": 0
+    }
+  ]
+}

@@ -1,0 +1,47 @@
+{
+  "topicId": "array-1",
+  "id": "makeEnds",
+  "difficulty": "Easy",
+  "functionName": "makeEnds",
+  "title": {
+    "en": "Make Ends",
+    "ru": "Создать концы",
+    "uz": "Oxirlarni yaratish"
+  },
+  "description": {
+    "en": "Given an array of ints, return a new array length 2 containing the first and last elements.",
+    "ru": "Дан массив целых. Верните массив длины 2 с первым и последним элементом.",
+    "uz": "Butun sonli massiv berilgan. Birinchi va oxirgi elementdan iborat yangi 2 o‘lchamli massiv qaytaring."
+  },
+  "solution": "function makeEnds(nums) { return [nums[0], nums[nums.length-1]]; }",
+  "starterCode": "function makeEnds(nums) {\n  // type here\n}",
+  "testCases": [
+    {
+      "input": [
+        "[1, 2, 3]"
+      ],
+      "output": [
+        1,
+        3
+      ]
+    },
+    {
+      "input": [
+        "[1, 2, 3, 4]"
+      ],
+      "output": [
+        1,
+        4
+      ]
+    },
+    {
+      "input": [
+        "[7, 4]"
+      ],
+      "output": [
+        7,
+        4
+      ]
+    }
+  ]
+}

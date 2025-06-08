@@ -1,0 +1,75 @@
+{
+  "topicId": "array-2",
+  "id": "sum67",
+  "difficulty": "Medium",
+  "functionName": "sum67",
+  "title": {
+    "en": "sum67",
+    "ru": "сумма без 6...7",
+    "uz": "6 dan 7 gacha yig‘indi"
+  },
+  "description": {
+    "en": "Return the sum of the numbers in the array, except ignore sections of numbers starting with a 6 and extending to the next 7 (every 6 will be followed by at least one 7). Return 0 for no numbers.",
+    "ru": "Верните сумму чисел в массиве, кроме участков чисел, начинающихся с 6 и продолжающихся до следующей 7 (каждая 6 сопровождается как минимум одной 7). Верните 0, если чисел нет.",
+    "uz": "Massivdagi sonlarning yig‘indisini qaytaring, lekin 6 dan boshlangan va keyingi 7 gacha bo‘lgan bo‘laklarni hisobga olmang (har bir 6 dan keyin kamida bitta 7 bor). Agar sonlar bo‘lmasa 0 qaytaring."
+  },
+  "solution": "function sum67(nums) {\n  let sum = 0;\n  let inSection = false;\n  for (let num of nums) {\n    if (num === 6) {\n      inSection = true;\n    } else if (inSection && num === 7) {\n      inSection = false;\n    } else if (!inSection) {\n      sum += num;\n    }\n  }\n  return sum;\n}",
+  "starterCode": "function sum67(nums) {\n  // type here\n}",
+  "testCases": [
+    {
+      "input": [
+        [
+          1,
+          2,
+          2
+        ]
+      ],
+      "output": 5
+    },
+    {
+      "input": [
+        [
+          1,
+          2,
+          2,
+          6,
+          99,
+          99,
+          7
+        ]
+      ],
+      "output": 5
+    },
+    {
+      "input": [
+        [
+          1,
+          1,
+          6,
+          7,
+          2
+        ]
+      ],
+      "output": 4
+    },
+    {
+      "input": [
+        [
+          6,
+          7,
+          1,
+          6,
+          7,
+          7
+        ]
+      ],
+      "output": 8
+    },
+    {
+      "input": [
+        []
+      ],
+      "output": 0
+    }
+  ]
+}

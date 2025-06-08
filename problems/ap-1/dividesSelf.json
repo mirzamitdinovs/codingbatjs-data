@@ -1,0 +1,60 @@
+{
+  "topicId": "ap-1",
+  "id": "dividesSelf",
+  "difficulty": "Medium",
+  "functionName": "dividesSelf",
+  "title": {
+    "en": "dividesSelf",
+    "ru": "делится на себя",
+    "uz": "o‘ziga bo‘linadi"
+  },
+  "description": {
+    "en": "Given an array of integers, return true if each integer in the array divides itself without a remainder. That is, each number in the array should be divisible by itself.",
+    "ru": "Дан массив целых чисел. Верните true, если каждое число в массиве делится на себя без остатка.",
+    "uz": "Butun sonlar massiv berilgan. Agar har bir son o‘ziga bo‘linib, qoldiqsiz bo‘lsa, true qaytaring."
+  },
+  "solution": "function dividesSelf(nums) {\n  for (let num of nums) {\n    if (num % num !== 0) return false;\n  }\n  return true;\n}",
+  "starterCode": "function dividesSelf(nums) {\n  // type here\n}",
+  "testCases": [
+    {
+      "input": [
+        [
+          10,
+          20,
+          30
+        ]
+      ],
+      "output": true
+    },
+    {
+      "input": [
+        [
+          10,
+          25,
+          30
+        ]
+      ],
+      "output": false
+    },
+    {
+      "input": [
+        [
+          1,
+          2,
+          3
+        ]
+      ],
+      "output": true
+    },
+    {
+      "input": [
+        [
+          12,
+          24,
+          36
+        ]
+      ],
+      "output": true
+    }
+  ]
+}

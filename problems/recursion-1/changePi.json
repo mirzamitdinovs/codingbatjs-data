@@ -1,0 +1,50 @@
+{
+  "topicId": "recursion-1",
+  "id": "changepi",
+  "difficulty": "Medium",
+  "functionName": "changePi",
+  "title": {
+    "en": "Change Pi",
+    "ru": "Замена Pi",
+    "uz": "Pi ni almashtirish"
+  },
+  "description": {
+    "en": "Given a string, compute recursively a new string where all appearances of \"pi\" have been replaced by \"3.14\".",
+    "ru": "Дана строка. Рекурсивно верните новую строку, где все вхождения \"pi\" заменены на \"3.14\".",
+    "uz": "Berilgan satrda rekursiv ravishda barcha \"pi\" satrlarini \"3.14\" ga almashtiring."
+  },
+  "solution": "function changePi(str) {\n  if (str.length < 2) return str;\n  if (str.substring(0, 2) === \"pi\") {\n    return \"3.14\" + changePi(str.substring(2));\n  } else {\n    return str.charAt(0) + changePi(str.substring(1));\n  }\n}",
+  "starterCode": "function changePi(str) {\n  // type here\n}",
+  "testCases": [
+    {
+      "input": [
+        "xpix"
+      ],
+      "output": "x3.14x"
+    },
+    {
+      "input": [
+        "pipi"
+      ],
+      "output": "3.143.14"
+    },
+    {
+      "input": [
+        "pip"
+      ],
+      "output": "3.14p"
+    },
+    {
+      "input": [
+        ""
+      ],
+      "output": ""
+    },
+    {
+      "input": [
+        "pi"
+      ],
+      "output": "3.14"
+    }
+  ]
+}

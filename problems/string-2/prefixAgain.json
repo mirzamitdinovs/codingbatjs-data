@@ -1,0 +1,55 @@
+{
+  "topicId": "string-2",
+  "id": "prefixAgain",
+  "difficulty": "Medium",
+  "functionName": "prefixAgain",
+  "title": {
+    "en": "Prefix Again",
+    "ru": "Префикс повторяется",
+    "uz": "Prefiks takrorlanadi"
+  },
+  "description": {
+    "en": "Given a string and an int n, return true if the prefix of length n appears somewhere else in the string.",
+    "ru": "Дана строка и число n. Верните true, если префикс длины n встречается ещё где-то в строке.",
+    "uz": "Berilgan satr va n soni. Satrning boshidan n belgidan iborat prefiks boshqa joyda ham uchrasa, true qaytaring."
+  },
+  "solution": "function prefixAgain(str, n) {\n  let prefix = str.substring(0, n);\n  return str.indexOf(prefix, n) !== -1;\n}",
+  "starterCode": "function prefixAgain(str, n) {\n  // type here\n}",
+  "testCases": [
+    {
+      "input": [
+        "abXYabc",
+        1
+      ],
+      "output": true
+    },
+    {
+      "input": [
+        "abXYabc",
+        2
+      ],
+      "output": true
+    },
+    {
+      "input": [
+        "abXYabc",
+        3
+      ],
+      "output": false
+    },
+    {
+      "input": [
+        "xyzxyxyxy",
+        2
+      ],
+      "output": true
+    },
+    {
+      "input": [
+        "xyz",
+        3
+      ],
+      "output": false
+    }
+  ]
+}

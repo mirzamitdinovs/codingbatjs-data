@@ -1,0 +1,68 @@
+{
+  "topicId": "map-2",
+  "id": "wordcount",
+  "difficulty": "Easy",
+  "functionName": "wordCount",
+  "title": {
+    "en": "WordCount",
+    "ru": "Подсчёт слов",
+    "uz": "So‘zlar soni"
+  },
+  "description": {
+    "en": "Given an array of strings, return a map with a key for each different string, and the value is the number of times that string appears in the array.",
+    "ru": "Дан массив строк. Верните карту, где для каждого уникального слова ключ — это слово, а значение — количество его появлений в массиве.",
+    "uz": "Satrlar massiv berilgan. Har bir noyob satr uchun kalit — o‘sha satr, qiymat esa u satrning massivda necha marta uchraganini ko‘rsatadi."
+  },
+  "solution": "function wordCount(words) {\n  const map = {};\n  for (const word of words) {\n    map[word] = (map[word] || 0) + 1;\n  }\n  return map;\n}",
+  "starterCode": "function wordCount(words) {\n  // type here\n}",
+  "testCases": [
+    {
+      "input": [
+        [
+          "a",
+          "b",
+          "a",
+          "c",
+          "b"
+        ]
+      ],
+      "output": {
+        "a": 2,
+        "b": 2,
+        "c": 1
+      }
+    },
+    {
+      "input": [
+        [
+          "c",
+          "b",
+          "a"
+        ]
+      ],
+      "output": {
+        "c": 1,
+        "b": 1,
+        "a": 1
+      }
+    },
+    {
+      "input": [
+        [
+          "hello",
+          "hello",
+          "hello"
+        ]
+      ],
+      "output": {
+        "hello": 3
+      }
+    },
+    {
+      "input": [
+        []
+      ],
+      "output": {}
+    }
+  ]
+}

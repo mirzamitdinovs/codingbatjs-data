@@ -1,0 +1,76 @@
+{
+  "topicId": "logic-2",
+  "id": "makeChocolate",
+  "difficulty": "Medium",
+  "functionName": "makeChocolate",
+  "title": {
+    "en": "Make Chocolate",
+    "ru": "Сделать шоколад",
+    "uz": "Shokolad yasash"
+  },
+  "description": {
+    "en": "We want to make a package of goal kilos of chocolate. We have small bars (1 kilo each) and big bars (5 kilos each). Return the number of small bars to use, assuming we always use big bars before small bars. Return -1 if it’s not possible to make the goal weight.",
+    "ru": "Нужно сделать упаковку шоколада весом goal килограммов. Есть маленькие батончики по 1 кг и большие по 5 кг. Верните количество маленьких батончиков, которые нужно использовать, предполагая, что сначала используются большие. Верните -1, если сделать упаковку невозможно.",
+    "uz": "Maqsad vazni goal bo‘lgan shokolad paketini yasashimiz kerak. Bizda kichik (1 kg) va katta (5 kg) shokoladlar bor. Katta shokoladlarni birinchi ishlatamiz deb hisoblab, kerakli kichik shokoladlar sonini qaytaring. Agar maqsadga erishib bo‘lmasa, -1 qaytaring."
+  },
+  "solution": "function makeChocolate(small, big, goal) {\n  let maxBig = Math.floor(goal / 5);\n  if (maxBig > big) maxBig = big;\n  let rem = goal - maxBig * 5;\n  if (rem <= small) return rem;\n  return -1;\n}",
+  "starterCode": "function makeChocolate(small, big, goal) {\n  // type here\n}",
+  "testCases": [
+    {
+      "input": [
+        "4",
+        "1",
+        "9"
+      ],
+      "output": 4
+    },
+    {
+      "input": [
+        "4",
+        "1",
+        "10"
+      ],
+      "output": -1
+    },
+    {
+      "input": [
+        "4",
+        "1",
+        "7"
+      ],
+      "output": 2
+    },
+    {
+      "input": [
+        "6",
+        "2",
+        "7"
+      ],
+      "output": 2
+    },
+    {
+      "input": [
+        "6",
+        "2",
+        "6"
+      ],
+      "output": 1
+    },
+    {
+      "input": [
+        "3",
+        "2",
+        "10"
+      ],
+      "output": 0
+    },
+    {
+      "input": [
+        "1",
+        "4",
+        "11"
+      ],
+      "output": 1
+    }
+  ]
+}

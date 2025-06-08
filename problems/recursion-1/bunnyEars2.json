@@ -1,0 +1,50 @@
+{
+  "topicId": "recursion-1",
+  "id": "bunnyears2",
+  "difficulty": "Medium",
+  "functionName": "bunnyEars2",
+  "title": {
+    "en": "Bunny Ears 2",
+    "ru": "Уши кролика 2",
+    "uz": "Quyon quloqlari 2"
+  },
+  "description": {
+    "en": "We have bunnies standing in a line, numbered 1, 2, ... The odd bunnies have 2 ears. The even bunnies have 3 ears (because they have a raised foot). Recursively compute the total number of ears in the line.",
+    "ru": "У нас есть кролики, стоящие в ряд, пронумерованные 1, 2, ... У нечетных кроликов по 2 уха. У четных — по 3 уха (потому что у них поднятая нога). Рекурсивно вычислите общее количество ушей в ряду.",
+    "uz": "Quyonlar qatorda turibdi, ularning raqamlari 1, 2, ... Toq raqamli quyonlarda 2 quloq bor. Juft raqamli quyonlarda 3 quloq bor (ularning oyog‘i ko‘tarilgan). Qatordagi jami quloqlar sonini rekursiv hisoblang."
+  },
+  "solution": "function bunnyEars2(bunnies) {\n  if (bunnies === 0) return 0;\n  if (bunnies % 2 === 1) {\n    return 2 + bunnyEars2(bunnies - 1);\n  } else {\n    return 3 + bunnyEars2(bunnies - 1);\n  }\n}",
+  "starterCode": "function bunnyEars2(bunnies) {\n  // type here\n}",
+  "testCases": [
+    {
+      "input": [
+        "0"
+      ],
+      "output": 0
+    },
+    {
+      "input": [
+        "1"
+      ],
+      "output": 2
+    },
+    {
+      "input": [
+        "2"
+      ],
+      "output": 5
+    },
+    {
+      "input": [
+        "3"
+      ],
+      "output": 7
+    },
+    {
+      "input": [
+        "4"
+      ],
+      "output": 10
+    }
+  ]
+}

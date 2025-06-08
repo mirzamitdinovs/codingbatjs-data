@@ -1,0 +1,60 @@
+{
+  "topicId": "string-2",
+  "id": "repeatSeparator",
+  "difficulty": "Easy",
+  "functionName": "repeatSeparator",
+  "title": {
+    "en": "Repeat Separator",
+    "ru": "Повторить с разделителем",
+    "uz": "Ajratgich bilan takrorlash"
+  },
+  "description": {
+    "en": "Given two strings, word and a separator sep, return a string made of n repetitions of the word, separated by the separator string.",
+    "ru": "Даны две строки: слово word и разделитель sep. Верните строку, состоящую из n повторений слова, разделённых строкой sep.",
+    "uz": "Ikki satr berilgan: word va sep. word satrini n marta takrorlab, ularni sep satri bilan ajratilgan holda qaytaring."
+  },
+  "solution": "function repeatSeparator(word, sep, count) {\n  if (count === 0) return '';\n  let result = word;\n  for (let i = 1; i < count; i++) {\n    result += sep + word;\n  }\n  return result;\n}",
+  "starterCode": "function repeatSeparator(word, sep, count) {\n  // type here\n}",
+  "testCases": [
+    {
+      "input": [
+        "Word",
+        "X",
+        3
+      ],
+      "output": "WordXWordXWord"
+    },
+    {
+      "input": [
+        "This",
+        "And",
+        2
+      ],
+      "output": "ThisAndThis"
+    },
+    {
+      "input": [
+        "This",
+        "And",
+        1
+      ],
+      "output": "This"
+    },
+    {
+      "input": [
+        "This",
+        "And",
+        0
+      ],
+      "output": ""
+    },
+    {
+      "input": [
+        "Hi",
+        "-_-",
+        2
+      ],
+      "output": "Hi-_-Hi"
+    }
+  ]
+}

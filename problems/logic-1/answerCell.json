@@ -1,0 +1,44 @@
+{
+  "topicId": "logic-1",
+  "id": "answerCell",
+  "difficulty": "Easy",
+  "functionName": "answerCell",
+  "title": {
+    "en": "Answer Cell",
+    "ru": "Ответить на звонок",
+    "uz": "Telefonni javob berish"
+  },
+  "description": {
+    "en": "Your cell phone rings. Return true if you should answer it. Normally, you answer unless it’s morning and you’re not a friend, or you’re asleep.",
+    "ru": "Ваш телефон звонит. Верните true, если нужно ответить. Обычно отвечаете, кроме утра и звонка не друга, или если спите.",
+    "uz": "Telefoningiz jiringlaydi. Javob berishingiz kerak bo‘lsa true qaytaring. Odatda javob berasiz, lekin ertalab do‘st bo‘lmagan kishidan yoki uxlayotgan bo‘lsangiz yo‘q."
+  },
+  "solution": "function answerCell(isMorning, isMom, isAsleep) { if (isAsleep) return false; if (isMorning && !isMom) return false; return true; }",
+  "starterCode": "function answerCell(isMorning, isMom, isAsleep) {\n  // type here\n}",
+  "testCases": [
+    {
+      "input": [
+        "false",
+        "false",
+        "false"
+      ],
+      "output": true
+    },
+    {
+      "input": [
+        "true",
+        "false",
+        "false"
+      ],
+      "output": false
+    },
+    {
+      "input": [
+        "true",
+        "true",
+        "false"
+      ],
+      "output": true
+    }
+  ]
+}

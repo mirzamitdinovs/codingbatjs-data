@@ -1,0 +1,41 @@
+{
+  "topicId": "string-1",
+  "id": "lastChars",
+  "difficulty": "Easy",
+  "functionName": "lastChars",
+  "title": {
+    "en": "Last Chars",
+    "ru": "Символы с конца",
+    "uz": "Oxirgi belgilar"
+  },
+  "description": {
+    "en": "Given 2 strings, return a new string using the first char of a and the last char of b. If either is empty, use '@' instead.",
+    "ru": "Даны 2 строки. Вернуть новую строку: первый символ a и последний символ b. Если строка пуста, используйте '@'.",
+    "uz": "2 satr berilgan. Yangi satr tuzing: birinchisining birinchi belgisi + ikkinchisining oxirgi belgisi. Agar biri bo‘sh bo‘lsa, '@' ishlating."
+  },
+  "solution": "function lastChars(a, b) {\n  let first = a ? a[0] : '@';\n  let last = b ? b[b.length - 1] : '@';\n  return first + last;\n}",
+  "starterCode": "function lastChars(a, b) {\n  // type here\n}",
+  "testCases": [
+    {
+      "input": [
+        "\"last\"",
+        "\"chars\""
+      ],
+      "output": "ls"
+    },
+    {
+      "input": [
+        "\"yo\"",
+        "\"java\""
+      ],
+      "output": "ya"
+    },
+    {
+      "input": [
+        "\"hi\"",
+        "\"\""
+      ],
+      "output": "h@"
+    }
+  ]
+}

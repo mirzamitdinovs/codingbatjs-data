@@ -1,0 +1,75 @@
+{
+  "topicId": "array-2",
+  "id": "has77",
+  "difficulty": "Medium",
+  "functionName": "has77",
+  "title": {
+    "en": "has77",
+    "ru": "есть ли 77",
+    "uz": "77 bormi"
+  },
+  "description": {
+    "en": "Given an array of ints, return true if the array contains two 7's next to each other, or there are two 7's separated by one element.",
+    "ru": "Дан массив целых чисел. Верните true, если массив содержит две 7 подряд или две 7 с одним элементом между ними.",
+    "uz": "Butun sonlar massiv berilgan. Agar massivda ketma-ket ikkita 7 yoki oralarida bitta element bo‘lgan ikkita 7 bo‘lsa, true qaytaring."
+  },
+  "solution": "function has77(nums) {\n  for (let i = 0; i < nums.length - 1; i++) {\n    if (nums[i] === 7 && nums[i + 1] === 7) return true;\n    if (i < nums.length - 2 && nums[i] === 7 && nums[i + 2] === 7) return true;\n  }\n  return false;\n}",
+  "starterCode": "function has77(nums) {\n  // type here\n}",
+  "testCases": [
+    {
+      "input": [
+        [
+          1,
+          7,
+          7
+        ]
+      ],
+      "output": true
+    },
+    {
+      "input": [
+        [
+          1,
+          7,
+          1,
+          7
+        ]
+      ],
+      "output": true
+    },
+    {
+      "input": [
+        [
+          1,
+          7,
+          1,
+          1,
+          7
+        ]
+      ],
+      "output": false
+    },
+    {
+      "input": [
+        [
+          7,
+          2,
+          7,
+          7
+        ]
+      ],
+      "output": true
+    },
+    {
+      "input": [
+        [
+          7,
+          2,
+          1,
+          7
+        ]
+      ],
+      "output": false
+    }
+  ]
+}

@@ -1,0 +1,41 @@
+{
+  "topicId": "string-1",
+  "id": "makeOutWord",
+  "difficulty": "Easy",
+  "functionName": "makeOutWord",
+  "title": {
+    "en": "Make Out Word",
+    "ru": "Сделать Out Word",
+    "uz": "Out Word yasash"
+  },
+  "description": {
+    "en": "Given an 'out' string of length 4, and a word, return a new string where the word is in the middle of the out string.",
+    "ru": "Дана строка out длины 4 и слово word. Верните строку, где word помещено внутрь out.",
+    "uz": "4 belgili out va word berilgan. word out ichiga qo‘yilgan yangi satr qaytaring."
+  },
+  "solution": "function makeOutWord(out, word) {\n  return out.substring(0,2) + word + out.substring(2);\n}",
+  "starterCode": "function makeOutWord(out, word) {\n  // type here\n}",
+  "testCases": [
+    {
+      "input": [
+        "\"<<>>\"",
+        "\"Yay\""
+      ],
+      "output": "<<Yay>>"
+    },
+    {
+      "input": [
+        "\"<<>>\"",
+        "\"WooHoo\""
+      ],
+      "output": "<<WooHoo>>"
+    },
+    {
+      "input": [
+        "\"[[]]\"",
+        "\"word\""
+      ],
+      "output": "[[word]]"
+    }
+  ]
+}

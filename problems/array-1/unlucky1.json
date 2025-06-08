@@ -1,0 +1,38 @@
+{
+  "topicId": "array-1",
+  "id": "unlucky1",
+  "difficulty": "Medium",
+  "functionName": "unlucky1",
+  "title": {
+    "en": "Unlucky 1",
+    "ru": "Несчастливое 1",
+    "uz": "Omadsiz 1"
+  },
+  "description": {
+    "en": "We'll say that a 1 in the array is 'unlucky' if it appears in the first 2 or last 2 positions in the array, immediately followed by a 3.",
+    "ru": "1 считается несчастливым, если он стоит на первых двух или последних двух позициях массива и за ним сразу идет 3.",
+    "uz": "Massivning boshidagi yoki oxiridagi 2 ta elementdan birida 1 bo‘lsa va uni darhol 3 ta element kuzatsa, uni 'omadsiz' deb ataymiz."
+  },
+  "solution": "function unlucky1(nums) { for (let i = 0; i < nums.length - 1; i++) { if ((i < 2 || i >= nums.length - 2) && nums[i] === 1 && nums[i + 1] === 3) return true; } return false; }",
+  "starterCode": "function unlucky1(nums) {\n  // type here\n}",
+  "testCases": [
+    {
+      "input": [
+        "[1, 3, 4, 5]"
+      ],
+      "output": true
+    },
+    {
+      "input": [
+        "[2, 1, 3, 4, 5]"
+      ],
+      "output": true
+    },
+    {
+      "input": [
+        "[1, 1, 1]"
+      ],
+      "output": false
+    }
+  ]
+}

@@ -1,0 +1,48 @@
+{
+  "topicId": "ap-1",
+  "id": "matchup",
+  "difficulty": "Medium",
+  "functionName": "matchUp",
+  "title": {
+    "en": "Match Up",
+    "ru": "Сопоставление",
+    "uz": "Moslikni tekshirish"
+  },
+  "description": {
+    "en": "Given 2 arrays that are the same length containing strings, compare the strings at the same position in both arrays. Count the number of positions where they contain strings of length 1 or more, and the first character in both strings is the same.",
+    "ru": "Даны два массива одинаковой длины, содержащие строки. Сравните строки на одинаковых позициях в обоих массивах. Посчитайте количество позиций, где строки имеют длину 1 или более, и их первые символы совпадают.",
+    "uz": "Uzunligi bir xil bo‘lgan ikkita satrli massiv berilgan. Ikkala massivdagi bir xil indeksdagi satrlarni solishtiring. Har ikkala satr uzunligi kamida 1 bo‘lsa va birinchi belgisi bir xil bo‘lsa, shunday pozitsiyalar sonini hisoblang."
+  },
+  "solution": "function matchUp(a, b) {\n  let count = 0;\n  for (let i = 0; i < a.length; i++) {\n    if (a[i].length > 0 && b[i].length > 0 && a[i][0] === b[i][0]) {\n      count++;\n    }\n  }\n  return count;\n}",
+  "starterCode": "function matchUp(a, b) {\n  // type here\n}",
+  "testCases": [
+    {
+      "input": [
+        "[\"aa\", \"bb\", \"cc\"]",
+        "[\"aaa\", \"xx\", \"bb\"]"
+      ],
+      "output": 1
+    },
+    {
+      "input": [
+        "[\"aa\", \"bb\", \"cc\"]",
+        "[\"aaa\", \"b\", \"bb\"]"
+      ],
+      "output": 2
+    },
+    {
+      "input": [
+        "[\"aa\", \"bb\", \"cc\"]",
+        "[\"\", \"\", \"ccc\"]"
+      ],
+      "output": 1
+    },
+    {
+      "input": [
+        "[\"x\", \"y\", \"z\"]",
+        "[\"x-ray\", \"yo-yo\", \"zebra\"]"
+      ],
+      "output": 3
+    }
+  ]
+}

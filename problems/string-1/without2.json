@@ -1,0 +1,38 @@
+{
+  "topicId": "string-1",
+  "id": "without2",
+  "difficulty": "Easy",
+  "functionName": "without2",
+  "title": {
+    "en": "Without 2",
+    "ru": "Без первых двух",
+    "uz": "Bir yoki ikki belgini chiqarma"
+  },
+  "description": {
+    "en": "Given a string, if a prefix of length 2 also appears at the end, return the string without that prefix; otherwise return the original.",
+    "ru": "Дана строка. Если её первые 2 символа также встречаются в конце, верните строку без них; иначе — полностью.",
+    "uz": "Satr berilgan. Agar birinchi 2 belgi oxirda ham bo‘lsa, ularsiz qaytaring; aks holda o‘zini."
+  },
+  "solution": "function without2(str) {\n  if (str.length >= 2 && str.substring(0, 2) === str.substring(str.length - 2))\n    return str.substring(2);\n  return str;\n}",
+  "starterCode": "function without2(str) {\n  // type here\n}",
+  "testCases": [
+    {
+      "input": [
+        "\"HelloHe\""
+      ],
+      "output": "lloHe"
+    },
+    {
+      "input": [
+        "\"HelloHi\""
+      ],
+      "output": "HelloHi"
+    },
+    {
+      "input": [
+        "\"Hi\""
+      ],
+      "output": ""
+    }
+  ]
+}

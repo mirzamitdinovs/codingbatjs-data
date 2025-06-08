@@ -1,0 +1,61 @@
+{
+  "topicId": "functional-2",
+  "id": "noyy",
+  "difficulty": "Easy",
+  "functionName": "noYY",
+  "title": {
+    "en": "No YY",
+    "ru": "Без YY",
+    "uz": "YYsiz"
+  },
+  "description": {
+    "en": "Given a list of strings, for each string, add 'y' at its end, then return a list excluding any resulting strings that contain 'yy' as a substring.",
+    "ru": "Дан список строк. К каждой строке добавьте 'y' в конец, затем верните список, исключив строки, содержащие подстроку 'yy'.",
+    "uz": "Satrlar ro‘yxati berilgan. Har bir satr oxiriga 'y' qo‘shing va natijada 'yy' bo‘lgan satrlarni chiqarib tashlab ro‘yxatni qaytaring."
+  },
+  "solution": "function noYY(strings) {\n  return strings.map(s => s + 'y').filter(s => !s.includes('yy'));\n}",
+  "starterCode": "function noYY(strings) {\n  // type here\n}",
+  "testCases": [
+    {
+      "input": [
+        [
+          "a",
+          "b",
+          "c"
+        ]
+      ],
+      "output": [
+        "ay",
+        "by",
+        "cy"
+      ]
+    },
+    {
+      "input": [
+        [
+          "a",
+          "b",
+          "cy"
+        ]
+      ],
+      "output": [
+        "ay",
+        "by"
+      ]
+    },
+    {
+      "input": [
+        [
+          "xx",
+          "ya",
+          "zz"
+        ]
+      ],
+      "output": [
+        "xxy",
+        "yay",
+        "zzy"
+      ]
+    }
+  ]
+}

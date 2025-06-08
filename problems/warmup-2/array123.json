@@ -1,0 +1,38 @@
+{
+  "topicId": "warmup-2",
+  "id": "array123",
+  "difficulty": "Easy",
+  "functionName": "array123",
+  "title": {
+    "en": "Array 123",
+    "ru": "123 в Массиве",
+    "uz": "Massivda 123"
+  },
+  "description": {
+    "en": "Given an array of ints, return true if the sequence of numbers 1, 2, 3 appears in the array somewhere.",
+    "ru": "Дан массив целых чисел. Верните true, если последовательность 1, 2, 3 встречается в массиве.",
+    "uz": "Butun sonlardan iborat massivda 1, 2, 3 ketma-ketligi mavjud bo‘lsa, true qaytaring."
+  },
+  "solution": "function array123(nums) {\n  for (let i = 0; i < nums.length - 2; i++) {\n    if (nums[i] === 1 && nums[i + 1] === 2 && nums[i + 2] === 3) {\n      return true;\n    }\n  }\n  return false;\n}",
+  "starterCode": "function array123(nums) {\n  // type here\n}",
+  "testCases": [
+    {
+      "input": [
+        "[1, 1, 2, 3, 1]"
+      ],
+      "output": true
+    },
+    {
+      "input": [
+        "[1, 1, 2, 4, 1]"
+      ],
+      "output": false
+    },
+    {
+      "input": [
+        "[1, 1, 2, 1, 2, 3]"
+      ],
+      "output": true
+    }
+  ]
+}

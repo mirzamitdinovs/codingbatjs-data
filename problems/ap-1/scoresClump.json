@@ -1,0 +1,72 @@
+{
+  "topicId": "ap-1",
+  "id": "scoresClump",
+  "difficulty": "Medium",
+  "functionName": "scoresClump",
+  "title": {
+    "en": "scoresClump",
+    "ru": "группа оценок",
+    "uz": "ballar guruhi"
+  },
+  "description": {
+    "en": "Given an array of scores sorted in increasing order, return true if the array contains 3 adjacent scores that differ from each other by at most 2.",
+    "ru": "Дан отсортированный по возрастанию массив оценок. Верните true, если в массиве есть 3 соседних оценки, которые отличаются друг от друга не более чем на 2.",
+    "uz": "O‘sish tartibida saralangan ballar massiv berilgan. Agar massivda yonma-yon 3 ta ball bir-biridan ko‘pi bilan 2 ga farq qilsa, true qaytaring."
+  },
+  "solution": "function scoresClump(scores) {\n  for (let i = 0; i < scores.length - 2; i++) {\n    let diff1 = scores[i + 1] - scores[i];\n    let diff2 = scores[i + 2] - scores[i + 1];\n    let diff3 = scores[i + 2] - scores[i];\n    if (diff1 <= 2 && diff2 <= 2 && diff3 <= 2) return true;\n  }\n  return false;\n}",
+  "starterCode": "function scoresClump(scores) {\n  // type here\n}",
+  "testCases": [
+    {
+      "input": [
+        [
+          3,
+          4,
+          5
+        ]
+      ],
+      "output": true
+    },
+    {
+      "input": [
+        [
+          3,
+          4,
+          6
+        ]
+      ],
+      "output": true
+    },
+    {
+      "input": [
+        [
+          1,
+          3,
+          5,
+          5
+        ]
+      ],
+      "output": false
+    },
+    {
+      "input": [
+        [
+          1,
+          3,
+          5,
+          6
+        ]
+      ],
+      "output": false
+    },
+    {
+      "input": [
+        [
+          9,
+          8,
+          9
+        ]
+      ],
+      "output": true
+    }
+  ]
+}

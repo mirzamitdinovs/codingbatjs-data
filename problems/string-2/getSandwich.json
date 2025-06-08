@@ -1,0 +1,50 @@
+{
+  "topicId": "string-2",
+  "id": "getSandwich",
+  "difficulty": "Medium",
+  "functionName": "getSandwich",
+  "title": {
+    "en": "getSandwich",
+    "ru": "получить сэндвич",
+    "uz": "sendvichni olish"
+  },
+  "description": {
+    "en": "A sandwich is two pieces of bread with something in between. Return the string that is between the first and last appearance of \"bread\" in the given string, or return the empty string if there are not two pieces of bread.",
+    "ru": "Сэндвич — это две части хлеба с чем-то между ними. Верните подстроку между первой и последней встречей \"bread\" в строке, или пустую строку, если \"bread\" встречается меньше двух раз.",
+    "uz": "Sendvich — bu ikkita non qismi orasida narsa. Berilgan satrdagi birinchi va oxirgi \"bread\" orasidagi qismni qaytaring. Agar \"bread\" ikki martadan kam bo‘lsa, bo‘sh satr qaytaring."
+  },
+  "solution": "function getSandwich(str) {\n  let first = str.indexOf('bread');\n  let last = str.lastIndexOf('bread');\n  if (first === -1 || last === -1 || first === last) return '';\n  return str.substring(first + 5, last);\n}",
+  "starterCode": "function getSandwich(str) {\n  // type here\n}",
+  "testCases": [
+    {
+      "input": [
+        "breadjambread"
+      ],
+      "output": "jam"
+    },
+    {
+      "input": [
+        "xxbreadjambreadyy"
+      ],
+      "output": "jam"
+    },
+    {
+      "input": [
+        "xxbreadyy"
+      ],
+      "output": ""
+    },
+    {
+      "input": [
+        "breadbread"
+      ],
+      "output": ""
+    },
+    {
+      "input": [
+        "breadabcbreadef bread"
+      ],
+      "output": "abcbreadef "
+    }
+  ]
+}

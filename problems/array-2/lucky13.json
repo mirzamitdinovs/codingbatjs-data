@@ -1,0 +1,66 @@
+{
+  "topicId": "array-2",
+  "id": "lucky13",
+  "difficulty": "Easy",
+  "functionName": "lucky13",
+  "title": {
+    "en": "lucky13",
+    "ru": "счастливая 13",
+    "uz": "omadli 13"
+  },
+  "description": {
+    "en": "Given an array of ints, return true if the array contains no 1's and no 3's.",
+    "ru": "Дан массив целых чисел. Верните true, если в массиве нет 1 и 3.",
+    "uz": "Butun sonlardan iborat massiv berilgan. Massivda 1 va 3 sonlari yo‘q bo‘lsa, true qaytaring."
+  },
+  "solution": "function lucky13(nums) {\n  for (let num of nums) {\n    if (num === 1 || num === 3) {\n      return false;\n    }\n  }\n  return true;\n}",
+  "starterCode": "function lucky13(nums) {\n  // type here\n}",
+  "testCases": [
+    {
+      "input": [
+        [
+          0,
+          2,
+          4
+        ]
+      ],
+      "output": true
+    },
+    {
+      "input": [
+        [
+          1,
+          2,
+          3
+        ]
+      ],
+      "output": false
+    },
+    {
+      "input": [
+        [
+          1,
+          2,
+          4
+        ]
+      ],
+      "output": false
+    },
+    {
+      "input": [
+        [
+          2,
+          7,
+          8
+        ]
+      ],
+      "output": true
+    },
+    {
+      "input": [
+        []
+      ],
+      "output": true
+    }
+  ]
+}

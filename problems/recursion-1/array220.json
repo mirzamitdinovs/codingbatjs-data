@@ -1,0 +1,73 @@
+{
+  "topicId": "recursion-1",
+  "id": "array220",
+  "difficulty": "Medium",
+  "functionName": "array220",
+  "title": {
+    "en": "Array 220",
+    "ru": "Массив 220",
+    "uz": "Massiv 220"
+  },
+  "description": {
+    "en": "Given an array of ints, compute recursively if the array contains somewhere a value followed in the array by that value times 10. We'll use the convention of considering only the part of the array that begins at the given index. The initial call will pass in index as 0.",
+    "ru": "Дан массив целых чисел. Рекурсивно определите, содержит ли массив где-либо значение, за которым следует это значение, умноженное на 10. Рассматривайте только часть массива, начиная с данного индекса. Начальный вызов будет с индексом 0.",
+    "uz": "Butun sonlardan iborat massiv berilgan. Rekursiv ravishda massivda qaysidir elementdan keyin shu elementning 10 barobar kattasi bor-yo‘qligini aniqlang. Faqat berilgan indeksdan boshlab massiv qismi ko‘riladi. Boshlang‘ich chaqiriqda indeks 0 bo‘ladi."
+  },
+  "solution": "function array220(nums, index) {\n  if (index >= nums.length - 1) return false;\n  if (nums[index] * 10 === nums[index + 1]) return true;\n  return array220(nums, index + 1);\n}",
+  "starterCode": "function array220(nums, index) {\n  // type here\n}",
+  "testCases": [
+    {
+      "input": [
+        [
+          1,
+          2,
+          20
+        ],
+        "0"
+      ],
+      "output": true
+    },
+    {
+      "input": [
+        [
+          3,
+          30
+        ],
+        "0"
+      ],
+      "output": true
+    },
+    {
+      "input": [
+        [
+          3
+        ],
+        "0"
+      ],
+      "output": false
+    },
+    {
+      "input": [
+        [
+          3,
+          3,
+          30,
+          4
+        ],
+        "0"
+      ],
+      "output": true
+    },
+    {
+      "input": [
+        [
+          2,
+          19,
+          4
+        ],
+        "0"
+      ],
+      "output": false
+    }
+  ]
+}

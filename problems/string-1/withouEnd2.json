@@ -1,0 +1,38 @@
+{
+  "topicId": "string-1",
+  "id": "withoutEnd2",
+  "difficulty": "Easy",
+  "functionName": "withoutEnd2",
+  "title": {
+    "en": "Without End 2",
+    "ru": "Без концевых символов 2",
+    "uz": "Oxirsiz 2"
+  },
+  "description": {
+    "en": "Given a string, return a version without the first and last char. If length ≤ 2, return empty string.",
+    "ru": "Дана строка. Верните её без первого и последнего символа. Если длина ≤ 2, вернуть пустую строку.",
+    "uz": "Satr berilgan. Birinchi va oxirgi belgilarni olib tashlab qaytaring. Uzunlik ≤ 2 bo‘lsa, bo‘sh satr."
+  },
+  "solution": "function withoutEnd2(str) {\n  return str.length <= 2 ? \"\" : str.substring(1, str.length - 1);\n}",
+  "starterCode": "function withoutEnd2(str) {\n  // type here\n}",
+  "testCases": [
+    {
+      "input": [
+        "\"Hello\""
+      ],
+      "output": "ell"
+    },
+    {
+      "input": [
+        "\"java\""
+      ],
+      "output": "av"
+    },
+    {
+      "input": [
+        "\"Hi\""
+      ],
+      "output": ""
+    }
+  ]
+}

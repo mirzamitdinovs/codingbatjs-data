@@ -1,0 +1,41 @@
+{
+  "topicId": "string-1",
+  "id": "conCat",
+  "difficulty": "Easy",
+  "functionName": "conCat",
+  "title": {
+    "en": "Con Cat",
+    "ru": "Соединение строк",
+    "uz": "Satr birlashmasi"
+  },
+  "description": {
+    "en": "Given two strings, append them together, but if the concatenation creates a double-char between them, omit one duplicate char.",
+    "ru": "Даны две строки. Соедините их, но если при соединении получается повтор символа, уберите дубликат.",
+    "uz": "2 satr berilgan. Ularni birlashtiring, agar o‘rta kesishda ikkita bir xil belgi bo‘lsa, bittasini olib tashlang."
+  },
+  "solution": "function conCat(a, b) {\n  if (a && b && a[a.length-1] === b[0]) return a + b.substring(1);\n  return a + b;\n}",
+  "starterCode": "function conCat(a, b) {\n  // type here\n}",
+  "testCases": [
+    {
+      "input": [
+        "\"abc\"",
+        "\"cat\""
+      ],
+      "output": "abcat"
+    },
+    {
+      "input": [
+        "\"dog\"",
+        "\"cat\""
+      ],
+      "output": "dogcat"
+    },
+    {
+      "input": [
+        "\"abc\"",
+        "\"\""
+      ],
+      "output": "abc"
+    }
+  ]
+}

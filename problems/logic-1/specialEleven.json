@@ -1,0 +1,38 @@
+{
+  "topicId": "logic-1",
+  "id": "specialEleven",
+  "difficulty": "Medium",
+  "functionName": "specialEleven",
+  "title": {
+    "en": "Special Eleven",
+    "ru": "Особенная одиннадцатка",
+    "uz": "Maxsus o‘n bir"
+  },
+  "description": {
+    "en": "Return true if n is a multiple of 11 or one more than a multiple of 11.",
+    "ru": "Верните true, если n кратно 11 или на 1 больше кратного 11.",
+    "uz": "Agar n 11 ga bo‘linadigan yoki 11 ga bo‘linadigan sondan 1 ga katta bo‘lsa true qaytaring."
+  },
+  "solution": "function specialEleven(n) { return n % 11 === 0 || n % 11 === 1; }",
+  "starterCode": "function specialEleven(n) {\n  // type here\n}",
+  "testCases": [
+    {
+      "input": [
+        "22"
+      ],
+      "output": true
+    },
+    {
+      "input": [
+        "23"
+      ],
+      "output": true
+    },
+    {
+      "input": [
+        "24"
+      ],
+      "output": false
+    }
+  ]
+}

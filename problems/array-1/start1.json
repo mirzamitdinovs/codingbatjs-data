@@ -1,0 +1,41 @@
+{
+  "topicId": "array-1",
+  "id": "start1",
+  "difficulty": "Easy",
+  "functionName": "start1",
+  "title": {
+    "en": "Start1",
+    "ru": "Начинается с 1",
+    "uz": "1 bilan boshlanadi"
+  },
+  "description": {
+    "en": "Start with 2 int arrays, a and b, return how many of them start with 1.",
+    "ru": "Даны 2 массива. Верните, сколько из них начинаются с 1.",
+    "uz": "2 butun sonli massiv berilgan. Ulardan nechtasi 1 bilan boshlanadi, shuni qaytaring."
+  },
+  "solution": "function start1(a,b) { let count=0; if(a[0]===1) count++; if(b[0]===1) count++; return count; }",
+  "starterCode": "function start1(a, b) {\n  // type here\n}",
+  "testCases": [
+    {
+      "input": [
+        "[1, 2, 3]",
+        "[1, 3]"
+      ],
+      "output": 2
+    },
+    {
+      "input": [
+        "[7, 2, 3]",
+        "[1]"
+      ],
+      "output": 1
+    },
+    {
+      "input": [
+        "[1, 2]",
+        "[]"
+      ],
+      "output": 1
+    }
+  ]
+}

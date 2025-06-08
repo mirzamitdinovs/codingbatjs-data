@@ -1,0 +1,38 @@
+{
+  "topicId": "string-1",
+  "id": "deFront",
+  "difficulty": "Easy",
+  "functionName": "deFront",
+  "title": {
+    "en": "De-Front",
+    "ru": "Удалить начало",
+    "uz": "Boshlanishi olib tashlash"
+  },
+  "description": {
+    "en": "Given a string, return a version without the first two chars except keep the first char if it is 'a', and keep the second if it is 'b'.",
+    "ru": "Дана строка. Верните её без первых двух символов, но оставьте первый, если это 'a', и оставьте второй, если это 'b'.",
+    "uz": "Satr berilgan. Birinchi ikki belgini olib tashlang, faqat agar birinchi 'a' bo‘lsa uni saqlang, ikkinchi 'b' bo‘lsa uni saqlang."
+  },
+  "solution": "function deFront(str) {\n  let result = '';\n  if (str[0] === 'a') result += 'a';\n  if (str[1] === 'b') result += 'b';\n  if (str.length > 2) result += str.substring(2);\n  return result;\n}",
+  "starterCode": "function deFront(str) {\n  // type here\n}",
+  "testCases": [
+    {
+      "input": [
+        "\"Hello\""
+      ],
+      "output": "llo"
+    },
+    {
+      "input": [
+        "\"java\""
+      ],
+      "output": "va"
+    },
+    {
+      "input": [
+        "\"away\""
+      ],
+      "output": "aay"
+    }
+  ]
+}

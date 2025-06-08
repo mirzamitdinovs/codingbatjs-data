@@ -1,0 +1,41 @@
+{
+  "topicId": "string-1",
+  "id": "comboString",
+  "difficulty": "Easy",
+  "functionName": "comboString",
+  "title": {
+    "en": "Combo String",
+    "ru": "Комбо строк",
+    "uz": "Satrlar kombosi"
+  },
+  "description": {
+    "en": "Given 2 strings, a and b, return a new string in the form short+long+short.",
+    "ru": "Даны 2 строки a и b. Верните строку short+long+short.",
+    "uz": "2 satr a va b berilgan. short+long+short shaklida yangi satr qaytaring."
+  },
+  "solution": "function comboString(a, b) {\n  return a.length < b.length ? a + b + a : b + a + b;\n}",
+  "starterCode": "function comboString(a, b) {\n  // type here\n}",
+  "testCases": [
+    {
+      "input": [
+        "\"Hello\"",
+        "\"hi\""
+      ],
+      "output": "hiHellohi"
+    },
+    {
+      "input": [
+        "\"hi\"",
+        "\"Hello\""
+      ],
+      "output": "hiHellohi"
+    },
+    {
+      "input": [
+        "\"aaa\"",
+        "\"b\""
+      ],
+      "output": "baaab"
+    }
+  ]
+}

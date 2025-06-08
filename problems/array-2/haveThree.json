@@ -1,0 +1,83 @@
+{
+  "topicId": "array-2",
+  "id": "haveThree",
+  "difficulty": "Medium",
+  "functionName": "haveThree",
+  "title": {
+    "en": "haveThree",
+    "ru": "иметь три",
+    "uz": "uchta borligi"
+  },
+  "description": {
+    "en": "Given an array of ints, return true if the value 3 appears exactly 3 times, and no 3's are next to each other.",
+    "ru": "Дан массив целых чисел. Верните true, если число 3 появляется ровно 3 раза, и при этом 3 не стоят рядом.",
+    "uz": "Butun sonlar massiv berilgan. Agar 3 qiymati aniq 3 marta uchrasa va ular yonma-yon kelmasa, true qaytaring."
+  },
+  "solution": "function haveThree(nums) {\n  let count = 0;\n  for (let i = 0; i < nums.length; i++) {\n    if (nums[i] === 3) {\n      count++;\n      if (i > 0 && nums[i - 1] === 3) {\n        return false;\n      }\n    }\n  }\n  return count === 3;\n}",
+  "starterCode": "function haveThree(nums) {\n  // type here\n}",
+  "testCases": [
+    {
+      "input": [
+        [
+          3,
+          1,
+          3,
+          1,
+          3
+        ]
+      ],
+      "output": true
+    },
+    {
+      "input": [
+        [
+          3,
+          1,
+          3,
+          3
+        ]
+      ],
+      "output": false
+    },
+    {
+      "input": [
+        [
+          3,
+          4,
+          3,
+          3,
+          4
+        ]
+      ],
+      "output": false
+    },
+    {
+      "input": [
+        [
+          1,
+          3,
+          1,
+          3,
+          1,
+          2,
+          3
+        ]
+      ],
+      "output": true
+    },
+    {
+      "input": [
+        [
+          1,
+          3,
+          1,
+          3,
+          1,
+          3,
+          3
+        ]
+      ],
+      "output": false
+    }
+  ]
+}

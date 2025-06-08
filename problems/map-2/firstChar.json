@@ -1,0 +1,69 @@
+{
+  "topicId": "map-2",
+  "id": "firstchar",
+  "difficulty": "Easy",
+  "functionName": "firstChar",
+  "title": {
+    "en": "FirstChar",
+    "ru": "Первый символ",
+    "uz": "Birinchi belgi"
+  },
+  "description": {
+    "en": "Given an array of non-empty strings, return a map where the keys are the first characters of the strings, and the values are all the strings starting with that character concatenated together in the order they appear in the array.",
+    "ru": "Дан массив непустых строк. Верните карту, где ключи — первые символы строк, а значения — все строки, начинающиеся с этого символа, объединённые вместе в порядке их появления в массиве.",
+    "uz": "Bo‘sh bo‘lmagan satrlar massiv berilgan. Kalitlar — satrlarning birinchi belgisi, qiymatlar esa shu belgi bilan boshlanadigan barcha satrlar ketma-ketligidir."
+  },
+  "solution": "function firstChar(words) {\n  const map = {};\n  for (const word of words) {\n    const first = word[0];\n    map[first] = (map[first] || '') + word;\n  }\n  return map;\n}",
+  "starterCode": "function firstChar(words) {\n  // type here\n}",
+  "testCases": [
+    {
+      "input": [
+        [
+          "salt",
+          "tea",
+          "soda",
+          "toast"
+        ]
+      ],
+      "output": {
+        "s": "saltsoda",
+        "t": "teatoast"
+      }
+    },
+    {
+      "input": [
+        [
+          "aa",
+          "bb",
+          "cc",
+          "aa"
+        ]
+      ],
+      "output": {
+        "a": "aaaa",
+        "b": "bb",
+        "c": "cc"
+      }
+    },
+    {
+      "input": [
+        [
+          "apple",
+          "art",
+          "bat",
+          "ball"
+        ]
+      ],
+      "output": {
+        "a": "appleart",
+        "b": "batball"
+      }
+    },
+    {
+      "input": [
+        []
+      ],
+      "output": {}
+    }
+  ]
+}

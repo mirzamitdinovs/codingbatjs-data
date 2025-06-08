@@ -1,0 +1,38 @@
+{
+  "topicId": "string-1",
+  "id": "withoutX2",
+  "difficulty": "Easy",
+  "functionName": "withoutX2",
+  "title": {
+    "en": "Without X2",
+    "ru": "Без X2",
+    "uz": "X2 holda"
+  },
+  "description": {
+    "en": "Given a string, if the first two chars are 'x', remove them; otherwise leave the string unchanged.",
+    "ru": "Дана строка. Если первые два символа — 'x', удалите их; иначе верните строку как есть.",
+    "uz": "Satr berilgan. Agar birinchi ikki belgi 'x' bo‘lsa, ularni olib tashlang; aks holda satr o‘zgarmasin."
+  },
+  "solution": "function withoutX2(str) {\n  if (str.length >= 1 && str[0] === 'x') str = str.substring(1);\n  if (str.length >= 1 && str[0] === 'x') str = str.substring(1);\n  return str;\n}",
+  "starterCode": "function withoutX2(str) {\n  // type here\n}",
+  "testCases": [
+    {
+      "input": [
+        "\"xHi\""
+      ],
+      "output": "Hi"
+    },
+    {
+      "input": [
+        "\"Hxi\""
+      ],
+      "output": "Hxi"
+    },
+    {
+      "input": [
+        "\"Hi\""
+      ],
+      "output": "Hi"
+    }
+  ]
+}

@@ -1,0 +1,38 @@
+{
+  "topicId": "string-1",
+  "id": "left2",
+  "difficulty": "Easy",
+  "functionName": "left2",
+  "title": {
+    "en": "Left2",
+    "ru": "Сдвиг влево на 2",
+    "uz": "Chapga 2 pozitsiya"
+  },
+  "description": {
+    "en": "Given a string, return a “rotated left 2” version where the first 2 chars are moved to the end.",
+    "ru": "Дана строка. Верните строку, где первые 2 символа перемещены в конец.",
+    "uz": "Satr berilgan. Birinchi 2 belgini oxiriga ko‘chiring."
+  },
+  "solution": "function left2(str) {\n  return str.substring(2) + str.substring(0, 2);\n}",
+  "starterCode": "function left2(str) {\n  // type here\n}",
+  "testCases": [
+    {
+      "input": [
+        "\"Hello\""
+      ],
+      "output": "lloHe"
+    },
+    {
+      "input": [
+        "\"java\""
+      ],
+      "output": "vaja"
+    },
+    {
+      "input": [
+        "\"Hi\""
+      ],
+      "output": "Hi"
+    }
+  ]
+}

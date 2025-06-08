@@ -1,0 +1,63 @@
+{
+  "topicId": "map-1",
+  "id": "mapab",
+  "difficulty": "Easy",
+  "functionName": "mapAB",
+  "title": {
+    "en": "Map AB",
+    "ru": "Карта AB",
+    "uz": "Map AB"
+  },
+  "description": {
+    "en": "Modify and return the given map as follows: if the keys \"a\" and \"b\" are both present, add a new key \"ab\" with their concatenated values.",
+    "ru": "Измените и верните данную карту следующим образом: если ключи \"a\" и \"b\" присутствуют, добавьте новый ключ \"ab\" со значением, являющимся конкатенацией значений \"a\" и \"b\".",
+    "uz": "Berilgan mapni quyidagicha o‘zgartiring va qaytaring: agar \"a\" va \"b\" kalitlari mavjud bo‘lsa, \"ab\" nomli yangi kalit yaratib, uning qiymatini \"a\" va \"b\" qiymatlarining birikmasi qilib o‘rnating."
+  },
+  "solution": "function mapAB(map) {\n  if (map.hasOwnProperty('a') && map.hasOwnProperty('b')) {\n    map['ab'] = map['a'] + map['b'];\n  }\n  return map;\n}",
+  "starterCode": "function mapAB(map) {\n  // type here\n}",
+  "testCases": [
+    {
+      "input": [
+        {
+          "a": "Hi",
+          "b": "There"
+        }
+      ],
+      "output": {
+        "a": "Hi",
+        "b": "There",
+        "ab": "HiThere"
+      }
+    },
+    {
+      "input": [
+        {
+          "a": "Hi"
+        }
+      ],
+      "output": {
+        "a": "Hi"
+      }
+    },
+    {
+      "input": [
+        {
+          "b": "There"
+        }
+      ],
+      "output": {
+        "b": "There"
+      }
+    },
+    {
+      "input": [
+        {
+          "c": "meh"
+        }
+      ],
+      "output": {
+        "c": "meh"
+      }
+    }
+  ]
+}

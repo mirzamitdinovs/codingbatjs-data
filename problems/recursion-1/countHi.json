@@ -1,0 +1,50 @@
+{
+  "topicId": "recursion-1",
+  "id": "counthi",
+  "difficulty": "Easy",
+  "functionName": "countHi",
+  "title": {
+    "en": "Count Hi",
+    "ru": "Подсчет 'hi'",
+    "uz": "'hi' ni sanash"
+  },
+  "description": {
+    "en": "Given a string, compute recursively the number of times lowercase 'hi' appears in the string.",
+    "ru": "Дана строка. Рекурсивно подсчитайте количество вхождений 'hi' в строке.",
+    "uz": "Berilgan satrda rekursiv ravishda kichik 'hi' satrini necha marta uchrashini hisoblang."
+  },
+  "solution": "function countHi(str) {\n  if (str.length < 2) return 0;\n  if (str.substring(0, 2) === 'hi') {\n    return 1 + countHi(str.substring(1));\n  } else {\n    return countHi(str.substring(1));\n  }\n}",
+  "starterCode": "function countHi(str) {\n  // type here\n}",
+  "testCases": [
+    {
+      "input": [
+        "xxhixx"
+      ],
+      "output": 1
+    },
+    {
+      "input": [
+        "xhixhix"
+      ],
+      "output": 2
+    },
+    {
+      "input": [
+        "hi"
+      ],
+      "output": 1
+    },
+    {
+      "input": [
+        "h"
+      ],
+      "output": 0
+    },
+    {
+      "input": [
+        ""
+      ],
+      "output": 0
+    }
+  ]
+}

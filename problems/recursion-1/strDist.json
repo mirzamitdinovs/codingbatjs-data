@@ -1,0 +1,55 @@
+{
+  "topicId": "recursion-1",
+  "id": "strdist",
+  "difficulty": "Medium",
+  "functionName": "strDist",
+  "title": {
+    "en": "Str Dist",
+    "ru": "Длина подстроки",
+    "uz": "Satr masofasi"
+  },
+  "description": {
+    "en": "Given a string and a non-empty substring sub, compute recursively the largest substring which starts and ends with sub and return its length.",
+    "ru": "Дана строка и непустая подстрока sub. Рекурсивно найдите наибольшую подстроку, которая начинается и заканчивается на sub, и верните её длину.",
+    "uz": "Berilgan satr va bo‘sh bo‘lmagan kichik satr sub. Rekursiv ravishda sub bilan boshlanib sub bilan tugaydigan eng uzun kichik satr uzunligini qaytaring."
+  },
+  "solution": "function strDist(str, sub) {\n  if (str.length < sub.length) return 0;\n  if (!str.startsWith(sub)) {\n    return strDist(str.substring(1), sub);\n  }\n  if (!str.endsWith(sub)) {\n    return strDist(str.substring(0, str.length - 1), sub);\n  }\n  return str.length;\n}",
+  "starterCode": "function strDist(str, sub) {\n  // type here\n}",
+  "testCases": [
+    {
+      "input": [
+        "catcowcat",
+        "cat"
+      ],
+      "output": 9
+    },
+    {
+      "input": [
+        "catcowcat",
+        "cow"
+      ],
+      "output": 3
+    },
+    {
+      "input": [
+        "cccatcowcatxx",
+        "cat"
+      ],
+      "output": 9
+    },
+    {
+      "input": [
+        "abccatcowcatcatxyz",
+        "cat"
+      ],
+      "output": 12
+    },
+    {
+      "input": [
+        "xyx",
+        "x"
+      ],
+      "output": 3
+    }
+  ]
+}

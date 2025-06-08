@@ -1,0 +1,67 @@
+{
+  "topicId": "map-2",
+  "id": "wordlen",
+  "difficulty": "Easy",
+  "functionName": "wordLen",
+  "title": {
+    "en": "WordLen",
+    "ru": "Длина слова",
+    "uz": "So‘z uzunligi"
+  },
+  "description": {
+    "en": "Given an array of strings, return a map containing a key for every different string in the array, and the value is that string's length.",
+    "ru": "Дан массив строк. Верните карту с ключом для каждой уникальной строки в массиве, значением которой является длина этой строки.",
+    "uz": "Satrlar massiv berilgan. Har bir noyob satr uchun kalit va qiymat sifatida o‘sha satr uzunligini o‘z ichiga olgan map qaytaring."
+  },
+  "solution": "function wordLen(words) {\n  const map = {};\n  for (const word of words) {\n    map[word] = word.length;\n  }\n  return map;\n}",
+  "starterCode": "function wordLen(words) {\n  // type here\n}",
+  "testCases": [
+    {
+      "input": [
+        [
+          "a",
+          "bb",
+          "a",
+          "bb"
+        ]
+      ],
+      "output": {
+        "a": 1,
+        "bb": 2
+      }
+    },
+    {
+      "input": [
+        [
+          "hello",
+          "hi",
+          "hello"
+        ]
+      ],
+      "output": {
+        "hello": 5,
+        "hi": 2
+      }
+    },
+    {
+      "input": [
+        [
+          "abc",
+          "def",
+          "ghi"
+        ]
+      ],
+      "output": {
+        "abc": 3,
+        "def": 3,
+        "ghi": 3
+      }
+    },
+    {
+      "input": [
+        []
+      ],
+      "output": {}
+    }
+  ]
+}

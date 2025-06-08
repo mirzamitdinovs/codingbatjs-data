@@ -1,0 +1,62 @@
+{
+  "topicId": "functional-2",
+  "id": "two2",
+  "difficulty": "Easy",
+  "functionName": "two2",
+  "title": {
+    "en": "Two2",
+    "ru": "Двойка 2",
+    "uz": "Ikki2"
+  },
+  "description": {
+    "en": "Given a list of non-negative integers, return a list where each even number is multiplied by 2, and odd numbers are unchanged.",
+    "ru": "Дан список неотрицательных целых чисел. Верните новый список, где каждое чётное число умножено на 2, а нечётные оставлены без изменений.",
+    "uz": "Musbat butun sonlar ro‘yxati berilgan. Har bir juft son 2 ga ko‘paytirilgan, toq sonlar o‘zgarmagan holda yangi ro‘yxat qaytaring."
+  },
+  "solution": "function two2(nums) {\n  return nums.map(n => (n % 2 === 0 ? n * 2 : n));\n}",
+  "starterCode": "function two2(nums) {\n  // type here\n}",
+  "testCases": [
+    {
+      "input": [
+        [
+          1,
+          2,
+          3
+        ]
+      ],
+      "output": [
+        1,
+        4,
+        3
+      ]
+    },
+    {
+      "input": [
+        [
+          2,
+          6,
+          11
+        ]
+      ],
+      "output": [
+        4,
+        12,
+        11
+      ]
+    },
+    {
+      "input": [
+        [
+          0,
+          1,
+          2
+        ]
+      ],
+      "output": [
+        0,
+        1,
+        4
+      ]
+    }
+  ]
+}

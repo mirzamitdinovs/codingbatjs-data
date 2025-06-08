@@ -1,0 +1,50 @@
+{
+  "topicId": "string-2",
+  "id": "countHi",
+  "difficulty": "Easy",
+  "functionName": "countHi",
+  "title": {
+    "en": "Count Hi",
+    "ru": "Посчитать 'hi'",
+    "uz": "'hi' ni hisoblash"
+  },
+  "description": {
+    "en": "Return the number of times that the string \"hi\" appears anywhere in the given string.",
+    "ru": "Верните количество раз, когда подстрока \"hi\" встречается в данной строке.",
+    "uz": "Berilgan matnda \"hi\" qanchalik ko‘p uchrashi sonini qaytaring."
+  },
+  "solution": "function countHi(str) {\n  let count = 0;\n  for (let i = 0; i < str.length - 1; i++) {\n    if (str.substring(i, i + 2) === 'hi') {\n      count++;\n    }\n  }\n  return count;\n}",
+  "starterCode": "function countHi(str) {\n  // type here\n}",
+  "testCases": [
+    {
+      "input": [
+        "abc hi ho"
+      ],
+      "output": 1
+    },
+    {
+      "input": [
+        "ABChi hi"
+      ],
+      "output": 2
+    },
+    {
+      "input": [
+        "hihi"
+      ],
+      "output": 2
+    },
+    {
+      "input": [
+        "hiHIhi"
+      ],
+      "output": 2
+    },
+    {
+      "input": [
+        ""
+      ],
+      "output": 0
+    }
+  ]
+}

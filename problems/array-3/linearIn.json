@@ -1,0 +1,100 @@
+{
+  "topicId": "array-3",
+  "id": "linearIn",
+  "difficulty": "Medium",
+  "functionName": "linearIn",
+  "title": {
+    "en": "linearIn",
+    "ru": "линейный поиск",
+    "uz": "chiziqli qidiruv"
+  },
+  "description": {
+    "en": "Given two arrays sorted in increasing order, return true if all of the numbers in the inner array appear in the outer array. The best solution makes only a single 'linear' pass of both arrays, taking advantage of the fact that both are sorted.",
+    "ru": "Даны два массива, отсортированных по возрастанию. Верните true, если все числа внутреннего массива присутствуют во внешнем массиве. Лучшее решение делает один проход по обоим массивам, используя тот факт, что оба отсортированы.",
+    "uz": "O‘sish tartibida saralangan ikki massiv berilgan. Agar ichki massivdagi barcha sonlar tashqi massivda mavjud bo‘lsa, true qaytaring. Eng yaxshi yechim ikkala massivni bir marta chiziqli o‘tkazishdir, chunki ular saralangan."
+  },
+  "solution": "function linearIn(outer, inner) {\n  let i = 0;\n  let j = 0;\n  while (i < outer.length && j < inner.length) {\n    if (outer[i] < inner[j]) {\n      i++;\n    } else if (outer[i] === inner[j]) {\n      i++;\n      j++;\n    } else {\n      return false;\n    }\n  }\n  return j === inner.length;\n}",
+  "starterCode": "function linearIn(outer, inner) {\n  // type here\n}",
+  "testCases": [
+    {
+      "input": [
+        [
+          1,
+          2,
+          4,
+          6
+        ],
+        [
+          2,
+          4
+        ]
+      ],
+      "output": true
+    },
+    {
+      "input": [
+        [
+          1,
+          2,
+          4,
+          6
+        ],
+        [
+          2,
+          3,
+          4
+        ]
+      ],
+      "output": false
+    },
+    {
+      "input": [
+        [
+          1,
+          2,
+          4,
+          4,
+          6
+        ],
+        [
+          2,
+          4
+        ]
+      ],
+      "output": true
+    },
+    {
+      "input": [
+        [
+          2,
+          2,
+          4,
+          4,
+          6
+        ],
+        [
+          2,
+          4
+        ]
+      ],
+      "output": true
+    },
+    {
+      "input": [
+        [
+          2,
+          2,
+          4,
+          4,
+          6
+        ],
+        [
+          2,
+          2,
+          4
+        ]
+      ],
+      "output": true
+    }
+  ]
+}

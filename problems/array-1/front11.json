@@ -1,0 +1,50 @@
+{
+  "topicId": "array-1",
+  "id": "front11",
+  "difficulty": "Medium",
+  "functionName": "front11",
+  "title": {
+    "en": "Front 11",
+    "ru": "Передние 11",
+    "uz": "Oldingi 11"
+  },
+  "description": {
+    "en": "Given 2 int arrays, a and b, return a new array length 2 containing their first elements. If either is length 0, use 0 in its place.",
+    "ru": "Даны 2 массива целых a и b. Верните новый массив длины 2, содержащий первые элементы обоих массивов. Если один пуст, вместо него используйте 0.",
+    "uz": "2 butun sonli massiv a va b berilgan. Har ikkala massivning birinchi elementidan iborat yangi 2 o‘lchamli massiv qaytaring. Agar massiv bo‘sh bo‘lsa, uning o‘rniga 0 qo‘ying."
+  },
+  "solution": "function front11(a,b) { let res = []; res.push(a.length > 0 ? a[0] : 0); res.push(b.length > 0 ? b[0] : 0); return res; }",
+  "starterCode": "function front11(a, b) {\n  // type here\n}",
+  "testCases": [
+    {
+      "input": [
+        "[1, 2, 3]",
+        "[7, 9, 8]"
+      ],
+      "output": [
+        1,
+        7
+      ]
+    },
+    {
+      "input": [
+        "[1]",
+        "[]"
+      ],
+      "output": [
+        1,
+        0
+      ]
+    },
+    {
+      "input": [
+        "[]",
+        "[2]"
+      ],
+      "output": [
+        0,
+        2
+      ]
+    }
+  ]
+}

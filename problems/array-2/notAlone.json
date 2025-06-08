@@ -1,0 +1,107 @@
+{
+  "topicId": "array-2",
+  "id": "notAlone",
+  "difficulty": "Medium",
+  "functionName": "notAlone",
+  "title": {
+    "en": "notAlone",
+    "ru": "не одинокий",
+    "uz": "yolg‘iz emas"
+  },
+  "description": {
+    "en": "Return an array where every instance of the given value that is alone (i.e., surrounded by different values) is replaced by the larger of the values to its left and right.",
+    "ru": "Верните массив, в котором каждый встречающийся одинокий элемент, равный заданному значению (т.е. окружённый другими значениями), заменён на большее из его соседних значений.",
+    "uz": "Berilgan qiymatning yolg‘iz holatda (ya’ni atrofidagi qiymatlar undan boshqacha bo‘lsa) bo‘lgan barcha nusxalarini uning chap va o‘ngdagi qo‘shnilari orasidagi kattasi bilan almashtiring."
+  },
+  "solution": "function notAlone(nums, val) {\n  for (let i = 1; i < nums.length - 1; i++) {\n    if (nums[i] === val && nums[i - 1] !== val && nums[i + 1] !== val) {\n      nums[i] = Math.max(nums[i - 1], nums[i + 1]);\n    }\n  }\n  return nums;\n}",
+  "starterCode": "function notAlone(nums, val) {\n  // type here\n}",
+  "testCases": [
+    {
+      "input": [
+        [
+          1,
+          2,
+          3
+        ],
+        2
+      ],
+      "output": [
+        1,
+        3,
+        3
+      ]
+    },
+    {
+      "input": [
+        [
+          1,
+          2,
+          3,
+          2,
+          5,
+          2
+        ],
+        2
+      ],
+      "output": [
+        1,
+        3,
+        3,
+        5,
+        5,
+        2
+      ]
+    },
+    {
+      "input": [
+        [
+          3,
+          4
+        ],
+        3
+      ],
+      "output": [
+        3,
+        4
+      ]
+    },
+    {
+      "input": [
+        [
+          3,
+          3,
+          3
+        ],
+        3
+      ],
+      "output": [
+        3,
+        3,
+        3
+      ]
+    },
+    {
+      "input": [
+        [
+          1,
+          2,
+          1,
+          2,
+          1,
+          2,
+          1
+        ],
+        2
+      ],
+      "output": [
+        1,
+        1,
+        1,
+        1,
+        1,
+        2,
+        1
+      ]
+    }
+  ]
+}

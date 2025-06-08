@@ -1,0 +1,50 @@
+{
+  "topicId": "string-3",
+  "id": "maxBlock",
+  "difficulty": "Medium",
+  "functionName": "maxBlock",
+  "title": {
+    "en": "maxBlock",
+    "ru": "максимальный блок",
+    "uz": "eng katta blok"
+  },
+  "description": {
+    "en": "Given a string, return the length of the largest 'block' in the string. A block is a run of adjacent chars that are the same.",
+    "ru": "Дана строка. Верните длину самого длинного 'блока' в строке. Блок — это последовательность одинаковых соседних символов.",
+    "uz": "Berilgan satrda eng uzun ketma-ket takrorlangan belgilar blokining uzunligini qaytaring."
+  },
+  "solution": "function maxBlock(str) {\n  if (str.length === 0) return 0;\n  let maxLen = 1;\n  let curLen = 1;\n  for (let i = 1; i < str.length; i++) {\n    if (str[i] === str[i - 1]) {\n      curLen++;\n      if (curLen > maxLen) maxLen = curLen;\n    } else {\n      curLen = 1;\n    }\n  }\n  return maxLen;\n}",
+  "starterCode": "function maxBlock(str) {\n  // type here\n}",
+  "testCases": [
+    {
+      "input": [
+        "hoopla"
+      ],
+      "output": 2
+    },
+    {
+      "input": [
+        "abbCCCddDDDeeEEE"
+      ],
+      "output": 3
+    },
+    {
+      "input": [
+        ""
+      ],
+      "output": 0
+    },
+    {
+      "input": [
+        "xyz"
+      ],
+      "output": 1
+    },
+    {
+      "input": [
+        "xxyzxx"
+      ],
+      "output": 2
+    }
+  ]
+}

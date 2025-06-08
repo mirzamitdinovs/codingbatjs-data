@@ -1,0 +1,50 @@
+{
+  "topicId": "recursion-1",
+  "id": "countx",
+  "difficulty": "Easy",
+  "functionName": "countX",
+  "title": {
+    "en": "Count X",
+    "ru": "Подсчет символов 'x'",
+    "uz": "'x' harfini sanash"
+  },
+  "description": {
+    "en": "Given a string, compute recursively the number of lowercase 'x' chars in the string.",
+    "ru": "Дана строка. Рекурсивно подсчитайте количество строчных символов 'x' в строке.",
+    "uz": "Berilgan satrda rekursiv ravishda kichik harf 'x' lar sonini hisoblang."
+  },
+  "solution": "function countX(str) {\n  if (str.length === 0) return 0;\n  let count = (str.charAt(0) === 'x') ? 1 : 0;\n  return count + countX(str.substring(1));\n}",
+  "starterCode": "function countX(str) {\n  // type here\n}",
+  "testCases": [
+    {
+      "input": [
+        "xxhixx"
+      ],
+      "output": 4
+    },
+    {
+      "input": [
+        "xhixhix"
+      ],
+      "output": 3
+    },
+    {
+      "input": [
+        "hi"
+      ],
+      "output": 0
+    },
+    {
+      "input": [
+        "h"
+      ],
+      "output": 0
+    },
+    {
+      "input": [
+        "x"
+      ],
+      "output": 1
+    }
+  ]
+}

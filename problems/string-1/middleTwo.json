@@ -1,0 +1,38 @@
+{
+  "topicId": "string-1",
+  "id": "middleTwo",
+  "difficulty": "Easy",
+  "functionName": "middleTwo",
+  "title": {
+    "en": "Middle Two",
+    "ru": "Средние два",
+    "uz": "O‘rta ikkita"
+  },
+  "description": {
+    "en": "Given a string of even length, return the middle two chars.",
+    "ru": "Дана строка четной длины. Верните её средние два символа.",
+    "uz": "Juft uzunlikdagi satr berilgan. O‘rta ikki belgini qaytaring."
+  },
+  "solution": "function middleTwo(str) {\n  let mid = str.length / 2;\n  return str.substring(mid - 1, mid + 1);\n}",
+  "starterCode": "function middleTwo(str) {\n  // type here\n}",
+  "testCases": [
+    {
+      "input": [
+        "\"string\""
+      ],
+      "output": "ri"
+    },
+    {
+      "input": [
+        "\"code\""
+      ],
+      "output": "od"
+    },
+    {
+      "input": [
+        "\"Practice\""
+      ],
+      "output": "ct"
+    }
+  ]
+}

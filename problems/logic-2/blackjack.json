@@ -1,0 +1,62 @@
+{
+  "topicId": "logic-2",
+  "id": "blackjack",
+  "difficulty": "Medium",
+  "functionName": "blackjack",
+  "title": {
+    "en": "Blackjack",
+    "ru": "Блэкджек",
+    "uz": "Qora Jak"
+  },
+  "description": {
+    "en": "Given 2 int values greater than 0, return whichever value is nearest to 21 without going over. Return 0 if they both go over.",
+    "ru": "Даны 2 целых числа больше 0. Верните то, которое ближе к 21, но не больше. Если оба больше 21, верните 0.",
+    "uz": "2 ta musbat butun son berilgan. 21 ga eng yaqin, lekin oshmaydigan qiymatni qaytaring. Ikkalasi ham 21 dan katta bo‘lsa 0 qaytaring."
+  },
+  "solution": "function blackjack(a, b) {\n  if (a > 21 && b > 21) return 0;\n  if (a > 21) return b;\n  if (b > 21) return a;\n  return (21 - a) <= (21 - b) ? a : b;\n}",
+  "starterCode": "function blackjack(a, b) {\n  // type here\n}",
+  "testCases": [
+    {
+      "input": [
+        "19",
+        "21"
+      ],
+      "output": 21
+    },
+    {
+      "input": [
+        "21",
+        "19"
+      ],
+      "output": 21
+    },
+    {
+      "input": [
+        "19",
+        "22"
+      ],
+      "output": 19
+    },
+    {
+      "input": [
+        "22",
+        "22"
+      ],
+      "output": 0
+    },
+    {
+      "input": [
+        "22",
+        "23"
+      ],
+      "output": 0
+    },
+    {
+      "input": [
+        "20",
+        "18"
+      ],
+      "output": 20
+    }
+  ]
+}

@@ -1,0 +1,75 @@
+{
+  "topicId": "array-2",
+  "id": "sum28",
+  "difficulty": "Easy",
+  "functionName": "sum28",
+  "title": {
+    "en": "sum28",
+    "ru": "сумма 28",
+    "uz": "28 yig‘indisi"
+  },
+  "description": {
+    "en": "Given an array of ints, return true if the sum of all the 2's in the array is exactly 8.",
+    "ru": "Дан массив целых чисел. Верните true, если сумма всех двоек в массиве ровна 8.",
+    "uz": "Butun sonlardan iborat massiv berilgan. Agar massivdagi barcha 2 sonlarining yig‘indisi aniq 8 ga teng bo‘lsa, true qaytaring."
+  },
+  "solution": "function sum28(nums) {\n  let sum = 0;\n  for (let num of nums) {\n    if (num === 2) {\n      sum += 2;\n    }\n  }\n  return sum === 8;\n}",
+  "starterCode": "function sum28(nums) {\n  // type here\n}",
+  "testCases": [
+    {
+      "input": [
+        [
+          2,
+          3,
+          2,
+          2,
+          4,
+          2
+        ]
+      ],
+      "output": true
+    },
+    {
+      "input": [
+        [
+          2,
+          3,
+          2,
+          2,
+          4,
+          2,
+          2
+        ]
+      ],
+      "output": false
+    },
+    {
+      "input": [
+        [
+          1,
+          2,
+          3,
+          4
+        ]
+      ],
+      "output": false
+    },
+    {
+      "input": [
+        [
+          2,
+          2,
+          2,
+          2
+        ]
+      ],
+      "output": true
+    },
+    {
+      "input": [
+        []
+      ],
+      "output": false
+    }
+  ]
+}

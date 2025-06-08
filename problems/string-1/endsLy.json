@@ -1,0 +1,38 @@
+{
+  "topicId": "string-1",
+  "id": "endsLy",
+  "difficulty": "Easy",
+  "functionName": "endsLy",
+  "title": {
+    "en": "Ends Ly",
+    "ru": "Окончание Ly",
+    "uz": "Oxiri Ly"
+  },
+  "description": {
+    "en": "Given a string, return true if it ends with \"ly\".",
+    "ru": "Дана строка. Верните true, если она оканчивается на \"ly\".",
+    "uz": "Satr berilgan. Oxirida \"ly\" bo‘lsa true qaytaring."
+  },
+  "solution": "function endsLy(str) {\n  return str.length >= 2 && str.substring(str.length - 2) === 'ly';\n}",
+  "starterCode": "function endsLy(str) {\n  // type here\n}",
+  "testCases": [
+    {
+      "input": [
+        "\"oddly\""
+      ],
+      "output": true
+    },
+    {
+      "input": [
+        "\"y\""
+      ],
+      "output": false
+    },
+    {
+      "input": [
+        "\"oddy\""
+      ],
+      "output": false
+    }
+  ]
+}

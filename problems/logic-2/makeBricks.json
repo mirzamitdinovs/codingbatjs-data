@@ -1,0 +1,84 @@
+{
+  "topicId": "logic-2",
+  "id": "makeBricks",
+  "difficulty": "Medium",
+  "functionName": "makeBricks",
+  "title": {
+    "en": "Make Bricks",
+    "ru": "Сделать кирпичи",
+    "uz": "G‘ishtlar yasash"
+  },
+  "description": {
+    "en": "We want to make a row of bricks that is 'goal' inches long. We have a number of small bricks (1 inch each) and big bricks (5 inches each). Return true if it is possible to make the goal by choosing from the given bricks. This is a little harder than it looks and can be done without any loops.",
+    "ru": "Нужно выложить ряд из кирпичей длиной goal дюймов. Есть маленькие кирпичи длиной 1 дюйм и большие — 5 дюймов. Верните true, если можно выложить цель, используя данные кирпичи. Можно решить без циклов.",
+    "uz": "Ma’lum bir goal dyuymli g‘isht qatori yasashimiz kerak. Qo‘limizda 1 dyuymlik kichik g‘ishtlar va 5 dyuymlik katta g‘ishtlar bor. Maqsadga erishish mumkin bo‘lsa true qaytaring. Buni siklsiz yechish mumkin."
+  },
+  "solution": "function makeBricks(small, big, goal) {\n  const maxBig = Math.min(Math.floor(goal / 5), big);\n  const remainder = goal - maxBig * 5;\n  return remainder <= small;\n}",
+  "starterCode": "function makeBricks(small, big, goal) {\n  // type here\n}",
+  "testCases": [
+    {
+      "input": [
+        "3",
+        "1",
+        "8"
+      ],
+      "output": true
+    },
+    {
+      "input": [
+        "3",
+        "1",
+        "9"
+      ],
+      "output": false
+    },
+    {
+      "input": [
+        "3",
+        "2",
+        "10"
+      ],
+      "output": true
+    },
+    {
+      "input": [
+        "3",
+        "2",
+        "8"
+      ],
+      "output": true
+    },
+    {
+      "input": [
+        "3",
+        "2",
+        "9"
+      ],
+      "output": false
+    },
+    {
+      "input": [
+        "6",
+        "1",
+        "11"
+      ],
+      "output": true
+    },
+    {
+      "input": [
+        "6",
+        "0",
+        "11"
+      ],
+      "output": false
+    },
+    {
+      "input": [
+        "1",
+        "4",
+        "11"
+      ],
+      "output": true
+    }
+  ]
+}

@@ -1,0 +1,50 @@
+{
+  "topicId": "string-2",
+  "id": "bobThere",
+  "difficulty": "Medium",
+  "functionName": "bobThere",
+  "title": {
+    "en": "bobThere",
+    "ru": "bob там",
+    "uz": "bob mavjud"
+  },
+  "description": {
+    "en": "Return true if the given string contains a 'bob' string, but where the middle 'o' char can be any char.",
+    "ru": "Верните true, если в строке есть подстрока \"bob\", где средний символ может быть любым.",
+    "uz": "Berilgan satrda 'bob' qismi bo‘lsa, ammo o‘rtadagi 'o' harfi istalgan belgi bo‘lishi mumkin bo‘lsa, true qaytaring."
+  },
+  "solution": "function bobThere(str) {\n  for (let i = 0; i < str.length - 2; i++) {\n    if (str.charAt(i) === 'b' && str.charAt(i + 2) === 'b') {\n      return true;\n    }\n  }\n  return false;\n}",
+  "starterCode": "function bobThere(str) {\n  // type here\n}",
+  "testCases": [
+    {
+      "input": [
+        "abcbob"
+      ],
+      "output": true
+    },
+    {
+      "input": [
+        "b9b"
+      ],
+      "output": true
+    },
+    {
+      "input": [
+        "bac"
+      ],
+      "output": false
+    },
+    {
+      "input": [
+        "bbb"
+      ],
+      "output": true
+    },
+    {
+      "input": [
+        ""
+      ],
+      "output": false
+    }
+  ]
+}

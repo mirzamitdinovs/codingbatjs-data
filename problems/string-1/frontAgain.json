@@ -1,0 +1,38 @@
+{
+  "topicId": "string-1",
+  "id": "frontAgain",
+  "difficulty": "Easy",
+  "functionName": "frontAgain",
+  "title": {
+    "en": "Front Again",
+    "ru": "Схожие начала",
+    "uz": "Avvalo va oxir bir xil"
+  },
+  "description": {
+    "en": "Given a string, return true if the first 2 chars also appear at the end of the string.",
+    "ru": "Дана строка. Верните true, если первые 2 символа совпадают с последними 2.",
+    "uz": "Satr berilgan. Agar birinchi 2 belgisi oxirgi 2 bilan bir xil bo‘lsa, true qaytaring."
+  },
+  "solution": "function frontAgain(str) {\n  return str.length >= 2 && str.substring(0, 2) === str.substring(str.length - 2);\n}",
+  "starterCode": "function frontAgain(str) {\n  // type here\n}",
+  "testCases": [
+    {
+      "input": [
+        "\"edited\""
+      ],
+      "output": true
+    },
+    {
+      "input": [
+        "\"edit\""
+      ],
+      "output": false
+    },
+    {
+      "input": [
+        "\"ed\""
+      ],
+      "output": true
+    }
+  ]
+}

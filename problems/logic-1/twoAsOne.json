@@ -1,0 +1,44 @@
+{
+  "topicId": "logic-1",
+  "id": "twoAsOne",
+  "difficulty": "Medium",
+  "functionName": "twoAsOne",
+  "title": {
+    "en": "Two As One",
+    "ru": "Два как один",
+    "uz": "Ikki birga"
+  },
+  "description": {
+    "en": "Given three ints, return true if one is the sum of the other two.",
+    "ru": "Даны три целых. Верните true, если одно из них равно сумме двух других.",
+    "uz": "Uchta butun son berilgan. Agar biri boshqalar yig‘indisiga teng bo‘lsa true qaytaring."
+  },
+  "solution": "function twoAsOne(a, b, c) { return a + b === c || a + c === b || b + c === a; }",
+  "starterCode": "function twoAsOne(a, b, c) {\n  // type here\n}",
+  "testCases": [
+    {
+      "input": [
+        "1",
+        "2",
+        "3"
+      ],
+      "output": true
+    },
+    {
+      "input": [
+        "3",
+        "1",
+        "2"
+      ],
+      "output": true
+    },
+    {
+      "input": [
+        "3",
+        "2",
+        "2"
+      ],
+      "output": false
+    }
+  ]
+}

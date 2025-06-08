@@ -1,0 +1,95 @@
+{
+  "topicId": "array-2",
+  "id": "sameEnds",
+  "difficulty": "Medium",
+  "functionName": "sameEnds",
+  "title": {
+    "en": "sameEnds",
+    "ru": "одинаковые концы",
+    "uz": "xuddi shunday oxirlar"
+  },
+  "description": {
+    "en": "Given an array of ints, return true if the group of N numbers at the start and end of the array are the same.",
+    "ru": "Дан массив целых чисел. Верните true, если группа из N чисел в начале и в конце массива совпадает.",
+    "uz": "Butun sonlar massiv berilgan. Agar massivning boshidagi va oxiridagi N ta sonlar guruhi bir xil bo‘lsa, true qaytaring."
+  },
+  "solution": "function sameEnds(nums, len) {\n  for (let i = 0; i < len; i++) {\n    if (nums[i] !== nums[nums.length - len + i]) {\n      return false;\n    }\n  }\n  return true;\n}",
+  "starterCode": "function sameEnds(nums, len) {\n  // type here\n}",
+  "testCases": [
+    {
+      "input": [
+        [
+          5,
+          6,
+          45,
+          99,
+          13,
+          5,
+          6
+        ],
+        1
+      ],
+      "output": true
+    },
+    {
+      "input": [
+        [
+          5,
+          6,
+          45,
+          99,
+          13,
+          5,
+          6
+        ],
+        2
+      ],
+      "output": false
+    },
+    {
+      "input": [
+        [
+          5,
+          6,
+          45,
+          99,
+          13,
+          5,
+          6
+        ],
+        0
+      ],
+      "output": true
+    },
+    {
+      "input": [
+        [
+          1,
+          2,
+          3,
+          4,
+          1,
+          2,
+          3
+        ],
+        3
+      ],
+      "output": true
+    },
+    {
+      "input": [
+        [
+          1,
+          2,
+          3,
+          4,
+          1,
+          2,
+          3
+        ],
+        2
+      ],
+      "output": false
+    }
+  ]
+}

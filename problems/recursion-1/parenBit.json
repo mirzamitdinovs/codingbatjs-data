@@ -1,0 +1,50 @@
+{
+  "topicId": "recursion-1",
+  "id": "parenbit",
+  "difficulty": "Medium",
+  "functionName": "parenBit",
+  "title": {
+    "en": "Paren Bit",
+    "ru": "Скобочная часть",
+    "uz": "Qavsli qism"
+  },
+  "description": {
+    "en": "Given a string that contains a single pair of parentheses, compute recursively a new string made of only the parentheses and their contents.",
+    "ru": "Дана строка, содержащая одну пару скобок. Рекурсивно верните новую строку, состоящую только из скобок и их содержимого.",
+    "uz": "Berilgan satrda bitta qavs jufti mavjud. Rekursiv ravishda faqat qavslar va ularning ichidagi qismdan iborat yangi satrni qaytaring."
+  },
+  "solution": "function parenBit(str) {\n  if (str.charAt(0) === '(') {\n    if (str.charAt(str.length - 1) === ')') {\n      return str;\n    } else {\n      return parenBit(str.substring(0, str.length - 1));\n    }\n  } else {\n    return parenBit(str.substring(1));\n  }\n}",
+  "starterCode": "function parenBit(str) {\n  // type here\n}",
+  "testCases": [
+    {
+      "input": [
+        "xyz(abc)123"
+      ],
+      "output": "(abc)"
+    },
+    {
+      "input": [
+        "x(hello)"
+      ],
+      "output": "(hello)"
+    },
+    {
+      "input": [
+        "(xy)1"
+      ],
+      "output": "(xy)"
+    },
+    {
+      "input": [
+        "(abc)"
+      ],
+      "output": "(abc)"
+    },
+    {
+      "input": [
+        "abc(123)xyz"
+      ],
+      "output": "(123)"
+    }
+  ]
+}

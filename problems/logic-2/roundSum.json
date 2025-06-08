@@ -1,0 +1,68 @@
+{
+  "topicId": "logic-2",
+  "id": "roundSum",
+  "difficulty": "Medium",
+  "functionName": "roundSum",
+  "title": {
+    "en": "Round Sum",
+    "ru": "Округленная сумма",
+    "uz": "Yig‘indi yaxlitlash"
+  },
+  "description": {
+    "en": "For this problem, we'll round an int value up to the next multiple of 10 if its rightmost digit is 5 or more, so 15 rounds up to 20. Alternately, round down to the previous multiple of 10 if its rightmost digit is less than 5, so 12 rounds down to 10. Given 3 ints, a b c, return the sum of their rounded values.",
+    "ru": "В этой задаче округляем число до следующего десятка, если последняя цифра 5 или больше (15 округляется до 20), иначе до предыдущего десятка (12 округляется до 10). Даны 3 числа a, b, c. Верните сумму округленных значений.",
+    "uz": "Bu masalada butun sonni oxirgi raqami 5 yoki undan katta bo‘lsa keyingi o‘nlikka, kichik bo‘lsa oldingi o‘nlikka yaxlitlaymiz. Masalan, 15 → 20, 12 → 10. 3 ta butun son a, b, c berilgan. Ularning yaxlitlangan yig‘indisini qaytaring."
+  },
+  "solution": "function round10(num) {\n  const mod = num % 10;\n  if (mod >= 5) {\n    return num + (10 - mod);\n  } else {\n    return num - mod;\n  }\n}\n\nfunction roundSum(a, b, c) {\n  return round10(a) + round10(b) + round10(c);\n}",
+  "starterCode": "function roundSum(a, b, c) {\n  // type here\n}",
+  "testCases": [
+    {
+      "input": [
+        "16",
+        "17",
+        "18"
+      ],
+      "output": 60
+    },
+    {
+      "input": [
+        "12",
+        "13",
+        "14"
+      ],
+      "output": 30
+    },
+    {
+      "input": [
+        "6",
+        "4",
+        "4"
+      ],
+      "output": 10
+    },
+    {
+      "input": [
+        "4",
+        "6",
+        "15"
+      ],
+      "output": 30
+    },
+    {
+      "input": [
+        "5",
+        "6",
+        "7"
+      ],
+      "output": 20
+    },
+    {
+      "input": [
+        "24",
+        "25",
+        "26"
+      ],
+      "output": 80
+    }
+  ]
+}

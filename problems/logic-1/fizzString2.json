@@ -1,0 +1,68 @@
+{
+  "topicId": "logic-1",
+  "id": "fizzString2",
+  "difficulty": "Easy",
+  "functionName": "fizzString2",
+  "title": {
+    "en": "Fizz String 2",
+    "ru": "Строка Физз 2",
+    "uz": "Fizz String 2"
+  },
+  "description": {
+    "en": "Given an int n, return the string form of the number followed by '!'. So the int 6 yields '6!'. However, if the number is divisible by 3, use 'Fizz' instead of the number, and if the number is divisible by 5, use 'Buzz'. If divisible by both 3 and 5, use 'FizzBuzz'.",
+    "ru": "Дано целое число n. Верните строковое представление числа с восклицательным знаком в конце. Например, 6 -> '6!'. Но если число делится на 3, используйте 'Fizz', если на 5 — 'Buzz', а если на оба — 'FizzBuzz'.",
+    "uz": "n butun soni berilgan. Uni matnga aylantirib, oxiriga '!' belgisi qo‘shib qaytaring. Masalan, 6 -> '6!'. Ammo agar son 3 ga bo‘linadigan bo‘lsa, 'Fizz', 5 ga bo‘linsa 'Buzz', ikkala holatda ham bo‘linadigan bo‘lsa, 'FizzBuzz' qaytaring."
+  },
+  "solution": "function fizzString2(n) {\n  if (n % 3 === 0 && n % 5 === 0) {\n    return \"FizzBuzz!\";\n  } else if (n % 3 === 0) {\n    return \"Fizz!\";\n  } else if (n % 5 === 0) {\n    return \"Buzz!\";\n  } else {\n    return n + \"!\";\n  }\n}",
+  "starterCode": "function fizzString2(n) {\n  // type here\n}",
+  "testCases": [
+    {
+      "input": [
+        "1"
+      ],
+      "output": "1!"
+    },
+    {
+      "input": [
+        "2"
+      ],
+      "output": "2!"
+    },
+    {
+      "input": [
+        "3"
+      ],
+      "output": "Fizz!"
+    },
+    {
+      "input": [
+        "5"
+      ],
+      "output": "Buzz!"
+    },
+    {
+      "input": [
+        "15"
+      ],
+      "output": "FizzBuzz!"
+    },
+    {
+      "input": [
+        "16"
+      ],
+      "output": "16!"
+    },
+    {
+      "input": [
+        "18"
+      ],
+      "output": "Fizz!"
+    },
+    {
+      "input": [
+        "25"
+      ],
+      "output": "Buzz!"
+    }
+  ]
+}

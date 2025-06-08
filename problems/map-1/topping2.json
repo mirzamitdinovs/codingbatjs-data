@@ -1,0 +1,60 @@
+{
+  "topicId": "map-1",
+  "id": "topping2",
+  "difficulty": "Easy",
+  "functionName": "topping2",
+  "title": {
+    "en": "Topping2",
+    "ru": "Топпинг 2",
+    "uz": "Topping2"
+  },
+  "description": {
+    "en": "Given a map of food keys and topping values, modify and return the map as follows: if the key \"ice cream\" has a value, set the key \"yogurt\" to have that same value. If the key \"spinach\" has a value, change that value to \"nuts\".",
+    "ru": "Дана карта с ключами еды и значениями топпингов. Измените и верните карту следующим образом: если ключ \"ice cream\" имеет значение, установите ключу \"yogurt\" то же значение. Если ключ \"spinach\" имеет значение, измените это значение на \"nuts\".",
+    "uz": "Ovqat kalitlari va topping qiymatlari berilgan mapni o‘zgartiring va qaytaring: agar \"ice cream\" kalitida qiymat bo‘lsa, \"yogurt\" kalitining qiymatini shunga o‘rnatilsin. Agar \"spinach\" kalitida qiymat bo‘lsa, uning qiymatini \"nuts\" ga o‘zgartiring."
+  },
+  "solution": "function topping2(map) {\n  if (map.hasOwnProperty('ice cream')) {\n    map['yogurt'] = map['ice cream'];\n  }\n  if (map.hasOwnProperty('spinach')) {\n    map['spinach'] = 'nuts';\n  }\n  return map;\n}",
+  "starterCode": "function topping2(map) {\n  // type here\n}",
+  "testCases": [
+    {
+      "input": [
+        {
+          "ice cream": "cherry",
+          "spinach": "dirt"
+        }
+      ],
+      "output": {
+        "ice cream": "cherry",
+        "spinach": "nuts",
+        "yogurt": "cherry"
+      }
+    },
+    {
+      "input": [
+        {
+          "spinach": "dirt"
+        }
+      ],
+      "output": {
+        "spinach": "nuts"
+      }
+    },
+    {
+      "input": [
+        {
+          "ice cream": "cherry"
+        }
+      ],
+      "output": {
+        "ice cream": "cherry",
+        "yogurt": "cherry"
+      }
+    },
+    {
+      "input": [
+        {}
+      ],
+      "output": {}
+    }
+  ]
+}

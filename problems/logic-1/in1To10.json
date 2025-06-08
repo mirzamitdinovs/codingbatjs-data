@@ -1,0 +1,41 @@
+{
+  "topicId": "logic-1",
+  "id": "in1To10",
+  "difficulty": "Easy",
+  "functionName": "in1To10",
+  "title": {
+    "en": "In 1 To 10",
+    "ru": "От 1 до 10",
+    "uz": "1 dan 10 gacha"
+  },
+  "description": {
+    "en": "Given a number n, return true if n is between 1 and 10 inclusive, or if outside that range and 'outsideMode' is true.",
+    "ru": "Дано число n. Верните true, если n от 1 до 10 включительно или вне этого диапазона, если outsideMode true.",
+    "uz": "n soni berilgan. Agar n 1 dan 10 gacha bo‘lsa yoki tashqarida bo‘lsa va outsideMode true bo‘lsa true qaytaring."
+  },
+  "solution": "function in1To10(n, outsideMode) { if (outsideMode) return n <= 1 || n >= 10; return n >= 1 && n <= 10; }",
+  "starterCode": "function in1To10(n, outsideMode) {\n  // type here\n}",
+  "testCases": [
+    {
+      "input": [
+        "5",
+        "false"
+      ],
+      "output": true
+    },
+    {
+      "input": [
+        "11",
+        "false"
+      ],
+      "output": false
+    },
+    {
+      "input": [
+        "11",
+        "true"
+      ],
+      "output": true
+    }
+  ]
+}

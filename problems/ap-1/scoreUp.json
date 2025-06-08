@@ -1,0 +1,48 @@
+{
+  "topicId": "ap-1",
+  "id": "scoreup",
+  "difficulty": "Medium",
+  "functionName": "scoreUp",
+  "title": {
+    "en": "Score Up",
+    "ru": "Подсчет баллов",
+    "uz": "Ballarni hisoblash"
+  },
+  "description": {
+    "en": "The \"key\" array contains the correct answers to an exam, like [\"a\", \"a\", \"b\", \"b\"]. The \"answers\" array contains a student's answers. The two arrays are not empty and are the same length. Return the student's score. For each correct answer, the student gets +4 points. For a blank answer (\"?\"), the student gets 0 points. For an incorrect answer, the student loses 1 point.",
+    "ru": "Массив \"key\" содержит правильные ответы на экзамен, например [\"a\", \"a\", \"b\", \"b\"]. Массив \"answers\" содержит ответы студента. Оба массива непустые и одинаковой длины. Верните количество набранных баллов. За каждый правильный ответ студент получает +4 балла. За пропущенный ответ (\"?\") — 0 баллов. За неправильный ответ — минус 1 балл.",
+    "uz": "\"key\" massivi testning to‘g‘ri javoblarini, masalan [\"a\", \"a\", \"b\", \"b\"] ni o‘z ichiga oladi. \"answers\" massivi esa talabani javoblarini o‘z ichiga oladi. Har ikki massiv bo‘sh emas va uzunligi teng. To‘g‘ri javob uchun +4 ball, bo‘sh javob (\"?\") uchun 0 ball, noto‘g‘ri javob uchun esa -1 ball beriladi. Talabaning umumiy ballini qaytaring."
+  },
+  "solution": "function scoreUp(key, answers) {\n  let score = 0;\n  for (let i = 0; i < key.length; i++) {\n    if (answers[i] === \"?\") {\n      continue;\n    } else if (answers[i] === key[i]) {\n      score += 4;\n    } else {\n      score -= 1;\n    }\n  }\n  return score;\n}",
+  "starterCode": "function scoreUp(key, answers) {\n  // type here\n}",
+  "testCases": [
+    {
+      "input": [
+        "[\"a\", \"a\", \"b\", \"b\"]",
+        "[\"a\", \"c\", \"b\", \"c\"]"
+      ],
+      "output": 6
+    },
+    {
+      "input": [
+        "[\"a\", \"a\", \"b\", \"b\"]",
+        "[\"a\", \"a\", \"b\", \"b\"]"
+      ],
+      "output": 16
+    },
+    {
+      "input": [
+        "[\"a\", \"a\", \"b\", \"b\"]",
+        "[\"a\", \"a\", \"b\", \"?\"]"
+      ],
+      "output": 12
+    },
+    {
+      "input": [
+        "[\"a\", \"b\", \"c\"]",
+        "[\"?\", \"?\", \"?\"]"
+      ],
+      "output": 0
+    }
+  ]
+}

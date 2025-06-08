@@ -1,0 +1,58 @@
+{
+  "topicId": "functional-1",
+  "id": "math1",
+  "difficulty": "Easy",
+  "functionName": "math1",
+  "title": {
+    "en": "Math1",
+    "ru": "Математика 1",
+    "uz": "Matematika 1"
+  },
+  "description": {
+    "en": "Given an array of integers, return a new array where each value is increased by 1 and then multiplied by 10.",
+    "ru": "Дан массив целых чисел. Верните новый массив, в котором каждое значение увеличено на 1 и затем умножено на 10.",
+    "uz": "Butun sonlar massiv berilgan. Har bir qiymatga 1 qo‘shilib, keyin 10 ga ko‘paytirilgan yangi massivni qaytaring."
+  },
+  "solution": "function math1(nums) {\n  return nums.map(n => (n + 1) * 10);\n}",
+  "starterCode": "function math1(nums) {\n  // type here\n}",
+  "testCases": [
+    {
+      "input": [
+        [
+          1,
+          2,
+          3
+        ]
+      ],
+      "output": [
+        20,
+        30,
+        40
+      ]
+    },
+    {
+      "input": [
+        [
+          6,
+          8,
+          6,
+          8,
+          -1
+        ]
+      ],
+      "output": [
+        70,
+        90,
+        70,
+        90,
+        0
+      ]
+    },
+    {
+      "input": [
+        []
+      ],
+      "output": []
+    }
+  ]
+}

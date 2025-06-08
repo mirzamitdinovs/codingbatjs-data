@@ -1,0 +1,80 @@
+{
+  "topicId": "recursion-2",
+  "id": "groupsum6",
+  "difficulty": "Medium",
+  "functionName": "groupSum6",
+  "title": {
+    "en": "Group Sum 6",
+    "ru": "Сумма группы с шестёрками",
+    "uz": "Guruh yig'indisi 6 bilan"
+  },
+  "description": {
+    "en": "Given an array of ints, is it possible to choose a group of some of the ints, beginning at the start index, such that the group sums to the given target, with the constraint that all 6's must be chosen?",
+    "ru": "Дан массив целых чисел. Можно ли выбрать группу чисел, начиная с указанного индекса, чтобы сумма этой группы равнялась заданному числу, при условии, что все 6 должны быть выбраны?",
+    "uz": "Berilgan butun sonlar massividan boshlang‘ich indeksdan boshlab ba’zi elementlarni tanlab, ularning yig‘indisi berilgan maqsadga teng bo‘lishi mumkinmi, bunda barcha 6 lar tanlanishi kerak?"
+  },
+  "solution": "function groupSum6(start, nums, target) {\n  if (start >= nums.length) return target === 0;\n  if (nums[start] === 6) {\n    return groupSum6(start + 1, nums, target - 6);\n  }\n  if (groupSum6(start + 1, nums, target - nums[start])) return true;\n  if (groupSum6(start + 1, nums, target)) return true;\n  return false;\n}",
+  "starterCode": "function groupSum6(start, nums, target) {\n  // type here\n}",
+  "testCases": [
+    {
+      "input": [
+        0,
+        [
+          5,
+          6,
+          2
+        ],
+        8
+      ],
+      "output": true
+    },
+    {
+      "input": [
+        0,
+        [
+          5,
+          6,
+          2
+        ],
+        9
+      ],
+      "output": false
+    },
+    {
+      "input": [
+        0,
+        [
+          5,
+          6,
+          2
+        ],
+        7
+      ],
+      "output": false
+    },
+    {
+      "input": [
+        0,
+        [
+          1
+        ],
+        1
+      ],
+      "output": true
+    },
+    {
+      "input": [
+        0,
+        [
+          9,
+          2,
+          6,
+          3,
+          1
+        ],
+        14
+      ],
+      "output": true
+    }
+  ]
+}

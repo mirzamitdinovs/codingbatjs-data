@@ -1,0 +1,55 @@
+{
+  "topicId": "recursion-1",
+  "id": "powern",
+  "difficulty": "Easy",
+  "functionName": "powerN",
+  "title": {
+    "en": "Power N",
+    "ru": "Степень N",
+    "uz": "N-daraja"
+  },
+  "description": {
+    "en": "Given base and n that are both integers, compute recursively (no loops) the value of base to the n power, that is, base^n.",
+    "ru": "Даны целые числа base и n. Рекурсивно (без циклов) вычислите base в степени n, то есть base^n.",
+    "uz": "base va n butun sonlari berilgan. Rekursiv tarzda (tsiklsiz) base ni n-darajaga oshiring, ya’ni base^n ni hisoblang."
+  },
+  "solution": "function powerN(base, n) {\n  if (n === 0) return 1;\n  return base * powerN(base, n - 1);\n}",
+  "starterCode": "function powerN(base, n) {\n  // type here\n}",
+  "testCases": [
+    {
+      "input": [
+        "3",
+        "1"
+      ],
+      "output": 3
+    },
+    {
+      "input": [
+        "3",
+        "2"
+      ],
+      "output": 9
+    },
+    {
+      "input": [
+        "3",
+        "3"
+      ],
+      "output": 27
+    },
+    {
+      "input": [
+        "2",
+        "5"
+      ],
+      "output": 32
+    },
+    {
+      "input": [
+        "10",
+        "0"
+      ],
+      "output": 1
+    }
+  ]
+}

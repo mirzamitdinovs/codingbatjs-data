@@ -1,0 +1,60 @@
+{
+  "topicId": "map-2",
+  "id": "wordappend",
+  "difficulty": "Medium",
+  "functionName": "wordAppend",
+  "title": {
+    "en": "WordAppend",
+    "ru": "Сложение слов",
+    "uz": "So‘zlarni qo‘shish"
+  },
+  "description": {
+    "en": "Given an array of strings, return a string that is built by appending each string to the result every second time the string appears in the array. For example, if a string appears the 2nd, 4th, 6th, etc. time, append it to the result.",
+    "ru": "Дан массив строк. Верните строку, построенную путем добавления каждой строки в результат каждый второй раз, когда она появляется в массиве. Например, если строка появляется 2-й, 4-й, 6-й и т.д. раз, добавьте ее к результату.",
+    "uz": "Satrlar massiv berilgan. Har bir satr massivda 2-, 4-, 6- va hokazo marta uchraganda, uni natijaga qo‘shib boring va oxirida natijani qaytaring."
+  },
+  "solution": "function wordAppend(words) {\n  const map = {};\n  let result = '';\n  for (const word of words) {\n    map[word] = (map[word] || 0) + 1;\n    if (map[word] % 2 === 0) {\n      result += word;\n    }\n  }\n  return result;\n}",
+  "starterCode": "function wordAppend(words) {\n  // type here\n}",
+  "testCases": [
+    {
+      "input": [
+        [
+          "a",
+          "b",
+          "a"
+        ]
+      ],
+      "output": "a"
+    },
+    {
+      "input": [
+        [
+          "a",
+          "b",
+          "a",
+          "c",
+          "a",
+          "d",
+          "a"
+        ]
+      ],
+      "output": "aa"
+    },
+    {
+      "input": [
+        [
+          "a",
+          "",
+          "a"
+        ]
+      ],
+      "output": "a"
+    },
+    {
+      "input": [
+        []
+      ],
+      "output": ""
+    }
+  ]
+}

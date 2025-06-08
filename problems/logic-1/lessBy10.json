@@ -1,0 +1,44 @@
+{
+  "topicId": "logic-1",
+  "id": "lessBy10",
+  "difficulty": "Medium",
+  "functionName": "lessBy10",
+  "title": {
+    "en": "Less By 10",
+    "ru": "Меньше на 10",
+    "uz": "10 ga kichikroq"
+  },
+  "description": {
+    "en": "Given three ints, return true if one is at least 10 less than one of the others.",
+    "ru": "Даны три целых. Верните true, если одно на 10 или более меньше другого.",
+    "uz": "Uchta butun son berilgan. Agar biri boshqasidan 10 yoki undan ko‘p kichik bo‘lsa true qaytaring."
+  },
+  "solution": "function lessBy10(a, b, c) { return Math.abs(a - b) >= 10 || Math.abs(a - c) >= 10 || Math.abs(b - c) >= 10; }",
+  "starterCode": "function lessBy10(a, b, c) {\n  // type here\n}",
+  "testCases": [
+    {
+      "input": [
+        "1",
+        "7",
+        "11"
+      ],
+      "output": true
+    },
+    {
+      "input": [
+        "1",
+        "7",
+        "10"
+      ],
+      "output": false
+    },
+    {
+      "input": [
+        "11",
+        "1",
+        "7"
+      ],
+      "output": true
+    }
+  ]
+}

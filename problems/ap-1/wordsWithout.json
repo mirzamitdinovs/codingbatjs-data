@@ -1,0 +1,62 @@
+{
+  "topicId": "ap-1",
+  "id": "wordswithout",
+  "difficulty": "Medium",
+  "functionName": "wordsWithout",
+  "title": {
+    "en": "Words Without",
+    "ru": "Слова без",
+    "uz": "So‘zlarsiz"
+  },
+  "description": {
+    "en": "Given an array of strings, return a new array without the strings that are equal to the target string. One approach is to count the occurrences of the target string, make a new array of the correct length, and then copy over the correct strings.",
+    "ru": "Дан массив строк. Верните новый массив без строк, равных целевой строке. Один из подходов — подсчитать количество вхождений целевой строки, создать новый массив нужной длины и скопировать в него подходящие строки.",
+    "uz": "Satrlar massividan ma’lum bir maqsad satrga teng bo‘lgan elementlarni olib tashlab, yangi massiv qaytaring. Bitta yondashuv — maqsad satr nechta marta uchrashini sanab chiqish, kerakli uzunlikda yangi massiv yaratish va mos satrlarni unga nusxalash."
+  },
+  "solution": "function wordsWithout(words, target) {\n  let result = [];\n  for (let i = 0; i < words.length; i++) {\n    if (words[i] !== target) {\n      result.push(words[i]);\n    }\n  }\n  return result;\n}",
+  "starterCode": "function wordsWithout(words, target) {\n  // type here\n}",
+  "testCases": [
+    {
+      "input": [
+        "[\"a\", \"b\", \"c\", \"a\"]",
+        "\"a\""
+      ],
+      "output": [
+        "b",
+        "c"
+      ]
+    },
+    {
+      "input": [
+        "[\"a\", \"b\", \"c\", \"a\"]",
+        "\"b\""
+      ],
+      "output": [
+        "a",
+        "c",
+        "a"
+      ]
+    },
+    {
+      "input": [
+        "[\"a\", \"b\", \"c\", \"a\"]",
+        "\"c\""
+      ],
+      "output": [
+        "a",
+        "b",
+        "a"
+      ]
+    },
+    {
+      "input": [
+        "[\"x\", \"y\", \"x\", \"z\"]",
+        "\"x\""
+      ],
+      "output": [
+        "y",
+        "z"
+      ]
+    }
+  ]
+}

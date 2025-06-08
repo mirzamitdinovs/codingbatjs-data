@@ -1,0 +1,50 @@
+{
+  "topicId": "recursion-1",
+  "id": "pairstar",
+  "difficulty": "Easy",
+  "functionName": "pairStar",
+  "title": {
+    "en": "Pair Star",
+    "ru": "Парная звезда",
+    "uz": "Juft yulduzcha"
+  },
+  "description": {
+    "en": "Given a string, compute recursively a new string where identical chars that are adjacent in the original string are separated by a '*'.",
+    "ru": "Дана строка. Рекурсивно верните новую строку, где одинаковые символы, стоящие рядом, разделены '*'.",
+    "uz": "Berilgan satrda rekursiv ravishda qo‘shni joylashgan bir xil belgilar orasiga '*' qo‘yilgan yangi satrni qaytaring."
+  },
+  "solution": "function pairStar(str) {\n  if (str.length <= 1) return str;\n  if (str.charAt(0) === str.charAt(1)) {\n    return str.charAt(0) + '*' + pairStar(str.substring(1));\n  } else {\n    return str.charAt(0) + pairStar(str.substring(1));\n  }\n}",
+  "starterCode": "function pairStar(str) {\n  // type here\n}",
+  "testCases": [
+    {
+      "input": [
+        "hello"
+      ],
+      "output": "hel*lo"
+    },
+    {
+      "input": [
+        "xxyy"
+      ],
+      "output": "x*xy*y"
+    },
+    {
+      "input": [
+        "aaaa"
+      ],
+      "output": "a*a*a*a"
+    },
+    {
+      "input": [
+        "abc"
+      ],
+      "output": "abc"
+    },
+    {
+      "input": [
+        ""
+      ],
+      "output": ""
+    }
+  ]
+}

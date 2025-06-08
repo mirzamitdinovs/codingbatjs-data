@@ -1,0 +1,52 @@
+{
+  "topicId": "functional-1",
+  "id": "copies3",
+  "difficulty": "Easy",
+  "functionName": "copies3",
+  "title": {
+    "en": "Copies3",
+    "ru": "Тройные копии",
+    "uz": "Uch marta nusxa"
+  },
+  "description": {
+    "en": "Given an array of strings, return a new array where each string is replaced by 3 copies of the string concatenated together.",
+    "ru": "Дан массив строк. Верните новый массив, в котором каждая строка заменена на 3 копии этой строки, соединенные вместе.",
+    "uz": "Satrlar massiv berilgan. Har bir satr 3 marta takrorlangan yangi massivni qaytaring."
+  },
+  "solution": "function copies3(strings) {\n  return strings.map(s => s + s + s);\n}",
+  "starterCode": "function copies3(strings) {\n  // type here\n}",
+  "testCases": [
+    {
+      "input": [
+        [
+          "a",
+          "bb",
+          "ccc"
+        ]
+      ],
+      "output": [
+        "aaa",
+        "bbbbbb",
+        "ccccccccc"
+      ]
+    },
+    {
+      "input": [
+        [
+          "hello",
+          "there"
+        ]
+      ],
+      "output": [
+        "hellohellohello",
+        "theretherethere"
+      ]
+    },
+    {
+      "input": [
+        []
+      ],
+      "output": []
+    }
+  ]
+}

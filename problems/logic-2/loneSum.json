@@ -1,0 +1,76 @@
+{
+  "topicId": "logic-2",
+  "id": "loneSum",
+  "difficulty": "Easy",
+  "functionName": "loneSum",
+  "title": {
+    "en": "Lone Sum",
+    "ru": "Уникальная сумма",
+    "uz": "Yagona yig‘indi"
+  },
+  "description": {
+    "en": "Given 3 int values, a b c, return their sum. However, if one of the values is the same as another of the values, it does not count towards the sum.",
+    "ru": "Даны три целых числа a, b и c. Верните их сумму. Однако, если одно из чисел совпадает с другим, оно не считается в сумме.",
+    "uz": "3 ta butun son a, b, c berilgan. Ularning yig‘indisini qaytaring. Ammo agar sonlardan biri boshqasiga teng bo‘lsa, u yig‘indiga qo‘shilmaydi."
+  },
+  "solution": "function loneSum(a, b, c) {\n  let sum = 0;\n  if (a !== b && a !== c) sum += a;\n  if (b !== a && b !== c) sum += b;\n  if (c !== a && c !== b) sum += c;\n  return sum;\n}",
+  "starterCode": "function loneSum(a, b, c) {\n  // type here\n}",
+  "testCases": [
+    {
+      "input": [
+        "1",
+        "2",
+        "3"
+      ],
+      "output": 6
+    },
+    {
+      "input": [
+        "3",
+        "2",
+        "3"
+      ],
+      "output": 2
+    },
+    {
+      "input": [
+        "3",
+        "3",
+        "3"
+      ],
+      "output": 0
+    },
+    {
+      "input": [
+        "9",
+        "2",
+        "2"
+      ],
+      "output": 9
+    },
+    {
+      "input": [
+        "2",
+        "2",
+        "9"
+      ],
+      "output": 9
+    },
+    {
+      "input": [
+        "2",
+        "9",
+        "3"
+      ],
+      "output": 14
+    },
+    {
+      "input": [
+        "4",
+        "4",
+        "9"
+      ],
+      "output": 9
+    }
+  ]
+}

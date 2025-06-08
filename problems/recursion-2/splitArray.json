@@ -1,0 +1,71 @@
+{
+  "topicId": "recursion-2",
+  "id": "splitarray",
+  "difficulty": "Medium",
+  "functionName": "splitArray",
+  "title": {
+    "en": "Split Array",
+    "ru": "Разделить массив",
+    "uz": "Massivni bo‘lish"
+  },
+  "description": {
+    "en": "Given an array of ints, is it possible to divide the ints into two groups, so that the sums of the two groups are the same?",
+    "ru": "Дан массив целых чисел. Можно ли разделить числа на две группы так, чтобы суммы этих групп были равны?",
+    "uz": "Berilgan butun sonlar massivini ikki guruhga bo‘lish mumkinmi, shunda ikkala guruh yig‘indisi teng bo‘ladi?"
+  },
+  "solution": "function splitArray(nums) {\n  function helper(start, sum1, sum2) {\n    if (start >= nums.length) return sum1 === sum2;\n    return helper(start + 1, sum1 + nums[start], sum2) || helper(start + 1, sum1, sum2 + nums[start]);\n  }\n  return helper(0, 0, 0);\n}",
+  "starterCode": "function splitArray(nums) {\n  // type here\n}",
+  "testCases": [
+    {
+      "input": [
+        [
+          2,
+          2
+        ]
+      ],
+      "output": true
+    },
+    {
+      "input": [
+        [
+          2,
+          3
+        ]
+      ],
+      "output": false
+    },
+    {
+      "input": [
+        [
+          5,
+          2,
+          3
+        ]
+      ],
+      "output": true
+    },
+    {
+      "input": [
+        [
+          5,
+          2,
+          2
+        ]
+      ],
+      "output": false
+    },
+    {
+      "input": [
+        [
+          1,
+          1,
+          1,
+          1,
+          1,
+          1
+        ]
+      ],
+      "output": true
+    }
+  ]
+}

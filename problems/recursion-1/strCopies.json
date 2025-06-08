@@ -1,0 +1,60 @@
+{
+  "topicId": "recursion-1",
+  "id": "strcopies",
+  "difficulty": "Medium",
+  "functionName": "strCopies",
+  "title": {
+    "en": "Str Copies",
+    "ru": "Копии подстроки",
+    "uz": "Satr nusxalari"
+  },
+  "description": {
+    "en": "Given a string, a non-empty substring sub, and an integer n, return true if at least n copies of sub appear in the string somewhere, possibly with overlapping. Use recursion.",
+    "ru": "Дана строка, непустая подстрока sub и число n. Верните true, если подстрока sub встречается в строке не менее n раз, возможно с перекрытиями. Используйте рекурсию.",
+    "uz": "Berilgan satr, bo‘sh bo‘lmagan kichik satr sub va n soni. Agar satrda sub kamida n marta (qoplanish bilan ham) uchrasa, true qaytaring. Rekursiyani ishlating."
+  },
+  "solution": "function strCopies(str, sub, n) {\n  if (n <= 0) return true;\n  if (str.length < sub.length) return false;\n  if (str.substring(0, sub.length) === sub) {\n    return strCopies(str.substring(1), sub, n - 1);\n  } else {\n    return strCopies(str.substring(1), sub, n);\n  }\n}",
+  "starterCode": "function strCopies(str, sub, n) {\n  // type here\n}",
+  "testCases": [
+    {
+      "input": [
+        "catcowcat",
+        "cat",
+        2
+      ],
+      "output": true
+    },
+    {
+      "input": [
+        "catcowcat",
+        "cow",
+        2
+      ],
+      "output": false
+    },
+    {
+      "input": [
+        "catcowcat",
+        "cow",
+        1
+      ],
+      "output": true
+    },
+    {
+      "input": [
+        "iiiiii",
+        "iii",
+        3
+      ],
+      "output": true
+    },
+    {
+      "input": [
+        "iiiiii",
+        "iii",
+        4
+      ],
+      "output": false
+    }
+  ]
+}

@@ -1,0 +1,69 @@
+{
+  "topicId": "logic-1",
+  "id": "sumLimit",
+  "difficulty": "Medium",
+  "functionName": "sumLimit",
+  "title": {
+    "en": "Sum Limit",
+    "ru": "Лимит суммы",
+    "uz": "Yig‘indi cheklovi"
+  },
+  "description": {
+    "en": "Given 2 non-negative integers, a and b, return their sum. However, if the number of digits in the sum is more than the number of digits in a, then return a instead.",
+    "ru": "Даны два неотрицательных целых числа a и b. Верните их сумму. Однако, если количество цифр в сумме больше, чем количество цифр в a, верните a.",
+    "uz": "2 ta musbat butun son — a va b berilgan. Ularning yig‘indisini qaytaring. Biroq, agar yig‘indidagi raqamlar soni a sonidagi raqamlar sonidan ko‘p bo‘lsa, a ni qaytaring."
+  },
+  "solution": "function sumLimit(a, b) {\n  const sum = a + b;\n  return String(sum).length > String(a).length ? a : sum;\n}",
+  "starterCode": "function sumLimit(a, b) {\n  // type here\n}",
+  "testCases": [
+    {
+      "input": [
+        "2",
+        "3"
+      ],
+      "output": 5
+    },
+    {
+      "input": [
+        "8",
+        "3"
+      ],
+      "output": 8
+    },
+    {
+      "input": [
+        "8",
+        "1"
+      ],
+      "output": 9
+    },
+    {
+      "input": [
+        "11",
+        "99"
+      ],
+      "output": 11
+    },
+    {
+      "input": [
+        "0",
+        "0"
+      ],
+      "output": 0
+    },
+    {
+      "input": [
+        "99",
+        "1"
+      ],
+      "output": 99
+    },
+    {
+      "input": [
+        "100",
+        "900"
+      ],
+      "output": 100
+    }
+  ]
+}

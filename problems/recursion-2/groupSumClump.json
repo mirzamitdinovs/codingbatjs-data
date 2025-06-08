@@ -1,0 +1,86 @@
+{
+  "topicId": "recursion-2",
+  "id": "groupsumclump",
+  "difficulty": "Medium",
+  "functionName": "groupSumClump",
+  "title": {
+    "en": "Group Sum Clump",
+    "ru": "Сумма группы с кластерами",
+    "uz": "Guruh yig'indisi (klasterlar bilan)"
+  },
+  "description": {
+    "en": "Given an array of ints, is it possible to choose a group of some of the ints, beginning at the start index, such that the group sums to the given target, with the constraint that all identical adjacent numbers must be chosen together as a single group?",
+    "ru": "Дан массив целых чисел. Можно ли выбрать группу чисел, начиная с указанного индекса, чтобы сумма этой группы равнялась заданному числу, при условии, что все одинаковые соседние числа должны быть выбраны вместе как одна группа?",
+    "uz": "Berilgan butun sonlar massividan boshlang‘ich indeksdan boshlab ba’zi elementlarni tanlab, ularning yig‘indisi berilgan maqsadga teng bo‘lishi mumkinmi, bunda bir xil qo‘shni sonlar bitta guruh sifatida birga tanlanishi kerak?"
+  },
+  "solution": "function groupSumClump(start, nums, target) {\n  if (start >= nums.length) return target === 0;\n  let sum = nums[start];\n  let count = 1;\n  while (start + count < nums.length && nums[start] === nums[start + count]) {\n    sum += nums[start + count];\n    count++;\n  }\n  if (groupSumClump(start + count, nums, target - sum)) return true;\n  if (groupSumClump(start + count, nums, target)) return false;\n  return false;\n}",
+  "starterCode": "function groupSumClump(start, nums, target) {\n  // type here\n}",
+  "testCases": [
+    {
+      "input": [
+        0,
+        [
+          2,
+          4,
+          4,
+          8
+        ],
+        14
+      ],
+      "output": true
+    },
+    {
+      "input": [
+        0,
+        [
+          2,
+          4,
+          4,
+          8
+        ],
+        12
+      ],
+      "output": false
+    },
+    {
+      "input": [
+        0,
+        [
+          1,
+          2,
+          4,
+          8,
+          1
+        ],
+        14
+      ],
+      "output": true
+    },
+    {
+      "input": [
+        0,
+        [
+          2,
+          4,
+          4,
+          8
+        ],
+        8
+      ],
+      "output": false
+    },
+    {
+      "input": [
+        0,
+        [
+          8,
+          2,
+          2,
+          1
+        ],
+        9
+      ],
+      "output": true
+    }
+  ]
+}

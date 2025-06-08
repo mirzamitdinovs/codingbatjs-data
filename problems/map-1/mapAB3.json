@@ -1,0 +1,62 @@
+{
+  "topicId": "map-1",
+  "id": "mapab3",
+  "difficulty": "Easy",
+  "functionName": "mapAB3",
+  "title": {
+    "en": "Map AB3",
+    "ru": "Карта AB3",
+    "uz": "Map AB3"
+  },
+  "description": {
+    "en": "Modify and return the given map as follows: if exactly one of the keys \"a\" or \"b\" has a value, set the other key to have that same value.",
+    "ru": "Измените и верните данную карту следующим образом: если ровно один из ключей \"a\" или \"b\" имеет значение, установите другому ключу такое же значение.",
+    "uz": "Berilgan mapni quyidagicha o‘zgartiring va qaytaring: agar faqatgina \"a\" yoki \"b\" kalitlaridan biri qiymatga ega bo‘lsa, boshqa kalitning qiymatini shu qiymatga o‘rnating."
+  },
+  "solution": "function mapAB3(map) {\n  const hasA = map.hasOwnProperty('a');\n  const hasB = map.hasOwnProperty('b');\n  if (hasA && !hasB) {\n    map['b'] = map['a'];\n  } else if (!hasA && hasB) {\n    map['a'] = map['b'];\n  }\n  return map;\n}",
+  "starterCode": "function mapAB3(map) {\n  // type here\n}",
+  "testCases": [
+    {
+      "input": [
+        {
+          "a": "aaa",
+          "c": "cake"
+        }
+      ],
+      "output": {
+        "a": "aaa",
+        "b": "aaa",
+        "c": "cake"
+      }
+    },
+    {
+      "input": [
+        {
+          "b": "bbb"
+        }
+      ],
+      "output": {
+        "a": "bbb",
+        "b": "bbb"
+      }
+    },
+    {
+      "input": [
+        {
+          "a": "aaa",
+          "b": "bbb"
+        }
+      ],
+      "output": {
+        "a": "aaa",
+        "b": "bbb"
+      }
+    },
+    {
+      "input": [
+        {}
+      ],
+      "output": {}
+    }
+  ]
+}

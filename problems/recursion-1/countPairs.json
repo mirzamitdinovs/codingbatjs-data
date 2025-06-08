@@ -1,0 +1,50 @@
+{
+  "topicId": "recursion-1",
+  "id": "countpairs",
+  "difficulty": "Medium",
+  "functionName": "countPairs",
+  "title": {
+    "en": "Count Pairs",
+    "ru": "Подсчет пар",
+    "uz": "Juftliklarni hisoblash"
+  },
+  "description": {
+    "en": "Count recursively the number of 'pairs' in the string. A 'pair' is two instances of a char separated by one char, so 'axa' counts but 'axxa' does not.",
+    "ru": "Рекурсивно подсчитайте количество 'пар' в строке. 'Пара' — это два одинаковых символа с одним символом между ними, например 'axa' считается, а 'axxa' — нет.",
+    "uz": "Satrda rekursiv ravishda 'juftliklar' sonini hisoblang. 'Juftlik' — bu ikki bir xil belgi orasida bitta belgi bo‘lishi, masalan 'axa' hisoblanadi, 'axxa' esa yo‘q."
+  },
+  "solution": "function countPairs(str) {\n  if (str.length < 3) return 0;\n  let count = (str.charAt(0) === str.charAt(2)) ? 1 : 0;\n  return count + countPairs(str.substring(1));\n}",
+  "starterCode": "function countPairs(str) {\n  // type here\n}",
+  "testCases": [
+    {
+      "input": [
+        "axa"
+      ],
+      "output": 1
+    },
+    {
+      "input": [
+        "axax"
+      ],
+      "output": 2
+    },
+    {
+      "input": [
+        "axbx"
+      ],
+      "output": 1
+    },
+    {
+      "input": [
+        "hi"
+      ],
+      "output": 0
+    },
+    {
+      "input": [
+        ""
+      ],
+      "output": 0
+    }
+  ]
+}

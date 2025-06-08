@@ -1,0 +1,56 @@
+{
+  "topicId": "string-2",
+  "id": "xyBalance",
+  "difficulty": "Medium",
+  "functionName": "xyBalance",
+  "title": {
+    "en": "xyBalance",
+    "ru": "Баланс xy",
+    "uz": "xy muvozanati"
+  },
+  "description": {
+    "en": "Given a string, return true if for every 'x' in the string there exists a 'y' somewhere later in the string.",
+    "ru": "Дана строка. Верните true, если для каждого 'x' в строке существует 'y' где-то позже в строке.",
+    "uz": "Berilgan satrda har bir 'x' belgisi uchun undan keyin hech bo‘lmasa bitta 'y' belgisi bo‘lsa, true qaytaring."
+  },
+  "solution": "function xyBalance(str) {\n  let lastY = str.lastIndexOf('y');\n  let lastX = str.lastIndexOf('x');\n  return lastX === -1 || lastX < lastY;\n}",
+  "starterCode": "function xyBalance(str) {\n  // type here\n}",
+  "testCases": [
+    {
+      "input": [
+        "xxyy"
+      ],
+      "output": true
+    },
+    {
+      "input": [
+        "xyxy"
+      ],
+      "output": true
+    },
+    {
+      "input": [
+        "xyx"
+      ],
+      "output": false
+    },
+    {
+      "input": [
+        "xxxyyy"
+      ],
+      "output": true
+    },
+    {
+      "input": [
+        "x"
+      ],
+      "output": false
+    },
+    {
+      "input": [
+        "y"
+      ],
+      "output": true
+    }
+  ]
+}

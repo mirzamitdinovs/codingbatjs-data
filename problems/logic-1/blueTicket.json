@@ -1,0 +1,84 @@
+{
+  "topicId": "logic-1",
+  "id": "blueTicket",
+  "difficulty": "Medium",
+  "functionName": "blueTicket",
+  "title": {
+    "en": "Blue Ticket",
+    "ru": "Синий билет",
+    "uz": "Ko‘k chipta"
+  },
+  "description": {
+    "en": "You have a blue lottery ticket, with integers a, b, and c on it. This makes three pairs, which are: ab, bc, and ac. If any pair sums to exactly 10, return 10. If the sum of ab is exactly 10 more than either bc or ac, return 5. Otherwise, return 0.",
+    "ru": "У вас синий лотерейный билет с числами a, b и c. Это создаёт три пары: ab, bc и ac. Если сумма любой пары ровно 10 — верните 10. Если сумма ab на 10 больше суммы bc или ac — верните 5. В остальных случаях — 0.",
+    "uz": "Sizda a, b va c sonlari yozilgan ko‘k lotereya chipta bor. Bu uchta juftlik hosil qiladi: ab, bc va ac. Agar istalgan juftlikning yig‘indisi aynan 10 bo‘lsa, 10 qaytaring. Agar ab yig‘indisi bc yoki ac yig‘indisidan aynan 10 ga katta bo‘lsa, 5 qaytaring. Aks holda, 0 qaytaring."
+  },
+  "solution": "function blueTicket(a, b, c) {\n  const ab = a + b;\n  const bc = b + c;\n  const ac = a + c;\n  \n  if (ab === 10 || bc === 10 || ac === 10) {\n    return 10;\n  } else if (ab === bc + 10 || ab === ac + 10) {\n    return 5;\n  } else {\n    return 0;\n  }\n}",
+  "starterCode": "function blueTicket(a, b, c) {\n  // type here\n}",
+  "testCases": [
+    {
+      "input": [
+        "9",
+        "1",
+        "0"
+      ],
+      "output": 10
+    },
+    {
+      "input": [
+        "9",
+        "2",
+        "0"
+      ],
+      "output": 0
+    },
+    {
+      "input": [
+        "6",
+        "1",
+        "4"
+      ],
+      "output": 10
+    },
+    {
+      "input": [
+        "10",
+        "0",
+        "0"
+      ],
+      "output": 10
+    },
+    {
+      "input": [
+        "15",
+        "5",
+        "5"
+      ],
+      "output": 5
+    },
+    {
+      "input": [
+        "5",
+        "5",
+        "0"
+      ],
+      "output": 10
+    },
+    {
+      "input": [
+        "5",
+        "0",
+        "5"
+      ],
+      "output": 10
+    },
+    {
+      "input": [
+        "5",
+        "10",
+        "0"
+      ],
+      "output": 0
+    }
+  ]
+}

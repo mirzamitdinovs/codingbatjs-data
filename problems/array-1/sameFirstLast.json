@@ -1,0 +1,38 @@
+{
+  "topicId": "array-1",
+  "id": "sameFirstLast",
+  "difficulty": "Easy",
+  "functionName": "sameFirstLast",
+  "title": {
+    "en": "Same First Last",
+    "ru": "Первый = последний?",
+    "uz": "Birinchi va oxiri bir xilmi?"
+  },
+  "description": {
+    "en": "Return true if the array is length 1 or more, and the first element and the last element are equal.",
+    "ru": "Верните true, если длина массива ≥ 1 и первый элемент равен последнему.",
+    "uz": "Massiv uzunligi ≥ 1 bo‘lsa va birinchi ham oxirgi element teng bo‘lsa true qaytaring."
+  },
+  "solution": "function sameFirstLast(nums) {\n  return nums.length >= 1 && nums[0] === nums[nums.length - 1];\n}",
+  "starterCode": "function sameFirstLast(nums) {\n  // type here\n}",
+  "testCases": [
+    {
+      "input": [
+        "[1, 2, 3]"
+      ],
+      "output": false
+    },
+    {
+      "input": [
+        "[1, 2, 3, 1]"
+      ],
+      "output": true
+    },
+    {
+      "input": [
+        "[1, 2, 1]"
+      ],
+      "output": true
+    }
+  ]
+}

@@ -1,0 +1,75 @@
+{
+  "topicId": "ap-1",
+  "id": "scoresAverage",
+  "difficulty": "Medium",
+  "functionName": "scoresAverage",
+  "title": {
+    "en": "scoresAverage",
+    "ru": "средний балл",
+    "uz": "o‘rtacha ball"
+  },
+  "description": {
+    "en": "Given an array of scores, compute the average of the first half and the average of the second half, and return the larger of the two averages. The array length will be at least 2.",
+    "ru": "Дан массив оценок. Вычислите среднее значение первой половины и средней второй половины массива, верните большее из двух средних. Длина массива будет не менее 2.",
+    "uz": "Ballar massiv berilgan. Birinchi yarmi va ikkinchi yarmi o‘rtachalarini hisoblab, ulardan kattasini qaytaring. Massiv uzunligi kamida 2 bo‘ladi."
+  },
+  "solution": "function scoresAverage(scores) {\n  function average(arr) {\n    let sum = 0;\n    for (let num of arr) {\n      sum += num;\n    }\n    return sum / arr.length;\n  }\n  const mid = Math.floor(scores.length / 2);\n  const leftAvg = average(scores.slice(0, mid));\n  const rightAvg = average(scores.slice(mid));\n  return leftAvg > rightAvg ? leftAvg : rightAvg;\n}",
+  "starterCode": "function scoresAverage(scores) {\n  // type here\n}",
+  "testCases": [
+    {
+      "input": [
+        [
+          2,
+          2,
+          4,
+          4
+        ]
+      ],
+      "output": 4.0
+    },
+    {
+      "input": [
+        [
+          4,
+          4,
+          4,
+          2,
+          2,
+          2
+        ]
+      ],
+      "output": 4.0
+    },
+    {
+      "input": [
+        [
+          3,
+          4,
+          5,
+          1,
+          2,
+          3
+        ]
+      ],
+      "output": 4.0
+    },
+    {
+      "input": [
+        [
+          5,
+          6
+        ]
+      ],
+      "output": 6.0
+    },
+    {
+      "input": [
+        [
+          5,
+          4
+        ]
+      ],
+      "output": 5.0
+    }
+  ]
+}

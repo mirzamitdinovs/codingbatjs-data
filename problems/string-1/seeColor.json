@@ -1,0 +1,38 @@
+{
+  "topicId": "string-1",
+  "id": "seeColor",
+  "difficulty": "Easy",
+  "functionName": "seeColor",
+  "title": {
+    "en": "See Color",
+    "ru": "Первые цвета",
+    "uz": "Rangni aniqlash"
+  },
+  "description": {
+    "en": "Given a string, if it begins with \"red\" or \"blue\" return that color string, otherwise return \"\".",
+    "ru": "Дана строка. Если начинается на \"red\" или \"blue\", верните этот цвет, иначе – пустую строку.",
+    "uz": "Satr berilgan. Agar 'red' yoki 'blue' bilan boshlansa, shu rangni qaytaring, aks holda bo‘sh satr."
+  },
+  "solution": "function seeColor(str) {\n  if (str.startsWith('red')) return 'red';\n  if (str.startsWith('blue')) return 'blue';\n  return '';\n}",
+  "starterCode": "function seeColor(str) {\n  // type here\n}",
+  "testCases": [
+    {
+      "input": [
+        "\"redxx\""
+      ],
+      "output": "red"
+    },
+    {
+      "input": [
+        "\"xxred\""
+      ],
+      "output": ""
+    },
+    {
+      "input": [
+        "\"blueTimes\""
+      ],
+      "output": "blue"
+    }
+  ]
+}

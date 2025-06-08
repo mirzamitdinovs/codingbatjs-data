@@ -1,0 +1,78 @@
+{
+  "topicId": "ap-1",
+  "id": "scoresIncreasing",
+  "difficulty": "Easy",
+  "functionName": "scoresIncreasing",
+  "title": {
+    "en": "scoresIncreasing",
+    "ru": "оценки возрастают",
+    "uz": "ballar o‘sib boradi"
+  },
+  "description": {
+    "en": "Given an array of scores, return true if each score is equal or greater than the one before. The array will be length 2 or more.",
+    "ru": "Дан массив оценок, верните true, если каждая оценка равна или больше предыдущей. Длина массива будет 2 или больше.",
+    "uz": "Ballar massiv berilgan, agar har bir ball oldingisidan teng yoki katta bo‘lsa, true qaytaring. Massiv uzunligi 2 yoki undan ko‘p bo‘ladi."
+  },
+  "solution": "function scoresIncreasing(scores) {\n  for (let i = 1; i < scores.length; i++) {\n    if (scores[i] < scores[i - 1]) return false;\n  }\n  return true;\n}",
+  "starterCode": "function scoresIncreasing(scores) {\n  // type here\n}",
+  "testCases": [
+    {
+      "input": [
+        [
+          1,
+          3,
+          4
+        ]
+      ],
+      "output": true
+    },
+    {
+      "input": [
+        [
+          1,
+          3,
+          2
+        ]
+      ],
+      "output": false
+    },
+    {
+      "input": [
+        [
+          1,
+          1,
+          4
+        ]
+      ],
+      "output": true
+    },
+    {
+      "input": [
+        [
+          1,
+          1,
+          2,
+          4,
+          4,
+          4,
+          5
+        ]
+      ],
+      "output": true
+    },
+    {
+      "input": [
+        [
+          1,
+          6,
+          10,
+          18,
+          2,
+          4,
+          20
+        ]
+      ],
+      "output": false
+    }
+  ]
+}

@@ -1,0 +1,62 @@
+{
+  "topicId": "map-1",
+  "id": "topping3",
+  "difficulty": "Easy",
+  "functionName": "topping3",
+  "title": {
+    "en": "Topping3",
+    "ru": "Топпинг 3",
+    "uz": "Topping3"
+  },
+  "description": {
+    "en": "Given a map of food keys and topping values, modify and return the map as follows: if the key \"potato\" has a value, set the key \"fries\" to have that same value. If the key \"salad\" has a value, set the key \"spinach\" to have that same value.",
+    "ru": "Дана карта с ключами еды и значениями топпингов. Измените и верните карту следующим образом: если ключ \"potato\" имеет значение, установите ключу \"fries\" то же значение. Если ключ \"salad\" имеет значение, установите ключу \"spinach\" то же значение.",
+    "uz": "Ovqat kalitlari va topping qiymatlari berilgan mapni o‘zgartiring va qaytaring: agar \"potato\" kalitida qiymat bo‘lsa, \"fries\" kalitining qiymatini shunga o‘rnatilsin. Agar \"salad\" kalitida qiymat bo‘lsa, \"spinach\" kalitining qiymatini shunga o‘rnatilsin."
+  },
+  "solution": "function topping3(map) {\n  if (map.hasOwnProperty('potato')) {\n    map['fries'] = map['potato'];\n  }\n  if (map.hasOwnProperty('salad')) {\n    map['spinach'] = map['salad'];\n  }\n  return map;\n}",
+  "starterCode": "function topping3(map) {\n  // type here\n}",
+  "testCases": [
+    {
+      "input": [
+        {
+          "potato": "ketchup",
+          "salad": "oil"
+        }
+      ],
+      "output": {
+        "potato": "ketchup",
+        "salad": "oil",
+        "fries": "ketchup",
+        "spinach": "oil"
+      }
+    },
+    {
+      "input": [
+        {
+          "potato": "ketchup"
+        }
+      ],
+      "output": {
+        "potato": "ketchup",
+        "fries": "ketchup"
+      }
+    },
+    {
+      "input": [
+        {
+          "salad": "oil"
+        }
+      ],
+      "output": {
+        "salad": "oil",
+        "spinach": "oil"
+      }
+    },
+    {
+      "input": [
+        {}
+      ],
+      "output": {}
+    }
+  ]
+}

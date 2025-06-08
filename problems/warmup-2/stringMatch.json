@@ -1,0 +1,41 @@
+{
+  "topicId": "warmup-2",
+  "id": "stringMatch",
+  "difficulty": "Easy",
+  "functionName": "stringMatch",
+  "title": {
+    "en": "String Match",
+    "ru": "Совпадение Строк",
+    "uz": "Satr Mosligi"
+  },
+  "description": {
+    "en": "Given 2 strings, a and b, return the number of the positions where they contain the same length 2 substring.",
+    "ru": "Даны 2 строки. Верните количество позиций, в которых они содержат одинаковые подстроки длиной 2.",
+    "uz": "2 ta satr berilgan. Ularning 2 belgidan iborat bir xil substringlari necha pozitsiyada mos tushishini hisoblang."
+  },
+  "solution": "function stringMatch(a, b) {\n  let len = Math.min(a.length, b.length);\n  let count = 0;\n  for (let i = 0; i < len - 1; i++) {\n    if (a.substring(i, i + 2) === b.substring(i, i + 2)) {\n      count++;\n    }\n  }\n  return count;\n}",
+  "starterCode": "function stringMatch(a, b) {\n  // type here\n}",
+  "testCases": [
+    {
+      "input": [
+        "\"xxcaazz\"",
+        "\"xxbaaz\""
+      ],
+      "output": 3
+    },
+    {
+      "input": [
+        "\"abc\"",
+        "\"abc\""
+      ],
+      "output": 2
+    },
+    {
+      "input": [
+        "\"abc\"",
+        "\"axc\""
+      ],
+      "output": 0
+    }
+  ]
+}

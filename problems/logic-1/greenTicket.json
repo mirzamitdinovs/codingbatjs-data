@@ -1,0 +1,84 @@
+{
+  "topicId": "logic-1",
+  "id": "greenTicket",
+  "difficulty": "Easy",
+  "functionName": "greenTicket",
+  "title": {
+    "en": "Green Ticket",
+    "ru": "Зелёный билет",
+    "uz": "Yashil chipta"
+  },
+  "description": {
+    "en": "You have a green lottery ticket, with integers a, b, and c on it. If all the numbers are different, the result is 0. If all the numbers are the same, the result is 20. If two of the numbers are the same, the result is 10.",
+    "ru": "У вас зелёный лотерейный билет с числами a, b и c. Если все числа разные, результат — 0. Если все одинаковые — 20. Если два одинаковых — 10.",
+    "uz": "Sizda a, b va c sonlari yozilgan yashil lotereya chipta bor. Agar ularning barchasi har xil bo‘lsa, natija 0. Agar ularning barchasi bir xil bo‘lsa, natija 20. Agar faqat ikkitasi bir xil bo‘lsa, natija 10 bo‘ladi."
+  },
+  "solution": "function greenTicket(a, b, c) {\n  if (a === b && b === c) {\n    return 20;\n  } else if (a === b || b === c || a === c) {\n    return 10;\n  } else {\n    return 0;\n  }\n}",
+  "starterCode": "function greenTicket(a, b, c) {\n  // type here\n}",
+  "testCases": [
+    {
+      "input": [
+        "1",
+        "2",
+        "3"
+      ],
+      "output": 0
+    },
+    {
+      "input": [
+        "2",
+        "2",
+        "2"
+      ],
+      "output": 20
+    },
+    {
+      "input": [
+        "1",
+        "1",
+        "2"
+      ],
+      "output": 10
+    },
+    {
+      "input": [
+        "1",
+        "2",
+        "1"
+      ],
+      "output": 10
+    },
+    {
+      "input": [
+        "2",
+        "1",
+        "1"
+      ],
+      "output": 10
+    },
+    {
+      "input": [
+        "0",
+        "0",
+        "1"
+      ],
+      "output": 10
+    },
+    {
+      "input": [
+        "0",
+        "1",
+        "0"
+      ],
+      "output": 10
+    },
+    {
+      "input": [
+        "0",
+        "1",
+        "2"
+      ],
+      "output": 0
+    }
+  ]
+}

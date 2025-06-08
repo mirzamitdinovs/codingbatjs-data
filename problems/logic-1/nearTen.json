@@ -1,0 +1,68 @@
+{
+  "topicId": "logic-1",
+  "id": "nearTen",
+  "difficulty": "Easy",
+  "functionName": "nearTen",
+  "title": {
+    "en": "Near Ten",
+    "ru": "Близко к десяти",
+    "uz": "Onga yaqin"
+  },
+  "description": {
+    "en": "Given a non-negative number 'num', return true if it is within 2 of a multiple of 10. Note: (a % b) is the remainder of dividing a by b, so 12 % 10 is 2.",
+    "ru": "Дано неотрицательное число 'num'. Верните true, если оно находится в пределах 2 от числа, кратного 10. Примечание: (a % b) — это остаток от деления a на b, например, 12 % 10 равно 2.",
+    "uz": "Musbat 'num' soni berilgan. Agar u 10 ga bo‘linadigan songa 2 farqdan kam bo‘lsa, true qaytaring. Eslatma: (a % b) — bu a ni b ga bo‘lgandagi qoldiq, masalan 12 % 10 = 2."
+  },
+  "solution": "function nearTen(num) {\n  return num % 10 <= 2 || num % 10 >= 8;\n}",
+  "starterCode": "function nearTen(num) {\n  // type here\n}",
+  "testCases": [
+    {
+      "input": [
+        "12"
+      ],
+      "output": true
+    },
+    {
+      "input": [
+        "17"
+      ],
+      "output": false
+    },
+    {
+      "input": [
+        "19"
+      ],
+      "output": true
+    },
+    {
+      "input": [
+        "20"
+      ],
+      "output": true
+    },
+    {
+      "input": [
+        "22"
+      ],
+      "output": true
+    },
+    {
+      "input": [
+        "23"
+      ],
+      "output": false
+    },
+    {
+      "input": [
+        "28"
+      ],
+      "output": true
+    },
+    {
+      "input": [
+        "30"
+      ],
+      "output": true
+    }
+  ]
+}

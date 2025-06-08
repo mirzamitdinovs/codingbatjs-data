@@ -1,0 +1,50 @@
+{
+  "topicId": "array-1",
+  "id": "biggerTwo",
+  "difficulty": "Easy",
+  "functionName": "biggerTwo",
+  "title": {
+    "en": "Bigger Two",
+    "ru": "Больше из двух",
+    "uz": "Ikki orasidan kattasi"
+  },
+  "description": {
+    "en": "Given two int arrays length 2, return the one with the larger sum. In a tie, return a.",
+    "ru": "Даны два массива длины 2. Верните тот, сумма элементов которого больше. При равных — первый.",
+    "uz": "2 elementli ikkita massiv berilgan. Qaysi massiv yig‘indisi katta bo‘lsa, uni qaytaring. Teng bo‘lsa a ni qaytaring."
+  },
+  "solution": "function biggerTwo(a,b) { return (a[0]+a[1])>=(b[0]+b[1])?a:b; }",
+  "starterCode": "function biggerTwo(a, b) {\n  // type here\n}",
+  "testCases": [
+    {
+      "input": [
+        "[1, 2]",
+        "[3, 4]"
+      ],
+      "output": [
+        3,
+        4
+      ]
+    },
+    {
+      "input": [
+        "[3, 4]",
+        "[1, 2]"
+      ],
+      "output": [
+        3,
+        4
+      ]
+    },
+    {
+      "input": [
+        "[1, 1]",
+        "[1, 2]"
+      ],
+      "output": [
+        1,
+        2
+      ]
+    }
+  ]
+}

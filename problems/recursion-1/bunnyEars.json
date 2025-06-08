@@ -1,0 +1,50 @@
+{
+  "topicId": "recursion-1",
+  "id": "bunnyears",
+  "difficulty": "Easy",
+  "functionName": "bunnyEars",
+  "title": {
+    "en": "Bunny Ears",
+    "ru": "Уши кролика",
+    "uz": "Quyon quloqlari"
+  },
+  "description": {
+    "en": "We have a number of bunnies, each with two ears. Compute the total number of ears recursively (without loops or multiplication).",
+    "ru": "У нас есть несколько кроликов, у каждого по два уха. Рекурсивно вычислите общее количество ушей (без циклов и умножения).",
+    "uz": "Bir nechta quyonlar bor, har birida ikkita quloq. Ularning jami quloqlar sonini rekursiv ravishda hisoblang (tsikl va ko‘paytirishsiz)."
+  },
+  "solution": "function bunnyEars(bunnies) {\n  if (bunnies === 0) return 0;\n  return 2 + bunnyEars(bunnies - 1);\n}",
+  "starterCode": "function bunnyEars(bunnies) {\n  // type here\n}",
+  "testCases": [
+    {
+      "input": [
+        "0"
+      ],
+      "output": 0
+    },
+    {
+      "input": [
+        "1"
+      ],
+      "output": 2
+    },
+    {
+      "input": [
+        "2"
+      ],
+      "output": 4
+    },
+    {
+      "input": [
+        "3"
+      ],
+      "output": 6
+    },
+    {
+      "input": [
+        "4"
+      ],
+      "output": 8
+    }
+  ]
+}

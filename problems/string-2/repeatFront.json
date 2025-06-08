@@ -1,0 +1,55 @@
+{
+  "topicId": "string-2",
+  "id": "repeatFront",
+  "difficulty": "Easy",
+  "functionName": "repeatFront",
+  "title": {
+    "en": "Repeat Front",
+    "ru": "Повторять начало",
+    "uz": "Boshlanishini takrorlash"
+  },
+  "description": {
+    "en": "Given a string and an int n, return a string made of the first n characters of the string, followed by the first n-1 characters, and so on down to the first character.",
+    "ru": "Дана строка и число n. Верните строку, состоящую из первых n символов, затем первых n-1 символов, и так далее до первого символа.",
+    "uz": "Berilgan satr va n soni. Satrning birinchi n belgilaridan, keyin n-1 belgidan va hokazo, oxirida birinchi belgigacha bo‘lgan qismdan tashkil topgan yangi satrni qaytaring."
+  },
+  "solution": "function repeatFront(str, n) {\n  let result = '';\n  for (let i = n; i > 0; i--) {\n    result += str.substring(0, i);\n  }\n  return result;\n}",
+  "starterCode": "function repeatFront(str, n) {\n  // type here\n}",
+  "testCases": [
+    {
+      "input": [
+        "Chocolate",
+        4
+      ],
+      "output": "ChocChoChC"
+    },
+    {
+      "input": [
+        "Chocolate",
+        3
+      ],
+      "output": "ChoChC"
+    },
+    {
+      "input": [
+        "Ice Cream",
+        2
+      ],
+      "output": "IcI"
+    },
+    {
+      "input": [
+        "Ice Cream",
+        1
+      ],
+      "output": "I"
+    },
+    {
+      "input": [
+        "Java",
+        0
+      ],
+      "output": ""
+    }
+  ]
+}

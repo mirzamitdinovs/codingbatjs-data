@@ -1,0 +1,69 @@
+{
+  "topicId": "map-2",
+  "id": "wordmultiple",
+  "difficulty": "Medium",
+  "functionName": "wordMultiple",
+  "title": {
+    "en": "WordMultiple",
+    "ru": "Множество слов",
+    "uz": "So‘z ko‘pchiligi"
+  },
+  "description": {
+    "en": "Given an array of strings, return a map where each different string is a key and its value is true if that string appears 2 or more times in the array.",
+    "ru": "Дан массив строк. Верните карту, где каждый уникальный строковый ключ имеет значение true, если эта строка появляется в массиве 2 или более раза.",
+    "uz": "Satrlar massiv berilgan. Har bir noyob satr uchun kalit bo‘lib, agar u satr massivda 2 yoki undan ko‘p marta uchrasa, qiymati true bo‘lgan map qaytaring."
+  },
+  "solution": "function wordMultiple(words) {\n  const map = {};\n  for (const word of words) {\n    map[word] = (map[word] || 0) + 1;\n  }\n  for (const key in map) {\n    map[key] = map[key] >= 2;\n  }\n  return map;\n}",
+  "starterCode": "function wordMultiple(words) {\n  // type here\n}",
+  "testCases": [
+    {
+      "input": [
+        [
+          "a",
+          "b",
+          "a",
+          "c",
+          "b"
+        ]
+      ],
+      "output": {
+        "a": true,
+        "b": true,
+        "c": false
+      }
+    },
+    {
+      "input": [
+        [
+          "c",
+          "b",
+          "a"
+        ]
+      ],
+      "output": {
+        "c": false,
+        "b": false,
+        "a": false
+      }
+    },
+    {
+      "input": [
+        [
+          "c",
+          "c",
+          "c",
+          "c"
+        ]
+      ],
+      "output": {
+        "c": true
+      }
+    },
+    {
+      "input": [
+        []
+      ],
+      "output": {}
+    }
+  ]
+}

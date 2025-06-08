@@ -1,0 +1,50 @@
+{
+  "topicId": "array-1",
+  "id": "reverse3",
+  "difficulty": "Easy",
+  "functionName": "reverse3",
+  "title": {
+    "en": "Reverse 3",
+    "ru": "Обратный порядок 3",
+    "uz": "3 ta teskari"
+  },
+  "description": {
+    "en": "Given an array of ints length 3, return a new array with the elements in reverse order, e.g. {1,2,3} → {3,2,1}.",
+    "ru": "Дан массив из 3. Верните его в обратном порядке {3,2,1}.",
+    "uz": "3 elementli massiv berilgan. Uni teskari tartibda qaytaring."
+  },
+  "solution": "function reverse3(nums) {\n  return [nums[2], nums[1], nums[0]];\n}",
+  "starterCode": "function reverse3(nums) {\n  // type here\n}",
+  "testCases": [
+    {
+      "input": [
+        "[1, 2, 3]"
+      ],
+      "output": [
+        3,
+        2,
+        1
+      ]
+    },
+    {
+      "input": [
+        "[5, 11, 9]"
+      ],
+      "output": [
+        9,
+        11,
+        5
+      ]
+    },
+    {
+      "input": [
+        "[7, 0, 0]"
+      ],
+      "output": [
+        0,
+        0,
+        7
+      ]
+    }
+  ]
+}

@@ -1,0 +1,74 @@
+{
+  "topicId": "array-2",
+  "id": "fizzArray3",
+  "difficulty": "Easy",
+  "functionName": "fizzArray3",
+  "title": {
+    "en": "fizzArray3",
+    "ru": "массив чисел в заданном диапазоне",
+    "uz": "berilgan oraliqda sonlar massivi"
+  },
+  "description": {
+    "en": "Given start and end numbers, return a new array containing the sequence of integers from start up to but not including end.",
+    "ru": "Даны числа start и end. Верните новый массив с последовательностью чисел от start до end, не включая end.",
+    "uz": "Berilgan start va end sonlar bo‘yicha start dan end gacha, end ni kirmasdan, ketma-ket sonlar massivini qaytaring."
+  },
+  "solution": "function fizzArray3(start, end) {\n  let result = [];\n  for (let i = start; i < end; i++) {\n    result.push(i);\n  }\n  return result;\n}",
+  "starterCode": "function fizzArray3(start, end) {\n  // type here\n}",
+  "testCases": [
+    {
+      "input": [
+        5,
+        10
+      ],
+      "output": [
+        5,
+        6,
+        7,
+        8,
+        9
+      ]
+    },
+    {
+      "input": [
+        11,
+        18
+      ],
+      "output": [
+        11,
+        12,
+        13,
+        14,
+        15,
+        16,
+        17
+      ]
+    },
+    {
+      "input": [
+        1,
+        3
+      ],
+      "output": [
+        1,
+        2
+      ]
+    },
+    {
+      "input": [
+        1,
+        2
+      ],
+      "output": [
+        1
+      ]
+    },
+    {
+      "input": [
+        1,
+        1
+      ],
+      "output": []
+    }
+  ]
+}

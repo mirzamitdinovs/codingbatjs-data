@@ -1,0 +1,71 @@
+{
+  "topicId": "recursion-1",
+  "id": "array11",
+  "difficulty": "Easy",
+  "functionName": "array11",
+  "title": {
+    "en": "Array 11",
+    "ru": "Массив 11",
+    "uz": "Massiv 11"
+  },
+  "description": {
+    "en": "Given an array of ints, compute recursively the number of times that the value 11 appears in the array. We'll use the convention of considering only the part of the array that begins at the given index. The initial call will pass in index as 0.",
+    "ru": "Дан массив целых чисел. Рекурсивно подсчитайте, сколько раз встречается значение 11 в массиве. Рассматривайте только часть массива, начиная с данного индекса. Начальный вызов будет с индексом 0.",
+    "uz": "Butun sonlardan iborat massiv berilgan. Rekursiv ravishda massivda 11 necha marta uchrashini hisoblang. Faqat berilgan indeksdan boshlab massiv qismi ko‘riladi. Boshlang‘ich chaqiriqda indeks 0 bo‘ladi."
+  },
+  "solution": "function array11(nums, index) {\n  if (index >= nums.length) return 0;\n  let count = nums[index] === 11 ? 1 : 0;\n  return count + array11(nums, index + 1);\n}",
+  "starterCode": "function array11(nums, index) {\n  // type here\n}",
+  "testCases": [
+    {
+      "input": [
+        [
+          1,
+          11,
+          3,
+          11,
+          11
+        ],
+        "0"
+      ],
+      "output": 3
+    },
+    {
+      "input": [
+        [
+          11,
+          11
+        ],
+        "0"
+      ],
+      "output": 2
+    },
+    {
+      "input": [
+        [
+          1,
+          2,
+          3,
+          4
+        ],
+        "0"
+      ],
+      "output": 0
+    },
+    {
+      "input": [
+        [],
+        "0"
+      ],
+      "output": 0
+    },
+    {
+      "input": [
+        [
+          11
+        ],
+        "0"
+      ],
+      "output": 1
+    }
+  ]
+}

@@ -1,0 +1,38 @@
+{
+  "topicId": "string-1",
+  "id": "withoutX",
+  "difficulty": "Easy",
+  "functionName": "withoutX",
+  "title": {
+    "en": "Without X",
+    "ru": "Без X",
+    "uz": "X holda"
+  },
+  "description": {
+    "en": "Given a string, if it starts or ends with 'x', return the string without those 'x's.",
+    "ru": "Дана строка. Если она начинается или заканчивается на 'x', верните её без этих 'x'.",
+    "uz": "Satr berilgan. Agar uning boshida yoki oxirida 'x' bo‘lsa, ularni olib tashlab qaytaring."
+  },
+  "solution": "function withoutX(str) {\n  if (str.startsWith('x')) str = str.substring(1);\n  if (str.endsWith('x')) str = str.substring(0, str.length - 1);\n  return str;\n}",
+  "starterCode": "function withoutX(str) {\n  // type here\n}",
+  "testCases": [
+    {
+      "input": [
+        "\"xHix\""
+      ],
+      "output": "Hi"
+    },
+    {
+      "input": [
+        "\"xHi\""
+      ],
+      "output": "Hi"
+    },
+    {
+      "input": [
+        "\"Hxix\""
+      ],
+      "output": "Hxi"
+    }
+  ]
+}

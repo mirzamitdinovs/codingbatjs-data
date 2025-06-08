@@ -1,0 +1,62 @@
+{
+  "topicId": "array-2",
+  "id": "fizzArray",
+  "difficulty": "Easy",
+  "functionName": "fizzArray",
+  "title": {
+    "en": "fizzArray",
+    "ru": "физзМассив",
+    "uz": "fizzMassiv"
+  },
+  "description": {
+    "en": "Given a number n, create and return a new int array of length n, containing the numbers 0, 1, 2, ... n-1.",
+    "ru": "Дано число n. Создайте и верните новый массив длины n, содержащий числа 0, 1, 2, ... n-1.",
+    "uz": "Berilgan n soni bo‘yicha uzunligi n bo‘lgan yangi butun sonlar massivini yaratib, 0, 1, 2, ... n-1 raqamlarini joylang."
+  },
+  "solution": "function fizzArray(n) {\n  let result = [];\n  for (let i = 0; i < n; i++) {\n    result.push(i);\n  }\n  return result;\n}",
+  "starterCode": "function fizzArray(n) {\n  // type here\n}",
+  "testCases": [
+    {
+      "input": [
+        4
+      ],
+      "output": [
+        0,
+        1,
+        2,
+        3
+      ]
+    },
+    {
+      "input": [
+        1
+      ],
+      "output": [
+        0
+      ]
+    },
+    {
+      "input": [
+        10
+      ],
+      "output": [
+        0,
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9
+      ]
+    },
+    {
+      "input": [
+        0
+      ],
+      "output": []
+    }
+  ]
+}

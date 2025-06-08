@@ -1,0 +1,50 @@
+{
+  "topicId": "string-3",
+  "id": "gHappy",
+  "difficulty": "Medium",
+  "functionName": "gHappy",
+  "title": {
+    "en": "gHappy",
+    "ru": "счастливая g",
+    "uz": "baxtli g"
+  },
+  "description": {
+    "en": "We'll say that a lowercase 'g' in a string is 'happy' if there is another 'g' immediately to its left or right. Return true if all the 'g's in the string are happy.",
+    "ru": "Говорим, что буква 'g' счастлива, если рядом с ней слева или справа есть еще одна 'g'. Верните true, если все 'g' в строке счастливы.",
+    "uz": "Berilgan satrdagi kichik 'g' harfi yonida chap yoki o‘ngda boshqa 'g' bo‘lsa, u 'baxtli' hisoblanadi. Agar barcha 'g' harflar baxtli bo‘lsa, true qaytaring."
+  },
+  "solution": "function gHappy(str) {\n  for (let i = 0; i < str.length; i++) {\n    if (str[i] === 'g') {\n      if (!( (i > 0 && str[i - 1] === 'g') || (i < str.length - 1 && str[i + 1] === 'g') )) {\n        return false;\n      }\n    }\n  }\n  return true;\n}",
+  "starterCode": "function gHappy(str) {\n  // type here\n}",
+  "testCases": [
+    {
+      "input": [
+        "xxggxx"
+      ],
+      "output": true
+    },
+    {
+      "input": [
+        "xxgxx"
+      ],
+      "output": false
+    },
+    {
+      "input": [
+        "xxggyygxx"
+      ],
+      "output": false
+    },
+    {
+      "input": [
+        "gg"
+      ],
+      "output": true
+    },
+    {
+      "input": [
+        "g"
+      ],
+      "output": false
+    }
+  ]
+}

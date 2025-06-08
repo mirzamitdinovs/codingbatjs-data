@@ -1,0 +1,55 @@
+{
+  "topicId": "string-2",
+  "id": "repeatEnd",
+  "difficulty": "Easy",
+  "functionName": "repeatEnd",
+  "title": {
+    "en": "Repeat End",
+    "ru": "Повторять конец",
+    "uz": "Oxirini takrorlash"
+  },
+  "description": {
+    "en": "Given a string and an int n, return a string made of n copies of the last n characters of the string.",
+    "ru": "Дана строка и число n. Верните строку, состоящую из n копий последних n символов исходной строки.",
+    "uz": "Berilgan satr va n soni. Satrning oxirgi n belgilaridan n marta takrorlangan yangi satrni qaytaring."
+  },
+  "solution": "function repeatEnd(str, n) {\n  let end = str.substring(str.length - n);\n  let result = '';\n  for (let i = 0; i < n; i++) {\n    result += end;\n  }\n  return result;\n}",
+  "starterCode": "function repeatEnd(str, n) {\n  // type here\n}",
+  "testCases": [
+    {
+      "input": [
+        "Hello",
+        3
+      ],
+      "output": "llollollo"
+    },
+    {
+      "input": [
+        "Hello",
+        2
+      ],
+      "output": "lolo"
+    },
+    {
+      "input": [
+        "Hello",
+        1
+      ],
+      "output": "o"
+    },
+    {
+      "input": [
+        "abc",
+        3
+      ],
+      "output": "abcabcabc"
+    },
+    {
+      "input": [
+        "abc",
+        0
+      ],
+      "output": ""
+    }
+  ]
+}

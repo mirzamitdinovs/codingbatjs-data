@@ -1,0 +1,38 @@
+{
+  "topicId": "warmup-2",
+  "id": "arrayCount9",
+  "difficulty": "Easy",
+  "functionName": "arrayCount9",
+  "title": {
+    "en": "Array Count 9",
+    "ru": "Счет 9 в Массиве",
+    "uz": "Massivdagi 9 lar soni"
+  },
+  "description": {
+    "en": "Given an array of ints, return the number of 9's in the array.",
+    "ru": "Дан массив целых чисел. Верните количество девяток в массиве.",
+    "uz": "Butun sonlardan iborat massiv berilgan. Undagi 9 sonlarining sonini qaytaring."
+  },
+  "solution": "function arrayCount9(nums) {\n  let count = 0;\n  for (let num of nums) {\n    if (num === 9) count++;\n  }\n  return count;\n}",
+  "starterCode": "function arrayCount9(nums) {\n  // type here\n}",
+  "testCases": [
+    {
+      "input": [
+        "[1, 2, 9]"
+      ],
+      "output": 1
+    },
+    {
+      "input": [
+        "[1, 9, 9]"
+      ],
+      "output": 2
+    },
+    {
+      "input": [
+        "[1, 9, 9, 3, 9]"
+      ],
+      "output": 3
+    }
+  ]
+}

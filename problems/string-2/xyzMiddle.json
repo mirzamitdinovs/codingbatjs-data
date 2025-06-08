@@ -1,0 +1,50 @@
+{
+  "topicId": "string-2",
+  "id": "xyzMiddle",
+  "difficulty": "Medium",
+  "functionName": "xyzMiddle",
+  "title": {
+    "en": "xyzMiddle",
+    "ru": "xyz посередине",
+    "uz": "xyz o‘rtada"
+  },
+  "description": {
+    "en": "Return true if the given string contains an appearance of \"xyz\" such that the number of chars to the left and right differ by at most one.",
+    "ru": "Верните true, если в строке есть \"xyz\", расположенное так, что количество символов слева и справа от него отличается не более чем на один.",
+    "uz": "Berilgan satrda \"xyz\" bo‘lsa, uning chap va o‘ng tomonidagi belgilar soni bir-biridan ko‘pi bilan bitta farq qilsa, true qaytaring."
+  },
+  "solution": "function xyzMiddle(str) {\n  const len = str.length;\n  for (let i = 0; i <= len - 3; i++) {\n    if (str.substring(i, i + 3) === 'xyz') {\n      let left = i;\n      let right = len - (i + 3);\n      if (Math.abs(left - right) <= 1) return true;\n    }\n  }\n  return false;\n}",
+  "starterCode": "function xyzMiddle(str) {\n  // type here\n}",
+  "testCases": [
+    {
+      "input": [
+        "AAxyzBB"
+      ],
+      "output": true
+    },
+    {
+      "input": [
+        "AxyzBB"
+      ],
+      "output": true
+    },
+    {
+      "input": [
+        "AxyzBBB"
+      ],
+      "output": false
+    },
+    {
+      "input": [
+        "xyz"
+      ],
+      "output": true
+    },
+    {
+      "input": [
+        "xy"
+      ],
+      "output": false
+    }
+  ]
+}

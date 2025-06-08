@@ -1,0 +1,50 @@
+{
+  "topicId": "recursion-1",
+  "id": "countabc",
+  "difficulty": "Medium",
+  "functionName": "countAbc",
+  "title": {
+    "en": "Count ABC",
+    "ru": "Подсчет ABC",
+    "uz": "ABC ni hisoblash"
+  },
+  "description": {
+    "en": "Count recursively the number of times that the strings 'abc' or 'aba' appear in the given string.",
+    "ru": "Рекурсивно подсчитайте, сколько раз строки 'abc' или 'aba' появляются в данной строке.",
+    "uz": "Berilgan satrda 'abc' yoki 'aba' satrlari necha marta uchrashini rekursiv ravishda hisoblang."
+  },
+  "solution": "function countAbc(str) {\n  if (str.length < 3) return 0;\n  let count = (str.substring(0, 3) === 'abc' || str.substring(0, 3) === 'aba') ? 1 : 0;\n  return count + countAbc(str.substring(1));\n}",
+  "starterCode": "function countAbc(str) {\n  // type here\n}",
+  "testCases": [
+    {
+      "input": [
+        "abc"
+      ],
+      "output": 1
+    },
+    {
+      "input": [
+        "abcabc"
+      ],
+      "output": 2
+    },
+    {
+      "input": [
+        "abaxaba"
+      ],
+      "output": 3
+    },
+    {
+      "input": [
+        "ab"
+      ],
+      "output": 0
+    },
+    {
+      "input": [
+        ""
+      ],
+      "output": 0
+    }
+  ]
+}

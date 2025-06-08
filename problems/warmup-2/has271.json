@@ -1,0 +1,38 @@
+{
+  "topicId": "warmup-2",
+  "id": "has271",
+  "difficulty": "Medium",
+  "functionName": "has271",
+  "title": {
+    "en": "Has 271",
+    "ru": "Есть 271",
+    "uz": "271 Bor"
+  },
+  "description": {
+    "en": "Return true if the array contains a 2, then a 7 (within 1), then a 1 (within 2) somewhere.",
+    "ru": "Верните true, если в массиве есть 2, затем 7 (±1), затем 1 (±2) где-либо подряд.",
+    "uz": "Agar massivda 2 bo‘lib, undan keyin 7 (1±) va 1 (2±) ketma-ket bo‘lsa true qaytaring."
+  },
+  "solution": "function has271(nums) {\n  for (let i = 0; i < nums.length - 2; i++) {\n    let v = nums[i];\n    if (nums[i + 1] === v + 5 && Math.abs(nums[i + 2] - (v - 1)) <= 2) return true;\n  }\n  return false;\n}",
+  "starterCode": "function has271(nums) {\n  // type here\n}",
+  "testCases": [
+    {
+      "input": [
+        "[1, 2, 7, 1]"
+      ],
+      "output": true
+    },
+    {
+      "input": [
+        "[1, 2, 8, 1]"
+      ],
+      "output": false
+    },
+    {
+      "input": [
+        "[2, 7, 1]"
+      ],
+      "output": true
+    }
+  ]
+}

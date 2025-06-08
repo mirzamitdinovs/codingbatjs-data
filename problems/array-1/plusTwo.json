@@ -1,0 +1,56 @@
+{
+  "topicId": "array-1",
+  "id": "plusTwo",
+  "difficulty": "Easy",
+  "functionName": "plusTwo",
+  "title": {
+    "en": "Plus Two",
+    "ru": "Плюс два",
+    "uz": "Qo‘sh ikki"
+  },
+  "description": {
+    "en": "Given two int arrays length 2, return a new array length 4 with all their elements.",
+    "ru": "Даны два массива длины 2. Верните массив длины 4, содержащий все их элементы.",
+    "uz": "Ikki elementli ikkita massiv berilgan. Ularning barcha elementlarini olgan 4 elementli yangi massiv qaytaring."
+  },
+  "solution": "function plusTwo(a,b) { return [a[0],a[1],b[0],b[1]]; }",
+  "starterCode": "function plusTwo(a, b) {\n  // type here\n}",
+  "testCases": [
+    {
+      "input": [
+        "[1, 2]",
+        "[3, 4]"
+      ],
+      "output": [
+        1,
+        2,
+        3,
+        4
+      ]
+    },
+    {
+      "input": [
+        "[4, 4]",
+        "[2, 2]"
+      ],
+      "output": [
+        4,
+        4,
+        2,
+        2
+      ]
+    },
+    {
+      "input": [
+        "[9, 2]",
+        "[3, 4]"
+      ],
+      "output": [
+        9,
+        2,
+        3,
+        4
+      ]
+    }
+  ]
+}

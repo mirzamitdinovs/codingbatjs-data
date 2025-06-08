@@ -1,0 +1,41 @@
+{
+  "topicId": "logic-1",
+  "id": "sortaSum",
+  "difficulty": "Easy",
+  "functionName": "sortaSum",
+  "title": {
+    "en": "Sorta Sum",
+    "ru": "Сортировка суммы",
+    "uz": "Qisman yig‘indi"
+  },
+  "description": {
+    "en": "Given 2 ints, return their sum. Unless the sum is between 10 and 19 inclusive, then return 20.",
+    "ru": "Даны 2 целых. Верните их сумму. Если сумма между 10 и 19 включительно, верните 20.",
+    "uz": "2 butun son berilgan. Ularning yig‘indisini qaytaring. Agar yig‘indi 10 dan 19 gacha (shu jumladan) bo‘lsa, 20 qaytaring."
+  },
+  "solution": "function sortaSum(a, b) { let sum = a + b; if (sum >= 10 && sum <= 19) return 20; return sum; }",
+  "starterCode": "function sortaSum(a, b) {\n  // type here\n}",
+  "testCases": [
+    {
+      "input": [
+        "3",
+        "4"
+      ],
+      "output": 7
+    },
+    {
+      "input": [
+        "9",
+        "4"
+      ],
+      "output": 20
+    },
+    {
+      "input": [
+        "10",
+        "11"
+      ],
+      "output": 21
+    }
+  ]
+}

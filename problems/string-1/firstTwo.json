@@ -1,0 +1,38 @@
+{
+  "topicId": "string-1",
+  "id": "firstTwo",
+  "difficulty": "Easy",
+  "functionName": "firstTwo",
+  "title": {
+    "en": "First Two",
+    "ru": "Первые два",
+    "uz": "Birinchi ikki"
+  },
+  "description": {
+    "en": "Given a string, return the first 2 chars. If the string is shorter than 2, return the string as is.",
+    "ru": "Дана строка. Верните первые 2 символа. Если строка короче, верните её полностью.",
+    "uz": "Satr berilgan. Birinchi 2 belgini qaytaring. Agar satr 2 dan qisqa bo‘lsa, o‘zini qaytaring."
+  },
+  "solution": "function firstTwo(str) {\n  return str.length < 2 ? str : str.substring(0,2);\n}",
+  "starterCode": "function firstTwo(str) {\n  // type here\n}",
+  "testCases": [
+    {
+      "input": [
+        "\"Hello\""
+      ],
+      "output": "He"
+    },
+    {
+      "input": [
+        "\"abcdefg\""
+      ],
+      "output": "ab"
+    },
+    {
+      "input": [
+        "\"\""
+      ],
+      "output": ""
+    }
+  ]
+}

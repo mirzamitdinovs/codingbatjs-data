@@ -1,0 +1,41 @@
+{
+  "topicId": "string-1",
+  "id": "startWord",
+  "difficulty": "Easy",
+  "functionName": "startWord",
+  "title": {
+    "en": "Start Word",
+    "ru": "Начало слова",
+    "uz": "Satrni boshlash"
+  },
+  "description": {
+    "en": "Given a string and a word, return the front of the string if it matches the word except the first char can be anything.",
+    "ru": "Дана строка и слово. Верните начало строки, если оно совпадает со словом (кроме первого символа может быть любой).",
+    "uz": "Satr va so‘z berilgan. Agar satr boshida so‘z bor bo‘lsa (faqat birinchi belgisi farqli bo‘lishi mumkin), uni qaytaring."
+  },
+  "solution": "function startWord(str, word) {\n  if (str.length < word.length) return '';\n  if (str.substring(1, word.length) === word.substring(1))\n    return str.substring(0, word.length);\n  return '';\n}",
+  "starterCode": "function startWord(str, word) {\n  // type here\n}",
+  "testCases": [
+    {
+      "input": [
+        "\"hippo\"",
+        "\"hi\""
+      ],
+      "output": "hi"
+    },
+    {
+      "input": [
+        "\"hippo\"",
+        "\"i\""
+      ],
+      "output": "h"
+    },
+    {
+      "input": [
+        "\"hippo\"",
+        "\"zipo\""
+      ],
+      "output": "hip"
+    }
+  ]
+}

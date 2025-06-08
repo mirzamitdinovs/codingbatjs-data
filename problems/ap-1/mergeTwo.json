@@ -1,0 +1,67 @@
+{
+  "topicId": "ap-1",
+  "id": "mergetwo",
+  "difficulty": "Medium",
+  "functionName": "mergeTwo",
+  "title": {
+    "en": "Merge Two",
+    "ru": "Слияние двух массивов",
+    "uz": "Ikki massivni birlashtirish"
+  },
+  "description": {
+    "en": "Start with two arrays of strings, each in alphabetical order, possibly with duplicates. Return a new array containing the first n unique strings from the two arrays merged together in alphabetical order.",
+    "ru": "Даны два массива строк, каждый в алфавитном порядке, возможно с дубликатами. Верните новый массив, содержащий первые n уникальных строк из объединения двух массивов в алфавитном порядке.",
+    "uz": "Ikki ta alfavit bo‘yicha tartiblangan, takroriy elementlari bo‘lishi mumkin bo‘lgan satrlar massivlari berilgan. Ushbu ikki massivdan birlashtirilgan, alfavit tartibida bo‘lgan, birinchi n noyob elementlarni o‘z ichiga olgan yangi massiv qaytaring."
+  },
+  "solution": "function mergeTwo(a, b, n) {\n  let result = [];\n  let i = 0, j = 0;\n  while (result.length < n) {\n    if (i < a.length && (j >= b.length || a[i] < b[j])) {\n      if (result.length === 0 || result[result.length - 1] !== a[i]) {\n        result.push(a[i]);\n      }\n      i++;\n    } else if (j < b.length) {\n      if (result.length === 0 || result[result.length - 1] !== b[j]) {\n        result.push(b[j]);\n      }\n      j++;\n    } else {\n      break;\n    }\n  }\n  return result;\n}",
+  "starterCode": "function mergeTwo(a, b, n) {\n  // type here\n}",
+  "testCases": [
+    {
+      "input": [
+        "[\"a\", \"c\", \"z\"]",
+        "[\"b\", \"f\", \"z\"]",
+        "3"
+      ],
+      "output": [
+        "a",
+        "b",
+        "c"
+      ]
+    },
+    {
+      "input": [
+        "[\"a\", \"c\", \"z\"]",
+        "[\"c\", \"f\", \"z\"]",
+        "3"
+      ],
+      "output": [
+        "a",
+        "c",
+        "f"
+      ]
+    },
+    {
+      "input": [
+        "[\"f\", \"g\", \"z\"]",
+        "[\"c\", \"f\", \"g\", \"z\"]",
+        "3"
+      ],
+      "output": [
+        "c",
+        "f",
+        "g"
+      ]
+    },
+    {
+      "input": [
+        "[\"a\", \"b\", \"c\"]",
+        "[\"a\", \"b\", \"c\"]",
+        "2"
+      ],
+      "output": [
+        "a",
+        "b"
+      ]
+    }
+  ]
+}

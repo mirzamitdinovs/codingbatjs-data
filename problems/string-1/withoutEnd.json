@@ -1,0 +1,38 @@
+{
+  "topicId": "string-1",
+  "id": "withoutEnd",
+  "difficulty": "Easy",
+  "functionName": "withoutEnd",
+  "title": {
+    "en": "Without End",
+    "ru": "Без конца",
+    "uz": "Oxirsiz"
+  },
+  "description": {
+    "en": "Given a string, return a version without the first and last char.",
+    "ru": "Дана строка. Верните версию без первого и последнего символа.",
+    "uz": "Satr berilgan. Birinchi va oxirgi belgisi yo‘q versiyasini qaytaring."
+  },
+  "solution": "function withoutEnd(str) {\n  return str.substring(1, str.length-1);\n}",
+  "starterCode": "function withoutEnd(str) {\n  // type here\n}",
+  "testCases": [
+    {
+      "input": [
+        "\"Hello\""
+      ],
+      "output": "ell"
+    },
+    {
+      "input": [
+        "\"java\""
+      ],
+      "output": "av"
+    },
+    {
+      "input": [
+        "\"coding\""
+      ],
+      "output": "odin"
+    }
+  ]
+}

@@ -1,0 +1,52 @@
+{
+  "topicId": "functional-1",
+  "id": "moreY",
+  "difficulty": "Easy",
+  "functionName": "moreY",
+  "title": {
+    "en": "MoreY",
+    "ru": "Добавить Y",
+    "uz": "Y qo‘shish"
+  },
+  "description": {
+    "en": "Given an array of strings, return a new array where each string has a 'y' added at the start and end.",
+    "ru": "Дан массив строк. Верните новый массив, в котором к каждой строке добавлена 'y' в начале и в конце.",
+    "uz": "Satrlar massiv berilgan. Har bir satr boshiga va oxiriga 'y' belgisi qo‘shilgan yangi massivni qaytaring."
+  },
+  "solution": "function moreY(strings) {\n  return strings.map(s => 'y' + s + 'y');\n}",
+  "starterCode": "function moreY(strings) {\n  // type here\n}",
+  "testCases": [
+    {
+      "input": [
+        [
+          "a",
+          "b",
+          "c"
+        ]
+      ],
+      "output": [
+        "yay",
+        "yby",
+        "ycy"
+      ]
+    },
+    {
+      "input": [
+        [
+          "hello",
+          "there"
+        ]
+      ],
+      "output": [
+        "yhelloy",
+        "ytherey"
+      ]
+    },
+    {
+      "input": [
+        []
+      ],
+      "output": []
+    }
+  ]
+}

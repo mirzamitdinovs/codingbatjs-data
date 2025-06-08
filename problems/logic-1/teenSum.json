@@ -1,0 +1,41 @@
+{
+  "topicId": "logic-1",
+  "id": "teenSum",
+  "difficulty": "Easy",
+  "functionName": "teenSum",
+  "title": {
+    "en": "Teen Sum",
+    "ru": "Подростковая сумма",
+    "uz": "O‘n yoshlar yig‘indisi"
+  },
+  "description": {
+    "en": "Return their sum. If either value is a 'teen' (13-19 inclusive), return 19.",
+    "ru": "Верните их сумму. Если любое значение подростковое (13-19 включительно), верните 19.",
+    "uz": "Ularning yig‘indisini qaytaring. Agar qiymatlardan biri o‘n yosh (13-19) bo‘lsa, 19 qaytaring."
+  },
+  "solution": "function teenSum(a, b) { if ((a >= 13 && a <= 19) || (b >= 13 && b <= 19)) return 19; return a + b; }",
+  "starterCode": "function teenSum(a, b) {\n  // type here\n}",
+  "testCases": [
+    {
+      "input": [
+        "3",
+        "4"
+      ],
+      "output": 7
+    },
+    {
+      "input": [
+        "10",
+        "13"
+      ],
+      "output": 19
+    },
+    {
+      "input": [
+        "13",
+        "2"
+      ],
+      "output": 19
+    }
+  ]
+}

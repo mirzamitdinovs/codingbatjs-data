@@ -1,0 +1,50 @@
+{
+  "topicId": "array-1",
+  "id": "midThree",
+  "difficulty": "Medium",
+  "functionName": "midThree",
+  "title": {
+    "en": "Mid Three",
+    "ru": "Средние три",
+    "uz": "O‘rtadagi uchta"
+  },
+  "description": {
+    "en": "Given an array of ints of odd length, return a new array length 3 from its middle.",
+    "ru": "Дан массив нечетной длины. Верните новый массив длины 3 из его середины.",
+    "uz": "Toq uzunlikdagi massiv berilgan. Uning o‘rtasidan 3 elementli yangi massiv qaytaring."
+  },
+  "solution": "function midThree(nums) { let mid = Math.floor(nums.length / 2); return [nums[mid - 1], nums[mid], nums[mid + 1]]; }",
+  "starterCode": "function midThree(nums) {\n  // type here\n}",
+  "testCases": [
+    {
+      "input": [
+        "[1, 2, 3, 4, 5]"
+      ],
+      "output": [
+        2,
+        3,
+        4
+      ]
+    },
+    {
+      "input": [
+        "[8, 6, 7, 5, 3, 0, 9]"
+      ],
+      "output": [
+        7,
+        5,
+        3
+      ]
+    },
+    {
+      "input": [
+        "[1, 2, 3]"
+      ],
+      "output": [
+        1,
+        2,
+        3
+      ]
+    }
+  ]
+}

@@ -1,0 +1,46 @@
+{
+  "topicId": "array-1",
+  "id": "frontPiece",
+  "difficulty": "Easy",
+  "functionName": "frontPiece",
+  "title": {
+    "en": "Front Piece",
+    "ru": "Передняя часть",
+    "uz": "Oldingi qism"
+  },
+  "description": {
+    "en": "Given an int array, return a new array length 2 containing its first two elements. If length less than 2, return what is there.",
+    "ru": "Дан массив целых. Верните массив длины 2 с его первыми двумя элементами. Если длина меньше 2, верните, что есть.",
+    "uz": "Butun sonli massiv berilgan. Uning birinchi ikki elementidan iborat yangi 2 o‘lchamli massiv qaytaring. Agar uzunlik 2 dan kichik bo‘lsa, mavjud elementlarni qaytaring."
+  },
+  "solution": "function frontPiece(nums) { return nums.length < 2 ? nums : nums.slice(0, 2); }",
+  "starterCode": "function frontPiece(nums) {\n  // type here\n}",
+  "testCases": [
+    {
+      "input": [
+        "[1, 2, 3]"
+      ],
+      "output": [
+        1,
+        2
+      ]
+    },
+    {
+      "input": [
+        "[1, 2]"
+      ],
+      "output": [
+        1,
+        2
+      ]
+    },
+    {
+      "input": [
+        "[1]"
+      ],
+      "output": [
+        1
+      ]
+    }
+  ]
+}

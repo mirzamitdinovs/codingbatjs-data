@@ -1,0 +1,28 @@
+{
+  "topicId": "array-1",
+  "id": "makePi",
+  "difficulty": "Easy",
+  "functionName": "makePi",
+  "title": {
+    "en": "Make Pi",
+    "ru": "Создать Pi",
+    "uz": "Pi yaratish"
+  },
+  "description": {
+    "en": "Return an int array length 3 containing the first 3 digits of pi, {3, 1, 4}.",
+    "ru": "Верните массив целых длины 3, содержащий {3, 1, 4}.",
+    "uz": "Pi ning ilk 3 raqamidan {3, 1, 4} massivini qaytaring."
+  },
+  "solution": "function makePi() {\n  return [3, 1, 4];\n}",
+  "starterCode": "function makePi() {\n  // type here\n}",
+  "testCases": [
+    {
+      "input": [],
+      "output": [
+        3,
+        1,
+        4
+      ]
+    }
+  ]
+}

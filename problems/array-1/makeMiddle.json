@@ -1,0 +1,47 @@
+{
+  "topicId": "array-1",
+  "id": "makeMiddle",
+  "difficulty": "Easy",
+  "functionName": "makeMiddle",
+  "title": {
+    "en": "Make Middle",
+    "ru": "Сделать середину",
+    "uz": "O‘rtasini tuzish"
+  },
+  "description": {
+    "en": "Given an int array length odd ≥ 3, return a new array length 2 with its middle two elements.",
+    "ru": "Дан массив нечетной длины ≥ 3. Верните массив длины 2 с его средними элементами.",
+    "uz": "Toq uzunlikdagi (≥3) massiv berilgan. Ustidan o‘rtadagi ikkita elementni olgan yangi ikki elementli massivni qaytaring."
+  },
+  "solution": "function makeMiddle(nums) { let mid=nums.length/2; return [nums[mid-1], nums[mid]]; }",
+  "starterCode": "function makeMiddle(nums) {\n  // type here\n}",
+  "testCases": [
+    {
+      "input": [
+        "[1, 2, 3, 4, 5]"
+      ],
+      "output": [
+        2,
+        3
+      ]
+    },
+    {
+      "input": [
+        "[7, 1, 2, 3, 4, 9, 5]"
+      ],
+      "output": [
+        2,
+        3
+      ]
+    },
+    {
+      "input": [
+        "[1, 2, 3]"
+      ],
+      "output": [
+        1,
+        2
+      ]
+    }
+  ]
+}

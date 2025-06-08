@@ -1,0 +1,96 @@
+{
+  "topicId": "array-3",
+  "id": "fix34",
+  "difficulty": "Medium",
+  "functionName": "fix34",
+  "title": {
+    "en": "fix34",
+    "ru": "исправить 3-4",
+    "uz": "3 va 4 ni tuzatish"
+  },
+  "description": {
+    "en": "Return an array that contains exactly the same numbers as the given array, but rearranged so that every 3 is immediately followed by a 4. Do not move the 3's, but every 4 must follow a 3.",
+    "ru": "Верните массив с теми же числами, что и данный, но так, чтобы за каждым 3 сразу следовал 4. Числа 3 не перемещайте, а все 4 должны идти сразу после 3.",
+    "uz": "Berilgan massivdagi barcha 3 sonlaridan keyin darhol 4 sonlari keladigan tarzda massivni qaytaring. 3 sonlarini joyini o‘zgartirmang, lekin har bir 4 3 dan keyin kelishi kerak."
+  },
+  "solution": "function fix34(nums) {\n  let fours = [];\n  for (let i = 0; i < nums.length; i++) {\n    if (nums[i] === 4) fours.push(i);\n  }\n  let index = 0;\n  for (let i = 0; i < nums.length; i++) {\n    if (nums[i] === 3) {\n      let temp = nums[i + 1];\n      nums[i + 1] = 4;\n      nums[fours[index]] = temp;\n      index++;\n    }\n  }\n  return nums;\n}",
+  "starterCode": "function fix34(nums) {\n  // type here\n}",
+  "testCases": [
+    {
+      "input": [
+        [
+          1,
+          3,
+          1,
+          4
+        ]
+      ],
+      "output": [
+        1,
+        3,
+        4,
+        1
+      ]
+    },
+    {
+      "input": [
+        [
+          3,
+          2,
+          2,
+          4
+        ]
+      ],
+      "output": [
+        3,
+        4,
+        2,
+        2
+      ]
+    },
+    {
+      "input": [
+        [
+          3,
+          1,
+          4,
+          1,
+          4,
+          3,
+          1,
+          4
+        ]
+      ],
+      "output": [
+        3,
+        4,
+        1,
+        1,
+        1,
+        3,
+        4,
+        4
+      ]
+    },
+    {
+      "input": [
+        [
+          2,
+          3,
+          4,
+          3,
+          4,
+          2
+        ]
+      ],
+      "output": [
+        2,
+        3,
+        4,
+        3,
+        4,
+        2
+      ]
+    }
+  ]
+}

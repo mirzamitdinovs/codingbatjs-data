@@ -1,0 +1,58 @@
+{
+  "topicId": "functional-1",
+  "id": "square",
+  "difficulty": "Easy",
+  "functionName": "square",
+  "title": {
+    "en": "Square",
+    "ru": "Квадрат",
+    "uz": "Kvadrat"
+  },
+  "description": {
+    "en": "Given an array of integers, return a new array with each element squared (multiplied by itself).",
+    "ru": "Дан массив целых чисел. Верните новый массив, в котором каждый элемент возведен в квадрат.",
+    "uz": "Butun sonlar massiv berilgan. Har bir elementning kvadratini olgan yangi massivni qaytaring."
+  },
+  "solution": "function square(nums) {\n  return nums.map(n => n * n);\n}",
+  "starterCode": "function square(nums) {\n  // type here\n}",
+  "testCases": [
+    {
+      "input": [
+        [
+          1,
+          2,
+          3
+        ]
+      ],
+      "output": [
+        1,
+        4,
+        9
+      ]
+    },
+    {
+      "input": [
+        [
+          6,
+          8,
+          -6,
+          -8,
+          0
+        ]
+      ],
+      "output": [
+        36,
+        64,
+        36,
+        64,
+        0
+      ]
+    },
+    {
+      "input": [
+        []
+      ],
+      "output": []
+    }
+  ]
+}

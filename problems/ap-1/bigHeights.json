@@ -1,0 +1,52 @@
+{
+  "topicId": "ap-1",
+  "id": "bigheights",
+  "difficulty": "Medium",
+  "functionName": "bigHeights",
+  "title": {
+    "en": "Big Heights",
+    "ru": "Большие Подъемы",
+    "uz": "Katta Ko'tarilishlar"
+  },
+  "description": {
+    "en": "We have an array of heights, representing the altitude at different points along a trail. Given start and end indexes, return the number of 'big' steps between them. A big step is defined as a change of 5 or more in absolute height.",
+    "ru": "Дан массив высот, представляющий высоты на различных точках маршрута. Учитывая начальный и конечный индексы, верните количество 'больших' шагов между ними. 'Большим' считается шаг, при котором изменение высоты составляет 5 или более.",
+    "uz": "Turli nuqtalardagi balandliklar massivi berilgan. start va end indekslari orasidagi 'katta' qadamlar sonini qaytaring. 'Katta' qadam bu — balandlik o‘zgarishi 5 yoki undan ko‘p bo‘lgan holat."
+  },
+  "solution": "function bigHeights(heights, start, end) {\n  let count = 0;\n  for (let i = start; i < end; i++) {\n    if (Math.abs(heights[i + 1] - heights[i]) >= 5) {\n      count++;\n    }\n  }\n  return count;\n}",
+  "starterCode": "function bigHeights(heights, start, end) {\n  // type here\n}",
+  "testCases": [
+    {
+      "input": [
+        "[5, 3, 6, 7, 2]",
+        "2",
+        "4"
+      ],
+      "output": 1
+    },
+    {
+      "input": [
+        "[5, 3, 6, 7, 2]",
+        "0",
+        "1"
+      ],
+      "output": 0
+    },
+    {
+      "input": [
+        "[5, 3, 6, 7, 2]",
+        "0",
+        "4"
+      ],
+      "output": 1
+    },
+    {
+      "input": [
+        "[1, 7, 3, 10, 2]",
+        "0",
+        "4"
+      ],
+      "output": 3
+    }
+  ]
+}

@@ -1,0 +1,92 @@
+{
+  "topicId": "array-3",
+  "id": "fix45",
+  "difficulty": "Medium",
+  "functionName": "fix45",
+  "title": {
+    "en": "fix45",
+    "ru": "исправить 4-5",
+    "uz": "4 va 5 ni tuzatish"
+  },
+  "description": {
+    "en": "Return an array that contains exactly the same numbers as the given array, but rearranged so that every 4 is immediately followed by a 5. Do not move the 4's, but every 5 must follow a 4.",
+    "ru": "Верните массив с теми же числами, что и данный, но так, чтобы за каждым 4 сразу следовал 5. Числа 4 не перемещайте, а все 5 должны идти сразу после 4.",
+    "uz": "Berilgan massivdagi barcha 4 sonlaridan keyin darhol 5 sonlari keladigan tarzda massivni qaytaring. 4 sonlarini joyini o‘zgartirmang, lekin har bir 5 4 dan keyin kelishi kerak."
+  },
+  "solution": "function fix45(nums) {\n  let fives = [];\n  for (let i = 0; i < nums.length; i++) {\n    if (nums[i] === 5 && (i === 0 || nums[i - 1] !== 4)) {\n      fives.push(i);\n    }\n  }\n  let index = 0;\n  for (let i = 0; i < nums.length; i++) {\n    if (nums[i] === 4) {\n      let temp = nums[i + 1];\n      nums[i + 1] = 5;\n      nums[fives[index]] = temp;\n      index++;\n    }\n  }\n  return nums;\n}",
+  "starterCode": "function fix45(nums) {\n  // type here\n}",
+  "testCases": [
+    {
+      "input": [
+        [
+          5,
+          4,
+          9,
+          4,
+          9,
+          5
+        ]
+      ],
+      "output": [
+        9,
+        4,
+        5,
+        4,
+        5,
+        9
+      ]
+    },
+    {
+      "input": [
+        [
+          1,
+          4,
+          1,
+          5
+        ]
+      ],
+      "output": [
+        1,
+        4,
+        5,
+        1
+      ]
+    },
+    {
+      "input": [
+        [
+          4,
+          2,
+          2,
+          5
+        ]
+      ],
+      "output": [
+        4,
+        5,
+        2,
+        2
+      ]
+    },
+    {
+      "input": [
+        [
+          4,
+          5,
+          4,
+          5,
+          4,
+          5
+        ]
+      ],
+      "output": [
+        4,
+        5,
+        4,
+        5,
+        4,
+        5
+      ]
+    }
+  ]
+}

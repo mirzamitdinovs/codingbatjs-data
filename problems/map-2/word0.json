@@ -1,0 +1,64 @@
+{
+  "topicId": "map-2",
+  "id": "word0",
+  "difficulty": "Easy",
+  "functionName": "word0",
+  "title": {
+    "en": "Word0",
+    "ru": "Слово0",
+    "uz": "Word0"
+  },
+  "description": {
+    "en": "Given an array of strings, return a map with a key for every different string in the array, and the value 0 for all keys.",
+    "ru": "Дан массив строк. Верните карту с ключом для каждой уникальной строки в массиве и значением 0 для всех ключей.",
+    "uz": "Satrlar massiv berilgan. Har bir noyob satr uchun kalit va barcha kalitlar uchun qiymat 0 bo‘lgan map qaytaring."
+  },
+  "solution": "function word0(words) {\n  const map = {};\n  for (const word of words) {\n    map[word] = 0;\n  }\n  return map;\n}",
+  "starterCode": "function word0(words) {\n  // type here\n}",
+  "testCases": [
+    {
+      "input": [
+        [
+          "a",
+          "b",
+          "a",
+          "b"
+        ]
+      ],
+      "output": {
+        "a": 0,
+        "b": 0
+      }
+    },
+    {
+      "input": [
+        [
+          "c",
+          "b",
+          "a"
+        ]
+      ],
+      "output": {
+        "c": 0,
+        "b": 0,
+        "a": 0
+      }
+    },
+    {
+      "input": [
+        [
+          "hello"
+        ]
+      ],
+      "output": {
+        "hello": 0
+      }
+    },
+    {
+      "input": [
+        []
+      ],
+      "output": {}
+    }
+  ]
+}

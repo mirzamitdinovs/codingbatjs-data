@@ -1,0 +1,58 @@
+{
+  "topicId": "functional-1",
+  "id": "nox",
+  "difficulty": "Easy",
+  "functionName": "noX",
+  "title": {
+    "en": "No X",
+    "ru": "Без X",
+    "uz": "X harfisiz"
+  },
+  "description": {
+    "en": "Given a list of strings, return a list where each string has all the 'x' removed.",
+    "ru": "Дан список строк. Верните список, в котором из каждой строки удалены все символы 'x'.",
+    "uz": "Satrlar ro‘yxati berilgan. Har bir satrdan barcha 'x' harflari olib tashlangan yangi ro‘yxatni qaytaring."
+  },
+  "solution": "function noX(strings) {\n  return strings.map(s => s.replace(/x/g, \"\"));\n}",
+  "starterCode": "function noX(strings) {\n  // type here\n}",
+  "testCases": [
+    {
+      "input": [
+        [
+          "ax",
+          "bb",
+          "cx"
+        ]
+      ],
+      "output": [
+        "a",
+        "bb",
+        "c"
+      ]
+    },
+    {
+      "input": [
+        [
+          "xxax",
+          "xbxbx",
+          "xxcx"
+        ]
+      ],
+      "output": [
+        "a",
+        "bb",
+        "c"
+      ]
+    },
+    {
+      "input": [
+        [
+          "x"
+        ]
+      ],
+      "output": [
+        ""
+      ]
+    }
+  ]
+}

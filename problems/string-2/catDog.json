@@ -1,0 +1,50 @@
+{
+  "topicId": "string-2",
+  "id": "catDog",
+  "difficulty": "Easy",
+  "functionName": "catDog",
+  "title": {
+    "en": "Cat Dog",
+    "ru": "Кот и собака",
+    "uz": "Mushuk va it"
+  },
+  "description": {
+    "en": "Return true if the string \"cat\" and \"dog\" appear the same number of times in the given string.",
+    "ru": "Верните true, если подстроки \"cat\" и \"dog\" встречаются одинаковое количество раз в строке.",
+    "uz": "Berilgan matnda \"cat\" va \"dog\" so‘zlari bir xil miqdorda uchrasa, true qaytaring."
+  },
+  "solution": "function catDog(str) {\n  let catCount = 0;\n  let dogCount = 0;\n  for (let i = 0; i < str.length - 2; i++) {\n    if (str.substring(i, i + 3) === 'cat') catCount++;\n    if (str.substring(i, i + 3) === 'dog') dogCount++;\n  }\n  return catCount === dogCount;\n}",
+  "starterCode": "function catDog(str) {\n  // type here\n}",
+  "testCases": [
+    {
+      "input": [
+        "catdog"
+      ],
+      "output": true
+    },
+    {
+      "input": [
+        "catcat"
+      ],
+      "output": false
+    },
+    {
+      "input": [
+        "1cat1cadodog"
+      ],
+      "output": true
+    },
+    {
+      "input": [
+        ""
+      ],
+      "output": true
+    },
+    {
+      "input": [
+        "dogdogcat"
+      ],
+      "output": false
+    }
+  ]
+}

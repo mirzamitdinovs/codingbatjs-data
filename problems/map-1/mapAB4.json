@@ -1,0 +1,66 @@
+{
+  "topicId": "map-1",
+  "id": "mapab4",
+  "difficulty": "Easy",
+  "functionName": "mapAB4",
+  "title": {
+    "en": "Map AB4",
+    "ru": "Карта AB4",
+    "uz": "Map AB4"
+  },
+  "description": {
+    "en": "Modify and return the given map as follows: if the keys \"a\" and \"b\" are both present and have values of different lengths, remove the key with the shorter value. If they have the same length, do nothing.",
+    "ru": "Измените и верните данную карту следующим образом: если ключи \"a\" и \"b\" присутствуют и имеют значения разной длины, удалите ключ с более коротким значением. Если длины равны, ничего не делайте.",
+    "uz": "Berilgan mapni quyidagicha o‘zgartiring va qaytaring: agar \"a\" va \"b\" kalitlari mavjud bo‘lsa va ularning qiymatlari uzunligi turlicha bo‘lsa, qisqaroq qiymatga ega kalitni o‘chiring. Agar uzunliklar teng bo‘lsa, hech narsa qilmang."
+  },
+  "solution": "function mapAB4(map) {\n  if (map.hasOwnProperty('a') && map.hasOwnProperty('b')) {\n    const aLen = map['a'].length;\n    const bLen = map['b'].length;\n    if (aLen !== bLen) {\n      if (aLen < bLen) {\n        delete map['a'];\n      } else {\n        delete map['b'];\n      }\n    }\n  }\n  return map;\n}",
+  "starterCode": "function mapAB4(map) {\n  // type here\n}",
+  "testCases": [
+    {
+      "input": [
+        {
+          "a": "aaa",
+          "b": "bb",
+          "c": "cake"
+        }
+      ],
+      "output": {
+        "b": "bb",
+        "c": "cake"
+      }
+    },
+    {
+      "input": [
+        {
+          "a": "aa",
+          "b": "bbb"
+        }
+      ],
+      "output": {
+        "a": "aa"
+      }
+    },
+    {
+      "input": [
+        {
+          "a": "aa",
+          "b": "bb"
+        }
+      ],
+      "output": {
+        "a": "aa",
+        "b": "bb"
+      }
+    },
+    {
+      "input": [
+        {
+          "a": "aaa"
+        }
+      ],
+      "output": {
+        "a": "aaa"
+      }
+    }
+  ]
+}

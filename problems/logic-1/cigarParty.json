@@ -1,0 +1,41 @@
+{
+  "topicId": "logic-1",
+  "id": "cigarParty",
+  "difficulty": "Easy",
+  "functionName": "cigarParty",
+  "title": {
+    "en": "Cigar Party",
+    "ru": "Партия с сигарами",
+    "uz": "Sigara partiyasi"
+  },
+  "description": {
+    "en": "When squirrels get together for a party, they like to have cigars. A squirrel party is successful when the number of cigars is between 40 and 60, inclusive. Unless it is the weekend, in which case there is no upper bound on the number of cigars. Return true if the party with the given values is successful, or false otherwise.",
+    "ru": "Когда белки собираются на вечеринку, им нравятся сигары. Вечеринка успешна, если количество сигар от 40 до 60 включительно. Если это выходной, верхнего предела нет. Верните true, если вечеринка успешна, иначе false.",
+    "uz": "Tovuslar yig‘ilishadi va sigaralarni yoqtirishadi. Sigara partiyasi muvaffaqiyatli bo‘ladi, agar sigaralar soni 40 dan 60 gacha bo‘lsa (shu jumladan). Dam olish kunlari esa yuqori chegarasi yo‘q. Agar partiya muvaffaqiyatli bo‘lsa true qaytaring, aks holda false."
+  },
+  "solution": "function cigarParty(cigars, isWeekend) { if (isWeekend) return cigars >= 40; return cigars >= 40 && cigars <= 60; }",
+  "starterCode": "function cigarParty(cigars, isWeekend) {\n  // type here\n}",
+  "testCases": [
+    {
+      "input": [
+        "30",
+        "false"
+      ],
+      "output": false
+    },
+    {
+      "input": [
+        "50",
+        "false"
+      ],
+      "output": true
+    },
+    {
+      "input": [
+        "70",
+        "true"
+      ],
+      "output": true
+    }
+  ]
+}

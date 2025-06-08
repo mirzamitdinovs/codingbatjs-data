@@ -1,0 +1,38 @@
+{
+  "topicId": "array-1",
+  "id": "has23",
+  "difficulty": "Easy",
+  "functionName": "has23",
+  "title": {
+    "en": "Has 23",
+    "ru": "Есть 2 или 3",
+    "uz": "2 yoki 3 bormi?"
+  },
+  "description": {
+    "en": "Given an int array length 2, return true if it contains a 2 or a 3.",
+    "ru": "Дан массив длины 2. Верните true, если он содержит 2 или 3.",
+    "uz": "2 uzunlikdagi butun sonli massiv berilgan. Unda 2 yoki 3 bo‘lsa true qaytaring."
+  },
+  "solution": "function has23(nums) { return nums[0]===2||nums[0]===3||nums[1]===2||nums[1]===3; }",
+  "starterCode": "function has23(nums) {\n  // type here\n}",
+  "testCases": [
+    {
+      "input": [
+        "[2, 5]"
+      ],
+      "output": true
+    },
+    {
+      "input": [
+        "[4, 3]"
+      ],
+      "output": true
+    },
+    {
+      "input": [
+        "[4, 5]"
+      ],
+      "output": false
+    }
+  ]
+}

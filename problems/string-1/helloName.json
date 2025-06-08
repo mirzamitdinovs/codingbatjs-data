@@ -1,0 +1,38 @@
+{
+  "topicId": "string-1",
+  "id": "helloName",
+  "difficulty": "Easy",
+  "functionName": "helloName",
+  "title": {
+    "en": "Hello Name",
+    "ru": "Привет, имя",
+    "uz": "Salom, ism"
+  },
+  "description": {
+    "en": "Given a string name, e.g. \"Bob\", return a greeting of the form \"Hello Bob!\".",
+    "ru": "Дана строка name, например \"Bob\". Верните приветствие вида \"Hello Bob!\".",
+    "uz": "Berilgan name, masalan \"Bob\". \"Hello Bob!\" shaklida salom qaytaring."
+  },
+  "solution": "function helloName(name) {\n  return \"Hello \" + name + \"!\";\n}",
+  "starterCode": "function helloName(name) {\n  // type here\n}",
+  "testCases": [
+    {
+      "input": [
+        "\"Bob\""
+      ],
+      "output": "Hello Bob!"
+    },
+    {
+      "input": [
+        "\"Alice\""
+      ],
+      "output": "Hello Alice!"
+    },
+    {
+      "input": [
+        "\"X\""
+      ],
+      "output": "Hello X!"
+    }
+  ]
+}

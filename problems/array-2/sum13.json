@@ -1,0 +1,76 @@
+{
+  "topicId": "array-2",
+  "id": "sum13",
+  "difficulty": "Easy",
+  "functionName": "sum13",
+  "title": {
+    "en": "sum13",
+    "ru": "сумма без 13",
+    "uz": "13siz yig‘indi"
+  },
+  "description": {
+    "en": "Return the sum of the numbers in the array, returning 0 for an empty array. Except the number 13 is unlucky, so it does not count and numbers that come immediately after a 13 also do not count.",
+    "ru": "Верните сумму чисел в массиве, для пустого массива верните 0. Число 13 несчастливое, поэтому оно не считается, а также не считаются числа, которые идут сразу после 13.",
+    "uz": "Massivdagi sonlarning yig‘indisini qaytaring, bo‘sh massiv bo‘lsa 0. 13 raqami omadli emas, shuning uchun u hisobga olinmaydi, 13 dan keyingi raqamlar ham hisobga olinmaydi."
+  },
+  "solution": "function sum13(nums) {\n  let sum = 0;\n  for (let i = 0; i < nums.length; i++) {\n    if (nums[i] === 13) {\n      i++;\n    } else {\n      sum += nums[i];\n    }\n  }\n  return sum;\n}",
+  "starterCode": "function sum13(nums) {\n  // type here\n}",
+  "testCases": [
+    {
+      "input": [
+        [
+          1,
+          2,
+          2,
+          1
+        ]
+      ],
+      "output": 6
+    },
+    {
+      "input": [
+        [
+          1,
+          2,
+          2,
+          1,
+          13
+        ]
+      ],
+      "output": 6
+    },
+    {
+      "input": [
+        [
+          1,
+          2,
+          13,
+          2,
+          1,
+          13
+        ]
+      ],
+      "output": 4
+    },
+    {
+      "input": [
+        [
+          13,
+          1,
+          2,
+          13,
+          2,
+          1,
+          13
+        ]
+      ],
+      "output": 3
+    },
+    {
+      "input": [
+        []
+      ],
+      "output": 0
+    }
+  ]
+}

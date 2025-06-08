@@ -1,0 +1,80 @@
+{
+  "topicId": "array-2",
+  "id": "modThree",
+  "difficulty": "Medium",
+  "functionName": "modThree",
+  "title": {
+    "en": "modThree",
+    "ru": "три подряд с одинаковым остатком",
+    "uz": "bir xil qoldiq bilan ketma-ket uchta"
+  },
+  "description": {
+    "en": "Given an array of ints, return true if the array contains 3 even or 3 odd values all next to each other.",
+    "ru": "Дан массив целых чисел. Верните true, если в массиве есть 3 подряд идущих четных или нечетных числа.",
+    "uz": "Butun sonlar massiv berilgan. Agar massivda ketma-ket uchta juft yoki toq son bo‘lsa, true qaytaring."
+  },
+  "solution": "function modThree(nums) {\n  for (let i = 0; i < nums.length - 2; i++) {\n    let mod0 = nums[i] % 2;\n    if (nums[i + 1] % 2 === mod0 && nums[i + 2] % 2 === mod0) {\n      return true;\n    }\n  }\n  return false;\n}",
+  "starterCode": "function modThree(nums) {\n  // type here\n}",
+  "testCases": [
+    {
+      "input": [
+        [
+          2,
+          1,
+          3,
+          5
+        ]
+      ],
+      "output": true
+    },
+    {
+      "input": [
+        [
+          2,
+          1,
+          2,
+          5
+        ]
+      ],
+      "output": false
+    },
+    {
+      "input": [
+        [
+          2,
+          4,
+          2,
+          5
+        ]
+      ],
+      "output": true
+    },
+    {
+      "input": [
+        [
+          1,
+          2,
+          1,
+          2,
+          1
+        ]
+      ],
+      "output": false
+    },
+    {
+      "input": [
+        [
+          1,
+          2,
+          1,
+          2,
+          1,
+          2,
+          2,
+          2
+        ]
+      ],
+      "output": true
+    }
+  ]
+}

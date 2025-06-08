@@ -1,0 +1,64 @@
+{
+  "topicId": "map-1",
+  "id": "mapab2",
+  "difficulty": "Easy",
+  "functionName": "mapAB2",
+  "title": {
+    "en": "Map AB2",
+    "ru": "Карта AB2",
+    "uz": "Map AB2"
+  },
+  "description": {
+    "en": "Modify and return the given map as follows: if the keys \"a\" and \"b\" have values that are the same, remove both keys from the map.",
+    "ru": "Измените и верните данную карту следующим образом: если ключи \"a\" и \"b\" имеют одинаковые значения, удалите оба ключа из карты.",
+    "uz": "Berilgan mapni quyidagicha o‘zgartiring va qaytaring: agar \"a\" va \"b\" kalitlari bir xil qiymatga ega bo‘lsa, ikkala kalitni ham mapdan o‘chiring."
+  },
+  "solution": "function mapAB2(map) {\n  if (map.hasOwnProperty('a') && map.hasOwnProperty('b') && map['a'] === map['b']) {\n    delete map['a'];\n    delete map['b'];\n  }\n  return map;\n}",
+  "starterCode": "function mapAB2(map) {\n  // type here\n}",
+  "testCases": [
+    {
+      "input": [
+        {
+          "a": "aaa",
+          "b": "aaa",
+          "c": "cake"
+        }
+      ],
+      "output": {
+        "c": "cake"
+      }
+    },
+    {
+      "input": [
+        {
+          "a": "aaa",
+          "b": "bbb"
+        }
+      ],
+      "output": {
+        "a": "aaa",
+        "b": "bbb"
+      }
+    },
+    {
+      "input": [
+        {
+          "a": "aaa"
+        }
+      ],
+      "output": {
+        "a": "aaa"
+      }
+    },
+    {
+      "input": [
+        {
+          "b": "bbb"
+        }
+      ],
+      "output": {
+        "b": "bbb"
+      }
+    }
+  ]
+}

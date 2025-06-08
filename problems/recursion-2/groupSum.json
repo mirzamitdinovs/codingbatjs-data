@@ -1,0 +1,78 @@
+{
+  "topicId": "recursion-2",
+  "id": "groupsum",
+  "difficulty": "Medium",
+  "functionName": "groupSum",
+  "title": {
+    "en": "Group Sum",
+    "ru": "Сумма группы",
+    "uz": "Guruh yig'indisi"
+  },
+  "description": {
+    "en": "Given an array of ints, is it possible to choose a group of some of the ints, beginning at the start index, such that the group sums to the given target?",
+    "ru": "Дан массив целых чисел. Можно ли выбрать группу чисел, начиная с указанного индекса, чтобы сумма этой группы равнялась заданному числу?",
+    "uz": "Berilgan butun sonlar massividan boshlang‘ich indeksdan boshlab ba’zi elementlarni tanlab, ularning yig‘indisi berilgan maqsadga teng bo‘lishi mumkinmi?"
+  },
+  "solution": "function groupSum(start, nums, target) {\n  if (start >= nums.length) return target === 0;\n  if (groupSum(start + 1, nums, target - nums[start])) return true;\n  if (groupSum(start + 1, nums, target)) return true;\n  return false;\n}",
+  "starterCode": "function groupSum(start, nums, target) {\n  // type here\n}",
+  "testCases": [
+    {
+      "input": [
+        0,
+        [
+          2,
+          4,
+          8
+        ],
+        10
+      ],
+      "output": true
+    },
+    {
+      "input": [
+        0,
+        [
+          2,
+          4,
+          8
+        ],
+        14
+      ],
+      "output": true
+    },
+    {
+      "input": [
+        0,
+        [
+          2,
+          4,
+          8
+        ],
+        9
+      ],
+      "output": false
+    },
+    {
+      "input": [
+        0,
+        [
+          2,
+          4,
+          8
+        ],
+        8
+      ],
+      "output": true
+    },
+    {
+      "input": [
+        0,
+        [
+          1
+        ],
+        1
+      ],
+      "output": true
+    }
+  ]
+}

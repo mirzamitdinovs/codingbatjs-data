@@ -1,0 +1,71 @@
+{
+  "topicId": "array-2",
+  "id": "no14",
+  "difficulty": "Easy",
+  "functionName": "no14",
+  "title": {
+    "en": "no14",
+    "ru": "нет 1 и 4 вместе",
+    "uz": "1 va 4 birga yo‘q"
+  },
+  "description": {
+    "en": "Given an array of ints, return true if it contains no 1's or it contains no 4's.",
+    "ru": "Дан массив целых чисел. Верните true, если в массиве нет 1 или в массиве нет 4.",
+    "uz": "Butun sonlardan iborat massiv berilgan. Agar massivda 1 yo‘q yoki 4 yo‘q bo‘lsa, true qaytaring."
+  },
+  "solution": "function no14(nums) {\n  let has1 = false;\n  let has4 = false;\n  for (let num of nums) {\n    if (num === 1) has1 = true;\n    if (num === 4) has4 = true;\n  }\n  return !has1 || !has4;\n}",
+  "starterCode": "function no14(nums) {\n  // type here\n}",
+  "testCases": [
+    {
+      "input": [
+        [
+          1,
+          2,
+          3
+        ]
+      ],
+      "output": true
+    },
+    {
+      "input": [
+        [
+          1,
+          2,
+          3,
+          4
+        ]
+      ],
+      "output": false
+    },
+    {
+      "input": [
+        [
+          2,
+          3,
+          4
+        ]
+      ],
+      "output": true
+    },
+    {
+      "input": [
+        [
+          2,
+          3
+        ]
+      ],
+      "output": true
+    },
+    {
+      "input": [
+        [
+          1,
+          1,
+          1,
+          1
+        ]
+      ],
+      "output": true
+    }
+  ]
+}

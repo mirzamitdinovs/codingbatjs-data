@@ -1,0 +1,66 @@
+{
+  "topicId": "array-2",
+  "id": "fizzBuzz",
+  "difficulty": "Medium",
+  "functionName": "fizzBuzz",
+  "title": {
+    "en": "fizzBuzz",
+    "ru": "физзбазз",
+    "uz": "fizzBuzz"
+  },
+  "description": {
+    "en": "Given start and end numbers, return a new array containing the string form of each number in the range, but for multiples of 3 use 'Fizz', for multiples of 5 use 'Buzz', and for multiples of both 3 and 5 use 'FizzBuzz'.",
+    "ru": "Даны начальное и конечное числа. Верните массив строк, представляющих числа в этом диапазоне, но для чисел, кратных 3, используйте 'Fizz', для кратных 5 — 'Buzz', а для кратных и 3 и 5 — 'FizzBuzz'.",
+    "uz": "Berilgan boshlang‘ich va tugash sonlar oralig‘idagi har bir sonning matn shaklini qaytaring, lekin 3 ga bo‘linadiganlarga 'Fizz', 5 ga bo‘linadiganlarga 'Buzz', 3 va 5 ga bo‘linadiganlarga 'FizzBuzz' yozilsin."
+  },
+  "solution": "function fizzBuzz(start, end) {\n  let result = [];\n  for (let i = start; i < end; i++) {\n    if (i % 15 === 0) result.push('FizzBuzz');\n    else if (i % 3 === 0) result.push('Fizz');\n    else if (i % 5 === 0) result.push('Buzz');\n    else result.push(i.toString());\n  }\n  return result;\n}",
+  "starterCode": "function fizzBuzz(start, end) {\n  // type here\n}",
+  "testCases": [
+    {
+      "input": [
+        1,
+        6
+      ],
+      "output": [
+        "1",
+        "2",
+        "Fizz",
+        "4",
+        "Buzz"
+      ]
+    },
+    {
+      "input": [
+        1,
+        8
+      ],
+      "output": [
+        "1",
+        "2",
+        "Fizz",
+        "4",
+        "Buzz",
+        "Fizz",
+        "7"
+      ]
+    },
+    {
+      "input": [
+        1,
+        11
+      ],
+      "output": [
+        "1",
+        "2",
+        "Fizz",
+        "4",
+        "Buzz",
+        "Fizz",
+        "7",
+        "8",
+        "Fizz",
+        "Buzz"
+      ]
+    }
+  ]
+}

@@ -1,0 +1,38 @@
+{
+  "topicId": "warmup-2",
+  "id": "arrayFront9",
+  "difficulty": "Easy",
+  "functionName": "arrayFront9",
+  "title": {
+    "en": "Array Front 9",
+    "ru": "9 в Начале Массива",
+    "uz": "Massiv Boshida 9"
+  },
+  "description": {
+    "en": "Given an array of ints, return true if one of the first 4 elements in the array is a 9. The array length may be less than 4.",
+    "ru": "Дан массив целых чисел. Верните true, если один из первых 4 элементов равен 9. Длина массива может быть меньше 4.",
+    "uz": "Butun sonlardan iborat massiv berilgan. Agar birinchi 4 elementdan biri 9 bo‘lsa, true qaytaring. Massiv uzunligi 4 dan kam bo‘lishi mumkin."
+  },
+  "solution": "function arrayFront9(nums) {\n  let len = Math.min(4, nums.length);\n  for (let i = 0; i < len; i++) {\n    if (nums[i] === 9) return true;\n  }\n  return false;\n}",
+  "starterCode": "function arrayFront9(nums) {\n  // type here\n}",
+  "testCases": [
+    {
+      "input": [
+        "[1, 2, 9, 3, 4]"
+      ],
+      "output": true
+    },
+    {
+      "input": [
+        "[1, 2, 3, 4, 9]"
+      ],
+      "output": false
+    },
+    {
+      "input": [
+        "[1, 2, 3, 4, 5]"
+      ],
+      "output": false
+    }
+  ]
+}

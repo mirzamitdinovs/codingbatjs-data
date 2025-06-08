@@ -1,0 +1,88 @@
+{
+  "topicId": "ap-1",
+  "id": "wordsWithoutList",
+  "difficulty": "Medium",
+  "functionName": "wordsWithoutList",
+  "title": {
+    "en": "wordsWithoutList",
+    "ru": "слова без списка",
+    "uz": "ro‘yxatsiz so‘zlar"
+  },
+  "description": {
+    "en": "Given an array of strings, return a new array containing the strings that do not appear in the given list of strings. The list of strings is not empty.",
+    "ru": "Дан массив строк. Верните новый массив, содержащий строки, которые не содержатся в данном списке строк. Список строк не пуст.",
+    "uz": "So‘zlar massiv berilgan. Yangi massivni, berilgan ro‘yxatdagi so‘zlar mavjud bo‘lmagan so‘zlar bilan qaytaring. Ro‘yxat bo‘sh bo‘lmaydi."
+  },
+  "solution": "function wordsWithoutList(words, list) {\n  return words.filter(word => !list.includes(word));\n}",
+  "starterCode": "function wordsWithoutList(words, list) {\n  // type here\n}",
+  "testCases": [
+    {
+      "input": [
+        [
+          "a",
+          "b",
+          "c",
+          "d"
+        ],
+        [
+          "b",
+          "d"
+        ]
+      ],
+      "output": [
+        "a",
+        "c"
+      ]
+    },
+    {
+      "input": [
+        [
+          "x",
+          "y",
+          "z"
+        ],
+        [
+          "y"
+        ]
+      ],
+      "output": [
+        "x",
+        "z"
+      ]
+    },
+    {
+      "input": [
+        [
+          "apple",
+          "banana",
+          "cherry",
+          "date"
+        ],
+        [
+          "banana",
+          "date"
+        ]
+      ],
+      "output": [
+        "apple",
+        "cherry"
+      ]
+    },
+    {
+      "input": [
+        [
+          "cat",
+          "dog",
+          "fish"
+        ],
+        [
+          "dog"
+        ]
+      ],
+      "output": [
+        "cat",
+        "fish"
+      ]
+    }
+  ]
+}

@@ -1,0 +1,84 @@
+{
+  "topicId": "recursion-2",
+  "id": "groupsum5",
+  "difficulty": "Medium",
+  "functionName": "groupSum5",
+  "title": {
+    "en": "Group Sum 5",
+    "ru": "Сумма группы с пятёрками",
+    "uz": "Guruh yig'indisi 5 bilan"
+  },
+  "description": {
+    "en": "Given an array of ints, is it possible to choose a group of some of the ints, beginning at the start index, such that the group sums to the given target, with the constraint that all multiples of 5 must be chosen, and if a multiple of 5 is immediately followed by a 1, that 1 must not be chosen?",
+    "ru": "Дан массив целых чисел. Можно ли выбрать группу чисел, начиная с указанного индекса, чтобы сумма этой группы равнялась заданному числу, при условии, что все кратные 5 должны быть выбраны, а если за кратным 5 следует 1, то 1 не выбирается?",
+    "uz": "Berilgan butun sonlar massividan boshlang‘ich indeksdan boshlab ba’zi elementlarni tanlab, ularning yig‘indisi berilgan maqsadga teng bo‘lishi mumkinmi, bunda barcha 5 ga karrali sonlar tanlanishi shart va agar 5 ga karrali sondan keyin 1 kelsa, u tanlanmasligi kerak?"
+  },
+  "solution": "function groupSum5(start, nums, target) {\n  if (start >= nums.length) return target === 0;\n  if (nums[start] % 5 === 0) {\n    if (start + 1 < nums.length && nums[start + 1] === 1) {\n      return groupSum5(start + 2, nums, target - nums[start]);\n    } else {\n      return groupSum5(start + 1, nums, target - nums[start]);\n    }\n  }\n  if (groupSum5(start + 1, nums, target - nums[start])) return true;\n  if (groupSum5(start + 1, nums, target)) return true;\n  return false;\n}",
+  "starterCode": "function groupSum5(start, nums, target) {\n  // type here\n}",
+  "testCases": [
+    {
+      "input": [
+        0,
+        [
+          2,
+          5,
+          10,
+          4
+        ],
+        19
+      ],
+      "output": true
+    },
+    {
+      "input": [
+        0,
+        [
+          2,
+          5,
+          10,
+          4
+        ],
+        17
+      ],
+      "output": false
+    },
+    {
+      "input": [
+        0,
+        [
+          2,
+          5,
+          10,
+          4
+        ],
+        12
+      ],
+      "output": false
+    },
+    {
+      "input": [
+        0,
+        [
+          5,
+          5,
+          5
+        ],
+        15
+      ],
+      "output": true
+    },
+    {
+      "input": [
+        0,
+        [
+          5,
+          1,
+          5,
+          1
+        ],
+        10
+      ],
+      "output": true
+    }
+  ]
+}

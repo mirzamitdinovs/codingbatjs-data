@@ -1,0 +1,41 @@
+{
+  "topicId": "string-1",
+  "id": "nTwice",
+  "difficulty": "Easy",
+  "functionName": "nTwice",
+  "title": {
+    "en": "N Twice",
+    "ru": "Два конца N",
+    "uz": "N ikkita"
+  },
+  "description": {
+    "en": "Given a string and int n, return the first and last n chars concatenated.",
+    "ru": "Дана строка и число n. Верните первые и последние n символов, соединённые вместе.",
+    "uz": "Satr va n soni berilgan. Birinchi va oxirgi n belgini birlashtirib qaytaring."
+  },
+  "solution": "function nTwice(str, n) {\n  return str.substring(0, n) + str.substring(str.length - n);\n}",
+  "starterCode": "function nTwice(str, n) {\n  // type here\n}",
+  "testCases": [
+    {
+      "input": [
+        "\"Chocolate\"",
+        "3"
+      ],
+      "output": "Choate"
+    },
+    {
+      "input": [
+        "\"Chocolate\"",
+        "1"
+      ],
+      "output": "Ce"
+    },
+    {
+      "input": [
+        "\"Chocolate\"",
+        "2"
+      ],
+      "output": "Choe"
+    }
+  ]
+}

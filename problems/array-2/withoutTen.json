@@ -1,0 +1,90 @@
+{
+  "topicId": "array-2",
+  "id": "withoutTen",
+  "difficulty": "Medium",
+  "functionName": "withoutTen",
+  "title": {
+    "en": "withoutTen",
+    "ru": "без десяти",
+    "uz": "o‘nsiz"
+  },
+  "description": {
+    "en": "Return a version of the given array where all the 10's have been removed. The remaining elements should be shifted left towards the start of the array, and the empty spaces at the end of the array should be filled with 0's.",
+    "ru": "Верните версию данного массива, где все десять удалены. Оставшиеся элементы должны быть сдвинуты влево, а пустые места в конце заполнены нулями.",
+    "uz": "Berilgan massivdan barcha 10 lar olib tashlangan versiyasini qaytaring. Qolgan elementlar chapga suriladi, bo‘sh joylar oxirida 0 bilan to‘ldiriladi."
+  },
+  "solution": "function withoutTen(nums) {\n  let result = [];\n  for (let num of nums) {\n    if (num !== 10) result.push(num);\n  }\n  while (result.length < nums.length) {\n    result.push(0);\n  }\n  return result;\n}",
+  "starterCode": "function withoutTen(nums) {\n  // type here\n}",
+  "testCases": [
+    {
+      "input": [
+        [
+          1,
+          10,
+          10,
+          2
+        ]
+      ],
+      "output": [
+        1,
+        2,
+        0,
+        0
+      ]
+    },
+    {
+      "input": [
+        [
+          10,
+          2,
+          10
+        ]
+      ],
+      "output": [
+        2,
+        0,
+        0
+      ]
+    },
+    {
+      "input": [
+        [
+          1,
+          99,
+          10
+        ]
+      ],
+      "output": [
+        1,
+        99,
+        0
+      ]
+    },
+    {
+      "input": [
+        [
+          10,
+          10
+        ]
+      ],
+      "output": [
+        0,
+        0
+      ]
+    },
+    {
+      "input": [
+        [
+          1,
+          2,
+          3
+        ]
+      ],
+      "output": [
+        1,
+        2,
+        3
+      ]
+    }
+  ]
+}

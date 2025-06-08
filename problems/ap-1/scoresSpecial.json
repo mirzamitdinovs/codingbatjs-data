@@ -1,0 +1,48 @@
+{
+  "topicId": "ap-1",
+  "id": "scoresspecial",
+  "difficulty": "Medium",
+  "functionName": "scoresSpecial",
+  "title": {
+    "en": "Scores Special",
+    "ru": "Особые Баллы",
+    "uz": "Maxsus Ballar"
+  },
+  "description": {
+    "en": "Given two arrays of scores, return the sum of the largest special score in each array. A special score is a multiple of 10, such as 40 or 90. Assume each array has at least one special score.",
+    "ru": "Даны два массива с баллами. Верните сумму наибольших 'особых' баллов в каждом массиве. 'Особый' балл — это число, кратное 10, например 40 или 90. Предполагается, что в каждом массиве есть хотя бы один такой балл.",
+    "uz": "Ikki ta ballar massivi berilgan. Har bir massivdagi eng katta 'maxsus' ball (10 ga karrali son) ni toping va ularning yig‘indisini qaytaring. Har bir massivda hech bo‘lmaganda bitta maxsus ball mavjud deb hisoblanadi."
+  },
+  "solution": "function scoresSpecial(a, b) {\n  function maxSpecial(arr) {\n    let max = 0;\n    for (let i = 0; i < arr.length; i++) {\n      if (arr[i] % 10 === 0 && arr[i] > max) {\n        max = arr[i];\n      }\n    }\n    return max;\n  }\n  return maxSpecial(a) + maxSpecial(b);\n}",
+  "starterCode": "function scoresSpecial(a, b) {\n  // type here\n}",
+  "testCases": [
+    {
+      "input": [
+        "[12, 10, 4]",
+        "[2, 20, 30]"
+      ],
+      "output": 40
+    },
+    {
+      "input": [
+        "[20, 10, 4]",
+        "[2, 20, 10]"
+      ],
+      "output": 40
+    },
+    {
+      "input": [
+        "[12, 11, 4]",
+        "[2, 20, 31]"
+      ],
+      "output": 20
+    },
+    {
+      "input": [
+        "[100, 90, 80]",
+        "[10, 20, 30]"
+      ],
+      "output": 130
+    }
+  ]
+}

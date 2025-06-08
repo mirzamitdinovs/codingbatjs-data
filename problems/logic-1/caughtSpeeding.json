@@ -1,0 +1,41 @@
+{
+  "topicId": "logic-1",
+  "id": "caughtSpeeding",
+  "difficulty": "Medium",
+  "functionName": "caughtSpeeding",
+  "title": {
+    "en": "Caught Speeding",
+    "ru": "Пойман за превышением скорости",
+    "uz": "Tezlikda ushlanmoq"
+  },
+  "description": {
+    "en": "You are driving a vehicle, speed is given. Return 0 if speed <= 60, 1 if speed between 61 and 80 inclusive, and 2 if speed > 80. If it is your birthday, speed can be 5 higher in all cases.",
+    "ru": "Вы едете на машине. Верните 0, если скорость <= 60, 1 если от 61 до 80 включительно, 2 если > 80. Если день рождения, добавьте 5 к скорости.",
+    "uz": "Siz mashinada haydangansiz. Agar tezlik <= 60 bo‘lsa 0, 61 dan 80 gacha (shu jumladan) bo‘lsa 1, 80 dan yuqori bo‘lsa 2 qaytaring. Tug‘ilgan kuningiz bo‘lsa, tezlikga 5 qo‘shiladi."
+  },
+  "solution": "function caughtSpeeding(speed, isBirthday) { let limit1 = 60 + (isBirthday ? 5 : 0); let limit2 = 80 + (isBirthday ? 5 : 0); if (speed <= limit1) return 0; if (speed <= limit2) return 1; return 2; }",
+  "starterCode": "function caughtSpeeding(speed, isBirthday) {\n  // type here\n}",
+  "testCases": [
+    {
+      "input": [
+        "60",
+        "false"
+      ],
+      "output": 0
+    },
+    {
+      "input": [
+        "65",
+        "false"
+      ],
+      "output": 1
+    },
+    {
+      "input": [
+        "65",
+        "true"
+      ],
+      "output": 0
+    }
+  ]
+}

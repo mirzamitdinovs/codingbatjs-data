@@ -1,0 +1,52 @@
+{
+  "topicId": "ap-1",
+  "id": "sumheights2",
+  "difficulty": "Medium",
+  "functionName": "sumHeights2",
+  "title": {
+    "en": "Sum Heights 2",
+    "ru": "Сумма Высот 2",
+    "uz": "Balandliklar Yig'indisi 2"
+  },
+  "description": {
+    "en": "We have an array of heights, representing the altitude at different points along a trail. Given start and end indexes, return the sum of the changes in height between each step from start to end (inclusive). However, if the step goes up, the change counts double. Going down counts as normal.",
+    "ru": "Дан массив высот, представляющий высоты на различных точках маршрута. Учитывая начальный и конечный индексы, верните сумму изменений высоты между каждым шагом от start до end (включительно). Однако, если шаг идет вверх, изменение учитывается вдвойне. Шаг вниз считается обычно.",
+    "uz": "Turli nuqtalardagi balandliklar berilgan. start va end indekslari orasidagi har bir o‘zgarishni hisoblang. Agar balandlik oshsa, bu o‘zgarish ikki baravar hisoblanadi. Pasayish esa oddiy hisoblanadi."
+  },
+  "solution": "function sumHeights2(heights, start, end) {\n  let sum = 0;\n  for (let i = start; i < end; i++) {\n    let diff = heights[i + 1] - heights[i];\n    if (diff > 0) {\n      sum += 2 * diff;\n    } else {\n      sum += Math.abs(diff);\n    }\n  }\n  return sum;\n}",
+  "starterCode": "function sumHeights2(heights, start, end) {\n  // type here\n}",
+  "testCases": [
+    {
+      "input": [
+        "[5, 3, 6, 7, 2]",
+        "2",
+        "4"
+      ],
+      "output": 7
+    },
+    {
+      "input": [
+        "[5, 3, 6, 7, 2]",
+        "0",
+        "1"
+      ],
+      "output": 2
+    },
+    {
+      "input": [
+        "[5, 3, 6, 7, 2]",
+        "0",
+        "4"
+      ],
+      "output": 15
+    },
+    {
+      "input": [
+        "[1, 2, 3, 4]",
+        "0",
+        "3"
+      ],
+      "output": 6
+    }
+  ]
+}

@@ -1,0 +1,50 @@
+{
+  "topicId": "array-1",
+  "id": "maxEnd3",
+  "difficulty": "Easy",
+  "functionName": "maxEnd3",
+  "title": {
+    "en": "Max End 3",
+    "ru": "Максимум на концах",
+    "uz": "Oxirgi maksimal 3"
+  },
+  "description": {
+    "en": "Given an array length 3, figure out which is larger, first or last element, and set all elements to that value.",
+    "ru": "Дан массив длины 3. Определите, какой элемент больше — первый или последний, и замените все элементы этим значением.",
+    "uz": "3 elementli massiv berilgan. Birinchi va oxirgi elementdan kattasini toping va barcha elementlarni shu qiymatga tenglashtiring."
+  },
+  "solution": "function maxEnd3(nums) { let max = Math.max(nums[0], nums[2]); return [max, max, max]; }",
+  "starterCode": "function maxEnd3(nums) {\n  // type here\n}",
+  "testCases": [
+    {
+      "input": [
+        "[1, 2, 3]"
+      ],
+      "output": [
+        3,
+        3,
+        3
+      ]
+    },
+    {
+      "input": [
+        "[11, 5, 9]"
+      ],
+      "output": [
+        11,
+        11,
+        11
+      ]
+    },
+    {
+      "input": [
+        "[2, 11, 3]"
+      ],
+      "output": [
+        3,
+        3,
+        3
+      ]
+    }
+  ]
+}

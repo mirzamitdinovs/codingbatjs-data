@@ -1,0 +1,55 @@
+{
+  "topicId": "string-2",
+  "id": "wordEnds",
+  "difficulty": "Medium",
+  "functionName": "wordEnds",
+  "title": {
+    "en": "wordEnds",
+    "ru": "символы вокруг слова",
+    "uz": "so‘z atrofidagi belgilar"
+  },
+  "description": {
+    "en": "Given a string and a non-empty word string, return a string made of each char before and after every appearance of the word in the string. Ignore cases where there is no char before or after the word.",
+    "ru": "Дана строка и непустое слово. Верните строку из символов перед и после каждого появления слова в строке. Игнорируйте случаи, где символа нет.",
+    "uz": "Berilgan satr va bo‘sh bo‘lmagan so‘z. Satrda so‘z har uchragan joydan oldingi va keyingi belgilarni ketma-ket olib qaytaring. Belgilar yo‘q bo‘lsa e’tiborga olmang."
+  },
+  "solution": "function wordEnds(str, word) {\n  let result = '';\n  let len = word.length;\n  for (let i = 0; i <= str.length - len; i++) {\n    if (str.substring(i, i + len) === word) {\n      if (i > 0) result += str.charAt(i - 1);\n      if (i + len < str.length) result += str.charAt(i + len);\n    }\n  }\n  return result;\n}",
+  "starterCode": "function wordEnds(str, word) {\n  // type here\n}",
+  "testCases": [
+    {
+      "input": [
+        "abcXY123XYijk",
+        "XY"
+      ],
+      "output": "c13i"
+    },
+    {
+      "input": [
+        "XY123XY",
+        "XY"
+      ],
+      "output": "13"
+    },
+    {
+      "input": [
+        "XY1XY",
+        "XY"
+      ],
+      "output": "11"
+    },
+    {
+      "input": [
+        "XY",
+        "XY"
+      ],
+      "output": ""
+    },
+    {
+      "input": [
+        "abc1xyz1abc",
+        "1"
+      ],
+      "output": "cxza"
+    }
+  ]
+}

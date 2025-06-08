@@ -1,0 +1,74 @@
+{
+  "topicId": "array-2",
+  "id": "either24",
+  "difficulty": "Medium",
+  "functionName": "either24",
+  "title": {
+    "en": "either24",
+    "ru": "либо 2, либо 4",
+    "uz": "yoki 2 yoki 4"
+  },
+  "description": {
+    "en": "Given an array of ints, return true if the array contains a 2 next to a 2 or a 4 next to a 4, but not both.",
+    "ru": "Дан массив целых чисел. Верните true, если массив содержит 2 рядом с 2 или 4 рядом с 4, но не оба варианта.",
+    "uz": "Butun sonlar massiv berilgan. Agar massivda yonma-yon ikkita 2 yoki ikkita 4 bo‘lsa, lekin ikkalasi bir vaqtda bo‘lmasa, true qaytaring."
+  },
+  "solution": "function either24(nums) {\n  let has22 = false;\n  let has44 = false;\n  for (let i = 0; i < nums.length - 1; i++) {\n    if (nums[i] === 2 && nums[i + 1] === 2) has22 = true;\n    if (nums[i] === 4 && nums[i + 1] === 4) has44 = true;\n  }\n  return has22 !== has44;\n}",
+  "starterCode": "function either24(nums) {\n  // type here\n}",
+  "testCases": [
+    {
+      "input": [
+        [
+          1,
+          2,
+          2
+        ]
+      ],
+      "output": true
+    },
+    {
+      "input": [
+        [
+          4,
+          4,
+          1
+        ]
+      ],
+      "output": true
+    },
+    {
+      "input": [
+        [
+          4,
+          4,
+          1,
+          2,
+          2
+        ]
+      ],
+      "output": false
+    },
+    {
+      "input": [
+        [
+          2,
+          2,
+          4,
+          4
+        ]
+      ],
+      "output": false
+    },
+    {
+      "input": [
+        [
+          1,
+          2,
+          3,
+          4
+        ]
+      ],
+      "output": false
+    }
+  ]
+}

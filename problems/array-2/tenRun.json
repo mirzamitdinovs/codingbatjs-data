@@ -1,0 +1,106 @@
+{
+  "topicId": "array-2",
+  "id": "tenRun",
+  "difficulty": "Medium",
+  "functionName": "tenRun",
+  "title": {
+    "en": "tenRun",
+    "ru": "десять подряд",
+    "uz": "o‘nlik ketma-ketligi"
+  },
+  "description": {
+    "en": "For each multiple of 10 in the array, change all the values following it to be that multiple of 10, until encountering another multiple of 10.",
+    "ru": "Для каждого числа, кратного 10 в массиве, замените все последующие значения этим числом, пока не встретится другое число, кратное 10.",
+    "uz": "Massivdagi har bir 10 ga karrali son uchun, keyingi barcha qiymatlarni shu son bilan almashtiring, boshqa 10 ga karrali son uchraguncha."
+  },
+  "solution": "function tenRun(nums) {\n  let currentMultiple = null;\n  for (let i = 0; i < nums.length; i++) {\n    if (nums[i] % 10 === 0) {\n      currentMultiple = nums[i];\n    } else if (currentMultiple !== null) {\n      nums[i] = currentMultiple;\n    }\n  }\n  return nums;\n}",
+  "starterCode": "function tenRun(nums) {\n  // type here\n}",
+  "testCases": [
+    {
+      "input": [
+        [
+          2,
+          10,
+          3,
+          4,
+          20,
+          5
+        ]
+      ],
+      "output": [
+        2,
+        10,
+        10,
+        10,
+        20,
+        20
+      ]
+    },
+    {
+      "input": [
+        [
+          10,
+          1,
+          20,
+          2
+        ]
+      ],
+      "output": [
+        10,
+        10,
+        20,
+        20
+      ]
+    },
+    {
+      "input": [
+        [
+          10,
+          1,
+          9,
+          20
+        ]
+      ],
+      "output": [
+        10,
+        10,
+        10,
+        20
+      ]
+    },
+    {
+      "input": [
+        [
+          1,
+          2,
+          3,
+          4,
+          5
+        ]
+      ],
+      "output": [
+        1,
+        2,
+        3,
+        4,
+        5
+      ]
+    },
+    {
+      "input": [
+        [
+          10,
+          10,
+          10,
+          10
+        ]
+      ],
+      "output": [
+        10,
+        10,
+        10,
+        10
+      ]
+    }
+  ]
+}

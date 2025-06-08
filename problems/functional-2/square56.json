@@ -1,0 +1,67 @@
+{
+  "topicId": "functional-2",
+  "id": "square56",
+  "difficulty": "Easy",
+  "functionName": "square56",
+  "title": {
+    "en": "Square56",
+    "ru": "Квадрат56",
+    "uz": "Kvadrat56"
+  },
+  "description": {
+    "en": "Given a list of integers, return a list where each integer is squared and then increased by 10, except ignore any resulting values that end with 5 or 6.",
+    "ru": "Дан список целых чисел. Верните новый список, где каждый элемент возведён в квадрат и увеличен на 10, но исключите те результаты, которые заканчиваются на 5 или 6.",
+    "uz": "Butun sonlar ro‘yxati berilgan. Har bir element kvadratga ko‘tarilib, 10 ga oshiriladi, lekin oxiri 5 yoki 6 bilan tugaydigan qiymatlar chiqarib tashlanadi."
+  },
+  "solution": "function square56(nums) {\n  return nums.map(n => n * n + 10).filter(n => n % 10 !== 5 && n % 10 !== 6);\n}",
+  "starterCode": "function square56(nums) {\n  // type here\n}",
+  "testCases": [
+    {
+      "input": [
+        [
+          44,
+          1,
+          2,
+          3,
+          9,
+          11
+        ]
+      ],
+      "output": [
+        1976,
+        11,
+        14,
+        19,
+        111
+      ]
+    },
+    {
+      "input": [
+        [
+          2,
+          6,
+          1,
+          7
+        ]
+      ],
+      "output": [
+        14,
+        10,
+        11
+      ]
+    },
+    {
+      "input": [
+        [
+          3,
+          1,
+          4
+        ]
+      ],
+      "output": [
+        19,
+        11
+      ]
+    }
+  ]
+}

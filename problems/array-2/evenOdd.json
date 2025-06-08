@@ -1,0 +1,94 @@
+{
+  "topicId": "array-2",
+  "id": "evenOdd",
+  "difficulty": "Medium",
+  "functionName": "evenOdd",
+  "title": {
+    "en": "evenOdd",
+    "ru": "чётные и нечётные",
+    "uz": "juft va toq"
+  },
+  "description": {
+    "en": "Return an array that contains the exact same numbers as the given array, but rearranged so that all the even numbers come before all the odd numbers.",
+    "ru": "Верните массив, содержащий те же числа, что и данный, но так, чтобы сначала шли все чётные числа, а затем все нечётные.",
+    "uz": "Berilgan massivdagi barcha juft sonlar oldin, barcha toq sonlar esa keyin keladigan tarzda tartiblangan yangi massivni qaytaring."
+  },
+  "solution": "function evenOdd(nums) {\n  let evens = [];\n  let odds = [];\n  for (let num of nums) {\n    if (num % 2 === 0) evens.push(num);\n    else odds.push(num);\n  }\n  return evens.concat(odds);\n}",
+  "starterCode": "function evenOdd(nums) {\n  // type here\n}",
+  "testCases": [
+    {
+      "input": [
+        [
+          1,
+          0,
+          1,
+          0,
+          0,
+          1,
+          1
+        ]
+      ],
+      "output": [
+        0,
+        0,
+        0,
+        1,
+        1,
+        1,
+        1
+      ]
+    },
+    {
+      "input": [
+        [
+          3,
+          3,
+          2
+        ]
+      ],
+      "output": [
+        2,
+        3,
+        3
+      ]
+    },
+    {
+      "input": [
+        [
+          2,
+          2,
+          2
+        ]
+      ],
+      "output": [
+        2,
+        2,
+        2
+      ]
+    },
+    {
+      "input": [
+        [
+          1,
+          1,
+          1
+        ]
+      ],
+      "output": [
+        1,
+        1,
+        1
+      ]
+    },
+    {
+      "input": [
+        [
+          0
+        ]
+      ],
+      "output": [
+        0
+      ]
+    }
+  ]
+}

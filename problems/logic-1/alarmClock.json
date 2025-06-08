@@ -1,0 +1,62 @@
+{
+  "topicId": "logic-1",
+  "id": "alarmClock",
+  "difficulty": "Easy",
+  "functionName": "alarmClock",
+  "title": {
+    "en": "Alarm Clock",
+    "ru": "Будильник",
+    "uz": "Budilnik"
+  },
+  "description": {
+    "en": "Given a day of the week encoded as 0=Sun, 1=Mon, 2=Tue, ...6=Sat, and a boolean indicating if we are on vacation, return a string of the form \"7:00\" indicating when the alarm clock should ring. Weekdays (1-5) return \"7:00\" and weekends (0,6) return \"10:00\" unless we are on vacation -- then weekdays return \"10:00\" and weekends return \"off\".",
+    "ru": "Дан день недели, закодированный как 0=воскресенье, 1=понедельник, 2=вторник, ...6=суббота, и булево значение, указывающее, в отпуске ли мы. Верните строку вида \"7:00\", указывающую, когда должен звонить будильник. В будние дни (1-5) возвращается \"7:00\", а в выходные (0,6) — \"10:00\", если только мы не в отпуске — тогда в будние дни возвращается \"10:00\", а в выходные — \"off\".",
+    "uz": "Hafta kuni 0=Yakshanba, 1=Dushanba, 2=Seshanba, ...6=Shanba tarzida kodlangan va ta'tilda ekanligimiz boolean qiymatda berilgan. Budilnik necha soatda jiringlashi kerakligini bildiruvchi \"7:00\" ko‘rinishidagi matnni qaytaring. Ish kunlari (1-5) uchun \"7:00\", dam olish kunlari (0,6) uchun \"10:00\" qaytariladi. Agar ta'tilda bo‘lsak, ish kunlari uchun \"10:00\", dam olish kunlari uchun \"off\" qaytariladi."
+  },
+  "solution": "function alarmClock(day, vacation) {\n  if (vacation) {\n    if (day == 0 || day == 6) {\n      return \"off\";\n    } else {\n      return \"10:00\";\n    }\n  } else {\n    if (day == 0 || day == 6) {\n      return \"10:00\";\n    } else {\n      return \"7:00\";\n    }\n  }\n}",
+  "starterCode": "function alarmClock(day, vacation) {\n  // type here\n}",
+  "testCases": [
+    {
+      "input": [
+        "1",
+        "false"
+      ],
+      "output": "7:00"
+    },
+    {
+      "input": [
+        "5",
+        "false"
+      ],
+      "output": "7:00"
+    },
+    {
+      "input": [
+        "0",
+        "false"
+      ],
+      "output": "10:00"
+    },
+    {
+      "input": [
+        "6",
+        "true"
+      ],
+      "output": "off"
+    },
+    {
+      "input": [
+        "2",
+        "true"
+      ],
+      "output": "10:00"
+    },
+    {
+      "input": [
+        "0",
+        "true"
+      ],
+      "output": "off"
+    }
+  ]
+}

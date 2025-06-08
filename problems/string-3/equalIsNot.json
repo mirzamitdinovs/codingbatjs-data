@@ -1,0 +1,50 @@
+{
+  "topicId": "string-3",
+  "id": "equalIsNot",
+  "difficulty": "Medium",
+  "functionName": "equalIsNot",
+  "title": {
+    "en": "equalIsNot",
+    "ru": "равное количество is и not",
+    "uz": "'is' va 'not' tengligi"
+  },
+  "description": {
+    "en": "Given a string, return true if the number of appearances of 'is' is equal to the number of appearances of 'not' in the string.",
+    "ru": "Дана строка. Верните true, если количество вхождений 'is' равно количеству вхождений 'not' в строке.",
+    "uz": "Berilgan satrda 'is' va 'not' so‘zlari soni teng bo‘lsa true qaytaring."
+  },
+  "solution": "function equalIsNot(str) {\n  let countIs = 0;\n  let countNot = 0;\n  for (let i = 0; i < str.length; i++) {\n    if (str.substring(i, i + 2) === 'is') countIs++;\n    if (str.substring(i, i + 3) === 'not') countNot++;\n  }\n  return countIs === countNot;\n}",
+  "starterCode": "function equalIsNot(str) {\n  // type here\n}",
+  "testCases": [
+    {
+      "input": [
+        "This is notnot"
+      ],
+      "output": true
+    },
+    {
+      "input": [
+        "This is not"
+      ],
+      "output": false
+    },
+    {
+      "input": [
+        "noisxxnotyynotxisi"
+      ],
+      "output": true
+    },
+    {
+      "input": [
+        "noisxxnotyynotxsi"
+      ],
+      "output": false
+    },
+    {
+      "input": [
+        "xxxyyyzzzintint"
+      ],
+      "output": true
+    }
+  ]
+}

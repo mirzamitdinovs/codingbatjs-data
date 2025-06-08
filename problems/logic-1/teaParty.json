@@ -1,0 +1,41 @@
+{
+  "topicId": "logic-1",
+  "id": "teaParty",
+  "difficulty": "Easy",
+  "functionName": "teaParty",
+  "title": {
+    "en": "Tea Party",
+    "ru": "Чайная вечеринка",
+    "uz": "Choy partiyasi"
+  },
+  "description": {
+    "en": "Return the party success based on tea and candy amounts. If either is less than 5, return 0. If either is at least double the other, return 2. Otherwise, return 1.",
+    "ru": "Верните успех вечеринки по количеству чая и конфет. Если меньше 5 — 0. Если одна вдвое больше другой — 2. Иначе — 1.",
+    "uz": "Choy va shirinlik miqdoriga qarab partiya muvaffaqiyatini qaytaring. Agar biri 5 dan kam bo‘lsa 0, biri ikkinchisidan ikki baravar ko‘p bo‘lsa 2, aks holda 1."
+  },
+  "solution": "function teaParty(tea, candy) { if (tea < 5 || candy < 5) return 0; if (tea >= 2 * candy || candy >= 2 * tea) return 2; return 1; }",
+  "starterCode": "function teaParty(tea, candy) {\n  // type here\n}",
+  "testCases": [
+    {
+      "input": [
+        "6",
+        "8"
+      ],
+      "output": 1
+    },
+    {
+      "input": [
+        "3",
+        "8"
+      ],
+      "output": 0
+    },
+    {
+      "input": [
+        "20",
+        "6"
+      ],
+      "output": 2
+    }
+  ]
+}

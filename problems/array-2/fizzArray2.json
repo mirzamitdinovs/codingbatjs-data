@@ -1,0 +1,62 @@
+{
+  "topicId": "array-2",
+  "id": "fizzArray2",
+  "difficulty": "Easy",
+  "functionName": "fizzArray2",
+  "title": {
+    "en": "fizzArray2",
+    "ru": "физзМассив 2",
+    "uz": "fizzMassiv 2"
+  },
+  "description": {
+    "en": "Given a number n, create and return a new string array of length n, containing the string versions of the numbers 0, 1, 2, ... n-1.",
+    "ru": "Дано число n. Создайте и верните новый массив строк длины n, содержащий строковые представления чисел 0, 1, 2, ... n-1.",
+    "uz": "Berilgan n soni bo‘yicha uzunligi n bo‘lgan yangi satrlar massivini yaratib, 0, 1, 2, ... n-1 raqamlarining satr ko‘rinishini joylang."
+  },
+  "solution": "function fizzArray2(n) {\n  let result = [];\n  for (let i = 0; i < n; i++) {\n    result.push(i.toString());\n  }\n  return result;\n}",
+  "starterCode": "function fizzArray2(n) {\n  // type here\n}",
+  "testCases": [
+    {
+      "input": [
+        4
+      ],
+      "output": [
+        "0",
+        "1",
+        "2",
+        "3"
+      ]
+    },
+    {
+      "input": [
+        1
+      ],
+      "output": [
+        "0"
+      ]
+    },
+    {
+      "input": [
+        10
+      ],
+      "output": [
+        "0",
+        "1",
+        "2",
+        "3",
+        "4",
+        "5",
+        "6",
+        "7",
+        "8",
+        "9"
+      ]
+    },
+    {
+      "input": [
+        0
+      ],
+      "output": []
+    }
+  ]
+}

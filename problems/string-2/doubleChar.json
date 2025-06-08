@@ -1,0 +1,50 @@
+{
+  "topicId": "string-2",
+  "id": "doubleChar",
+  "difficulty": "Easy",
+  "functionName": "doubleChar",
+  "title": {
+    "en": "Double Char",
+    "ru": "Удвоенный символ",
+    "uz": "Belgini ikki marta yozish"
+  },
+  "description": {
+    "en": "Given a string, return a string where for every char in the original, there are two chars.",
+    "ru": "Дана строка. Верните строку, где каждый символ исходной строки повторяется дважды.",
+    "uz": "Berilgan matnda har bir belgini ikki marta yozilgan yangi matnni qaytaring."
+  },
+  "solution": "function doubleChar(str) {\n  let result = '';\n  for (let i = 0; i < str.length; i++) {\n    result += str[i] + str[i];\n  }\n  return result;\n}",
+  "starterCode": "function doubleChar(str) {\n  // type here\n}",
+  "testCases": [
+    {
+      "input": [
+        "The"
+      ],
+      "output": "TThhee"
+    },
+    {
+      "input": [
+        "AAbb"
+      ],
+      "output": "AAAAbbbb"
+    },
+    {
+      "input": [
+        "Hi-There"
+      ],
+      "output": "HHii--TThheerree"
+    },
+    {
+      "input": [
+        ""
+      ],
+      "output": ""
+    },
+    {
+      "input": [
+        "@#"
+      ],
+      "output": "@@##"
+    }
+  ]
+}

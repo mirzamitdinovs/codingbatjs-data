@@ -1,0 +1,38 @@
+{
+  "topicId": "warmup-2",
+  "id": "stringX",
+  "difficulty": "Easy",
+  "functionName": "stringX",
+  "title": {
+    "en": "String X",
+    "ru": "Строка X",
+    "uz": "X Belgili Satr"
+  },
+  "description": {
+    "en": "Given a string, return a version where all the 'x' have been removed except those at the start or end.",
+    "ru": "Дана строка. Верните её версию, где все 'x' удалены, кроме тех, что в начале или конце.",
+    "uz": "Berilgan satrda boshidagi va oxiridagi 'x' larni qoldirib, qolganlarini olib tashlang."
+  },
+  "solution": "function stringX(str) {\n  if (str.length <= 2) return str;\n  return str[0] + str.slice(1, -1).replace(/x/g, '') + str[str.length - 1];\n}",
+  "starterCode": "function stringX(str) {\n  // type here\n}",
+  "testCases": [
+    {
+      "input": [
+        "\"xxHxix\""
+      ],
+      "output": "xHix"
+    },
+    {
+      "input": [
+        "\"abxxxcd\""
+      ],
+      "output": "abcd"
+    },
+    {
+      "input": [
+        "\"xabxxxcdx\""
+      ],
+      "output": "xabcdx"
+    }
+  ]
+}

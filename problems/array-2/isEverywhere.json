@@ -1,0 +1,81 @@
+{
+  "topicId": "array-2",
+  "id": "isEverywhere",
+  "difficulty": "Medium",
+  "functionName": "isEverywhere",
+  "title": {
+    "en": "isEverywhere",
+    "ru": "везде ли",
+    "uz": "har joyda"
+  },
+  "description": {
+    "en": "Given an array of ints and a value, return true if for every pair of adjacent elements in the array, at least one of the pair is that value.",
+    "ru": "Дан массив целых чисел и значение. Верните true, если для каждой пары соседних элементов в массиве хотя бы один равен этому значению.",
+    "uz": "Butun sonlar massiv va qiymat berilgan. Agar massivdagi har bir qo‘shni element juftligida kamida bittasi shu qiymatga teng bo‘lsa, true qaytaring."
+  },
+  "solution": "function isEverywhere(nums, val) {\n  for (let i = 0; i < nums.length - 1; i++) {\n    if (nums[i] !== val && nums[i + 1] !== val) {\n      return false;\n    }\n  }\n  return true;\n}",
+  "starterCode": "function isEverywhere(nums, val) {\n  // type here\n}",
+  "testCases": [
+    {
+      "input": [
+        [
+          1,
+          2,
+          1,
+          3
+        ],
+        1
+      ],
+      "output": true
+    },
+    {
+      "input": [
+        [
+          1,
+          2,
+          1,
+          3
+        ],
+        2
+      ],
+      "output": false
+    },
+    {
+      "input": [
+        [
+          1,
+          2,
+          1,
+          3,
+          4
+        ],
+        1
+      ],
+      "output": false
+    },
+    {
+      "input": [
+        [
+          2,
+          1,
+          2,
+          1
+        ],
+        1
+      ],
+      "output": true
+    },
+    {
+      "input": [
+        [
+          2,
+          1,
+          2,
+          1
+        ],
+        2
+      ],
+      "output": true
+    }
+  ]
+}

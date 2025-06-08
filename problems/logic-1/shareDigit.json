@@ -1,0 +1,76 @@
+{
+  "topicId": "logic-1",
+  "id": "shareDigit",
+  "difficulty": "Easy",
+  "functionName": "shareDigit",
+  "title": {
+    "en": "Share Digit",
+    "ru": "Общая цифра",
+    "uz": "Umumiy raqam"
+  },
+  "description": {
+    "en": "Given two integers in the range 10..99, return true if they share a digit. For example, 12 and 23 share the digit 2.",
+    "ru": "Даны два целых числа в диапазоне от 10 до 99. Верните true, если у них есть общая цифра. Например, 12 и 23 имеют общую цифру 2.",
+    "uz": "10 dan 99 gacha bo‘lgan ikkita butun son berilgan. Agar ular umumiy raqamga ega bo‘lsa, true qaytaring. Masalan, 12 va 23 da 2 raqami umumiy."
+  },
+  "solution": "function shareDigit(a, b) {\n  const a1 = Math.floor(a / 10);\n  const a2 = a % 10;\n  const b1 = Math.floor(b / 10);\n  const b2 = b % 10;\n  return a1 === b1 || a1 === b2 || a2 === b1 || a2 === b2;\n}",
+  "starterCode": "function shareDigit(a, b) {\n  // type here\n}",
+  "testCases": [
+    {
+      "input": [
+        "12",
+        "23"
+      ],
+      "output": true
+    },
+    {
+      "input": [
+        "12",
+        "43"
+      ],
+      "output": false
+    },
+    {
+      "input": [
+        "12",
+        "44"
+      ],
+      "output": false
+    },
+    {
+      "input": [
+        "55",
+        "55"
+      ],
+      "output": true
+    },
+    {
+      "input": [
+        "19",
+        "91"
+      ],
+      "output": true
+    },
+    {
+      "input": [
+        "98",
+        "89"
+      ],
+      "output": true
+    },
+    {
+      "input": [
+        "10",
+        "20"
+      ],
+      "output": true
+    },
+    {
+      "input": [
+        "21",
+        "43"
+      ],
+      "output": false
+    }
+  ]
+}

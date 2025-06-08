@@ -1,0 +1,41 @@
+{
+  "topicId": "logic-1",
+  "id": "love6",
+  "difficulty": "Medium",
+  "functionName": "love6",
+  "title": {
+    "en": "Love 6",
+    "ru": "Любовь к 6",
+    "uz": "Sevgi 6 ga"
+  },
+  "description": {
+    "en": "The number 6 is special. Return true if either input is 6, or their sum or difference is 6.",
+    "ru": "Число 6 особенное. Верните true, если любой из входов равен 6, или их сумма или разность равна 6.",
+    "uz": "6 soni maxsus. Agar kirishlardan biri 6 ga teng bo‘lsa, yoki yig‘indisi yoki ayirmasi 6 ga teng bo‘lsa true qaytaring."
+  },
+  "solution": "function love6(a, b) { return a === 6 || b === 6 || a + b === 6 || Math.abs(a - b) === 6; }",
+  "starterCode": "function love6(a, b) {\n  // type here\n}",
+  "testCases": [
+    {
+      "input": [
+        "6",
+        "4"
+      ],
+      "output": true
+    },
+    {
+      "input": [
+        "4",
+        "5"
+      ],
+      "output": false
+    },
+    {
+      "input": [
+        "1",
+        "5"
+      ],
+      "output": true
+    }
+  ]
+}

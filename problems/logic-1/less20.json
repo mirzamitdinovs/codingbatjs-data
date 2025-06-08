@@ -1,0 +1,62 @@
+{
+  "topicId": "logic-1",
+  "id": "less20",
+  "difficulty": "Easy",
+  "functionName": "less20",
+  "title": {
+    "en": "Less 20",
+    "ru": "Меньше 20",
+    "uz": "20 dan kam"
+  },
+  "description": {
+    "en": "Return true if the given non-negative number is 1 or 2 less than a multiple of 20. So for example, 38 and 39 return true, but 40 returns false.",
+    "ru": "Верните true, если заданное неотрицательное число на 1 или 2 меньше кратного 20. Например, 38 и 39 возвращают true, а 40 — false.",
+    "uz": "Agar berilgan musbat son 20 ga bo‘linadigan sondan 1 yoki 2 kam bo‘lsa, true qaytaring. Masalan, 38 va 39 uchun true, lekin 40 uchun false qaytadi."
+  },
+  "solution": "function less20(n) {\n  return n % 20 === 18 || n % 20 === 19;\n}",
+  "starterCode": "function less20(n) {\n  // type here\n}",
+  "testCases": [
+    {
+      "input": [
+        "18"
+      ],
+      "output": true
+    },
+    {
+      "input": [
+        "19"
+      ],
+      "output": true
+    },
+    {
+      "input": [
+        "20"
+      ],
+      "output": false
+    },
+    {
+      "input": [
+        "21"
+      ],
+      "output": false
+    },
+    {
+      "input": [
+        "38"
+      ],
+      "output": true
+    },
+    {
+      "input": [
+        "39"
+      ],
+      "output": true
+    },
+    {
+      "input": [
+        "40"
+      ],
+      "output": false
+    }
+  ]
+}

@@ -1,0 +1,50 @@
+{
+  "topicId": "string-2",
+  "id": "starOut",
+  "difficulty": "Medium",
+  "functionName": "starOut",
+  "title": {
+    "en": "starOut",
+    "ru": "удаление звездочек",
+    "uz": "yulduzchalarni olib tashlash"
+  },
+  "description": {
+    "en": "Return a version of the given string where for every star ('*'), the star and the chars immediately to its left and right are gone.",
+    "ru": "Верните версию строки, где для каждой звёздочки ('*') удалены сама звёздочка и символы слева и справа от неё.",
+    "uz": "Berilgan satrda har bir '*' uchun o‘sha '*' va uning chap va o‘ng tomonidagi belgilar olib tashlangan holda qaytaring."
+  },
+  "solution": "function starOut(str) {\n  let result = '';\n  for (let i = 0; i < str.length; i++) {\n    if (str[i] === '*') continue;\n    if (i > 0 && str[i - 1] === '*') continue;\n    if (i < str.length - 1 && str[i + 1] === '*') continue;\n    result += str[i];\n  }\n  return result;\n}",
+  "starterCode": "function starOut(str) {\n  // type here\n}",
+  "testCases": [
+    {
+      "input": [
+        "ab*cd"
+      ],
+      "output": "ad"
+    },
+    {
+      "input": [
+        "ab**cd"
+      ],
+      "output": "ad"
+    },
+    {
+      "input": [
+        "sm*eilly"
+      ],
+      "output": "silly"
+    },
+    {
+      "input": [
+        "*sm*eilly*"
+      ],
+      "output": "illy"
+    },
+    {
+      "input": [
+        "*sm*e*il*ly*"
+      ],
+      "output": ""
+    }
+  ]
+}

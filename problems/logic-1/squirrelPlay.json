@@ -1,0 +1,41 @@
+{
+  "topicId": "logic-1",
+  "id": "squirrelPlay",
+  "difficulty": "Easy",
+  "functionName": "squirrelPlay",
+  "title": {
+    "en": "Squirrel Play",
+    "ru": "Игра белок",
+    "uz": "Tovus o‘yinlari"
+  },
+  "description": {
+    "en": "The squirrels in Palo Alto like to play if the temperature is between 60 and 90 (inclusive). Unless it is summer, then the upper limit is 100 instead of 90. Return true if the squirrels play, otherwise false.",
+    "ru": "Белки в Пало-Альто любят играть, если температура от 60 до 90 включительно. Если лето, верхняя граница 100. Верните true, если белки играют, иначе false.",
+    "uz": "Palo Altodagi tovuslar 60 dan 90 gacha (shu jumladan) haroratda o‘ynashni yoqtirishadi. Yozda yuqori chegarasi 100 ga oshadi. O‘ynashsa true, aks holda false qaytaring."
+  },
+  "solution": "function squirrelPlay(temp, isSummer) { if (isSummer) return temp >= 60 && temp <= 100; return temp >= 60 && temp <= 90; }",
+  "starterCode": "function squirrelPlay(temp, isSummer) {\n  // type here\n}",
+  "testCases": [
+    {
+      "input": [
+        "70",
+        "false"
+      ],
+      "output": true
+    },
+    {
+      "input": [
+        "95",
+        "false"
+      ],
+      "output": false
+    },
+    {
+      "input": [
+        "95",
+        "true"
+      ],
+      "output": true
+    }
+  ]
+}

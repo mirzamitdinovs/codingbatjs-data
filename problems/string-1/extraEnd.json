@@ -1,0 +1,38 @@
+{
+  "topicId": "string-1",
+  "id": "extraEnd",
+  "difficulty": "Easy",
+  "functionName": "extraEnd",
+  "title": {
+    "en": "Extra End",
+    "ru": "Дополнительный конец",
+    "uz": "Qo‘shimcha oxir"
+  },
+  "description": {
+    "en": "Given a string, return a new string made of 3 copies of the last 2 chars of the original string. The string length will be at least 2.",
+    "ru": "Дана строка. Верните строку из 3 копий последних 2 символов. Длина >= 2.",
+    "uz": "Satr berilgan. Oxirgi 2 belgining 3 nusxasidan iborat yangi satr qaytaring. Uzunligi ≥ 2."
+  },
+  "solution": "function extraEnd(str) {\n  let sub = str.substring(str.length-2);\n  return sub + sub + sub;\n}",
+  "starterCode": "function extraEnd(str) {\n  // type here\n}",
+  "testCases": [
+    {
+      "input": [
+        "\"Hello\""
+      ],
+      "output": "lololo"
+    },
+    {
+      "input": [
+        "\"ab\""
+      ],
+      "output": "ababab"
+    },
+    {
+      "input": [
+        "\"Hi\""
+      ],
+      "output": "HiHiHi"
+    }
+  ]
+}

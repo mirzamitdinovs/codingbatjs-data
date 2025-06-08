@@ -1,0 +1,41 @@
+{
+  "topicId": "string-1",
+  "id": "makeAbba",
+  "difficulty": "Easy",
+  "functionName": "makeAbba",
+  "title": {
+    "en": "Make Abba",
+    "ru": "Сделать Abba",
+    "uz": "Abba yasash"
+  },
+  "description": {
+    "en": "Given two strings a and b, return the concatenation a+b+b+a.",
+    "ru": "Даны две строки a и b. Верните их соединение a+b+b+a.",
+    "uz": "Ikki satr a va b berilgan. a+b+b+a tarzida birikmasini qaytaring."
+  },
+  "solution": "function makeAbba(a, b) {\n  return a + b + b + a;\n}",
+  "starterCode": "function makeAbba(a, b) {\n  // type here\n}",
+  "testCases": [
+    {
+      "input": [
+        "\"Hi\"",
+        "\"Bye\""
+      ],
+      "output": "HiByeByeHi"
+    },
+    {
+      "input": [
+        "\"Yo\"",
+        "\"Alice\""
+      ],
+      "output": "YoAliceAliceYo"
+    },
+    {
+      "input": [
+        "\"What\"",
+        "\"Up\""
+      ],
+      "output": "WhatUpUpWhat"
+    }
+  ]
+}

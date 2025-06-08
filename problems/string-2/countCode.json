@@ -1,0 +1,50 @@
+{
+  "topicId": "string-2",
+  "id": "countCode",
+  "difficulty": "Easy",
+  "functionName": "countCode",
+  "title": {
+    "en": "Count Code",
+    "ru": "Посчитать 'code'",
+    "uz": "'code' ni hisoblash"
+  },
+  "description": {
+    "en": "Return the number of times that the string \"code\" appears anywhere in the given string, except we'll accept any letter for the 'd', so \"cope\" and \"cooe\" count.",
+    "ru": "Верните количество раз, когда подстрока \"code\" встречается в данной строке, но при этом допускается любая буква вместо 'd', поэтому \"cope\" и \"cooe\" считаются.",
+    "uz": "Berilgan matnda \"code\" so‘zi necha marta uchrasa, shu sonni qaytaring, ammo 'd' o‘rniga har qanday harf bo‘lishi mumkin, masalan \"cope\" va \"cooe\" ham hisoblanadi."
+  },
+  "solution": "function countCode(str) {\n  let count = 0;\n  for (let i = 0; i < str.length - 3; i++) {\n    if (str.substring(i, i + 2) === 'co' && str.charAt(i + 3) === 'e') {\n      count++;\n    }\n  }\n  return count;\n}",
+  "starterCode": "function countCode(str) {\n  // type here\n}",
+  "testCases": [
+    {
+      "input": [
+        "aaacodebbb"
+      ],
+      "output": 1
+    },
+    {
+      "input": [
+        "codexxcode"
+      ],
+      "output": 2
+    },
+    {
+      "input": [
+        "cozexxcope"
+      ],
+      "output": 2
+    },
+    {
+      "input": [
+        "cozfxxcozey"
+      ],
+      "output": 1
+    },
+    {
+      "input": [
+        ""
+      ],
+      "output": 0
+    }
+  ]
+}

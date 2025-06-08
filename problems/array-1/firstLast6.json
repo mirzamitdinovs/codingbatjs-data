@@ -1,0 +1,38 @@
+{
+  "topicId": "array-1",
+  "id": "firstLast6",
+  "difficulty": "Easy",
+  "functionName": "firstLast6",
+  "title": {
+    "en": "First Last 6",
+    "ru": "Первый или последний = 6",
+    "uz": "Birinchi yoki oxirgi 6"
+  },
+  "description": {
+    "en": "Given an array of ints, return true if 6 appears as either the first or last element in the array. The array length will be at least 1.",
+    "ru": "Дан массив целых чисел. Верните true, если 6 встречается первым или последним элементом. Длина ≥ 1.",
+    "uz": "Butun sonlardan iborat massiv berilgan. Agar 6 birinchi yoki oxirgi element bo‘lsa true qaytaring. Uzunlik ≥ 1."
+  },
+  "solution": "function firstLast6(nums) {\n  return nums[0] === 6 || nums[nums.length - 1] === 6;\n}",
+  "starterCode": "function firstLast6(nums) {\n  // type here\n}",
+  "testCases": [
+    {
+      "input": [
+        "[1, 2, 6]"
+      ],
+      "output": true
+    },
+    {
+      "input": [
+        "[6, 1, 2, 3]"
+      ],
+      "output": true
+    },
+    {
+      "input": [
+        "[13, 6, 1, 2, 3]"
+      ],
+      "output": false
+    }
+  ]
+}

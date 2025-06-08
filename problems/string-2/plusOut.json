@@ -1,0 +1,55 @@
+{
+  "topicId": "string-2",
+  "id": "plusOut",
+  "difficulty": "Medium",
+  "functionName": "plusOut",
+  "title": {
+    "en": "plusOut",
+    "ru": "замена на плюсы",
+    "uz": "plus bilan almashtirish"
+  },
+  "description": {
+    "en": "Given a string and a word, return a version where all chars are replaced by '+', except for appearances of the word which are unchanged.",
+    "ru": "Дана строка и слово. Верните строку, где все символы заменены на '+', кроме тех, что входят в слово, которые остаются без изменений.",
+    "uz": "Berilgan satr va so‘z. Satrning barcha belgilarini '+' bilan almashtiring, faqat so‘z uchrashlari o‘zgarmasin."
+  },
+  "solution": "function plusOut(str, word) {\n  let result = '';\n  let i = 0;\n  while (i < str.length) {\n    if (str.substring(i, i + word.length) === word) {\n      result += word;\n      i += word.length;\n    } else {\n      result += '+';\n      i++;\n    }\n  }\n  return result;\n}",
+  "starterCode": "function plusOut(str, word) {\n  // type here\n}",
+  "testCases": [
+    {
+      "input": [
+        "12xy34",
+        "xy"
+      ],
+      "output": "++xy++"
+    },
+    {
+      "input": [
+        "12xy34xyabcxy",
+        "xy"
+      ],
+      "output": "++xy++xy+++xy"
+    },
+    {
+      "input": [
+        "abcabc",
+        "abc"
+      ],
+      "output": "abcabc"
+    },
+    {
+      "input": [
+        "abcabc",
+        "ab"
+      ],
+      "output": "ab+ab+"
+    },
+    {
+      "input": [
+        "hello",
+        "ll"
+      ],
+      "output": "++ll+"
+    }
+  ]
+}

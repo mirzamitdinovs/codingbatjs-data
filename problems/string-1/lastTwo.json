@@ -1,0 +1,38 @@
+{
+  "topicId": "string-1",
+  "id": "lastTwo",
+  "difficulty": "Easy",
+  "functionName": "lastTwo",
+  "title": {
+    "en": "Last Two",
+    "ru": "Поменять последние два",
+    "uz": "Oxirgi ikki belgini almashtirish"
+  },
+  "description": {
+    "en": "Given a string of length at least 2, swap its last two chars and return the result.",
+    "ru": "Дана строка длины ≥2. Поменяйте местами её последние два символа.",
+    "uz": "Uzunligi ≥ 2 bo‘lgan satr berilgan. Oxirgi ikki belgisini almashtiring."
+  },
+  "solution": "function lastTwo(str) {\n  if (str.length < 2) return str;\n  let base = str.substring(0, str.length - 2);\n  return base + str[str.length - 1] + str[str.length - 2];\n}",
+  "starterCode": "function lastTwo(str) {\n  // type here\n}",
+  "testCases": [
+    {
+      "input": [
+        "\"coding\""
+      ],
+      "output": "codign"
+    },
+    {
+      "input": [
+        "\"cat\""
+      ],
+      "output": "cta"
+    },
+    {
+      "input": [
+        "\"ab\""
+      ],
+      "output": "ba"
+    }
+  ]
+}

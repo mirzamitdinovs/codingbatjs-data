@@ -1,0 +1,53 @@
+{
+  "topicId": "array-1",
+  "id": "makeLast",
+  "difficulty": "Easy",
+  "functionName": "makeLast",
+  "title": {
+    "en": "Make Last",
+    "ru": "Сделать конец",
+    "uz": "Oxir qil"
+  },
+  "description": {
+    "en": "Given an int array, return a new array of double length where last element is the same and all others are 0.",
+    "ru": "Дан массив. Верните новый массив в 2 раза длиннее, где последний элемент тот же, а остальные — 0.",
+    "uz": "Butun sonli massiv berilgan. Oxirgi element o‘sha joyda bo‘lgan, qolganlari 0 bo‘lgan ikki baravar uzunlikdagi massivni qaytaring."
+  },
+  "solution": "function makeLast(nums) { let a=Array(nums.length*2).fill(0); a[a.length-1]=nums[nums.length-1]; return a; }",
+  "starterCode": "function makeLast(nums) {\n  // type here\n}",
+  "testCases": [
+    {
+      "input": [
+        "[4, 5, 6]"
+      ],
+      "output": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        6
+      ]
+    },
+    {
+      "input": [
+        "[1, 2]"
+      ],
+      "output": [
+        0,
+        0,
+        0,
+        2
+      ]
+    },
+    {
+      "input": [
+        "[3]"
+      ],
+      "output": [
+        0,
+        3
+      ]
+    }
+  ]
+}

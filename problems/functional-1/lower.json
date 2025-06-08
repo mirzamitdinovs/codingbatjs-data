@@ -1,0 +1,58 @@
+{
+  "topicId": "functional-1",
+  "id": "lower",
+  "difficulty": "Easy",
+  "functionName": "lower",
+  "title": {
+    "en": "Lower",
+    "ru": "В нижний регистр",
+    "uz": "Kichik harfga o‘tkazish"
+  },
+  "description": {
+    "en": "Given a list of strings, return a list where each string is converted to lower case (lowercase).",
+    "ru": "Дан список строк. Верните список, в котором каждая строка приведена к нижнему регистру.",
+    "uz": "Satrlar ro‘yxati berilgan. Har bir satrni kichik harflarga o‘tkazib, yangi ro‘yxatni qaytaring."
+  },
+  "solution": "function lower(strings) {\n  return strings.map(s => s.toLowerCase());\n}",
+  "starterCode": "function lower(strings) {\n  // type here\n}",
+  "testCases": [
+    {
+      "input": [
+        [
+          "Hello",
+          "Hi"
+        ]
+      ],
+      "output": [
+        "hello",
+        "hi"
+      ]
+    },
+    {
+      "input": [
+        [
+          "AAA",
+          "BBB",
+          "ccc"
+        ]
+      ],
+      "output": [
+        "aaa",
+        "bbb",
+        "ccc"
+      ]
+    },
+    {
+      "input": [
+        [
+          "KitteN",
+          "ChocolaTE"
+        ]
+      ],
+      "output": [
+        "kitten",
+        "chocolate"
+      ]
+    }
+  ]
+}

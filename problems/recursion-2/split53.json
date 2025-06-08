@@ -1,0 +1,70 @@
+{
+  "topicId": "recursion-2",
+  "id": "split53",
+  "difficulty": "Medium",
+  "functionName": "split53",
+  "title": {
+    "en": "Split 53",
+    "ru": "Разделить на группы с 5 и 3",
+    "uz": "5 va 3 bo‘yicha guruhga bo‘lish"
+  },
+  "description": {
+    "en": "Given an array of ints, is it possible to divide the ints into two groups, so that the sum of one group is a multiple of 5, and the sum of the other group is a multiple of 3 (but not 5)?",
+    "ru": "Дан массив целых чисел. Можно ли разделить числа на две группы так, чтобы сумма одной группы была кратна 5, а сумма другой — кратна 3 (но не 5)?",
+    "uz": "Berilgan butun sonlar massivini ikkiga bo‘lish mumkinmi, shunda bir guruh yig‘indisi 5 ga bo‘linadigan, ikkinchi guruh yig‘indisi 3 ga bo‘linadigan (lekin 5 ga bo‘linmaydigan) bo‘lsin?"
+  },
+  "solution": "function split53(nums) {\n  function helper(start, sum5, sum3) {\n    if (start >= nums.length) return sum5 === sum3;\n    if (nums[start] % 5 === 0) {\n      return helper(start + 1, sum5 + nums[start], sum3);\n    } else if (nums[start] % 3 === 0) {\n      return helper(start + 1, sum5, sum3 + nums[start]);\n    } else {\n      return helper(start + 1, sum5 + nums[start], sum3) || helper(start + 1, sum5, sum3 + nums[start]);\n    }\n  }\n  return helper(0, 0, 0);\n}",
+  "starterCode": "function split53(nums) {\n  // type here\n}",
+  "testCases": [
+    {
+      "input": [
+        [
+          1,
+          1
+        ]
+      ],
+      "output": true
+    },
+    {
+      "input": [
+        [
+          1,
+          1,
+          1
+        ]
+      ],
+      "output": false
+    },
+    {
+      "input": [
+        [
+          2,
+          4,
+          2
+        ]
+      ],
+      "output": true
+    },
+    {
+      "input": [
+        [
+          2,
+          4,
+          2,
+          5
+        ]
+      ],
+      "output": false
+    },
+    {
+      "input": [
+        [
+          3,
+          5,
+          8
+        ]
+      ],
+      "output": true
+    }
+  ]
+}

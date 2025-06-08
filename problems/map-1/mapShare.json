@@ -1,0 +1,71 @@
+{
+  "topicId": "map-1",
+  "id": "mapshare",
+  "difficulty": "Easy",
+  "functionName": "mapShare",
+  "title": {
+    "en": "Map Share",
+    "ru": "Обмен в карте",
+    "uz": "Map Share"
+  },
+  "description": {
+    "en": "Modify and return the given map as follows: if the key \"a\" has a value, set the key \"b\" to have that same value. Remove the key \"c\", if it is present.",
+    "ru": "Измените и верните данную карту следующим образом: если ключ \"a\" есть в карте, установите значение ключа \"b\" равным значению ключа \"a\". Удалите ключ \"c\", если он присутствует.",
+    "uz": "Berilgan mapni quyidagicha o‘zgartiring va qaytaring: agar \"a\" kalitida qiymat bo‘lsa, \"b\" kalitining qiymatini \"a\" ning qiymatiga o‘rnatilsin. Agar \"c\" kaliti mavjud bo‘lsa, uni o‘chirib tashlang."
+  },
+  "solution": "function mapShare(map) {\n  if (map.hasOwnProperty('a')) {\n    map['b'] = map['a'];\n  }\n  if (map.hasOwnProperty('c')) {\n    delete map['c'];\n  }\n  return map;\n}",
+  "starterCode": "function mapShare(map) {\n  // type here\n}",
+  "testCases": [
+    {
+      "input": [
+        {
+          "a": "aaa",
+          "b": "bbb",
+          "c": "ccc"
+        }
+      ],
+      "output": {
+        "a": "aaa",
+        "b": "aaa"
+      }
+    },
+    {
+      "input": [
+        {
+          "b": "xyz",
+          "c": "ccc"
+        }
+      ],
+      "output": {
+        "b": "xyz"
+      }
+    },
+    {
+      "input": [
+        {
+          "a": "aaa",
+          "c": "meh",
+          "d": "hi"
+        }
+      ],
+      "output": {
+        "a": "aaa",
+        "b": "aaa",
+        "d": "hi"
+      }
+    },
+    {
+      "input": [
+        {
+          "a": "xyz",
+          "b": "old",
+          "c": "meh"
+        }
+      ],
+      "output": {
+        "a": "xyz",
+        "b": "xyz"
+      }
+    }
+  ]
+}

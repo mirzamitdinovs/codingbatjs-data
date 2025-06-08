@@ -1,0 +1,50 @@
+{
+  "topicId": "recursion-1",
+  "id": "changexy",
+  "difficulty": "Easy",
+  "functionName": "changeXY",
+  "title": {
+    "en": "Change XY",
+    "ru": "Замена X на Y",
+    "uz": "X ni Y ga o‘zgartirish"
+  },
+  "description": {
+    "en": "Given a string, compute recursively a new string where all the lowercase 'x' chars have been changed to 'y' chars.",
+    "ru": "Дана строка. Рекурсивно верните новую строку, где все строчные символы 'x' заменены на 'y'.",
+    "uz": "Berilgan satrda rekursiv ravishda barcha kichik 'x' harflarini 'y' harfiga almashtiring."
+  },
+  "solution": "function changeXY(str) {\n  if (str.length === 0) return \"\";\n  let firstChar = str.charAt(0) === 'x' ? 'y' : str.charAt(0);\n  return firstChar + changeXY(str.substring(1));\n}",
+  "starterCode": "function changeXY(str) {\n  // type here\n}",
+  "testCases": [
+    {
+      "input": [
+        "codex"
+      ],
+      "output": "codey"
+    },
+    {
+      "input": [
+        "xxhixx"
+      ],
+      "output": "yyhiyy"
+    },
+    {
+      "input": [
+        "xhixhix"
+      ],
+      "output": "yhiyhiy"
+    },
+    {
+      "input": [
+        ""
+      ],
+      "output": ""
+    },
+    {
+      "input": [
+        "abc"
+      ],
+      "output": "abc"
+    }
+  ]
+}

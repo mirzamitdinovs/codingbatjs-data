@@ -1,0 +1,50 @@
+{
+  "topicId": "recursion-1",
+  "id": "counthi2",
+  "difficulty": "Medium",
+  "functionName": "countHi2",
+  "title": {
+    "en": "Count Hi2",
+    "ru": "Подсчет Hi2",
+    "uz": "Hi2 ni hisoblash"
+  },
+  "description": {
+    "en": "Compute recursively the number of times lowercase 'hi' appears in the string, but do not count 'hi' that have an 'x' immediately before them.",
+    "ru": "Рекурсивно подсчитайте, сколько раз в строке появляется 'hi', но не считайте те 'hi', перед которыми сразу стоит 'x'.",
+    "uz": "Berilgan satrda kichik harfdagi 'hi' lar sonini rekursiv hisoblang, lekin oldida 'x' bo‘lgan 'hi' lar hisobga olinmasin."
+  },
+  "solution": "function countHi2(str) {\n  if (str.length < 2) return 0;\n  if (str.substring(0, 3) === 'xhi') {\n    return countHi2(str.substring(3));\n  } else if (str.substring(0, 2) === 'hi') {\n    return 1 + countHi2(str.substring(2));\n  } else {\n    return countHi2(str.substring(1));\n  }\n}",
+  "starterCode": "function countHi2(str) {\n  // type here\n}",
+  "testCases": [
+    {
+      "input": [
+        "ahixhi"
+      ],
+      "output": 1
+    },
+    {
+      "input": [
+        "ahibhi"
+      ],
+      "output": 2
+    },
+    {
+      "input": [
+        "xhixhi"
+      ],
+      "output": 0
+    },
+    {
+      "input": [
+        "hixhi"
+      ],
+      "output": 1
+    },
+    {
+      "input": [
+        ""
+      ],
+      "output": 0
+    }
+  ]
+}

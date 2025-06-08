@@ -1,0 +1,50 @@
+{
+  "topicId": "array-1",
+  "id": "rotateLeft3",
+  "difficulty": "Easy",
+  "functionName": "rotateLeft3",
+  "title": {
+    "en": "Rotate Left 3",
+    "ru": "Сдвинуть влево 3",
+    "uz": "Chapga 3 ta siljit"
+  },
+  "description": {
+    "en": "Given an array of ints length 3, return an array with the elements \"rotated left\" so {1,2,3} becomes {2,3,1}.",
+    "ru": "Дан массив из 3. Верните массив, сдвинутый влево (1→2, 2→3, 3→1).",
+    "uz": "{1,2,3} → {2,3,1} kabi chapga burilgan massiv."
+  },
+  "solution": "function rotateLeft3(nums) {\n  return [nums[1], nums[2], nums[0]];\n}",
+  "starterCode": "function rotateLeft3(nums) {\n  // type here\n}",
+  "testCases": [
+    {
+      "input": [
+        "[1, 2, 3]"
+      ],
+      "output": [
+        2,
+        3,
+        1
+      ]
+    },
+    {
+      "input": [
+        "[5, 11, 9]"
+      ],
+      "output": [
+        11,
+        9,
+        5
+      ]
+    },
+    {
+      "input": [
+        "[7, 0, 0]"
+      ],
+      "output": [
+        0,
+        0,
+        7
+      ]
+    }
+  ]
+}

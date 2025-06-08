@@ -1,0 +1,38 @@
+{
+  "topicId": "warmup-2",
+  "id": "stringYak",
+  "difficulty": "Medium",
+  "functionName": "stringYak",
+  "title": {
+    "en": "String Yak",
+    "ru": "Строка Yak",
+    "uz": "Satr Yak"
+  },
+  "description": {
+    "en": "Return a version of the string where all the \"yak\" substrings are removed, but the \"a\" can be any letter. The \"yak\" substrings do not overlap.",
+    "ru": "Верните строку, где все подстроки формата \"yak\" удалены, но буква \"a\" может быть любой. Подстроки не перекрываются.",
+    "uz": "Berilgan satrdan “yak” formatidagi tagliklarning barchasini olib tashlang, lekin 'a' harfini istalgan belgi bilan almashtirish mumkin. Tagliklar qismlar kesishmaydi."
+  },
+  "solution": "function stringYak(str) {\n  let result = '';\n  for (let i = 0; i < str.length; i++) {\n    if (i + 2 < str.length && str[i] === 'y' && str[i + 2] === 'k') {\n      i += 2;\n    } else {\n      result += str[i];\n    }\n  }\n  return result;\n}",
+  "starterCode": "function stringYak(str) {\n  // type here\n}",
+  "testCases": [
+    {
+      "input": [
+        "\"yakpak\""
+      ],
+      "output": "pak"
+    },
+    {
+      "input": [
+        "\"pakyak\""
+      ],
+      "output": "pak"
+    },
+    {
+      "input": [
+        "\"yak123ya\""
+      ],
+      "output": "123ya"
+    }
+  ]
+}

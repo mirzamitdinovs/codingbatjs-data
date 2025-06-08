@@ -1,0 +1,50 @@
+{
+  "topicId": "string-2",
+  "id": "xyzThere",
+  "difficulty": "Medium",
+  "functionName": "xyzThere",
+  "title": {
+    "en": "xyzThere",
+    "ru": "xyz там",
+    "uz": "xyz mavjud"
+  },
+  "description": {
+    "en": "Return true if the given string contains an appearance of \"xyz\" that is not directly preceded by a period ('.').",
+    "ru": "Верните true, если данная строка содержит \"xyz\", которое не предшествует точке ('.').",
+    "uz": "Berilgan satrda \"xyz\" qismi oldida nuqta ('.') bo‘lmagan holatda mavjud bo‘lsa, true qaytaring."
+  },
+  "solution": "function xyzThere(str) {\n  for (let i = 0; i < str.length - 2; i++) {\n    if (str.substring(i, i + 3) === 'xyz') {\n      if (i === 0 || str.charAt(i - 1) !== '.') {\n        return true;\n      }\n    }\n  }\n  return false;\n}",
+  "starterCode": "function xyzThere(str) {\n  // type here\n}",
+  "testCases": [
+    {
+      "input": [
+        "abcxyz"
+      ],
+      "output": true
+    },
+    {
+      "input": [
+        "abc.xyz"
+      ],
+      "output": false
+    },
+    {
+      "input": [
+        "xyz.abc"
+      ],
+      "output": true
+    },
+    {
+      "input": [
+        "abcxy"
+      ],
+      "output": false
+    },
+    {
+      "input": [
+        "xyz"
+      ],
+      "output": true
+    }
+  ]
+}

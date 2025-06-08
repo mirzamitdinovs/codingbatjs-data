@@ -1,0 +1,52 @@
+{
+  "topicId": "functional-1",
+  "id": "addstar",
+  "difficulty": "Easy",
+  "functionName": "addStar",
+  "title": {
+    "en": "AddStar",
+    "ru": "Добавить звездочку",
+    "uz": "Yulduzcha qo‘shish"
+  },
+  "description": {
+    "en": "Given an array of strings, return a new array where each string has \"*\" added at its end.",
+    "ru": "Дан массив строк. Верните новый массив, в котором к каждой строке добавлена \"*\" в конце.",
+    "uz": "Satrlar massiv berilgan. Har bir satr oxiriga \"*\" belgisi qo‘shilgan yangi massivni qaytaring."
+  },
+  "solution": "function addStar(strings) {\n  return strings.map(s => s + '*');\n}",
+  "starterCode": "function addStar(strings) {\n  // type here\n}",
+  "testCases": [
+    {
+      "input": [
+        [
+          "a",
+          "bb",
+          "ccc"
+        ]
+      ],
+      "output": [
+        "a*",
+        "bb*",
+        "ccc*"
+      ]
+    },
+    {
+      "input": [
+        [
+          "hello",
+          "there"
+        ]
+      ],
+      "output": [
+        "hello*",
+        "there*"
+      ]
+    },
+    {
+      "input": [
+        []
+      ],
+      "output": []
+    }
+  ]
+}

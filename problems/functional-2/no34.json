@@ -1,0 +1,59 @@
+{
+  "topicId": "functional-2",
+  "id": "no34",
+  "difficulty": "Easy",
+  "functionName": "no34",
+  "title": {
+    "en": "No 3 or 4",
+    "ru": "Без длины 3 или 4",
+    "uz": "3 yoki 4 uzunliksiz"
+  },
+  "description": {
+    "en": "Given a list of strings, return a list of the strings, omitting any string length 3 or 4.",
+    "ru": "Дан список строк. Верните новый список, исключив строки длиной 3 или 4 символа.",
+    "uz": "Satrlar ro‘yxati berilgan. Uzunligi 3 yoki 4 bo‘lgan satrlarni chiqarib tashlab, qolganlari bilan yangi ro‘yxatni qaytaring."
+  },
+  "solution": "function no34(strings) {\n  return strings.filter(s => s.length !== 3 && s.length !== 4);\n}",
+  "starterCode": "function no34(strings) {\n  // type here\n}",
+  "testCases": [
+    {
+      "input": [
+        [
+          "a",
+          "bb",
+          "ccc"
+        ]
+      ],
+      "output": [
+        "a",
+        "bb"
+      ]
+    },
+    {
+      "input": [
+        [
+          "a",
+          "bb",
+          "ccc",
+          "dddd"
+        ]
+      ],
+      "output": [
+        "a",
+        "bb"
+      ]
+    },
+    {
+      "input": [
+        [
+          "ccc",
+          "dddd",
+          "apple"
+        ]
+      ],
+      "output": [
+        "apple"
+      ]
+    }
+  ]
+}

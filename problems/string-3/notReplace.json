@@ -1,0 +1,50 @@
+{
+  "topicId": "string-3",
+  "id": "notReplace",
+  "difficulty": "Medium",
+  "functionName": "notReplace",
+  "title": {
+    "en": "notReplace",
+    "ru": "не замена",
+    "uz": "almashmaslik"
+  },
+  "description": {
+    "en": "Given a string, return a string where all the appearances of the lowercase word 'is' have been replaced with 'is not'. The 'is' should not be immediately preceded or followed by a letter — so 'is' in 'this' does not count.",
+    "ru": "Дана строка. Верните строку, в которой все появления слова 'is' заменены на 'is not'. 'is' не должно иметь букву слева или справа — так что 'is' в слове 'this' не считается.",
+    "uz": "Berilgan satrda kichik 'is' so‘zining barcha holatlari 'is not' ga almashtirilsin. 'is' so‘zining oldida yoki orqasida harf bo‘lmasligi kerak, shuning uchun 'this' dagi 'is' hisobga olinmaydi."
+  },
+  "solution": "function notReplace(str) {\n  let result = '';\n  let i = 0;\n  while (i < str.length) {\n    if (\n      i + 1 < str.length &&\n      str.substring(i, i + 2) === 'is' &&\n      (i === 0 || !isLetter(str[i - 1])) &&\n      (i + 2 === str.length || !isLetter(str[i + 2]))\n    ) {\n      result += 'is not';\n      i += 2;\n    } else {\n      result += str[i];\n      i++;\n    }\n  }\n  return result;\n}\n\nfunction isLetter(c) {\n  return c.toLowerCase() != c.toUpperCase();\n}",
+  "starterCode": "function notReplace(str) {\n  // type here\n}\n\nfunction isLetter(c) {\n  return c.toLowerCase() != c.toUpperCase();\n}",
+  "testCases": [
+    {
+      "input": [
+        "is test"
+      ],
+      "output": "is not test"
+    },
+    {
+      "input": [
+        "is-is"
+      ],
+      "output": "is not-is not"
+    },
+    {
+      "input": [
+        "this is right"
+      ],
+      "output": "this is not right"
+    },
+    {
+      "input": [
+        "island"
+      ],
+      "output": "island"
+    },
+    {
+      "input": [
+        "isis"
+      ],
+      "output": "is notis not"
+    }
+  ]
+}

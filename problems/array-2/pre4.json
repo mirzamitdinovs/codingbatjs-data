@@ -1,0 +1,84 @@
+{
+  "topicId": "array-2",
+  "id": "pre4",
+  "difficulty": "Medium",
+  "functionName": "pre4",
+  "title": {
+    "en": "pre4",
+    "ru": "все числа до 4",
+    "uz": "4 ga qadar bo‘lgan sonlar"
+  },
+  "description": {
+    "en": "Return a new array containing the elements from the original array that come before the first 4. The original array will contain at least one 4.",
+    "ru": "Верните новый массив, содержащий элементы исходного массива до первой четверки (4). В исходном массиве гарантированно есть хотя бы одна четверка.",
+    "uz": "Asl massivdagi birinchi 4 oldidagi elementlarni yangi massiv sifatida qaytaring. Asl massivda hech bo‘lmaganda bitta 4 bor."
+  },
+  "solution": "function pre4(nums) {\n  let index = nums.indexOf(4);\n  return nums.slice(0, index);\n}",
+  "starterCode": "function pre4(nums) {\n  // type here\n}",
+  "testCases": [
+    {
+      "input": [
+        [
+          1,
+          2,
+          4,
+          1
+        ]
+      ],
+      "output": [
+        1,
+        2
+      ]
+    },
+    {
+      "input": [
+        [
+          3,
+          1,
+          4
+        ]
+      ],
+      "output": [
+        3,
+        1
+      ]
+    },
+    {
+      "input": [
+        [
+          1,
+          4,
+          4
+        ]
+      ],
+      "output": [
+        1
+      ]
+    },
+    {
+      "input": [
+        [
+          4,
+          4,
+          4
+        ]
+      ],
+      "output": []
+    },
+    {
+      "input": [
+        [
+          1,
+          2,
+          1,
+          4
+        ]
+      ],
+      "output": [
+        1,
+        2,
+        1
+      ]
+    }
+  ]
+}

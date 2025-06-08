@@ -1,0 +1,55 @@
+{
+  "topicId": "functional-2",
+  "id": "noneg",
+  "difficulty": "Easy",
+  "functionName": "noNeg",
+  "title": {
+    "en": "No Negatives",
+    "ru": "Без отрицательных",
+    "uz": "Manfiylarsiz"
+  },
+  "description": {
+    "en": "Given a list of integers, return a list of the integers, omitting any that are less than 0.",
+    "ru": "Дан список целых чисел. Верните новый список, исключив из него все числа меньше нуля.",
+    "uz": "Butun sonlar ro‘yxati berilgan. 0 dan kichik bo‘lgan sonlarni chiqarib tashlab, qolganlari bilan yangi ro‘yxatni qaytaring."
+  },
+  "solution": "function noNeg(nums) {\n  return nums.filter(n => n >= 0);\n}",
+  "starterCode": "function noNeg(nums) {\n  // type here\n}",
+  "testCases": [
+    {
+      "input": [
+        [
+          1,
+          -2
+        ]
+      ],
+      "output": [
+        1
+      ]
+    },
+    {
+      "input": [
+        [
+          -3,
+          -3,
+          3,
+          3
+        ]
+      ],
+      "output": [
+        3,
+        3
+      ]
+    },
+    {
+      "input": [
+        [
+          -1,
+          -1,
+          -1
+        ]
+      ],
+      "output": []
+    }
+  ]
+}

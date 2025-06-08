@@ -1,0 +1,48 @@
+{
+  "topicId": "ap-1",
+  "id": "commontwo",
+  "difficulty": "Medium",
+  "functionName": "commonTwo",
+  "title": {
+    "en": "Common Two",
+    "ru": "Общие два",
+    "uz": "Umumiy ikkita"
+  },
+  "description": {
+    "en": "Start with two arrays of strings, each in alphabetical order, possibly with duplicates. Return the count of the number of strings that appear in both arrays.",
+    "ru": "Даны два массива строк, каждый в алфавитном порядке, возможно с дубликатами. Верните количество строк, которые встречаются в обоих массивах.",
+    "uz": "Ikki ta alfavit bo‘yicha tartiblangan, takroriy elementlari bo‘lishi mumkin bo‘lgan satrlar massivlari berilgan. Har ikkala massivda uchraydigan satrlar sonini qaytaring."
+  },
+  "solution": "function commonTwo(a, b) {\n  let i = 0, j = 0, count = 0;\n  let prev = null;\n  while (i < a.length && j < b.length) {\n    if (a[i] === b[j]) {\n      if (a[i] !== prev) {\n        count++;\n        prev = a[i];\n      }\n      i++;\n      j++;\n    } else if (a[i] < b[j]) {\n      i++;\n    } else {\n      j++;\n    }\n  }\n  return count;\n}",
+  "starterCode": "function commonTwo(a, b) {\n  // type here\n}",
+  "testCases": [
+    {
+      "input": [
+        "[\"a\", \"c\", \"x\"]",
+        "[\"b\", \"c\", \"d\", \"x\"]"
+      ],
+      "output": 2
+    },
+    {
+      "input": [
+        "[\"a\", \"c\", \"x\"]",
+        "[\"a\", \"b\", \"c\", \"x\", \"z\"]"
+      ],
+      "output": 3
+    },
+    {
+      "input": [
+        "[\"a\", \"b\", \"c\"]",
+        "[\"a\", \"b\", \"c\"]"
+      ],
+      "output": 3
+    },
+    {
+      "input": [
+        "[\"a\", \"a\", \"b\", \"b\", \"c\"]",
+        "[\"a\", \"b\", \"c\"]"
+      ],
+      "output": 3
+    }
+  ]
+}

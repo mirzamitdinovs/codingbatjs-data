@@ -1,0 +1,50 @@
+{
+  "topicId": "recursion-1",
+  "id": "nestparen",
+  "difficulty": "Medium",
+  "functionName": "nestParen",
+  "title": {
+    "en": "Nest Paren",
+    "ru": "Вложенные скобки",
+    "uz": "Ichma-ich qavslar"
+  },
+  "description": {
+    "en": "Given a string, return true if it is a nesting of zero or more pairs of parentheses, like \"((()))\".",
+    "ru": "Дана строка. Верните true, если это вложение нуля или более пар скобок, например \"((()))\".",
+    "uz": "Berilgan satr ichida noldan yoki undan ortiq juft qavslarning ichma-ich joylashuvi bo‘lsa true qaytaring, masalan \"((()))\"."
+  },
+  "solution": "function nestParen(str) {\n  if (str.length === 0) return true;\n  if (str.charAt(0) === '(' && str.charAt(str.length - 1) === ')') {\n    return nestParen(str.substring(1, str.length - 1));\n  } else {\n    return false;\n  }\n}",
+  "starterCode": "function nestParen(str) {\n  // type here\n}",
+  "testCases": [
+    {
+      "input": [
+        "(())"
+      ],
+      "output": true
+    },
+    {
+      "input": [
+        "((()))"
+      ],
+      "output": true
+    },
+    {
+      "input": [
+        "(((x))"
+      ],
+      "output": false
+    },
+    {
+      "input": [
+        "()"
+      ],
+      "output": true
+    },
+    {
+      "input": [
+        ""
+      ],
+      "output": true
+    }
+  ]
+}

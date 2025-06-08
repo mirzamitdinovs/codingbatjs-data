@@ -1,0 +1,41 @@
+{
+  "topicId": "string-1",
+  "id": "makeTags",
+  "difficulty": "Easy",
+  "functionName": "makeTags",
+  "title": {
+    "en": "Make Tags",
+    "ru": "Сделать теги",
+    "uz": "Teg yasash"
+  },
+  "description": {
+    "en": "Given tag and word strings, return HTML-like string: \"<tag>word</tag>\".",
+    "ru": "Даны строки tag и word. Верните строку вида \"<tag>word</tag>\".",
+    "uz": "tag va word satr berilgan. \"<tag>word</tag>\" ko‘rinishda qaytaring."
+  },
+  "solution": "function makeTags(tag, word) {\n  return \"<\" + tag + \">\" + word + \"</\" + tag + \">\";\n}",
+  "starterCode": "function makeTags(tag, word) {\n  // type here\n}",
+  "testCases": [
+    {
+      "input": [
+        "\"i\"",
+        "\"Yay\""
+      ],
+      "output": "<i>Yay</i>"
+    },
+    {
+      "input": [
+        "\"i\"",
+        "\"Hello\""
+      ],
+      "output": "<i>Hello</i>"
+    },
+    {
+      "input": [
+        "\"cite\"",
+        "\"Yay\""
+      ],
+      "output": "<cite>Yay</cite>"
+    }
+  ]
+}

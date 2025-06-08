@@ -1,0 +1,76 @@
+{
+  "topicId": "ap-1",
+  "id": "scores100",
+  "difficulty": "Easy",
+  "functionName": "scores100",
+  "title": {
+    "en": "scores100",
+    "ru": "оценки 100",
+    "uz": "ballar 100"
+  },
+  "description": {
+    "en": "Given an array of scores, return true if there are two 100's next to each other in the array.",
+    "ru": "Дан массив оценок, верните true, если в массиве есть две 100 подряд.",
+    "uz": "Ballar massiv berilgan, agar massivda ketma-ket ikki 100 bo‘lsa true qaytaring."
+  },
+  "solution": "function scores100(scores) {\n  for (let i = 0; i < scores.length - 1; i++) {\n    if (scores[i] === 100 && scores[i + 1] === 100) return true;\n  }\n  return false;\n}",
+  "starterCode": "function scores100(scores) {\n  // type here\n}",
+  "testCases": [
+    {
+      "input": [
+        [
+          1,
+          100,
+          100
+        ]
+      ],
+      "output": true
+    },
+    {
+      "input": [
+        [
+          1,
+          100,
+          99,
+          100
+        ]
+      ],
+      "output": false
+    },
+    {
+      "input": [
+        [
+          100,
+          1,
+          100,
+          100
+        ]
+      ],
+      "output": true
+    },
+    {
+      "input": [
+        [
+          100,
+          1,
+          100,
+          99,
+          100
+        ]
+      ],
+      "output": false
+    },
+    {
+      "input": [
+        [
+          100,
+          100,
+          1,
+          100,
+          100
+        ]
+      ],
+      "output": true
+    }
+  ]
+}

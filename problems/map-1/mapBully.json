@@ -1,0 +1,69 @@
+{
+  "topicId": "map-1",
+  "id": "mapbully",
+  "difficulty": "Easy",
+  "functionName": "mapBully",
+  "title": {
+    "en": "Map Bully",
+    "ru": "Булли карты",
+    "uz": "Map Bully"
+  },
+  "description": {
+    "en": "Modify and return the given map as follows: if the key \"a\" has a value, set the key \"b\" to have that value, and set the key \"a\" to the empty string.",
+    "ru": "Измените и верните данную карту следующим образом: если ключ \"a\" есть в карте, установите значение ключа \"b\" равным значению ключа \"a\", а значение ключа \"a\" установите в пустую строку.",
+    "uz": "Berilgan mapni quyidagicha o‘zgartiring va qaytaring: agar \"a\" kalitiga qiymat bo‘lsa, \"b\" kalitining qiymatini \"a\" ning qiymatiga o‘rnatilsin, \"a\" ning qiymati esa bo‘sh qatorga o‘zgartirilsin."
+  },
+  "solution": "function mapBully(map) {\n  if (map.hasOwnProperty('a')) {\n    map['b'] = map['a'];\n    map['a'] = '';\n  }\n  return map;\n}",
+  "starterCode": "function mapBully(map) {\n  // type here\n}",
+  "testCases": [
+    {
+      "input": [
+        {
+          "a": "candy",
+          "b": "dirt"
+        }
+      ],
+      "output": {
+        "a": "",
+        "b": "candy"
+      }
+    },
+    {
+      "input": [
+        {
+          "a": "candy"
+        }
+      ],
+      "output": {
+        "a": "",
+        "b": "candy"
+      }
+    },
+    {
+      "input": [
+        {
+          "b": "carrot",
+          "c": "meh"
+        }
+      ],
+      "output": {
+        "b": "carrot",
+        "c": "meh"
+      }
+    },
+    {
+      "input": [
+        {
+          "a": "candy",
+          "b": "carrot",
+          "c": "meh"
+        }
+      ],
+      "output": {
+        "a": "",
+        "b": "candy",
+        "c": "meh"
+      }
+    }
+  ]
+}

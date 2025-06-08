@@ -1,0 +1,55 @@
+{
+  "topicId": "string-3",
+  "id": "withoutString",
+  "difficulty": "Medium",
+  "functionName": "withoutString",
+  "title": {
+    "en": "withoutString",
+    "ru": "удаление подстроки",
+    "uz": "qism satrni olib tashlash"
+  },
+  "description": {
+    "en": "Given two strings, base and remove, return a version of the base string where all instances of the remove string have been removed (case insensitive). You may assume that the remove string is length 1 or more.",
+    "ru": "Даны две строки base и remove. Верните строку base, где все вхождения remove удалены (без учета регистра). Предполагается, что remove длиной 1 и более.",
+    "uz": "Berilgan base va remove satrlari asosida base satridan remove satrining barcha holatlari olib tashlangan versiyasini qaytaring (katta-kichik harf farqi yo‘q). remove uzunligi 1 yoki undan ko‘p deb faraz qilinadi."
+  },
+  "solution": "function withoutString(base, remove) {\n  let result = '';\n  let i = 0;\n  let removeLower = remove.toLowerCase();\n  let len = remove.length;\n  while (i < base.length) {\n    if (base.substring(i, i + len).toLowerCase() === removeLower) {\n      i += len;\n    } else {\n      result += base.charAt(i);\n      i++;\n    }\n  }\n  return result;\n}",
+  "starterCode": "function withoutString(base, remove) {\n  // type here\n}",
+  "testCases": [
+    {
+      "input": [
+        "Hello there",
+        "llo"
+      ],
+      "output": "He there"
+    },
+    {
+      "input": [
+        "Hello there",
+        "e"
+      ],
+      "output": "Hllo thr"
+    },
+    {
+      "input": [
+        "Hello there",
+        "x"
+      ],
+      "output": "Hello there"
+    },
+    {
+      "input": [
+        "Hello there",
+        "h"
+      ],
+      "output": "Hello tere"
+    },
+    {
+      "input": [
+        "Hello there",
+        "E"
+      ],
+      "output": "Hllo thr"
+    }
+  ]
+}

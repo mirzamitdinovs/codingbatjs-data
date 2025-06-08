@@ -1,0 +1,50 @@
+{
+  "topicId": "recursion-1",
+  "id": "stringclean",
+  "difficulty": "Medium",
+  "functionName": "stringClean",
+  "title": {
+    "en": "String Clean",
+    "ru": "Очистка строки",
+    "uz": "Satrni tozalash"
+  },
+  "description": {
+    "en": "Given a string, return recursively a 'cleaned' string where adjacent chars that are the same have been reduced to a single char. So 'yyzzza' yields 'yza'.",
+    "ru": "Дана строка. Рекурсивно верните «очищенную» строку, где соседние одинаковые символы сведены к одному. Например, 'yyzzza' превращается в 'yza'.",
+    "uz": "Berilgan satrda rekursiv ravishda qo‘shma bir xil belgilar bitta belgiga qisqartirilgan yangi satrni qaytaring. Masalan, 'yyzzza' -> 'yza'."
+  },
+  "solution": "function stringClean(str) {\n  if (str.length <= 1) return str;\n  if (str.charAt(0) === str.charAt(1)) {\n    return stringClean(str.substring(1));\n  } else {\n    return str.charAt(0) + stringClean(str.substring(1));\n  }\n}",
+  "starterCode": "function stringClean(str) {\n  // type here\n}",
+  "testCases": [
+    {
+      "input": [
+        "yyzzza"
+      ],
+      "output": "yza"
+    },
+    {
+      "input": [
+        "abbbcdd"
+      ],
+      "output": "abcd"
+    },
+    {
+      "input": [
+        "Hello"
+      ],
+      "output": "Helo"
+    },
+    {
+      "input": [
+        ""
+      ],
+      "output": ""
+    },
+    {
+      "input": [
+        "a"
+      ],
+      "output": "a"
+    }
+  ]
+}

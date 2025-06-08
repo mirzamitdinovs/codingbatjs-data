@@ -1,0 +1,47 @@
+{
+  "topicId": "logic-1",
+  "id": "inOrder",
+  "difficulty": "Medium",
+  "functionName": "inOrder",
+  "title": {
+    "en": "In Order",
+    "ru": "По порядку",
+    "uz": "Tartibda"
+  },
+  "description": {
+    "en": "Given three ints, a, b, c, return true if b > a and c > b. If 'bOk' is true, b does not need to be greater than a.",
+    "ru": "Даны три целых a, b, c. Верните true, если b > a и c > b. Если bOk true, b может не быть больше a.",
+    "uz": "Uchta son a, b, c berilgan. Agar b > a va c > b bo‘lsa true qaytaring. Agar bOk true bo‘lsa b > a bo‘lishi shart emas."
+  },
+  "solution": "function inOrder(a, b, c, bOk) { if (bOk) return c > b; return b > a && c > b; }",
+  "starterCode": "function inOrder(a, b, c, bOk) {\n  // type here\n}",
+  "testCases": [
+    {
+      "input": [
+        "1",
+        "2",
+        "3",
+        "false"
+      ],
+      "output": true
+    },
+    {
+      "input": [
+        "1",
+        "2",
+        "1",
+        "false"
+      ],
+      "output": false
+    },
+    {
+      "input": [
+        "1",
+        "1",
+        "2",
+        "true"
+      ],
+      "output": true
+    }
+  ]
+}

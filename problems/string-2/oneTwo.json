@@ -1,0 +1,50 @@
+{
+  "topicId": "string-2",
+  "id": "oneTwo",
+  "difficulty": "Medium",
+  "functionName": "oneTwo",
+  "title": {
+    "en": "oneTwo",
+    "ru": "один-два",
+    "uz": "bir-ikki"
+  },
+  "description": {
+    "en": "Given a string, compute a new string by moving the first char of every group of 3 chars to the end of the group. Ignore any group of fewer than 3 chars at the end.",
+    "ru": "Дана строка. Для каждой группы из 3 символов сдвиньте первый символ в конец группы. Игнорируйте оставшиеся символы, если их меньше 3.",
+    "uz": "Berilgan satrda har 3 belgidan tashkil topgan guruh uchun birinchi belgini guruh oxiriga o‘tkazing. Oxirda 3 tadan kam belgilar qolsa, ularni e'tiborga olmang."
+  },
+  "solution": "function oneTwo(str) {\n  let result = '';\n  for (let i = 0; i < str.length - 2; i += 3) {\n    result += str.substring(i + 1, i + 3) + str.charAt(i);\n  }\n  return result;\n}",
+  "starterCode": "function oneTwo(str) {\n  // type here\n}",
+  "testCases": [
+    {
+      "input": [
+        "abc"
+      ],
+      "output": "bca"
+    },
+    {
+      "input": [
+        "abcdef"
+      ],
+      "output": "bcaefd"
+    },
+    {
+      "input": [
+        "abcxy"
+      ],
+      "output": "bca"
+    },
+    {
+      "input": [
+        "abcdefghijklmn"
+      ],
+      "output": "bcaefdghiljknm"
+    },
+    {
+      "input": [
+        ""
+      ],
+      "output": ""
+    }
+  ]
+}

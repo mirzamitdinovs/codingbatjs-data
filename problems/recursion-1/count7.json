@@ -1,0 +1,50 @@
+{
+  "topicId": "recursion-1",
+  "id": "count7",
+  "difficulty": "Easy",
+  "functionName": "count7",
+  "title": {
+    "en": "Count 7",
+    "ru": "Подсчет семерок",
+    "uz": "7 larni sanash"
+  },
+  "description": {
+    "en": "Given a non-negative int n, return the count of the occurrences of 7 as a digit, recursively.",
+    "ru": "Дано неотрицательное целое число n. Рекурсивно верните количество цифр 7 в числе.",
+    "uz": "Musbat butun n berilgan. Raqam sifatida 7 larning sonini rekursiv hisoblang."
+  },
+  "solution": "function count7(n) {\n  if (n === 0) return 0;\n  if (n % 10 === 7) {\n    return 1 + count7(Math.floor(n / 10));\n  } else {\n    return count7(Math.floor(n / 10));\n  }\n}",
+  "starterCode": "function count7(n) {\n  // type here\n}",
+  "testCases": [
+    {
+      "input": [
+        "717"
+      ],
+      "output": 2
+    },
+    {
+      "input": [
+        "7"
+      ],
+      "output": 1
+    },
+    {
+      "input": [
+        "123"
+      ],
+      "output": 0
+    },
+    {
+      "input": [
+        "771237"
+      ],
+      "output": 3
+    },
+    {
+      "input": [
+        "1237777"
+      ],
+      "output": 4
+    }
+  ]
+}

@@ -1,0 +1,50 @@
+{
+  "topicId": "string-3",
+  "id": "countYZ",
+  "difficulty": "Easy",
+  "functionName": "countYZ",
+  "title": {
+    "en": "countYZ",
+    "ru": "подсчет Y и Z",
+    "uz": "Y va Z ni sanash"
+  },
+  "description": {
+    "en": "Given a string, count the number of words ending in 'y' or 'z' (not case sensitive). A 'y' or 'z' is at the end of a word if there is not an alphabetic letter immediately following it.",
+    "ru": "Дана строка. Посчитайте количество слов, которые заканчиваются на 'y' или 'z' (без учета регистра). 'y' или 'z' находятся в конце слова, если за ними не следует буква.",
+    "uz": "Berilgan satrda 'y' yoki 'z' bilan tugagan so‘zlar sonini hisoblang (katta-kichik harf farqi yo‘q). 'y' yoki 'z' so‘z oxirida bo‘lsa, keyingi belgi harf emas bo‘ladi."
+  },
+  "solution": "function countYZ(str) {\n  let count = 0;\n  str = str.toLowerCase();\n  for (let i = 0; i < str.length; i++) {\n    if ((str[i] === 'y' || str[i] === 'z') && (i === str.length - 1 || !(/[a-z]/).test(str[i + 1]))) {\n      count++;\n    }\n  }\n  return count;\n}",
+  "starterCode": "function countYZ(str) {\n  // type here\n}",
+  "testCases": [
+    {
+      "input": [
+        "fez day"
+      ],
+      "output": 2
+    },
+    {
+      "input": [
+        "day fez"
+      ],
+      "output": 2
+    },
+    {
+      "input": [
+        "day fyyyz"
+      ],
+      "output": 2
+    },
+    {
+      "input": [
+        "day yak"
+      ],
+      "output": 1
+    },
+    {
+      "input": [
+        "zxyx"
+      ],
+      "output": 0
+    }
+  ]
+}

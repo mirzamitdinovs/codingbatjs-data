@@ -1,0 +1,89 @@
+{
+  "topicId": "array-3",
+  "id": "maxMirror",
+  "difficulty": "Medium",
+  "functionName": "maxMirror",
+  "title": {
+    "en": "maxMirror",
+    "ru": "максимальное зеркало",
+    "uz": "maksimal oyna"
+  },
+  "description": {
+    "en": "Return the size of the largest mirror section in the array. A mirror section in an array is a group of contiguous elements such that somewhere in the array, the same group appears in reverse order.",
+    "ru": "Верните размер самой большой зеркальной секции в массиве. Зеркальная секция — это группа последовательных элементов, которая где-то в массиве появляется в обратном порядке.",
+    "uz": "Massivdagi eng katta oynaning uzunligini qaytaring. Oyna — bu ketma-ket elementlar guruhi bo‘lib, u massivda teskari tartibda ham uchraydi."
+  },
+  "solution": "function maxMirror(nums) {\n  let max = 0;\n  for (let i = 0; i < nums.length; i++) {\n    for (let j = nums.length - 1; j >= 0; j--) {\n      let length = 0;\n      while (i + length < nums.length && j - length >= 0 && nums[i + length] === nums[j - length]) {\n        length++;\n      }\n      if (length > max) max = length;\n    }\n  }\n  return max;\n}",
+  "starterCode": "function maxMirror(nums) {\n  // type here\n}",
+  "testCases": [
+    {
+      "input": [
+        [
+          1,
+          2,
+          3,
+          8,
+          9,
+          3,
+          2,
+          1
+        ]
+      ],
+      "output": 3
+    },
+    {
+      "input": [
+        [
+          7,
+          1,
+          2,
+          9,
+          7,
+          2,
+          1
+        ]
+      ],
+      "output": 2
+    },
+    {
+      "input": [
+        [
+          1,
+          2,
+          1,
+          4
+        ]
+      ],
+      "output": 3
+    },
+    {
+      "input": [
+        [
+          1,
+          4,
+          5,
+          3,
+          5,
+          4,
+          1
+        ]
+      ],
+      "output": 7
+    },
+    {
+      "input": [
+        [
+          1,
+          2,
+          3,
+          2,
+          1,
+          1,
+          2,
+          3
+        ]
+      ],
+      "output": 3
+    }
+  ]
+}

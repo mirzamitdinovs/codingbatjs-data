@@ -1,0 +1,41 @@
+{
+  "topicId": "logic-1",
+  "id": "dateFashion",
+  "difficulty": "Easy",
+  "functionName": "dateFashion",
+  "title": {
+    "en": "Date Fashion",
+    "ru": "Стиль на свидание",
+    "uz": "Sana modasi"
+  },
+  "description": {
+    "en": "You and your date are trying to get a table at a restaurant. The parameter 'you' and 'date' are your stylishness scores (0..10). If either of you has a style of 2 or less, the result is 0 (no). If either has a style of 8 or more, the result is 2 (yes). Otherwise, the result is 1 (maybe).",
+    "ru": "Вы с партнером пытаетесь получить столик в ресторане. Параметры 'you' и 'date' — оценки стиля от 0 до 10. Если кто-то из вас имеет стиль 2 или меньше — 0 (нет). Если кто-то 8 или больше — 2 (да). Иначе — 1 (возможно).",
+    "uz": "Siz va sana restoran stoliga harakat qilasiz. 'You' va 'date' 0 dan 10 gacha bo‘lgan uslub ballari. Agar kimdir 2 yoki kam bo‘lsa 0 (yo‘q), 8 yoki yuqori bo‘lsa 2 (ha), aks holda 1 (ehtimol)."
+  },
+  "solution": "function dateFashion(you, date) { if (you <= 2 || date <= 2) return 0; if (you >= 8 || date >= 8) return 2; return 1; }",
+  "starterCode": "function dateFashion(you, date) {\n  // type here\n}",
+  "testCases": [
+    {
+      "input": [
+        "5",
+        "10"
+      ],
+      "output": 2
+    },
+    {
+      "input": [
+        "5",
+        "2"
+      ],
+      "output": 0
+    },
+    {
+      "input": [
+        "5",
+        "5"
+      ],
+      "output": 1
+    }
+  ]
+}

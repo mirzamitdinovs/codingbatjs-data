@@ -1,0 +1,38 @@
+{
+  "topicId": "logic-1",
+  "id": "nearTen",
+  "difficulty": "Medium",
+  "functionName": "nearTen",
+  "title": {
+    "en": "Near Ten",
+    "ru": "Близко к десяти",
+    "uz": "O‘nga yaqin"
+  },
+  "description": {
+    "en": "Given a non-negative number 'num', return true if num is within 2 of a multiple of 10.",
+    "ru": "Дано неотрицательное число num. Верните true, если num в пределах 2 от кратного 10.",
+    "uz": "Musbat yoki nol bo‘lgan son num berilgan. Agar num 10 ga yaqin (2 gacha) bo‘lsa true qaytaring."
+  },
+  "solution": "function nearTen(num) { let mod = num % 10; return mod <= 2 || mod >= 8; }",
+  "starterCode": "function nearTen(num) {\n  // type here\n}",
+  "testCases": [
+    {
+      "input": [
+        "12"
+      ],
+      "output": true
+    },
+    {
+      "input": [
+        "17"
+      ],
+      "output": false
+    },
+    {
+      "input": [
+        "19"
+      ],
+      "output": true
+    }
+  ]
+}

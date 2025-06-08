@@ -1,0 +1,55 @@
+{
+  "topicId": "string-2",
+  "id": "mixString",
+  "difficulty": "Easy",
+  "functionName": "mixString",
+  "title": {
+    "en": "Mix String",
+    "ru": "Смешать строки",
+    "uz": "Satrlani aralashtirish"
+  },
+  "description": {
+    "en": "Given two strings, create a new string by alternating the characters from each string. If one string is longer, append the extra characters at the end.",
+    "ru": "Даны две строки. Создайте новую строку, чередуя символы из каждой строки. Если одна строка длиннее, добавьте оставшиеся символы в конце.",
+    "uz": "Ikki satr berilgan. Har biridan ketma-ket belgilar olib yangi satr hosil qiling. Agar birinchi yoki ikkinchi satr uzunroq bo‘lsa, ortiqcha belgilar oxiriga qo‘shilsin."
+  },
+  "solution": "function mixString(a, b) {\n  let result = '';\n  let maxLen = Math.max(a.length, b.length);\n  for (let i = 0; i < maxLen; i++) {\n    if (i < a.length) result += a.charAt(i);\n    if (i < b.length) result += b.charAt(i);\n  }\n  return result;\n}",
+  "starterCode": "function mixString(a, b) {\n  // type here\n}",
+  "testCases": [
+    {
+      "input": [
+        "abc",
+        "xyz"
+      ],
+      "output": "axbycz"
+    },
+    {
+      "input": [
+        "Hi",
+        "There"
+      ],
+      "output": "HTihere"
+    },
+    {
+      "input": [
+        "xxxx",
+        "There"
+      ],
+      "output": "xTxhxexre"
+    },
+    {
+      "input": [
+        "",
+        "There"
+      ],
+      "output": "There"
+    },
+    {
+      "input": [
+        "xx",
+        ""
+      ],
+      "output": "xx"
+    }
+  ]
+}
