@@ -1,0 +1,26 @@
+{
+  "topicId": "warmup-1",
+  "id": "backaround",
+  "difficulty": "Easy",
+  "functionName": "backAround",
+  "title": {
+    "en": "Back Around",
+    "ru": "Символ вокруг",
+    "uz": "Oxirgi belgini oldi va orqaga qo‘yish"
+  },
+  "description": {
+    "en": "Given a string, take the last char and return a new string with the last char added at the front and back.",
+    "ru": "Дана строка. Возьмите последний символ и добавьте его в начало и конец строки.",
+    "uz": "String berilgan. Oxirgi belgini olib, stringning boshiga va oxiriga qo‘shib qaytaring."
+  },
+  "solution": "function backAround(str) {\n  const last = str[str.length - 1];\n  return last + str + last;\n}",
+  "starterCode": "function backAround(str) {\n  // type here\n}",
+  "testCases": [
+    { "input": ["cat"], "output": "tcatt" },
+    { "input": ["Hello"], "output": "oHelloo" },
+    { "input": ["a"], "output": "aaa" },
+    { "input": ["abc"], "output": "cabcc" },
+    { "input": ["read"], "output": "dreadd" },
+    { "input": ["boo"], "output": "obooo" }
+  ]
+}

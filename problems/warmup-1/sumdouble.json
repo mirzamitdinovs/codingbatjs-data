@@ -1,0 +1,52 @@
+{
+  "topicId": "warmup-1",
+  "id": "sumdouble",
+  "difficulty": "Easy",
+  "functionName": "sumDouble",
+  "title": {
+    "en": "Sum Double",
+    "ru": "Сумма или двойная сумма",
+    "uz": "Yig‘indi yoki ikki karra yig‘indi"
+  },
+  "description": {
+    "en": "Given two int values, return their sum. Unless the two values are the same, then return double their sum.",
+    "ru": "Даны два числа. Верните их сумму. Если они одинаковы, верните двойную сумму.",
+    "uz": "Ikki butun son berilgan. Ularning yig‘indisini qaytaring. Agar ular bir xil bo‘lsa, ikki karra yig‘indini qaytaring."
+  },
+  "solution": "function sumDouble(a, b) {\n  return a === b ? 2 * (a + b) : a + b;\n}",
+  "starterCode": "function sumDouble(a, b) {\n  // type here\n}",
+  "testCases": [
+    {
+      "input": ["1", "2"],
+      "output": 3
+    },
+    {
+      "input": ["3", "2"],
+      "output": 5
+    },
+    {
+      "input": ["2", "2"],
+      "output": 8
+    },
+    {
+      "input": ["-1", "0"],
+      "output": -1
+    },
+    {
+      "input": ["3", "3"],
+      "output": 12
+    },
+    {
+      "input": ["0", "0"],
+      "output": 0
+    },
+    {
+      "input": ["0", "1"],
+      "output": 1
+    },
+    {
+      "input": ["3", "4"],
+      "output": 7
+    }
+  ]
+}

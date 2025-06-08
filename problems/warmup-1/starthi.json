@@ -1,0 +1,28 @@
+{
+  "topicId": "warmup-1",
+  "id": "starthi",
+  "difficulty": "Easy",
+  "functionName": "startHi",
+  "title": {
+    "en": "Start with Hi",
+    "ru": "Начинается с 'hi'",
+    "uz": "'hi' bilan boshlanadi"
+  },
+  "description": {
+    "en": "Given a string, return true if the string starts with 'hi' and false otherwise.",
+    "ru": "Дана строка. Верните true, если строка начинается с 'hi', иначе false.",
+    "uz": "String berilgan. Agar 'hi' bilan boshlansa true, aks holda false qaytaring."
+  },
+  "solution": "function startHi(str) {\n  return str.startsWith('hi');\n}",
+  "starterCode": "function startHi(str) {\n  // type here\n}",
+  "testCases": [
+    { "input": ["hi there"], "output": true },
+    { "input": ["hi"], "output": true },
+    { "input": ["hello hi"], "output": false },
+    { "input": ["he"], "output": false },
+    { "input": ["h"], "output": false },
+    { "input": [""], "output": false },
+    { "input": ["ho hi"], "output": false },
+    { "input": ["hi ho"], "output": true }
+  ]
+}

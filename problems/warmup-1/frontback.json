@@ -1,0 +1,28 @@
+{
+  "topicId": "warmup-1",
+  "id": "frontback",
+  "difficulty": "Easy",
+  "functionName": "frontBack",
+  "title": {
+    "en": "Front and Back",
+    "ru": "Начало и конец",
+    "uz": "Bosh va oxirni almashtirish"
+  },
+  "description": {
+    "en": "Given a string, return a new string where the first and last chars have been exchanged.",
+    "ru": "Дана строка. Верните новую строку, где первый и последний символы поменялись местами.",
+    "uz": "String berilgan. Birinchi va oxirgi belgilar o‘rinlarini almashtirib qaytaring."
+  },
+  "solution": "function frontBack(str) {\n  if (str.length <= 1) return str;\n  return str[str.length - 1] + str.slice(1, -1) + str[0];\n}",
+  "starterCode": "function frontBack(str) {\n  // type here\n}",
+  "testCases": [
+    { "input": ["code"], "output": "eodc" },
+    { "input": ["a"], "output": "a" },
+    { "input": ["ab"], "output": "ba" },
+    { "input": ["abc"], "output": "cba" },
+    { "input": [""], "output": "" },
+    { "input": ["Chocolate"], "output": "ehocolatC" },
+    { "input": ["aavj"], "output": "jav" },
+    { "input": ["hello"], "output": "oellh" }
+  ]
+}

@@ -1,0 +1,31 @@
+{
+  "topicId": "warmup-1",
+  "id": "hasteen",
+  "difficulty": "Easy",
+  "functionName": "hasTeen",
+  "title": {
+    "en": "Has Teen",
+    "ru": "Есть 'teen' число",
+    "uz": "'Teen' son mavjud"
+  },
+  "description": {
+    "en": "We'll say that a number is 'teen' if it is in the range 13..19 inclusive. Given 3 int values, return true if 1 or more of them are teen.",
+    "ru": "'Teen' числа — это числа от 13 до 19 включительно. Даны три числа, верните true, если хотя бы одно из них 'teen'.",
+    "uz": "'Teen' sonlar 13–19 oralig‘ida (shu sonlar ham). Uchta son berilgan, bittasi 'teen' bo‘lsa true qaytaring."
+  },
+  "solution": "function hasTeen(a, b, c) {\n  return [a, b, c].some(n => n >= 13 && n <= 19);\n}",
+  "starterCode": "function hasTeen(a, b, c) {\n  // type here\n}",
+  "testCases": [
+    { "input": ["13", "20", "10"], "output": true },
+    { "input": ["20", "19", "10"], "output": true },
+    { "input": ["20", "10", "13"], "output": true },
+    { "input": ["1", "20", "12"], "output": false },
+    { "input": ["19", "20", "12"], "output": true },
+    { "input": ["12", "20", "19"], "output": true },
+    { "input": ["12", "9", "20"], "output": false },
+    { "input": ["12", "18", "20"], "output": true },
+    { "input": ["14", "2", "20"], "output": true },
+    { "input": ["4", "2", "20"], "output": false },
+    { "input": ["11", "22", "22"], "output": false }
+  ]
+}

@@ -1,0 +1,26 @@
+{
+  "topicId": "warmup-1",
+  "id": "mixstart",
+  "difficulty": "Easy",
+  "functionName": "mixStart",
+  "title": {
+    "en": "Mix Start",
+    "ru": "Начинается с -ix",
+    "uz": "'-ix' bilan boshlanadi"
+  },
+  "description": {
+    "en": "Return true if the given string begins with 'mix', except the first character can be anything, so 'pix', '9ix', etc. all count.",
+    "ru": "Верните true, если строка начинается с 'ix', при этом первый символ может быть любым (например, 'mix', 'pix', '9ix').",
+    "uz": "String 'ix' bilan boshlanadigan bo‘lsa (birinchi belgisi farq qilmaydi: 'mix', 'pix', '9ix' va boshqalar) true qaytaring."
+  },
+  "solution": "function mixStart(str) {\n  return str.length >= 3 && str.substring(1, 3) === 'ix';\n}",
+  "starterCode": "function mixStart(str) {\n  // type here\n}",
+  "testCases": [
+    { "input": ["mix snacks"], "output": true },
+    { "input": ["pix snacks"], "output": true },
+    { "input": ["piz snacks"], "output": false },
+    { "input": ["nix"], "output": true },
+    { "input": ["ni"], "output": false },
+    { "input": ["n"], "output": false }
+  ]
+}

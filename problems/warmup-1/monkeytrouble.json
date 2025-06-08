@@ -1,0 +1,36 @@
+{
+  "topicId": "warmup-1",
+  "id": "monkeytrouble",
+  "difficulty": "Easy",
+  "functionName": "monkeyTrouble",
+  "title": {
+    "en": "Monkey Trouble",
+    "ru": "Обезьяний переполох",
+    "uz": "Maymunlar muammosi"
+  },
+  "description": {
+    "en": "We have two monkeys, a and b. The parameters aSmile and bSmile indicate if each is smiling. We are in trouble if both are smiling or neither is smiling. Return true if we are in trouble.",
+    "ru": "У нас есть две обезьяны: a и b. Параметры aSmile и bSmile указывают, улыбается ли каждая из них. У нас проблемы, если обе улыбаются или обе не улыбаются.",
+    "uz": "Ikki maymun bor: a va b. aSmile va bSmile parametrlari har birining kulayotganini bildiradi. Agar ikkisi ham kulayotgan bo‘lsa yoki ikkalasi ham kulmayotgan bo‘lsa, muammo bor. Muammo bo‘lsa, true qaytaring."
+  },
+  "solution": "function monkeyTrouble(aSmile, bSmile) {\n  return aSmile === bSmile;\n}",
+  "starterCode": "function monkeyTrouble(aSmile, bSmile) {\n  // type here\n}",
+  "testCases": [
+    {
+      "input": ["true", "true"],
+      "output": true
+    },
+    {
+      "input": ["false", "false"],
+      "output": true
+    },
+    {
+      "input": ["true", "false"],
+      "output": false
+    },
+    {
+      "input": ["false", "true"],
+      "output": false
+    }
+  ]
+}

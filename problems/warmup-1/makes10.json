@@ -1,0 +1,29 @@
+{
+  "topicId": "warmup-1",
+  "id": "makes10",
+  "difficulty": "Easy",
+  "functionName": "makes10",
+  "title": {
+    "en": "Makes 10",
+    "ru": "Делает 10",
+    "uz": "10 chiqarish"
+  },
+  "description": {
+    "en": "Given 2 integers, return true if one of them is 10 or if their sum is 10.",
+    "ru": "Даны два целых числа. Верните true, если одно из них равно 10 или их сумма равна 10.",
+    "uz": "2 ta butun son berilgan. Agar ulardan biri 10 bo‘lsa yoki ularning yig‘indisi 10 bo‘lsa, true qaytaring."
+  },
+  "solution": "function makes10(a, b) {\n  return a === 10 || b === 10 || a + b === 10;\n}",
+  "starterCode": "function makes10(a, b) {\n  // type here\n}",
+  "testCases": [
+    { "input": ["9", "10"], "output": true },
+    { "input": ["9", "9"], "output": false },
+    { "input": ["1", "9"], "output": true },
+    { "input": ["10", "1"], "output": true },
+    { "input": ["10", "10"], "output": true },
+    { "input": ["8", "2"], "output": true },
+    { "input": ["8", "3"], "output": false },
+    { "input": ["10", "42"], "output": true },
+    { "input": ["12", "-2"], "output": true }
+  ]
+}

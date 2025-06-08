@@ -1,0 +1,27 @@
+{
+  "topicId": "warmup-1",
+  "id": "front3",
+  "difficulty": "Easy",
+  "functionName": "front3",
+  "title": {
+    "en": "Front 3",
+    "ru": "Три первых символа",
+    "uz": "Birinchi 3 belgi"
+  },
+  "description": {
+    "en": "Given a string, we'll say that the front is the first 3 chars of the string. If the string length is less than 3, the front is whatever is there. Return a new string which is 3 copies of the front.",
+    "ru": "Дана строка. Возьмите первые 3 символа (или все, если их меньше трех) и повторите их три раза.",
+    "uz": "String berilgan. Birinchi 3 belgini (yoki borini) uch marta takrorlab yangi string qaytaring."
+  },
+  "solution": "function front3(str) {\n  let front = str.slice(0, 3);\n  return front + front + front;\n}",
+  "starterCode": "function front3(str) {\n  // type here\n}",
+  "testCases": [
+    { "input": ["Java"], "output": "JavJavJav" },
+    { "input": ["Chocolate"], "output": "ChoChoCho" },
+    { "input": ["abc"], "output": "abcabcabc" },
+    { "input": ["abcXYZ"], "output": "abcabcabc" },
+    { "input": ["ab"], "output": "ababab" },
+    { "input": ["a"], "output": "aaa" },
+    { "input": [""], "output": "" }
+  ]
+}

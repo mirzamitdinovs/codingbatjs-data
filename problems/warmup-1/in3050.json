@@ -1,0 +1,32 @@
+{
+  "topicId": "warmup-1",
+  "id": "in3050",
+  "difficulty": "Easy",
+  "functionName": "in3050",
+  "title": {
+    "en": "In 30..50",
+    "ru": "В диапазоне 30..50",
+    "uz": "30 dan 50 gacha"
+  },
+  "description": {
+    "en": "Given 2 int values, return true if they are both in the range 30..40 inclusive, or they are both in the range 40..50 inclusive.",
+    "ru": "Даны два числа. Верните true, если оба числа находятся в диапазоне 30..40 включительно или оба — в диапазоне 40..50 включительно.",
+    "uz": "Ikkita son berilgan. Ikkalasi ham 30–40 yoki ikkalasi ham 40–50 oralig‘ida (shu sonlar ham) bo‘lsa, true qaytaring."
+  },
+  "solution": "function in3050(a, b) {\n  const in30_40 = (n) => n >= 30 && n <= 40;\n  const in40_50 = (n) => n >= 40 && n <= 50;\n  return (in30_40(a) && in30_40(b)) || (in40_50(a) && in40_50(b));\n}",
+  "starterCode": "function in3050(a, b) {\n  // type here\n}",
+  "testCases": [
+    { "input": ["30", "31"], "output": true },
+    { "input": ["30", "41"], "output": false },
+    { "input": ["40", "50"], "output": true },
+    { "input": ["40", "51"], "output": false },
+    { "input": ["39", "50"], "output": false },
+    { "input": ["50", "39"], "output": false },
+    { "input": ["40", "39"], "output": true },
+    { "input": ["49", "48"], "output": true },
+    { "input": ["50", "40"], "output": true },
+    { "input": ["50", "51"], "output": false },
+    { "input": ["35", "36"], "output": true },
+    { "input": ["35", "45"], "output": false }
+  ]
+}

@@ -1,0 +1,26 @@
+{
+  "topicId": "warmup-1",
+  "id": "stringe",
+  "difficulty": "Easy",
+  "functionName": "stringE",
+  "title": {
+    "en": "String E",
+    "ru": "Содержит 'e'",
+    "uz": "'e' harfi necha marta"
+  },
+  "description": {
+    "en": "Return true if the given string contains between 1 and 3 'e' chars.",
+    "ru": "Верните true, если в строке от 1 до 3 символов 'e' (включительно).",
+    "uz": "Agar stringda 1 dan 3 gacha (shu jumladan) 'e' harfi bo‘lsa, true qaytaring."
+  },
+  "solution": "function stringE(str) {\n  const count = str.split('').filter(c => c === 'e').length;\n  return count >= 1 && count <= 3;\n}",
+  "starterCode": "function stringE(str) {\n  // type here\n}",
+  "testCases": [
+    { "input": ["Hello"], "output": true },
+    { "input": ["Heelle"], "output": true },
+    { "input": ["Heelele"], "output": false },
+    { "input": ["HII"], "output": false },
+    { "input": ["e"], "output": true },
+    { "input": [""], "output": false }
+  ]
+}

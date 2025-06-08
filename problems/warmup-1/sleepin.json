@@ -1,24 +1,38 @@
-{
-  "topicId": "warmup-1",
-  "id": "sleepin",
-  "difficulty": "Easy",
-  "title": {
-    "en": "Sleep In",
-    "ru": "Можно поспать подольше",
-    "uz": "Kechroq uxlash mumkin"
-  },
-  "functionName": "sleepIn",
-  "description": {
-    "en": "You are given two boolean parameters: 'weekday' and 'vacation'. The 'weekday' parameter is true if it is a weekday (Monday to Friday), and 'vacation' is true if you are currently on vacation. You can sleep in if it is not a weekday (i.e., it is Saturday or Sunday), or if you are on vacation, regardless of the day. Return true if you can sleep in, otherwise return false.",
-    "ru": "Даны два булевых параметра: 'weekday' (рабочий день) и 'vacation' (отпуск). Параметр 'weekday' равен true, если сегодня рабочий день (с понедельника по пятницу), а 'vacation' равен true, если вы сейчас в отпуске. Вы можете поспать подольше, если сегодня не рабочий день (то есть суббота или воскресенье), или если вы в отпуске, независимо от дня недели. Верните true, если вы можете поспать подольше, иначе верните false.",
-    "uz": "'weekday' va 'vacation' nomli ikkita mantiqiy (boolean) parametr berilgan. 'weekday' parametri ish kuni bo‘lsa (dushanbadan jumagacha) true bo‘ladi, 'vacation' esa siz ta’til (dam olish)da bo‘lsangiz true bo‘ladi. Siz ish kuni bo‘lmasa (ya’ni shanba yoki yakshanba) yoki ta’til (dam olish)da bo‘lsangiz, kechroq uxlashingiz mumkin. Agar kechroq uxlash mumkin bo‘lsa true, aks holda false qaytaring."
-  },
-  "solution": "function sleepIn(weekday, vacation) {\n  return !weekday || vacation;\n}",
-  "starterCode": "function sleepIn(weekday, vacation) {\n  // type here\n}",
-  "testCases": [
-    { "input": ["true", "true"], "output": true },
-    { "input": ["true", "false"], "output": false },
-    { "input": ["false", "true"], "output": true },
-    { "input": ["false", "false"], "output": true }
-  ]
-}
+[
+  {
+    "topicId": "warmup-1",
+    "id": "sleepin",
+    "difficulty": "Easy",
+    "functionName": "sleepIn",
+    "title": {
+      "en": "Sleep In",
+      "ru": "Можно поспать",
+      "uz": "Uxlash mumkin"
+    },
+    "description": {
+      "en": "The parameter weekday is true if it is a weekday, and the parameter vacation is true if we are on vacation. We sleep in if it is not a weekday or we're on vacation. Return true if we sleep in.",
+      "ru": "Параметр weekday равен true, если это будний день, и vacation равен true, если мы в отпуске. Можно поспать, если это не будний день или мы в отпуске. Верните true, если можно поспать.",
+      "uz": "weekday parametri ish kuni bo‘lsa true, vacation parametri ta’til bo‘lsa true bo‘ladi. Agar ish kuni bo‘lmasa yoki ta’til bo‘lsa, uxlash mumkin. Uxlash mumkin bo‘lsa, true qaytaring."
+    },
+    "solution": "function sleepIn(weekday, vacation) {\n  return !weekday || vacation;\n}",
+    "starterCode": "function sleepIn(weekday, vacation) {\n  // type here\n}",
+    "testCases": [
+      {
+        "input": ["true", "true"],
+        "output": true
+      },
+      {
+        "input": ["true", "false"],
+        "output": false
+      },
+      {
+        "input": ["false", "true"],
+        "output": true
+      },
+      {
+        "input": ["false", "false"],
+        "output": true
+      }
+    ]
+  }
+]

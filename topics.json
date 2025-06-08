@@ -11,84 +11,342 @@
         "topicId": "warmup-1",
         "id": "sleepin",
         "difficulty": "Easy",
-        "functionName": "sleepIn"
+        "functionName": "sleepIn",
+        "title": {
+          "en": "Sleep In",
+          "ru": "Долго спать",
+          "uz": "Kech uyg'onish"
+        }
       },
       {
         "topicId": "warmup-1",
         "id": "monkeytrouble",
         "difficulty": "Easy",
         "functionName": "monkeyTrouble",
-        "description": "We have two monkeys, a and b, and the parameters aSmile and bSmile indicate if each is smiling. We are in trouble if they are both smiling or if neither of them is smiling. Return true if we are in trouble.",
-        "solution": "function monkeyTrouble(aSmile, bSmile) {\n  return aSmile === bSmile;\n}",
-        "starterCode": "function monkeyTrouble(aSmile, bSmile) {\n  // type here\n}",
-        "testCases": [
-          { "input": ["true", "true"], "output": true },
-          { "input": ["false", "false"], "output": true },
-          { "input": ["true", "false"], "output": false },
-          { "input": ["false", "true"], "output": false }
-        ]
+        "title": {
+          "en": "Monkey Trouble",
+          "ru": "Обезьяны балуются",
+          "uz": "Maymunlar muammosi"
+        }
       },
       {
         "topicId": "warmup-1",
         "id": "sumdouble",
         "difficulty": "Easy",
         "functionName": "sumDouble",
-        "description": "Given two int values, return their sum. Unless the two values are the same, then return double their sum.",
-        "solution": "function sumDouble(a, b) {\n  return a === b ? 2 * (a + b) : a + b;\n}",
-        "starterCode": "function sumDouble(a, b) {\n  // type here\n}",
-        "testCases": [
-          { "input": ["1", "2"], "output": 3 },
-          { "input": ["3", "2"], "output": 5 },
-          { "input": ["2", "2"], "output": 8 },
-          { "input": ["-1", "0"], "output": -1 },
-          { "input": ["3", "3"], "output": 12 },
-          { "input": ["0", "0"], "output": 0 },
-          { "input": ["0", "1"], "output": 1 },
-          { "input": ["3", "4"], "output": 7 }
-        ]
+        "title": {
+          "en": "Sum Double",
+          "ru": "Сумма удваивается",
+          "uz": "Ikkilangan yig'indi"
+        }
       },
       {
         "topicId": "warmup-1",
         "id": "diff21",
         "difficulty": "Easy",
         "functionName": "diff21",
-        "description": "Given an int n, return the absolute difference between n and 21, except return double the absolute difference if n is over 21.",
-        "solution": "function diff21(n) {\n  return n > 21 ? 2 * Math.abs(n - 21) : Math.abs(n - 21);\n}",
-        "starterCode": "function diff21(n) {\n  // type here\n}",
-        "testCases": [
-          { "input": ["19"], "output": 2 },
-          { "input": ["10"], "output": 11 },
-          { "input": ["21"], "output": 0 },
-          { "input": ["22"], "output": 2 },
-          { "input": ["25"], "output": 8 },
-          { "input": ["30"], "output": 18 },
-          { "input": ["0"], "output": 21 },
-          { "input": ["1"], "output": 20 },
-          { "input": ["2"], "output": 19 },
-          { "input": ["-1"], "output": 22 },
-          { "input": ["-2"], "output": 23 },
-          { "input": ["50"], "output": 58 }
-        ]
+        "title": {
+          "en": "Diff 21",
+          "ru": "Разница с 21",
+          "uz": "21 bilan farq"
+        }
       },
       {
         "topicId": "warmup-1",
         "id": "parrottrouble",
         "difficulty": "Easy",
         "functionName": "parrotTrouble",
-        "description": "We have a loud talking parrot. The \"hour\" parameter is the current hour time in the range 0..23. We are in trouble if the parrot is talking and the hour is before 7 or after 20. Return true if we are in trouble.",
-        "solution": "function parrotTrouble(talking, hour) {\n  return talking && (hour < 7 || hour > 20);\n}",
-        "starterCode": "function parrotTrouble(talking, hour) {\n  // type here\n}",
-        "testCases": [
-          { "input": ["true", "6"], "output": true },
-          { "input": ["true", "7"], "output": false },
-          { "input": ["false", "6"], "output": false },
-          { "input": ["true", "21"], "output": true },
-          { "input": ["false", "21"], "output": false },
-          { "input": ["true", "23"], "output": true },
-          { "input": ["false", "23"], "output": false },
-          { "input": ["true", "20"], "output": false },
-          { "input": ["false", "12"], "output": false }
-        ]
+        "title": {
+          "en": "Parrot Trouble",
+          "ru": "Проблема с попугаем",
+          "uz": "Papugay muammosi"
+        }
+      },
+      {
+        "topicId": "warmup-1",
+        "id": "makes10",
+        "difficulty": "Easy",
+        "functionName": "makes10",
+        "title": {
+          "en": "Makes 10",
+          "ru": "Получить 10",
+          "uz": "10 hosil qilish"
+        }
+      },
+      {
+        "topicId": "warmup-1",
+        "id": "nearhundred",
+        "difficulty": "Easy",
+        "functionName": "nearHundred",
+        "title": {
+          "en": "Near Hundred",
+          "ru": "Близко к 100",
+          "uz": "Yuzga yaqin"
+        }
+      },
+      {
+        "topicId": "warmup-1",
+        "id": "posneg",
+        "difficulty": "Easy",
+        "functionName": "posNeg",
+        "title": {
+          "en": "Pos Neg",
+          "ru": "Положительное/Отрицательное",
+          "uz": "Musbat/Manfiy"
+        }
+      },
+      {
+        "topicId": "warmup-1",
+        "id": "notstring",
+        "difficulty": "Easy",
+        "functionName": "notString",
+        "title": {
+          "en": "Not String",
+          "ru": "Добавить 'not'",
+          "uz": "'not' qo'shish"
+        }
+      },
+      {
+        "topicId": "warmup-1",
+        "id": "missingchar",
+        "difficulty": "Easy",
+        "functionName": "missingChar",
+        "title": {
+          "en": "Missing Char",
+          "ru": "Отсутствующий символ",
+          "uz": "Tashlab yuborilgan belgi"
+        }
+      },
+      {
+        "topicId": "warmup-1",
+        "id": "frontback",
+        "difficulty": "Easy",
+        "functionName": "frontBack",
+        "title": {
+          "en": "Front Back",
+          "ru": "Перед/Зад",
+          "uz": "Bosh/Oxir"
+        }
+      },
+      {
+        "topicId": "warmup-1",
+        "id": "front3",
+        "difficulty": "Easy",
+        "functionName": "front3",
+        "title": {
+          "en": "Front 3",
+          "ru": "Тройной перед",
+          "uz": "Boshidan 3 martalab"
+        }
+      },
+      {
+        "topicId": "warmup-1",
+        "id": "backaround",
+        "difficulty": "Easy",
+        "functionName": "backAround",
+        "title": {
+          "en": "Back Around",
+          "ru": "Окружить концом",
+          "uz": "Oxiri bilan o'ralgan"
+        }
+      },
+      {
+        "topicId": "warmup-1",
+        "id": "or35",
+        "difficulty": "Easy",
+        "functionName": "or35",
+        "title": {
+          "en": "Or 35",
+          "ru": "Кратно 3 или 5",
+          "uz": "3 yoki 5 ga karrali"
+        }
+      },
+      {
+        "topicId": "warmup-1",
+        "id": "front22",
+        "difficulty": "Easy",
+        "functionName": "front22",
+        "title": {
+          "en": "Front 22",
+          "ru": "Добавить первые 2 символа",
+          "uz": "Boshi va oxiriga 2 harf qo'shish"
+        }
+      },
+      {
+        "topicId": "warmup-1",
+        "id": "starthi",
+        "difficulty": "Easy",
+        "functionName": "startHi",
+        "title": {
+          "en": "Start Hi",
+          "ru": "Начинается с 'hi'",
+          "uz": "'hi' bilan boshlanadi"
+        }
+      },
+      {
+        "topicId": "warmup-1",
+        "id": "icyhot",
+        "difficulty": "Easy",
+        "functionName": "icyHot",
+        "title": {
+          "en": "Icy Hot",
+          "ru": "Холодно/Горячо",
+          "uz": "Sovuq yoki issiq"
+        }
+      },
+      {
+        "topicId": "warmup-1",
+        "id": "in1020",
+        "difficulty": "Easy",
+        "functionName": "in1020",
+        "title": {
+          "en": "In 10..20",
+          "ru": "В диапазоне 10..20",
+          "uz": "10 dan 20 gacha"
+        }
+      },
+      {
+        "topicId": "warmup-1",
+        "id": "hasteen",
+        "difficulty": "Easy",
+        "functionName": "hasTeen",
+        "title": {
+          "en": "Has Teen",
+          "ru": "Есть тинейджер",
+          "uz": "Teen (13-19) bor"
+        }
+      },
+      {
+        "topicId": "warmup-1",
+        "id": "loneteen",
+        "difficulty": "Easy",
+        "functionName": "loneTeen",
+        "title": {
+          "en": "Lone Teen",
+          "ru": "Один тинейджер",
+          "uz": "Yolg'iz teen"
+        }
+      },
+      {
+        "topicId": "warmup-1",
+        "id": "deldel",
+        "difficulty": "Easy",
+        "functionName": "delDel",
+        "title": {
+          "en": "Del Del",
+          "ru": "Удалить 'del'",
+          "uz": "'del'ni olib tashlash"
+        }
+      },
+      {
+        "topicId": "warmup-1",
+        "id": "mixstart",
+        "difficulty": "Easy",
+        "functionName": "mixStart",
+        "title": {
+          "en": "Mix Start",
+          "ru": "Начинается на ?ix",
+          "uz": "?ix bilan boshlanadi"
+        }
+      },
+      {
+        "topicId": "warmup-1",
+        "id": "startoz",
+        "difficulty": "Easy",
+        "functionName": "startOz",
+        "title": {
+          "en": "Start Oz",
+          "ru": "Начинается на 'oz'",
+          "uz": "'oz' bilan boshlanadi"
+        }
+      },
+      {
+        "topicId": "warmup-1",
+        "id": "intmax",
+        "difficulty": "Easy",
+        "functionName": "intMax",
+        "title": {
+          "en": "Int Max",
+          "ru": "Максимум из трех чисел",
+          "uz": "Eng katta son"
+        }
+      },
+      {
+        "topicId": "warmup-1",
+        "id": "close10",
+        "difficulty": "Easy",
+        "functionName": "close10",
+        "title": {
+          "en": "Close 10",
+          "ru": "Ближайшее к 10",
+          "uz": "10 ga eng yaqin"
+        }
+      },
+      {
+        "topicId": "warmup-1",
+        "id": "in3050",
+        "difficulty": "Easy",
+        "functionName": "in3050",
+        "title": {
+          "en": "In 30..50",
+          "ru": "В диапазоне 30..50",
+          "uz": "30 dan 50 gacha"
+        }
+      },
+      {
+        "topicId": "warmup-1",
+        "id": "max1020",
+        "difficulty": "Easy",
+        "functionName": "max1020",
+        "title": {
+          "en": "Max 10..20",
+          "ru": "Максимум из 10..20",
+          "uz": "10-20 oralig'idagi eng katta"
+        }
+      },
+      {
+        "topicId": "warmup-1",
+        "id": "stringe",
+        "difficulty": "Easy",
+        "functionName": "stringE",
+        "title": {
+          "en": "String E",
+          "ru": "Буквы 'e' в строке",
+          "uz": "'e' harflari soni"
+        }
+      },
+      {
+        "topicId": "warmup-1",
+        "id": "lastdigit",
+        "difficulty": "Easy",
+        "functionName": "lastDigit",
+        "title": {
+          "en": "Last Digit",
+          "ru": "Последняя цифра",
+          "uz": "So‘nggi raqam"
+        }
+      },
+      {
+        "topicId": "warmup-1",
+        "id": "endup",
+        "difficulty": "Easy",
+        "functionName": "endUp",
+        "title": {
+          "en": "End Up",
+          "ru": "Заглавные в конце",
+          "uz": "Oxiri katta harf"
+        }
+      },
+      {
+        "topicId": "warmup-1",
+        "id": "everynth",
+        "difficulty": "Easy",
+        "functionName": "everyNth",
+        "title": {
+          "en": "Every Nth",
+          "ru": "Каждый N-ый",
+          "uz": "Har N-element"
+        }
       }
     ]
   },
@@ -98,7 +356,8 @@
     "description": "Basic string manipulation problems using substring, charAt, and length",
     "problemCount": 18,
     "difficulty": "Basic",
-    "color": "bg-blue-500"
+    "color": "bg-blue-500",
+    "problems": []
   },
   {
     "id": "array-1",
@@ -106,7 +365,8 @@
     "description": "Basic array problems involving loops and array manipulation",
     "problemCount": 15,
     "difficulty": "Basic",
-    "color": "bg-purple-500"
+    "color": "bg-purple-500",
+    "problems": []
   },
   {
     "id": "logic-1",
@@ -114,7 +374,8 @@
     "description": "Basic boolean logic problems with if/else statements",
     "problemCount": 20,
     "difficulty": "Basic",
-    "color": "bg-orange-500"
+    "color": "bg-orange-500",
+    "problems": []
   },
   {
     "id": "string-2",
@@ -122,7 +383,8 @@
     "description": "Medium string problems with more complex logic and patterns",
     "problemCount": 14,
     "difficulty": "Medium",
-    "color": "bg-cyan-500"
+    "color": "bg-cyan-500",
+    "problems": []
   },
   {
     "id": "array-2",
@@ -130,7 +392,8 @@
     "description": "Medium array problems with nested loops and complex logic",
     "problemCount": 16,
     "difficulty": "Medium",
-    "color": "bg-pink-500"
+    "color": "bg-pink-500",
+    "problems": []
   },
   {
     "id": "logic-2",
@@ -138,7 +401,8 @@
     "description": "Medium boolean logic problems with complex conditions",
     "problemCount": 11,
     "difficulty": "Medium",
-    "color": "bg-indigo-500"
+    "color": "bg-indigo-500",
+    "problems": []
   },
   {
     "id": "recursion-1",
@@ -146,6 +410,7 @@
     "description": "Introduction to recursion with basic recursive problems",
     "problemCount": 13,
     "difficulty": "Hard",
-    "color": "bg-red-500"
+    "color": "bg-red-500",
+    "problems": []
   }
 ]

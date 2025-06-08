@@ -1,0 +1,31 @@
+{
+  "topicId": "warmup-1",
+  "id": "max1020",
+  "difficulty": "Easy",
+  "functionName": "max1020",
+  "title": {
+    "en": "Max 10..20",
+    "ru": "Максимум в 10..20",
+    "uz": "10-20 orasidagi eng katta son"
+  },
+  "description": {
+    "en": "Given 2 positive int values, return the larger value that is in the range 10..20 inclusive, or return 0 if neither is in that range.",
+    "ru": "Даны два положительных числа. Верните большее из них, если оно находится в диапазоне 10..20 включительно. Если ни одно не попадает в диапазон, верните 0.",
+    "uz": "Ikkita musbat son berilgan. Agar 10-20 oralig‘ida bo‘lsa, eng kattasini qaytaring. Agar hech biri to‘g‘ri kelmasa, 0 qaytaring."
+  },
+  "solution": "function max1020(a, b) {\n  function inRange(x) { return x >= 10 && x <= 20; }\n  if (!inRange(a) && !inRange(b)) return 0;\n  if (!inRange(a)) return b;\n  if (!inRange(b)) return a;\n  return a > b ? a : b;\n}",
+  "starterCode": "function max1020(a, b) {\n  // type here\n}",
+  "testCases": [
+    { "input": ["11", "19"], "output": 19 },
+    { "input": ["19", "11"], "output": 19 },
+    { "input": ["11", "9"], "output": 11 },
+    { "input": ["9", "21"], "output": 0 },
+    { "input": ["10", "21"], "output": 10 },
+    { "input": ["21", "10"], "output": 10 },
+    { "input": ["9", "11"], "output": 11 },
+    { "input": ["23", "10"], "output": 10 },
+    { "input": ["20", "10"], "output": 20 },
+    { "input": ["7", "20"], "output": 20 },
+    { "input": ["17", "16"], "output": 17 }
+  ]
+}

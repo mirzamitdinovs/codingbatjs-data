@@ -1,0 +1,27 @@
+{
+  "topicId": "warmup-1",
+  "id": "notstring",
+  "difficulty": "Easy",
+  "functionName": "notString",
+  "title": {
+    "en": "Not String",
+    "ru": "Не строка",
+    "uz": "Not so‘zini qo‘shish"
+  },
+  "description": {
+    "en": "Given a string, return a new string where 'not ' has been added to the front. However, if the string already begins with 'not', return the string unchanged.",
+    "ru": "Дана строка. Верните новую строку, в начале которой добавлено 'not '. Если строка уже начинается с 'not', верните её без изменений.",
+    "uz": "String berilgan. Boshi 'not' bilan boshlanmasa, oldiga 'not ' qo‘shib qaytaring. Agar boshi 'not' bo‘lsa, stringni o‘zgartirmasdan qaytaring."
+  },
+  "solution": "function notString(str) {\n  if (str.startsWith('not')) return str;\n  return 'not ' + str;\n}",
+  "starterCode": "function notString(str) {\n  // type here\n}",
+  "testCases": [
+    { "input": ["candy"], "output": "not candy" },
+    { "input": ["x"], "output": "not x" },
+    { "input": ["not bad"], "output": "not bad" },
+    { "input": ["bad"], "output": "not bad" },
+    { "input": ["not"], "output": "not" },
+    { "input": ["is not"], "output": "not is not" },
+    { "input": ["no"], "output": "not no" }
+  ]
+}

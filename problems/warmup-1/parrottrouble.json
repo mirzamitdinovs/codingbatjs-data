@@ -1,0 +1,29 @@
+{
+  "topicId": "warmup-1",
+  "id": "parrottrouble",
+  "difficulty": "Easy",
+  "functionName": "parrotTrouble",
+  "title": {
+    "en": "Parrot Trouble",
+    "ru": "Проблема с попугаем",
+    "uz": "Papugay muammosi"
+  },
+  "description": {
+    "en": "We have a loud talking parrot. The 'hour' parameter is the current hour time in the range 0..23. We are in trouble if the parrot is talking and the hour is before 7 or after 20. Return true if we are in trouble.",
+    "ru": "У нас есть громко говорящий попугай. Параметр 'hour' — это текущее время (от 0 до 23). Мы попадаем в неприятности, если попугай говорит и час меньше 7 или больше 20. Верните true, если у нас проблемы.",
+    "uz": "Bizda baland gapiradigan papugay bor. 'hour' parametri hozirgi soatni bildiradi (0 dan 23 gacha). Agar papugay gapirayotgan bo‘lsa va soat 7 dan kichik yoki 20 dan katta bo‘lsa, muammo bor. Muammo bo‘lsa true qaytaring."
+  },
+  "solution": "function parrotTrouble(talking, hour) {\n  return talking && (hour < 7 || hour > 20);\n}",
+  "starterCode": "function parrotTrouble(talking, hour) {\n  // type here\n}",
+  "testCases": [
+    { "input": ["true", "6"], "output": true },
+    { "input": ["true", "7"], "output": false },
+    { "input": ["false", "6"], "output": false },
+    { "input": ["true", "21"], "output": true },
+    { "input": ["false", "21"], "output": false },
+    { "input": ["true", "23"], "output": true },
+    { "input": ["false", "23"], "output": false },
+    { "input": ["true", "20"], "output": false },
+    { "input": ["false", "12"], "output": false }
+  ]
+}

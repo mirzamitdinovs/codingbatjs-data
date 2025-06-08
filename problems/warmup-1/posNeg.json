@@ -1,0 +1,30 @@
+{
+  "topicId": "warmup-1",
+  "id": "posneg",
+  "difficulty": "Easy",
+  "functionName": "posNeg",
+  "title": {
+    "en": "Positive and Negative",
+    "ru": "Положительное и отрицательное",
+    "uz": "Musbat va manfiy"
+  },
+  "description": {
+    "en": "Given 2 int values, return true if one is negative and one is positive. Except if the parameter 'negative' is true, then return true only if both are negative.",
+    "ru": "Даны два целых числа. Верните true, если одно из них отрицательное, а другое положительное. Если параметр 'negative' равен true, верните true, только если оба отрицательные.",
+    "uz": "2 ta butun son berilgan. Agar bittasi manfiy, bittasi musbat bo‘lsa true qaytaring. Agar 'negative' parametri true bo‘lsa, faqat ikkalasi ham manfiy bo‘lsa true qaytaring."
+  },
+  "solution": "function posNeg(a, b, negative) {\n  if (negative) {\n    return a < 0 && b < 0;\n  } else {\n    return (a < 0 && b > 0) || (a > 0 && b < 0);\n  }\n}",
+  "starterCode": "function posNeg(a, b, negative) {\n  // type here\n}",
+  "testCases": [
+    { "input": ["1", "-1", "false"], "output": true },
+    { "input": ["-1", "1", "false"], "output": true },
+    { "input": ["-4", "-5", "true"], "output": true },
+    { "input": ["-4", "-5", "false"], "output": false },
+    { "input": ["-4", "5", "false"], "output": true },
+    { "input": ["-4", "5", "true"], "output": false },
+    { "input": ["1", "1", "false"], "output": false },
+    { "input": ["-1", "-1", "false"], "output": false },
+    { "input": ["1", "-1", "true"], "output": false },
+    { "input": ["-1", "1", "true"], "output": false }
+  ]
+}

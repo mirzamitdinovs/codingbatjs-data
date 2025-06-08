@@ -1,0 +1,31 @@
+{
+  "topicId": "warmup-1",
+  "id": "close10",
+  "difficulty": "Easy",
+  "functionName": "close10",
+  "title": {
+    "en": "Close 10",
+    "ru": "Ближайшее к 10",
+    "uz": "10 ga yaqinroq son"
+  },
+  "description": {
+    "en": "Given 2 int values, return whichever value is nearest to the value 10, or return 0 in the event of a tie.",
+    "ru": "Даны два числа. Верните то, которое ближе к 10. Если оба на одинаковом расстоянии, верните 0.",
+    "uz": "Ikkita son berilgan. 10 ga eng yaqinini qaytaring. Agar ikkalasi bir xil masofada bo‘lsa, 0 qaytaring."
+  },
+  "solution": "function close10(a, b) {\n  const distA = Math.abs(a - 10);\n  const distB = Math.abs(b - 10);\n  if (distA < distB) return a;\n  if (distB < distA) return b;\n  return 0;\n}",
+  "starterCode": "function close10(a, b) {\n  // type here\n}",
+  "testCases": [
+    { "input": ["8", "13"], "output": 8 },
+    { "input": ["13", "8"], "output": 8 },
+    { "input": ["13", "7"], "output": 10 },
+    { "input": ["7", "13"], "output": 10 },
+    { "input": ["9", "13"], "output": 9 },
+    { "input": ["13", "8"], "output": 8 },
+    { "input": ["10", "12"], "output": 10 },
+    { "input": ["11", "10"], "output": 10 },
+    { "input": ["5", "21"], "output": 5 },
+    { "input": ["0", "20"], "output": 0 },
+    { "input": ["10", "10"], "output": 0 }
+  ]
+}

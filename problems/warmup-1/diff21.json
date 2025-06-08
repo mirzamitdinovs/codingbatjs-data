@@ -1,0 +1,32 @@
+{
+  "topicId": "warmup-1",
+  "id": "diff21",
+  "difficulty": "Easy",
+  "functionName": "diff21",
+  "title": {
+    "en": "Difference 21",
+    "ru": "Разница с 21",
+    "uz": "21 dan farq"
+  },
+  "description": {
+    "en": "Given an int n, return the absolute difference between n and 21, except return double the absolute difference if n is over 21.",
+    "ru": "Дано целое число n. Верните абсолютную разницу между n и 21, но если n больше 21, верните удвоенную разницу.",
+    "uz": "n butun soni berilgan. n va 21 orasidagi modulli farqni qaytaring. Agar n 21 dan katta bo‘lsa, farqni ikki marta qaytaring."
+  },
+  "solution": "function diff21(n) {\n  return n > 21 ? 2 * Math.abs(n - 21) : Math.abs(n - 21);\n}",
+  "starterCode": "function diff21(n) {\n  // type here\n}",
+  "testCases": [
+    { "input": ["19"], "output": 2 },
+    { "input": ["10"], "output": 11 },
+    { "input": ["21"], "output": 0 },
+    { "input": ["22"], "output": 2 },
+    { "input": ["25"], "output": 8 },
+    { "input": ["30"], "output": 18 },
+    { "input": ["0"], "output": 21 },
+    { "input": ["1"], "output": 20 },
+    { "input": ["2"], "output": 19 },
+    { "input": ["-1"], "output": 22 },
+    { "input": ["-2"], "output": 23 },
+    { "input": ["50"], "output": 58 }
+  ]
+}

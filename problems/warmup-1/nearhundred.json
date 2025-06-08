@@ -1,0 +1,30 @@
+{
+  "topicId": "warmup-1",
+  "id": "nearhundred",
+  "difficulty": "Easy",
+  "functionName": "nearHundred",
+  "title": {
+    "en": "Near Hundred",
+    "ru": "Близко к 100",
+    "uz": "100 ga yaqin"
+  },
+  "description": {
+    "en": "Given an int n, return true if it is within 10 of 100 or 200. Note: Math.abs(num) computes the absolute value of a number.",
+    "ru": "Дано целое число n. Верните true, если оно находится на расстоянии 10 от 100 или 200. Примечание: Math.abs(num) вычисляет абсолютное значение числа.",
+    "uz": "n butun soni berilgan. Agar n 100 yoki 200 ga 10 dan kam masofada bo‘lsa, true qaytaring. Math.abs(num) sonning moduli (mutlaq qiymati)ni hisoblaydi."
+  },
+  "solution": "function nearHundred(n) {\n  return (Math.abs(100 - n) <= 10) || (Math.abs(200 - n) <= 10);\n}",
+  "starterCode": "function nearHundred(n) {\n  // type here\n}",
+  "testCases": [
+    { "input": ["93"], "output": true },
+    { "input": ["90"], "output": true },
+    { "input": ["89"], "output": false },
+    { "input": ["110"], "output": true },
+    { "input": ["111"], "output": false },
+    { "input": ["121"], "output": false },
+    { "input": ["0"], "output": false },
+    { "input": ["5"], "output": false },
+    { "input": ["191"], "output": true },
+    { "input": ["189"], "output": false }
+  ]
+}

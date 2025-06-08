@@ -1,0 +1,27 @@
+{
+  "topicId": "warmup-1",
+  "id": "in1020",
+  "difficulty": "Easy",
+  "functionName": "in1020",
+  "title": {
+    "en": "In Range 10..20",
+    "ru": "В диапазоне 10..20",
+    "uz": "10 dan 20 gacha"
+  },
+  "description": {
+    "en": "Given 2 int values, return true if either of them is in the range 10..20 inclusive.",
+    "ru": "Даны два целых числа. Верните true, если хотя бы одно из них находится в диапазоне 10..20 включительно.",
+    "uz": "Ikkita butun son berilgan. Ulardan biri 10–20 oralig‘ida (shu sonlar ham) bo‘lsa, true qaytaring."
+  },
+  "solution": "function in1020(a, b) {\n  return (a >= 10 && a <= 20) || (b >= 10 && b <= 20);\n}",
+  "starterCode": "function in1020(a, b) {\n  // type here\n}",
+  "testCases": [
+    { "input": ["12", "99"], "output": true },
+    { "input": ["21", "12"], "output": true },
+    { "input": ["8", "99"], "output": false },
+    { "input": ["99", "10"], "output": true },
+    { "input": ["20", "20"], "output": true },
+    { "input": ["21", "21"], "output": false },
+    { "input": ["9", "9"], "output": false }
+  ]
+}

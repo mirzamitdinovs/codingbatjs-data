@@ -1,0 +1,27 @@
+{
+  "topicId": "warmup-1",
+  "id": "everynth",
+  "difficulty": "Easy",
+  "functionName": "everyNth",
+  "title": {
+    "en": "Every Nth",
+    "ru": "Каждый N-й символ",
+    "uz": "Har N-ta harf"
+  },
+  "description": {
+    "en": "Given a non-empty string and an int N, return the string made starting with char 0, and then every Nth char of the string.",
+    "ru": "Дана непустая строка и целое число N. Верните строку, состоящую из символа под индексом 0, затем каждый N-й символ.",
+    "uz": "String va butun son N berilgan. Yangi string qaytaring: 0-indeksli harf, so‘ng har N-ta harf."
+  },
+  "solution": "function everyNth(str, n) {\n  let result = '';\n  for (let i = 0; i < str.length; i += n) {\n    result += str[i];\n  }\n  return result;\n}",
+  "starterCode": "function everyNth(str, n) {\n  // type here\n}",
+  "testCases": [
+    { "input": ["Miracle", "2"], "output": "Mrce" },
+    { "input": ["abcdefg", "2"], "output": "aceg" },
+    { "input": ["abcdefg", "3"], "output": "adg" },
+    { "input": ["Chocolate", "3"], "output": "Cca" },
+    { "input": ["Chocolates", "3"], "output": "Ccas" },
+    { "input": ["Chocolates", "4"], "output": "Coa" },
+    { "input": ["Chocolates", "100"], "output": "C" }
+  ]
+}

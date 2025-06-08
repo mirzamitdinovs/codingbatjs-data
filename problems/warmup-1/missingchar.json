@@ -1,0 +1,30 @@
+{
+  "topicId": "warmup-1",
+  "id": "missingchar",
+  "difficulty": "Easy",
+  "functionName": "missingChar",
+  "title": {
+    "en": "Missing Character",
+    "ru": "Пропущенный символ",
+    "uz": "Belgini olib tashlash"
+  },
+  "description": {
+    "en": "Given a non-empty string and an int n, return a new string where the char at index n has been removed. The value of n will be a valid index of a char in the original string.",
+    "ru": "Дана непустая строка и целое число n. Верните новую строку, в которой символ с индексом n удалён. n — всегда корректный индекс.",
+    "uz": "Bo‘sh bo‘lmagan string va n soni berilgan. n-indeksdagi belgi olib tashlangan yangi string qaytaring. n har doim to‘g‘ri indeks bo‘ladi."
+  },
+  "solution": "function missingChar(str, n) {\n  return str.slice(0, n) + str.slice(n + 1);\n}",
+  "starterCode": "function missingChar(str, n) {\n  // type here\n}",
+  "testCases": [
+    { "input": ["kitten", "1"], "output": "ktten" },
+    { "input": ["kitten", "0"], "output": "itten" },
+    { "input": ["kitten", "4"], "output": "kittn" },
+    { "input": ["Hi", "0"], "output": "i" },
+    { "input": ["Hi", "1"], "output": "H" },
+    { "input": ["code", "0"], "output": "ode" },
+    { "input": ["code", "1"], "output": "cde" },
+    { "input": ["code", "2"], "output": "coe" },
+    { "input": ["code", "3"], "output": "cod" },
+    { "input": ["chocolate", "8"], "output": "chocolat" }
+  ]
+}

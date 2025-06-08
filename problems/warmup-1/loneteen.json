@@ -1,0 +1,33 @@
+{
+  "topicId": "warmup-1",
+  "id": "loneteen",
+  "difficulty": "Easy",
+  "functionName": "loneTeen",
+  "title": {
+    "en": "Lone Teen",
+    "ru": "Один 'teen'",
+    "uz": "Bitta 'teen' bor"
+  },
+  "description": {
+    "en": "We'll say that a number is 'teen' if it is in the range 13..19 inclusive. Given 2 int values, return true if one or the other is teen, but not both.",
+    "ru": "'Teen' числа — это числа от 13 до 19 включительно. Даны два числа, верните true, если только одно из них 'teen'.",
+    "uz": "'Teen' sonlar 13–19 oralig‘ida (shu sonlar ham). Ikki son berilgan, faqat bittasi 'teen' bo‘lsa true qaytaring."
+  },
+  "solution": "function loneTeen(a, b) {\n  const isTeen = n => n >= 13 && n <= 19;\n  return isTeen(a) !== isTeen(b);\n}",
+  "starterCode": "function loneTeen(a, b) {\n  // type here\n}",
+  "testCases": [
+    { "input": ["13", "99"], "output": true },
+    { "input": ["21", "19"], "output": true },
+    { "input": ["13", "13"], "output": false },
+    { "input": ["14", "20"], "output": true },
+    { "input": ["20", "15"], "output": true },
+    { "input": ["16", "17"], "output": false },
+    { "input": ["16", "9"], "output": true },
+    { "input": ["16", "18"], "output": false },
+    { "input": ["13", "19"], "output": false },
+    { "input": ["13", "20"], "output": true },
+    { "input": ["6", "18"], "output": true },
+    { "input": ["99", "13"], "output": true },
+    { "input": ["99", "99"], "output": false }
+  ]
+}

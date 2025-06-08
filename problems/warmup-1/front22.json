@@ -1,0 +1,26 @@
+{
+  "topicId": "warmup-1",
+  "id": "front22",
+  "difficulty": "Easy",
+  "functionName": "front22",
+  "title": {
+    "en": "Front 2-2",
+    "ru": "Два символа впереди и сзади",
+    "uz": "2 ta belgi oldi va orqaga"
+  },
+  "description": {
+    "en": "Given a string, take the first 2 chars and return the string with the 2 chars added at both the front and back. If the string length is less than 2, use whatever is there.",
+    "ru": "Дана строка. Возьмите первые 2 символа и добавьте их в начало и конец строки. Если их меньше, используйте всё, что есть.",
+    "uz": "String berilgan. Birinchi 2 belgini olib, oldi va orqaga qo‘shib qaytaring. Agar 2 tadan kam bo‘lsa, borini oling."
+  },
+  "solution": "function front22(str) {\n  let front = str.slice(0, 2);\n  return front + str + front;\n}",
+  "starterCode": "function front22(str) {\n  // type here\n}",
+  "testCases": [
+    { "input": ["kitten"], "output": "kikittenki" },
+    { "input": ["Ha"], "output": "HaHaHa" },
+    { "input": ["abc"], "output": "ababcab" },
+    { "input": ["ab"], "output": "ababab" },
+    { "input": ["a"], "output": "aaa" },
+    { "input": [""], "output": "" }
+  ]
+}

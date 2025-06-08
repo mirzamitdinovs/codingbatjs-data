@@ -1,0 +1,31 @@
+{
+  "topicId": "warmup-1",
+  "id": "startoz",
+  "difficulty": "Easy",
+  "functionName": "startOz",
+  "title": {
+    "en": "Start Oz",
+    "ru": "Начинается с 'o' и 'z'",
+    "uz": "'o' va 'z' bilan boshlanadi"
+  },
+  "description": {
+    "en": "Given a string, return a string made of the first 2 chars (if present), but include the first char only if it is 'o' and include the second only if it is 'z'.",
+    "ru": "Дана строка. Верните строку из первых двух символов, но первый символ включите только если это 'o', а второй — только если это 'z'.",
+    "uz": "String berilgan. Birinchi 2 belgidan yangi string qaytaring: birinchisi 'o' bo‘lsa — qo‘shing, ikkinchisi 'z' bo‘lsa — qo‘shing."
+  },
+  "solution": "function startOz(str) {\n  let result = '';\n  if (str.length > 0 && str[0] === 'o') result += 'o';\n  if (str.length > 1 && str[1] === 'z') result += 'z';\n  return result;\n}",
+  "starterCode": "function startOz(str) {\n  // type here\n}",
+  "testCases": [
+    { "input": ["ozymandias"], "output": "oz" },
+    { "input": ["bzoo"], "output": "z" },
+    { "input": ["oxx"], "output": "o" },
+    { "input": ["ounce"], "output": "o" },
+    { "input": ["o"], "output": "o" },
+    { "input": ["abc"], "output": "" },
+    { "input": [""], "output": "" },
+    { "input": ["zoo"], "output": "" },
+    { "input": ["aztec"], "output": "z" },
+    { "input": ["zzzz"], "output": "z" },
+    { "input": ["oznic"], "output": "oz" }
+  ]
+}

@@ -1,0 +1,29 @@
+{
+  "topicId": "warmup-1",
+  "id": "or35",
+  "difficulty": "Easy",
+  "functionName": "or35",
+  "title": {
+    "en": "Multiple of 3 or 5",
+    "ru": "Кратность 3 или 5",
+    "uz": "3 yoki 5 ga bo‘linuvchi"
+  },
+  "description": {
+    "en": "Return true if the given non-negative number is a multiple of 3 or a multiple of 5.",
+    "ru": "Верните true, если заданное неотрицательное число кратно 3 или 5.",
+    "uz": "Berilgan musbat son 3 yoki 5 ga bo‘linsa, true qaytaring."
+  },
+  "solution": "function or35(n) {\n  return n % 3 === 0 || n % 5 === 0;\n}",
+  "starterCode": "function or35(n) {\n  // type here\n}",
+  "testCases": [
+    { "input": ["3"], "output": true },
+    { "input": ["10"], "output": true },
+    { "input": ["8"], "output": false },
+    { "input": ["15"], "output": true },
+    { "input": ["5"], "output": true },
+    { "input": ["4"], "output": false },
+    { "input": ["9"], "output": true },
+    { "input": ["7"], "output": false },
+    { "input": ["6"], "output": true }
+  ]
+}

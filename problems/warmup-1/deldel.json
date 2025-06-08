@@ -1,0 +1,30 @@
+{
+  "topicId": "warmup-1",
+  "id": "deldel",
+  "difficulty": "Easy",
+  "functionName": "delDel",
+  "title": {
+    "en": "Del Del",
+    "ru": "Удалить 'del'",
+    "uz": "'del' ni olib tashlash"
+  },
+  "description": {
+    "en": "Given a string, if the string 'del' appears starting at index 1, return a string where that 'del' has been deleted. Otherwise, return the string unchanged.",
+    "ru": "Дана строка. Если подстрока 'del' встречается с первого индекса, удалите её и верните новую строку. В противном случае верните исходную строку.",
+    "uz": "String berilgan. Agar 1-pozitsiyadan boshlab 'del' chiqsa, uni olib tashlab string qaytaring. Bo‘lmasa, string o‘zgarishsiz qaytsin."
+  },
+  "solution": "function delDel(str) {\n  if (str.substring(1, 4) === 'del') {\n    return str[0] + str.slice(4);\n  }\n  return str;\n}",
+  "starterCode": "function delDel(str) {\n  // type here\n}",
+  "testCases": [
+    { "input": ["adelbc"], "output": "abc" },
+    { "input": ["adelHello"], "output": "aHello" },
+    { "input": ["abcdel"], "output": "abcdel" },
+    { "input": ["add"], "output": "add" },
+    { "input": ["ad"], "output": "ad" },
+    { "input": ["a"], "output": "a" },
+    { "input": [""], "output": "" },
+    { "input": ["del"], "output": "del" },
+    { "input": ["adel"], "output": "a" },
+    { "input": ["aadelbb"], "output": "aadelbb" }
+  ]
+}
