@@ -1,8 +1,16 @@
 [
   {
     "id": "warmup-1",
-    "title": "Warmup-1",
-    "description": "Simple warmup problems to get started with basic logic and loops",
+    "title": {
+      "en": "Warmup-1",
+      "ru": "Разминка-1",
+      "uz": "Ishlov-1"
+    },
+    "description": {
+      "en": "Simple warmup problems to get started with basic logic and loops",
+      "ru": "Простые задачи для разминки, чтобы начать работу с базовой логикой и циклами",
+      "uz": "Oddiy mantiq va tsikllar bilan ishlashni boshlash uchun oddiy ishlov masalalari"
+    },
     "problemCount": 31,
     "difficulty": "Basic",
     "color": "bg-green-500",
@@ -352,8 +360,16 @@
   },
   {
     "id": "string-1",
-    "title": "String-1",
-    "description": "Basic string manipulation problems using substring, charAt, and length",
+    "title": {
+      "en": "String-1",
+      "ru": "Строки-1",
+      "uz": "Satr-1"
+    },
+    "description": {
+      "en": "Basic string manipulation problems using substring, charAt, and length",
+      "ru": "Базовые задачи по работе со строками с использованием substring, charAt и length",
+      "uz": "Substring, charAt va length yordamida satrlarni boshqarish bo'yicha oddiy masalalar"
+    },
     "problemCount": 18,
     "difficulty": "Basic",
     "color": "bg-blue-500",
@@ -361,8 +377,16 @@
   },
   {
     "id": "array-1",
-    "title": "Array-1",
-    "description": "Basic array problems involving loops and array manipulation",
+    "title": {
+      "en": "Array-1",
+      "ru": "Массивы-1",
+      "uz": "Massiv-1"
+    },
+    "description": {
+      "en": "Basic array problems involving loops and array manipulation",
+      "ru": "Базовые задачи по работе с массивами, включая циклы и манипуляции с массивами",
+      "uz": "Tsikllar va massivlarni boshqarishni o'z ichiga olgan oddiy massiv masalalari"
+    },
     "problemCount": 15,
     "difficulty": "Basic",
     "color": "bg-purple-500",
@@ -370,8 +394,16 @@
   },
   {
     "id": "logic-1",
-    "title": "Logic-1",
-    "description": "Basic boolean logic problems with if/else statements",
+    "title": {
+      "en": "Logic-1",
+      "ru": "Логика-1",
+      "uz": "Mantiq-1"
+    },
+    "description": {
+      "en": "Basic boolean logic problems with if/else statements",
+      "ru": "Базовые задачи по булевой логике с использованием if/else",
+      "uz": "If/else operatorlari yordamida oddiy mantiqiy masalalar"
+    },
     "problemCount": 20,
     "difficulty": "Basic",
     "color": "bg-orange-500",
@@ -379,8 +411,16 @@
   },
   {
     "id": "string-2",
-    "title": "String-2",
-    "description": "Medium string problems with more complex logic and patterns",
+    "title": {
+      "en": "String-2",
+      "ru": "Строки-2",
+      "uz": "Satr-2"
+    },
+    "description": {
+      "en": "Medium string problems with more complex logic and patterns",
+      "ru": "Задачи средней сложности по работе со строками с более сложной логикой и шаблонами",
+      "uz": "Murakkabroq mantiq va naqshlar bilan o'rta darajadagi satr masalalari"
+    },
     "problemCount": 14,
     "difficulty": "Medium",
     "color": "bg-cyan-500",
@@ -388,8 +428,16 @@
   },
   {
     "id": "array-2",
-    "title": "Array-2",
-    "description": "Medium array problems with nested loops and complex logic",
+    "title": {
+      "en": "Array-2",
+      "ru": "Массивы-2",
+      "uz": "Massiv-2"
+    },
+    "description": {
+      "en": "Medium array problems with nested loops and complex logic",
+      "ru": "Задачи средней сложности по работе с массивами с вложенными циклами и сложной логикой",
+      "uz": "Ichki tsikllar va murakkab mantiq bilan o'rta darajadagi massiv masalalari"
+    },
     "problemCount": 16,
     "difficulty": "Medium",
     "color": "bg-pink-500",
@@ -397,8 +445,16 @@
   },
   {
     "id": "logic-2",
-    "title": "Logic-2",
-    "description": "Medium boolean logic problems with complex conditions",
+    "title": {
+      "en": "Logic-2",
+      "ru": "Логика-2",
+      "uz": "Mantiq-2"
+    },
+    "description": {
+      "en": "Medium boolean logic problems with complex conditions",
+      "ru": "Задачи средней сложности по булевой логике с комплексными условиями",
+      "uz": "Murakkab shartlar bilan o'rta darajadagi mantiqiy masalalar"
+    },
     "problemCount": 11,
     "difficulty": "Medium",
     "color": "bg-indigo-500",
@@ -406,8 +462,16 @@
   },
   {
     "id": "recursion-1",
-    "title": "Recursion-1",
-    "description": "Introduction to recursion with basic recursive problems",
+    "title": {
+      "en": "Recursion-1",
+      "ru": "Рекурсия-1",
+      "uz": "Rekursiya-1"
+    },
+    "description": {
+      "en": "Introduction to recursion with basic recursive problems",
+      "ru": "Введение в рекурсию с базовыми рекурсивными задачами",
+      "uz": "Oddiy rekursiv masalalar bilan rekursiyaga kirish"
+    },
     "problemCount": 13,
     "difficulty": "Hard",
     "color": "bg-red-500",
